@@ -19,70 +19,52 @@ const menuItems = [
     type: 'mega-dropdown',
     categories: [
       {
-        title: 'Injectables',
-        route: '/procedures/injectables',
+        title: 'London Treatments',
+        route: '/london',
         items: [
-          { name: 'Anti-Wrinkle Treatment', route: '/procedures/injectables/anti-wrinkle' },
-          { name: 'Dermal Filler', route: '/procedures/injectables/dermal-filler' },
-          { name: 'Profhilo', route: '/procedures/injectables/profhilo' },
-          { name: 'Polynucleotides', route: '/procedures/injectables/polynucleotides' },
-          { name: 'Biofiller Edinburgh', route: '/procedures/injectables/biofiller-edinburgh' },
-          { name: 'Biofiller London', route: '/procedures/injectables/biofiller-london' },
-          { name: 'PRP', route: '/procedures/injectables/prp' },
-          { name: 'Carboxy Therapy', route: '/procedures/injectables/carboxy' },
-          { name: 'Sclerotherapy', route: '/procedures/injectables/sclerotherapy' },
-          { name: 'Mole Removal', route: '/procedures/injectables/mole-removal' },
-          { name: 'Neofound', route: '/procedures/injectables/neofound' },
-          { name: 'IV Drip Therapy', route: '/procedures/injectables/iv-drip' },
-          { name: 'Vitamin D', route: '/procedures/injectables/vitamin-d' },
-          { name: 'B12 Injections', route: '/procedures/injectables/b12' },
-          { name: 'Biotin', route: '/procedures/injectables/biotin' },
-          { name: 'Glutathione', route: '/procedures/injectables/glutathione' },
-          { name: 'Magnesium', route: '/procedures/injectables/magnesium' },
-          { name: 'Allergy Testing', route: '/procedures/injectables/allergy' }
+          { name: 'Body Treatments', route: '/london/body' },
+          { name: 'Peels', route: '/london/peels' },
+          { name: 'Facial Treatments', route: '/london/facial' },
+          { name: 'Injectables', route: '/london/injectables' }
         ]
       },
       {
-        title: 'Facial Treatments',
-        route: '/procedures/facial',
+        title: 'Edinburgh Treatments',
+        route: '/edinburgh',
         items: [
-          { name: 'HydraFacial Edinburgh', route: '/procedures/facial/hydrafacial-edinburgh' },
-          { name: 'HydraFacial London', route: '/procedures/facial/hydrafacial-london' },
-          { name: 'Microneedling Edinburgh', route: '/procedures/facial/microneedling-edinburgh' },
-          { name: 'Microneedling London', route: '/procedures/facial/microneedling-london' },
-          { name: 'Dermaplaning', route: '/procedures/facial/dermaplaning' },
-          { name: 'Exosome Therapy', route: '/procedures/facial/exosome' },
-          { name: 'HydraTite Facial', route: '/procedures/facial/hydratite' },
-          { name: 'Keravive', route: '/procedures/facial/keravive' },
-          { name: 'LED Facial', route: '/procedures/facial/led-facial' },
-          { name: 'Oxygen Facial', route: '/procedures/facial/oxygen-facial' },
-          { name: 'Skin Scanner', route: '/procedures/facial/skin-scanner' }
+          { name: 'Body Treatments', route: '/edinburgh/body' },
+          { name: 'Injectables', route: '/edinburgh/injectables' },
+          { name: 'Peels', route: '/edinburgh/peels' },
+          { name: 'Facial Treatments', route: '/edinburgh/facial' }
         ]
       },
       {
-        title: 'Body Treatments',
+        title: 'Body',
         route: '/procedures/body',
         items: [
-          { name: 'Laser Hair Removal', route: '/procedures/body/laser-hair-removal' },
-          { name: 'CoolSculpting', route: '/procedures/body/coolsculpting' },
           { name: 'Exilis Elite', route: '/procedures/body/exilis' },
-          { name: 'Vanquish ME', route: '/procedures/body/vanquish' },
           { name: 'HIFU Body', route: '/procedures/body/hifu' },
           { name: 'CM Slim', route: '/procedures/body/cmslim' },
           { name: 'Cool Laser', route: '/procedures/body/cool-laser' },
+          { name: 'CoolSculpting', route: '/procedures/body/coolsculpting' },
+          { name: 'Laser Hair Removal', route: '/procedures/body/laser-hair-removal' },
           { name: 'Electrolysis', route: '/procedures/body/electrolysis' },
-          { name: 'Unison', route: '/procedures/body/unison' }
+          { name: 'Unison', route: '/procedures/body/unison' },
+          { name: 'Vanquish ME', route: '/procedures/body/vanquish' }
         ]
       },
       {
-        title: 'Peels',
-        route: '/procedures/peels',
+        title: 'Facial & Injectables',
+        route: '/procedures/facial',
         items: [
-          { name: 'Medik8 Peel Edinburgh', route: '/procedures/peels/medik8-edinburgh' },
-          { name: 'Medik8 Peel London', route: '/procedures/peels/medik8-london' },
-          { name: 'ZO Peel Edinburgh', route: '/procedures/peels/zo-edinburgh' },
-          { name: 'ZO Peel London', route: '/procedures/peels/zo-london' },
-          { name: 'Obagi Blue Peel', route: '/procedures/peels/obagi' }
+          { name: 'HydraFacial', route: '/procedures/facial/hydrafacial-london' },
+          { name: 'Microneedling', route: '/procedures/facial/microneedling-london' },
+          { name: 'Anti-Wrinkle', route: '/procedures/injectables/anti-wrinkle' },
+          { name: 'Dermal Filler', route: '/procedures/injectables/dermal-filler' },
+          { name: 'Profhilo', route: '/procedures/injectables/profhilo' },
+          { name: 'Polynucleotides', route: '/procedures/injectables/polynucleotides' },
+          { name: 'PRP', route: '/procedures/injectables/prp' },
+          { name: 'Exosome Therapy', route: '/procedures/facial/exosome' }
         ]
       }
     ]
