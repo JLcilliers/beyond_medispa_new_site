@@ -5,25 +5,25 @@ const steps = [
     step: "01",
     title: "Consultația Inițială",
     description: "Evaluare completă a pielii și stabilirea planului de tratament personalizat",
-    image: "/treatment-journey/consultation.png"
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/consultation.png"
   },
   {
     step: "02", 
     title: "Pregătirea Tratamentului",
     description: "Curățarea și pregătirea pielii pentru procedura selectată",
-    image: "/treatment-journey/customization.png"
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/web-design.png"
   },
   {
     step: "03",
     title: "Aplicarea Tratamentului",
     description: "Executarea procedurilor cu echipamente de ultimă generație",
-    image: "/treatment-journey/treatment.png"
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/laser.png"
   },
   {
     step: "04",
     title: "Îngrijirea Post-Tratament",
     description: "Recomandări pentru menținerea rezultatelor și programul de urmărire",
-    image: "/treatment-journey/aftercare.png"
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/solidarity.png"
   }
 ]
 

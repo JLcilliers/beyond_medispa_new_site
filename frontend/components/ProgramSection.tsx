@@ -2,25 +2,25 @@ const programs = [
   {
     id: 1,
     title: "Consultation",
-    image: "/api/placeholder/200/200",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/consultation.png",
     description: "Personalized assessment by our medical experts"
   },
   {
     id: 2,
     title: "Customization",
-    image: "/api/placeholder/200/200", 
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/web-design.png", 
     description: "Tailored treatment plan for your goals"
   },
   {
     id: 3,
     title: "Treatment",
-    image: "/api/placeholder/200/200",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/laser.png",
     description: "Safe, advanced procedures for natural results"
   },
   {
     id: 4,
     title: "Aftercare",
-    image: "/api/placeholder/200/200",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/solidarity.png",
     description: "Ongoing support for lasting beauty"
   }
 ]
