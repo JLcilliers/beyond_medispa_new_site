@@ -64,7 +64,7 @@ export default function ProgramSection() {
                       className="w-12 h-12 object-contain"
                     />
                   </div>
-                  <div className="absolute -top-2 -right-2 bg-[#A38E78] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
+                  <div className="absolute -top-2 -left-2 bg-[#A38E78] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
                     {program.id}
                   </div>
                 </div>
