@@ -70,15 +70,15 @@ span[class*="rounded"], p[class*="rounded"] {
 
 @media (min-width: 768px) {
   .container {
-    padding-left: 4rem !important;
-    padding-right: 4rem !important;
+    padding-left: 5.25rem !important;
+    padding-right: 5.25rem !important;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    padding-left: 100px !important;
-    padding-right: 100px !important;
+    padding-left: 120px !important;
+    padding-right: 120px !important;
   }
 }
 
