@@ -1,6 +1,6 @@
 import './global-styles.css'
-import MaintenancePage from './components/MaintenancePage'
+import Homepage from './components/Homepage'
 
 export default function App() {
-  return <MaintenancePage />
+  return <Homepage />
 }
