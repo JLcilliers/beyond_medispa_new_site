@@ -6,7 +6,8 @@ export default function UnderEyeCorrectionPage() {
     title: "Invest in Your Eyes with",
     subtitle: "Aesthetic Lab",
     description: "Correct under-eye concerns including dark circles, hollows, and bags with our specialized eye area treatments for a refreshed appearance.",
-    buttonText: "BOOK CONSULTATION"
+    buttonText: "BOOK CONSULTATION",
+    backgroundImage: "/under-eye-correction-hero.png"
   }
 
   const treatmentInfo = {

@@ -6,7 +6,8 @@ export default function FacialBalancingPage() {
     title: "Facial Balancing",
     subtitle: "Complete Aesthetic Enhancement",
     description: "Achieve perfect facial harmony with our comprehensive facial balancing treatments, designed to enhance your natural features proportionally.",
-    buttonText: "BOOK CONSULTATION"
+    buttonText: "BOOK CONSULTATION",
+    backgroundImage: "/facial-balancing-hero.png"
   }
 
   const treatmentInfo = {

@@ -6,7 +6,8 @@ export default function ProfhiloPage() {
     title: "Invest in Your Hydration with",
     subtitle: "Aesthetic Lab",
     description: "Experience the revolutionary Profhilo treatment for deep skin hydration and bio-remodeling that improves skin quality from within.",
-    buttonText: "BOOK CONSULTATION"
+    buttonText: "BOOK CONSULTATION",
+    backgroundImage: "/profhilo-hero.png"
   }
 
   const treatmentInfo = {

@@ -6,7 +6,8 @@ export default function FatDissolvingInjectablesPage() {
     title: "Fat Dissolving",
     subtitle: "Injectable Treatments",
     description: "Eliminate stubborn fat deposits with our advanced fat dissolving injectable treatments for precise body contouring.",
-    buttonText: "BOOK CONSULTATION"
+    buttonText: "BOOK CONSULTATION",
+    backgroundImage: "/fat-dissolving-hero.png"
   }
 
   const treatmentInfo = {

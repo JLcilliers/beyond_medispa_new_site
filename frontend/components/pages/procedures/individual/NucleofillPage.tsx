@@ -6,7 +6,8 @@ export default function NucleofillPage() {
     title: "Nucleofill",
     subtitle: "Skin Regeneration Therapy",
     description: "Revolutionary bio-revitalization treatment using polynucleotides to stimulate natural skin regeneration and repair.",
-    buttonText: "BOOK CONSULTATION"
+    buttonText: "BOOK CONSULTATION",
+    backgroundImage: "/nucleofill-hero.png"
   }
 
   const treatmentInfo = {
