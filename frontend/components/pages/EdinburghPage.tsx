@@ -38,25 +38,25 @@ const treatments = [
     tag: 'A GLOWING APPEARANCE',
     title: 'Facial Treatments',
     description: 'Our facial treatments target fine lines, wrinkles, acne scars, and skin laxity, leaving your skin looking refreshed and youthful. Popular treatments include dermal fillers, anti-wrinkle injections, and skin resurfacing therapies.',
-    link: '/procedures/facial'
+    link: '/edinburgh/facial'
   },
   {
     tag: 'YOUR IDEAL SILHOUETTE',
     title: 'Body Contouring',
     description: 'Beyond MediSpa Edinburgh offers non-invasive body sculpting treatments such as fat freezing, skin tightening, and cellulite reduction to help shape and tone your body for a sleek, contoured look.',
-    link: '/procedures/body'
+    link: '/edinburgh/body'
   },
   {
     tag: 'SMOOTH TO THE TOUCH',
     title: 'Skin Treatments',
     description: 'We provide medical-grade skin treatments to tackle concerns like uneven skin tone, acne, pigmentation, and skin aging. Our advanced laser technology and bespoke skincare plans ensure amazing results.',
-    link: '/procedures/peels'
+    link: '/edinburgh/peels'
   },
   {
     tag: 'BOOST YOUR CONFIDENCE',
     title: 'Injectables',
     description: 'Enhance and rejuvenate your facial features with our expertly administered anti-wrinkle injections, dermal fillers, and fat loss injections for natural-looking, long-lasting results.',
-    link: '/procedures/injectables'
+    link: '/edinburgh/injectables'
   }
 ]
 

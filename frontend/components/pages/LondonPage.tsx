@@ -38,25 +38,25 @@ const treatments = [
     tag: 'REFINED & RADIANT',
     title: 'Facial Treatments',
     description: 'Discover the ultimate in facial rejuvenation with our advanced skincare solutions, including anti-aging facials, dermal fillers, and skin tightening treatments tailored to your skin\'s unique needs.',
-    link: '/procedures/facial'
+    link: '/london/facial'
   },
   {
     tag: 'SCULPTED & YOUTHFUL',
     title: 'Body Contouring',
     description: 'Achieve a toned and sculpted physique with our non-invasive body contouring treatments, designed to redefine your silhouette and enhance your natural curves.',
-    link: '/procedures/body'
+    link: '/london/body'
   },
   {
     tag: 'SILKEN & GLOWING',
     title: 'Skin Treatments',
     description: 'From laser skin resurfacing to medical-grade peels, our skin treatments are designed to improve texture, tone, and overall skin health for a radiant, youthful glow.',
-    link: '/procedures/peels'
+    link: '/london/peels'
   },
   {
     tag: 'TIGHT & TONED',
     title: 'Injectables',
     description: 'Smooth fine lines, restore lost volume, and achieve a refreshed appearance with our expertly administered anti-wrinkle injections and dermal fillers.',
-    link: '/procedures/injectables'
+    link: '/london/injectables'
   }
 ]
 

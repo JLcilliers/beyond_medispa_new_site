@@ -55,6 +55,14 @@ import Medik8LondonPage from './components/pages/procedures/peels/Medik8LondonPa
 import ZOEdinburghPage from './components/pages/procedures/peels/ZOEdinburghPage'
 import ZOLondonPage from './components/pages/procedures/peels/ZOLondonPage'
 import ObagiPage from './components/pages/procedures/peels/ObagiPage'
+import LondonBodyPage from './components/pages/locations/LondonBodyPage'
+import EdinburghBodyPage from './components/pages/locations/EdinburghBodyPage'
+import LondonPeelsPage from './components/pages/locations/LondonPeelsPage'
+import EdinburghPeelsPage from './components/pages/locations/EdinburghPeelsPage'
+import LondonFacialPage from './components/pages/locations/LondonFacialPage'
+import EdinburghFacialPage from './components/pages/locations/EdinburghFacialPage'
+import LondonInjectablesPage from './components/pages/locations/LondonInjectablesPage'
+import EdinburghInjectablesPage from './components/pages/locations/EdinburghInjectablesPage'
 
 export default function App() {
   return (
@@ -115,6 +123,14 @@ export default function App() {
         <Route path="/procedures/peels/zo-edinburgh" element={<ZOEdinburghPage />} />
         <Route path="/procedures/peels/zo-london" element={<ZOLondonPage />} />
         <Route path="/procedures/peels/obagi" element={<ObagiPage />} />
+        <Route path="/london/body" element={<LondonBodyPage />} />
+        <Route path="/edinburgh/body" element={<EdinburghBodyPage />} />
+        <Route path="/london/peels" element={<LondonPeelsPage />} />
+        <Route path="/edinburgh/peels" element={<EdinburghPeelsPage />} />
+        <Route path="/london/facial" element={<LondonFacialPage />} />
+        <Route path="/edinburgh/facial" element={<EdinburghFacialPage />} />
+        <Route path="/london/injectables" element={<LondonInjectablesPage />} />
+        <Route path="/edinburgh/injectables" element={<EdinburghInjectablesPage />} />
       </Routes>
     </BrowserRouter>
   )
