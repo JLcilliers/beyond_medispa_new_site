@@ -86,7 +86,7 @@ export default function CategoryPageTemplate({
             <div className="container mx-auto px-4">
               <div className="grid lg:grid-cols-2 gap-12">
                 {treatments.map((treatment, index) => (
-                  <div key={index} className={`${index % 2 === 1 ? 'lg:mt-16' : ''}`}>
+                  <div key={index}>
                     <div className="bg-[#F5F1EC] rounded-3xl overflow-hidden shadow-lg">
                       {treatment.image && (
                         <img 
