@@ -6,7 +6,8 @@ export default function LipEnhancementPage() {
     title: "Invest in Your Lips with",
     subtitle: "Aesthetic Lab",
     description: "Enhance your natural lip beauty with our expert lip enhancement treatments for fuller, more defined lips.",
-    buttonText: "BOOK CONSULTATION"
+    buttonText: "BOOK CONSULTATION",
+    backgroundImage: "/lip-enhancement-hero.png"
   }
 
   const treatmentInfo = {
