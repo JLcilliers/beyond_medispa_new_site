@@ -6,7 +6,8 @@ export default function NasolabialLinesPage() {
     title: "Invest in Your Smoothness with",
     subtitle: "Aesthetic Lab",
     description: "Soften nasolabial lines and restore youthful facial contours with our expert dermal filler treatments for natural-looking results.",
-    buttonText: "BOOK CONSULTATION"
+    buttonText: "BOOK CONSULTATION",
+    backgroundImage: "/nasolabial-lines-hero.png"
   }
 
   const treatmentInfo = {
