@@ -8,7 +8,7 @@ import TeamSection from './TeamSection'
 import TestimonialsSection from './TestimonialsSection'
 import PromotionsSection from './PromotionsSection'
 import FAQSection from './FAQSection'
-import RussianFooter from './RussianFooter'
+import Footer from './Footer'
 
 export default function Homepage() {
   return (
@@ -23,7 +23,7 @@ export default function Homepage() {
       <TestimonialsSection />
       <PromotionsSection />
       <FAQSection />
-      <RussianFooter />
+      <Footer />
     </div>
   )
 }
