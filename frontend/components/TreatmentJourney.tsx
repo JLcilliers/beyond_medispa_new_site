@@ -29,13 +29,13 @@ const steps = [
 
 export default function TreatmentJourney() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-[#FAF8F5]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">
-            Parcursul Tău de <span className="text-[#284139]">Transformare</span>
+          <h2 className="text-4xl md:text-5xl font-light text-[#333333] mb-4">
+            Parcursul Tău de <span className="text-[#A38E78]">Transformare</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-[#777777] max-w-2xl mx-auto">
             Un proces simplu și eficient pentru rezultate remarcabile
           </p>
         </div>
@@ -55,7 +55,7 @@ export default function TreatmentJourney() {
                 </button>
               </div>
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-[#284139] text-white p-6 rounded-2xl">
+            <div className="absolute -bottom-6 -left-6 bg-[#A38E78] text-white p-6 rounded-2xl">
               <div className="text-center">
                 <div className="text-2xl font-bold">98%</div>
                 <div className="text-sm">Satisfacție Clienți</div>
@@ -67,19 +67,19 @@ export default function TreatmentJourney() {
           <div className="space-y-8">
             {steps.map((step, index) => (
               <div key={index} className="flex items-start">
-                <div className="bg-[#284139] text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg mr-6 flex-shrink-0">
+                <div className="bg-[#A38E78] text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg mr-6 flex-shrink-0">
                   {step.step}
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-4 mb-2">
-                    <h3 className="text-xl font-semibold text-gray-900">{step.title}</h3>
+                    <h3 className="text-xl font-semibold text-[#333333]">{step.title}</h3>
                     <img 
                       src={step.image} 
                       alt={step.title}
                       className="w-16 h-16 rounded-lg object-cover shadow-lg"
                     />
                   </div>
-                  <p className="text-gray-600 leading-relaxed">{step.description}</p>
+                  <p className="text-[#777777] leading-relaxed">{step.description}</p>
                 </div>
               </div>
             ))}

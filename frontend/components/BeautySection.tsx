@@ -30,19 +30,19 @@ export default function BeautySection() {
   }
 
   return (
-    <section className="py-20 bg-[#111A19] text-white">
+    <section className="py-20 bg-[#F5F1EC] text-[#333333]">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Side - Content */}
           <div>
             <div className="mb-8">
               <h2 className="text-4xl lg:text-5xl font-light mb-6 leading-tight">
-                <span className="text-[#F8D794]">Building Beauty</span>
+                <span className="text-[#A38E78]">Building Beauty</span>
               </h2>
-              <div className="w-20 h-1 bg-[#F8D794] mb-6"></div>
+              <div className="w-20 h-1 bg-[#A38E78] mb-6"></div>
             </div>
 
-            <p className="text-xl text-gray-300 leading-relaxed mb-10">
+            <p className="text-xl text-[#777777] leading-relaxed mb-10">
               Our comprehensive range of aesthetic treatments is designed to enhance your 
               natural beauty. From advanced facial treatments to body contouring, we offer 
               cutting-edge solutions tailored to your unique needs.
@@ -53,17 +53,17 @@ export default function BeautySection() {
                 const Icon = service.icon
                 return (
                   <div key={index} className="flex items-start space-x-6">
-                    <div className="bg-[#F8D794]/10 p-4 rounded-full">
-                      <Icon className="w-8 h-8 text-[#F8D794]" />
+                    <div className="bg-[#A38E78]/10 p-4 rounded-full">
+                      <Icon className="w-8 h-8 text-[#A38E78]" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                      <p className="text-gray-400 mb-4">{service.description}</p>
+                      <h3 className="text-xl font-semibold mb-3 text-[#333333]">{service.title}</h3>
+                      <p className="text-[#777777] mb-4">{service.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {service.features.map((feature, idx) => (
                           <span 
                             key={idx}
-                            className="bg-[#284139]/30 text-[#F8D794] px-3 py-1 rounded-full text-sm"
+                            className="bg-[#A38E78]/10 text-[#A38E78] px-3 py-1 rounded-full text-sm border border-[#A38E78]/20"
                           >
                             {feature}
                           </span>
@@ -79,7 +79,7 @@ export default function BeautySection() {
               <Button
                 size="lg"
                 onClick={() => handleNavigation('procedures-skin-treatments')}
-                className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-8 py-4"
+                className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-8 py-4"
               >
                 View All Treatments
               </Button>
@@ -87,7 +87,7 @@ export default function BeautySection() {
                 variant="outline"
                 size="lg"
                 onClick={() => handleNavigation('book-treatment')}
-                className="border-[#F8D794] text-[#F8D794] hover:bg-[#F8D794] hover:text-[#111A19] px-8 py-4"
+                className="border-[#A38E78] text-[#A38E78] hover:bg-[#A38E78] hover:text-white px-8 py-4"
               >
                 Book Consultation
               </Button>
@@ -106,7 +106,7 @@ export default function BeautySection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-[#F8D794] text-[#111A19] px-3 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-[#A38E78] text-white px-3 py-1 rounded-full text-sm font-semibold">
                       Facial Care
                     </span>
                   </div>
@@ -119,7 +119,7 @@ export default function BeautySection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-[#F8D794] text-[#111A19] px-3 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-[#A38E78] text-white px-3 py-1 rounded-full text-sm font-semibold">
                       Injectables
                     </span>
                   </div>
@@ -134,7 +134,7 @@ export default function BeautySection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-[#F8D794] text-[#111A19] px-3 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-[#A38E78] text-white px-3 py-1 rounded-full text-sm font-semibold">
                       Body Sculpting
                     </span>
                   </div>
@@ -147,7 +147,7 @@ export default function BeautySection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-[#F8D794] text-[#111A19] px-3 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-[#A38E78] text-white px-3 py-1 rounded-full text-sm font-semibold">
                       Wellness
                     </span>
                   </div>
@@ -156,7 +156,7 @@ export default function BeautySection() {
             </div>
 
             {/* Stats overlay */}
-            <div className="absolute -top-6 -right-6 bg-[#F8D794] text-[#111A19] rounded-2xl p-6 shadow-xl">
+            <div className="absolute -top-6 -right-6 bg-[#A38E78] text-white rounded-2xl p-6 shadow-xl">
               <div className="text-center">
                 <div className="text-2xl font-bold mb-1">250+</div>
                 <div className="text-sm font-semibold">Treatments Monthly</div>

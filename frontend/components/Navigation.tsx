@@ -128,7 +128,7 @@ const handleNavigation = (route: string) => {
 
 export default function Navigation() {
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <nav className="absolute top-0 left-0 right-0 z-50 bg-[#2C2C2C]/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <button 
@@ -151,13 +151,13 @@ export default function Navigation() {
                 {item.type === 'single' ? (
                   <button 
                     onClick={() => handleNavigation(item.route!)}
-                    className="text-[#333333] hover:text-[#A38E78] transition-colors text-sm py-2 font-medium"
+                    className="text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium"
                   >
                     {item.name}
                   </button>
                 ) : item.type === 'mega-dropdown' ? (
                   <div>
-                    <button className="flex items-center text-[#333333] hover:text-[#A38E78] transition-colors text-sm py-2 font-medium">
+                    <button className="flex items-center text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium">
                       {item.name}
                       <ChevronDown className="w-4 h-4 ml-1" />
                     </button>
@@ -192,7 +192,7 @@ export default function Navigation() {
                   </div>
                 ) : (
                   <div>
-                    <button className="flex items-center text-[#333333] hover:text-[#A38E78] transition-colors text-sm py-2 font-medium">
+                    <button className="flex items-center text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium">
                       {item.name}
                       <ChevronDown className="w-4 h-4 ml-1" />
                     </button>
@@ -217,13 +217,13 @@ export default function Navigation() {
           </div>
           
           <div className="flex items-center space-x-4">
-            <div className="hidden xl:flex items-center space-x-4 text-[#777777] text-sm">
+            <div className="hidden xl:flex items-center space-x-4 text-[#B5A68B] text-sm">
               <div className="flex items-center">
-                <Phone className="w-4 h-4 mr-2 text-[#A38E78]" />
+                <Phone className="w-4 h-4 mr-2 text-[#C6A77D]" />
                 <span>+44 (20) 7123 4567</span>
               </div>
               <div className="flex items-center">
-                <MapPin className="w-4 h-4 mr-2 text-[#A38E78]" />
+                <MapPin className="w-4 h-4 mr-2 text-[#C6A77D]" />
                 <span>London & Edinburgh</span>
               </div>
             </div>

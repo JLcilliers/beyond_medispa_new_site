@@ -9,7 +9,7 @@ export default function ExpertiseSection() {
   }
 
   return (
-    <section className="py-20 bg-[#111A19] text-white">
+    <section className="py-20 bg-[#F5F1EC] text-[#333333]">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Side - Images */}
@@ -56,13 +56,13 @@ export default function ExpertiseSection() {
           <div>
             <div className="mb-8">
               <h2 className="text-4xl lg:text-5xl font-light mb-6 leading-tight">
-                Expertise, Combined with <span className="text-[#F8D794]">Quality</span>. 
+                Expertise, Combined with <span className="text-[#A38E78]">Quality</span>. 
                 Essence of Beauty.
               </h2>
-              <div className="w-20 h-1 bg-[#F8D794] mb-6"></div>
+              <div className="w-20 h-1 bg-[#A38E78] mb-6"></div>
             </div>
 
-            <p className="text-xl text-gray-300 leading-relaxed mb-10">
+            <p className="text-xl text-[#777777] leading-relaxed mb-10">
               Our commitment to excellence drives every aspect of our practice. With years of 
               experience and the latest aesthetic technologies, we deliver results that exceed 
               expectations while ensuring your comfort and safety.
@@ -70,35 +70,35 @@ export default function ExpertiseSection() {
 
             <div className="grid grid-cols-2 gap-8 mb-10">
               <div className="text-center">
-                <div className="bg-[#F8D794]/10 p-4 rounded-full inline-block mb-4">
-                  <Award className="w-8 h-8 text-[#F8D794]" />
+                <div className="bg-[#A38E78]/10 p-4 rounded-full inline-block mb-4">
+                  <Award className="w-8 h-8 text-[#A38E78]" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Certified Excellence</h3>
-                <p className="text-gray-400 text-sm">Award-winning clinic with certified practitioners</p>
+                <h3 className="text-lg font-semibold mb-2 text-[#333333]">Certified Excellence</h3>
+                <p className="text-[#777777] text-sm">Award-winning clinic with certified practitioners</p>
               </div>
               
               <div className="text-center">
-                <div className="bg-[#F8D794]/10 p-4 rounded-full inline-block mb-4">
-                  <Shield className="w-8 h-8 text-[#F8D794]" />
+                <div className="bg-[#A38E78]/10 p-4 rounded-full inline-block mb-4">
+                  <Shield className="w-8 h-8 text-[#A38E78]" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Safety First</h3>
-                <p className="text-gray-400 text-sm">Highest safety standards and medical protocols</p>
+                <h3 className="text-lg font-semibold mb-2 text-[#333333]">Safety First</h3>
+                <p className="text-[#777777] text-sm">Highest safety standards and medical protocols</p>
               </div>
               
               <div className="text-center">
-                <div className="bg-[#F8D794]/10 p-4 rounded-full inline-block mb-4">
-                  <Clock className="w-8 h-8 text-[#F8D794]" />
+                <div className="bg-[#A38E78]/10 p-4 rounded-full inline-block mb-4">
+                  <Clock className="w-8 h-8 text-[#A38E78]" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">15+ Years</h3>
-                <p className="text-gray-400 text-sm">Extensive experience in aesthetic medicine</p>
+                <h3 className="text-lg font-semibold mb-2 text-[#333333]">15+ Years</h3>
+                <p className="text-[#777777] text-sm">Extensive experience in aesthetic medicine</p>
               </div>
               
               <div className="text-center">
-                <div className="bg-[#F8D794]/10 p-4 rounded-full inline-block mb-4">
-                  <Sparkles className="w-8 h-8 text-[#F8D794]" />
+                <div className="bg-[#A38E78]/10 p-4 rounded-full inline-block mb-4">
+                  <Sparkles className="w-8 h-8 text-[#A38E78]" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Natural Results</h3>
-                <p className="text-gray-400 text-sm">Subtle enhancements that look naturally beautiful</p>
+                <h3 className="text-lg font-semibold mb-2 text-[#333333]">Natural Results</h3>
+                <p className="text-[#777777] text-sm">Subtle enhancements that look naturally beautiful</p>
               </div>
             </div>
 
@@ -106,7 +106,7 @@ export default function ExpertiseSection() {
               <Button
                 size="lg"
                 onClick={() => handleNavigation('about')}
-                className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-8 py-4"
+                className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-8 py-4"
               >
                 Meet Our Team
               </Button>
@@ -114,7 +114,7 @@ export default function ExpertiseSection() {
                 variant="outline"
                 size="lg"
                 onClick={() => handleNavigation('contact')}
-                className="border-[#F8D794] text-[#F8D794] hover:bg-[#F8D794] hover:text-[#111A19] px-8 py-4"
+                className="border-[#A38E78] text-[#A38E78] hover:bg-[#A38E78] hover:text-white px-8 py-4"
               >
                 Book Consultation
               </Button>

@@ -31,13 +31,13 @@ const handleNavigation = (route: string) => {
 
 export default function Locations() {
   return (
-    <section className="py-20 bg-[#111A19]">
+    <section className="py-20 bg-[#FFFFFF]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light text-white mb-4">
-            Our <span className="text-[#F8D794]">Locations</span>
+          <h2 className="text-4xl md:text-5xl font-light text-[#333333] mb-4">
+            Our <span className="text-[#A38E78]">Locations</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-[#777777] max-w-2xl mx-auto">
             Visit our premium clinics in London and Edinburgh for expert aesthetic treatments
           </p>
         </div>
@@ -48,48 +48,48 @@ export default function Locations() {
               {/* Location Info */}
               <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                 <div className="mb-8">
-                  <h3 className="text-3xl font-semibold text-white mb-4">{location.city}</h3>
-                  <div className="w-20 h-1 bg-[#F8D794] mb-6"></div>
+                  <h3 className="text-3xl font-semibold text-[#333333] mb-4">{location.city}</h3>
+                  <div className="w-20 h-1 bg-[#A38E78] mb-6"></div>
                 </div>
                 
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="bg-[#F8D794]/20 p-3 rounded-full mr-4 mt-1">
-                      <MapPin className="w-5 h-5 text-[#F8D794]" />
+                    <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
+                      <MapPin className="w-5 h-5 text-[#A38E78]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white mb-1">Address</h4>
-                      <p className="text-gray-300">{location.address}</p>
+                      <h4 className="font-semibold text-[#333333] mb-1">Address</h4>
+                      <p className="text-[#777777]">{location.address}</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="bg-[#F8D794]/20 p-3 rounded-full mr-4 mt-1">
-                      <Phone className="w-5 h-5 text-[#F8D794]" />
+                    <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
+                      <Phone className="w-5 h-5 text-[#A38E78]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white mb-1">Phone</h4>
-                      <p className="text-gray-300">{location.phone}</p>
+                      <h4 className="font-semibold text-[#333333] mb-1">Phone</h4>
+                      <p className="text-[#777777]">{location.phone}</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="bg-[#F8D794]/20 p-3 rounded-full mr-4 mt-1">
-                      <Clock className="w-5 h-5 text-[#F8D794]" />
+                    <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
+                      <Clock className="w-5 h-5 text-[#A38E78]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white mb-1">Hours</h4>
-                      <p className="text-gray-300 whitespace-pre-line">{location.hours}</p>
+                      <h4 className="font-semibold text-[#333333] mb-1">Hours</h4>
+                      <p className="text-[#777777] whitespace-pre-line">{location.hours}</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="bg-[#F8D794]/20 p-3 rounded-full mr-4 mt-1">
-                      <Car className="w-5 h-5 text-[#F8D794]" />
+                    <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
+                      <Car className="w-5 h-5 text-[#A38E78]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white mb-1">Parking</h4>
-                      <p className="text-gray-300">{location.parking}</p>
+                      <h4 className="font-semibold text-[#333333] mb-1">Parking</h4>
+                      <p className="text-[#777777]">{location.parking}</p>
                     </div>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function Locations() {
                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
                   <button 
                     onClick={() => handleNavigation('book-treatment')}
-                    className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-6 py-3 rounded-lg font-medium transition-colors"
+                    className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-6 py-3 rounded-lg font-medium transition-colors"
                   >
                     Book Appointment
                   </button>
@@ -105,7 +105,7 @@ export default function Locations() {
                     href={`https://www.google.com/maps/search/?api=1&query=Beyond+Aesthetic+Clinic+${location.city}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border border-[#F8D794] text-[#F8D794] hover:bg-[#F8D794] hover:text-[#111A19] px-6 py-3 rounded-lg font-medium transition-colors text-center"
+                    className="border border-[#A38E78] text-[#A38E78] hover:bg-[#A38E78] hover:text-white px-6 py-3 rounded-lg font-medium transition-colors text-center"
                   >
                     Get Directions
                   </a>
@@ -121,8 +121,8 @@ export default function Locations() {
                     alt={`Beyond MediSpa ${location.city}`}
                     className="w-full h-64 object-cover rounded-2xl shadow-lg"
                   />
-                  <div className="absolute top-4 left-4 bg-[#F8D794] bg-opacity-90 backdrop-blur-sm px-4 py-2 rounded-full">
-                    <span className="text-[#111A19] font-medium">{location.city}</span>
+                  <div className="absolute top-4 left-4 bg-[#A38E78] bg-opacity-90 backdrop-blur-sm px-4 py-2 rounded-full">
+                    <span className="text-white font-medium">{location.city}</span>
                   </div>
                 </div>
                 
