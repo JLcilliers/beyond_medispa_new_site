@@ -504,23 +504,6 @@ export default function ExilisPage() {
 
         <Locations />
 
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="aspect-square bg-[#F5F1EC] rounded-2xl flex items-center justify-center">
-                <div className="text-[#A38E78] text-xl">IMAGE</div>
-              </div>
-              <div>
-                <p className="text-sm text-[#A38E78] tracking-widest mb-4">REACH OUT NOW</p>
-                <h2 className="text-4xl lg:text-5xl font-light text-[#2C2C2C] mb-8">
-                  Get In Touch
-                </h2>
-                <ContactForm />
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="py-24 bg-[#F5F1EC]">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
