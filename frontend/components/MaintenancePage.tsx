@@ -8,7 +8,6 @@ import MaintenanceTeamSection from './MaintenanceTeamSection'
 import TestimonialsSection from './TestimonialsSection'
 import MaintenancePromotionsSection from './MaintenancePromotionsSection'
 import FAQSection from './FAQSection'
-import RussianFooter from './RussianFooter'
 
 export default function MaintenancePage() {
   return (
@@ -23,7 +22,6 @@ export default function MaintenancePage() {
       <TestimonialsSection />
       <MaintenancePromotionsSection />
       <FAQSection />
-      <RussianFooter />
     </div>
   )
 }
