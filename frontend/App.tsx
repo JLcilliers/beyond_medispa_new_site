@@ -14,7 +14,6 @@ import BodyContouringPage from './components/pages/procedures/BodyContouringPage
 import SkinConcernsPage from './components/pages/procedures/SkinConcernsPage'
 import WellbeingPage from './components/pages/procedures/WellbeingPage'
 
-// Individual treatment pages
 import AntiWrinkleTreatmentPage from './components/pages/procedures/individual/AntiWrinkleTreatmentPage'
 import LipEnhancementPage from './components/pages/procedures/individual/LipEnhancementPage'
 import HydraFacialPage from './components/pages/procedures/individual/HydraFacialPage'
@@ -32,6 +31,18 @@ import HarmonyMassagePage from './components/pages/procedures/individual/Harmony
 import VanquishPage from './components/pages/procedures/individual/VanquishPage'
 import NasolabialLinesPage from './components/pages/procedures/individual/NasolabialLinesPage'
 import UnderEyeCorrectionPage from './components/pages/procedures/individual/UnderEyeCorrectionPage'
+
+// New individual pages
+import HydratiteFacialPage from './components/pages/procedures/individual/HydratiteFacialPage'
+import FacialBalancingPage from './components/pages/procedures/individual/FacialBalancingPage'
+import NucleofillPage from './components/pages/procedures/individual/NucleofillPage'
+import FatDissolvingInjectablesPage from './components/pages/procedures/individual/FatDissolvingInjectablesPage'
+import HydroPeptidePage from './components/pages/procedures/individual/HydroPeptidePage'
+import PRPHairGrowthPage from './components/pages/procedures/individual/PRPHairGrowthPage'
+import CoolSculptingMenPage from './components/pages/procedures/individual/CoolSculptingMenPage'
+import ExosomesDecPage from './components/pages/procedures/individual/ExosomesDecPage'
+import ZOFacialPage from './components/pages/procedures/individual/ZOFacialPage'
+import CMSlimPage from './components/pages/procedures/individual/CMSlimPage'
 
 const routes = {
   'home': Homepage,
@@ -60,22 +71,22 @@ const routes = {
   'cheek-enhancement': CheekEnhancementPage,
   'nasolabial-lines': NasolabialLinesPage,
   'under-eye-correction': UnderEyeCorrectionPage,
-  'facial-balancing': InjectablesPage, // TODO: Create individual page
+  'facial-balancing': FacialBalancingPage,
   'profhilo': ProfhiloPage,
-  'nucleofill': InjectablesPage, // TODO: Create individual page
-  'fat-dissolving-injectables': InjectablesPage, // TODO: Create individual page
+  'nucleofill': NucleofillPage,
+  'fat-dissolving-injectables': FatDissolvingInjectablesPage,
   'b12-injections': B12InjectionsPage,
   
   // Individual Skin treatments
   'hydrafacial': HydraFacialPage,
-  'hydratite-facial': SkinTreatmentsPage, // TODO: Create individual page
+  'hydratite-facial': HydratiteFacialPage,
   'oxygen-facial': OxygenFacialPage,
-  'hydro-peptide': SkinTreatmentsPage, // TODO: Create individual page
+  'hydro-peptide': HydroPeptidePage,
   'led-light-therapy-facial': LEDLightTherapyPage,
   'microneedling': MicroneedlingPage,
-  'prp-hair-growth': SkinTreatmentsPage, // TODO: Create individual page
-  'exosomes-dec': SkinTreatmentsPage, // TODO: Create individual page
-  'zo-facial-zein-obagi': SkinTreatmentsPage, // TODO: Create individual page
+  'prp-hair-growth': PRPHairGrowthPage,
+  'exosomes-dec': ExosomesDecPage,
+  'zo-facial-zein-obagi': ZOFacialPage,
   'obagi-blue-radiance-peel': SkinTreatmentsPage, // TODO: Create individual page
   'exilis-elite-facial': SkinTreatmentsPage, // TODO: Create individual page
   'cool-laser': SkinTreatmentsPage, // TODO: Create individual page
@@ -83,9 +94,9 @@ const routes = {
   
   // Individual Body Contouring treatments
   'coolsculpting': CoolSculptingPage,
-  'coolsculpting-men': BodyContouringPage, // TODO: Create individual page
+  'coolsculpting-men': CoolSculptingMenPage,
   'fat-freezing': FatFreezingPage,
-  'cm-slim': BodyContouringPage, // TODO: Create individual page
+  'cm-slim': CMSlimPage,
   'exilis-elite-body': BodyContouringPage, // TODO: Create individual page
   'vanquish': VanquishPage,
   'buttocks-enhancement': BodyContouringPage, // TODO: Create individual page
