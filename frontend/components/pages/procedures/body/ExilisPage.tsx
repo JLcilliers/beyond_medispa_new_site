@@ -1,6 +1,15 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
+import { useEffect } from "react";
 
 export default function ExilisPage() {
+  useEffect(() => {
+    document.title = "Exilis Elite | Non-Surgical Skin Tightening & Contouring | Beyond Medispa";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Transform your skin with Exilis Elite at Beyond Medispa. Non-invasive skin tightening and contouring for a firmer, youthful look without surgery.");
+    }
+  }, []);
+
   return (
     <ProcedurePageTemplate
       hero={{
