@@ -8,7 +8,7 @@ const handleNavigation = (route: string) => {
 
 export default function RussianFooter() {
   return (
-    <footer className="bg-[#111A19] text-white py-16">
+    <footer className="bg-white text-black py-16 border-t border-gray-200">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-4 gap-12">
           <div className="lg:col-span-1">

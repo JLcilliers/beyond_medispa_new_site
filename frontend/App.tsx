@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import './global-styles.css'
 import Homepage from './components/Homepage'
 import AboutPage from './components/pages/AboutPage'
 import ContactPage from './components/pages/ContactPage'

@@ -1,0 +1,34 @@
+/* Global button and text styling overrides */
+.btn-primary, 
+button[class*="bg-"],
+.button-primary {
+  background-color: #F8D794 !important;
+  color: black !important;
+}
+
+.btn-primary:hover,
+button[class*="bg-"]:hover,
+.button-primary:hover {
+  background-color: #F8D794 !important;
+  opacity: 0.9;
+}
+
+/* Global text color overrides */
+body, 
+.text-inherit,
+h1, h2, h3, h4, h5, h6,
+p, span, div {
+  color: black !important;
+}
+
+/* Preserve certain elements that should stay white/other colors */
+.preserve-color,
+.text-white-preserve,
+nav .text-white,
+.hero-text-white {
+  color: white !important;
+}
+
+.text-gold-preserve {
+  color: #F8D794 !important;
+}

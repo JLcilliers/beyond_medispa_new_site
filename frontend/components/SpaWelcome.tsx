@@ -52,7 +52,7 @@ export default function SpaWelcome() {
               </div>
             </div>
             
-            <Button size="lg" className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-8 py-4">
+            <Button size="lg" className="bg-[#F8D794] hover:bg-[#F8D794] text-black px-8 py-4 hover:opacity-90">
               Despre Noi
             </Button>
           </div>

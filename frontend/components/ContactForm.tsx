@@ -135,7 +135,7 @@ export default function ContactForm() {
                 />
               </div>
               
-              <Button type="submit" size="lg" className="w-full bg-[#F8D794] hover:bg-[#B86330] text-[#111A19]">
+              <Button type="submit" size="lg" className="w-full bg-[#F8D794] hover:bg-[#F8D794] text-black hover:opacity-90">
                 Trimite Mesajul
               </Button>
             </form>
