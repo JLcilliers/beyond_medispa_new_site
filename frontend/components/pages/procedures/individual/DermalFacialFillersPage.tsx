@@ -6,7 +6,8 @@ export default function DermalFacialFillersPage() {
     title: "Invest in Your Features with",
     subtitle: "Aesthetic Lab",
     description: "Enhance your natural beauty with our expertly administered dermal and facial fillers for volume restoration and facial contouring.",
-    buttonText: "BOOK CONSULTATION"
+    buttonText: "BOOK CONSULTATION",
+    backgroundImage: "/dermal-fillers-hero.png"
   }
 
   const treatmentInfo = {
