@@ -78,13 +78,13 @@ export default function TeamSection() {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#284139] via-[#111A19] to-[#284139]">
+    <section className="py-20 bg-gradient-to-br from-[#FAF8F5] via-[#FFFFFF] to-[#F5F1EC]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-light text-white mb-6">
-            Meet Our <span className="text-[#F8D794]">Expert Team</span>
+          <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
+            Meet Our <span className="text-[#A38E78]">Expert Team</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-[#777777] max-w-3xl mx-auto">
             Our highly qualified doctors and practitioners combine medical expertise with artistic vision 
             to deliver exceptional results in a safe, professional environment.
           </p>
@@ -94,7 +94,7 @@ export default function TeamSection() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-[#111A19]/80 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group"
+              className="bg-white/90 border border-[#E5E5E5] rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group shadow-lg"
             >
               <div className="aspect-[3/4] overflow-hidden">
                 <img
@@ -105,12 +105,12 @@ export default function TeamSection() {
               </div>
               <div className="p-6">
                 <div className="mb-2">
-                  <span className="text-xs text-[#F8D794] font-medium uppercase tracking-wider">
+                  <span className="text-xs text-[#A38E78] font-medium uppercase tracking-wider">
                     {member.role}
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3">{member.name}</h3>
-                <p className="text-gray-300 text-sm leading-relaxed">{member.description}</p>
+                <h3 className="text-xl font-semibold text-[#333333] mb-3">{member.name}</h3>
+                <p className="text-[#777777] text-sm leading-relaxed">{member.description}</p>
               </div>
             </div>
           ))}

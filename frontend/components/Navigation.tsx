@@ -128,7 +128,7 @@ const handleNavigation = (route: string) => {
 
 export default function Navigation() {
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm">
+    <nav className="absolute top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <button 
@@ -151,25 +151,25 @@ export default function Navigation() {
                 {item.type === 'single' ? (
                   <button 
                     onClick={() => handleNavigation(item.route!)}
-                    className="text-white hover:text-[#F8D794] transition-colors text-sm py-2"
+                    className="text-[#333333] hover:text-[#A38E78] transition-colors text-sm py-2 font-medium"
                   >
                     {item.name}
                   </button>
                 ) : item.type === 'mega-dropdown' ? (
                   <div>
-                    <button className="flex items-center text-white hover:text-[#F8D794] transition-colors text-sm py-2">
+                    <button className="flex items-center text-[#333333] hover:text-[#A38E78] transition-colors text-sm py-2 font-medium">
                       {item.name}
                       <ChevronDown className="w-4 h-4 ml-1" />
                     </button>
                     
-                    <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-xl min-w-[800px] p-6 grid grid-cols-3 gap-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="absolute top-full left-0 mt-1 bg-[#FAF8F5] border border-[#E5E5E5] rounded-lg shadow-xl min-w-[800px] p-6 grid grid-cols-3 gap-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                       {item.categories?.map((category, catIndex) => (
                         <div key={catIndex} className="space-y-3">
                           <button
                             onClick={() => {
                               handleNavigation(category.route)
                             }}
-                            className="block text-black font-bold text-sm hover:text-[#F8D794] transition-colors mb-2"
+                            className="block text-[#333333] font-bold text-sm hover:text-[#A38E78] transition-colors mb-2"
                           >
                             {category.title}
                           </button>
@@ -180,7 +180,7 @@ export default function Navigation() {
                                 onClick={() => {
                                   handleNavigation(subItem.route)
                                 }}
-                                className="block w-full text-left text-black hover:text-[#F8D794] transition-colors text-xs py-1"
+                                className="block w-full text-left text-[#777777] hover:text-[#A38E78] transition-colors text-xs py-1"
                               >
                                 {subItem.name}
                               </button>
@@ -192,19 +192,19 @@ export default function Navigation() {
                   </div>
                 ) : (
                   <div>
-                    <button className="flex items-center text-white hover:text-[#F8D794] transition-colors text-sm py-2">
+                    <button className="flex items-center text-[#333333] hover:text-[#A38E78] transition-colors text-sm py-2 font-medium">
                       {item.name}
                       <ChevronDown className="w-4 h-4 ml-1" />
                     </button>
                     
-                    <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-xl min-w-48 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="absolute top-full left-0 mt-1 bg-[#FAF8F5] border border-[#E5E5E5] rounded-lg shadow-xl min-w-48 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                       {item.items?.map((subItem, subIndex) => (
                         <button
                           key={subIndex}
                           onClick={() => {
                             handleNavigation(subItem.route)
                           }}
-                          className="block w-full text-left px-4 py-2 text-black hover:text-[#F8D794] hover:bg-[#284139]/30 transition-colors text-sm"
+                          className="block w-full text-left px-4 py-2 text-[#777777] hover:text-[#A38E78] hover:bg-[#A38E78]/10 transition-colors text-sm"
                         >
                           {subItem.name}
                         </button>
@@ -217,13 +217,13 @@ export default function Navigation() {
           </div>
           
           <div className="flex items-center space-x-4">
-            <div className="hidden xl:flex items-center space-x-4 text-white text-sm">
+            <div className="hidden xl:flex items-center space-x-4 text-[#777777] text-sm">
               <div className="flex items-center">
-                <Phone className="w-4 h-4 mr-2 text-[#F8D794]" />
+                <Phone className="w-4 h-4 mr-2 text-[#A38E78]" />
                 <span>+44 (20) 7123 4567</span>
               </div>
               <div className="flex items-center">
-                <MapPin className="w-4 h-4 mr-2 text-[#F8D794]" />
+                <MapPin className="w-4 h-4 mr-2 text-[#A38E78]" />
                 <span>London & Edinburgh</span>
               </div>
             </div>

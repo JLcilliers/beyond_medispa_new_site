@@ -1,9 +1,9 @@
 export default function MeditationSpaDay() {
   return (
-    <section className="py-20 bg-[#111A19] text-white relative overflow-hidden">
+    <section className="py-20 bg-[#FFFFFF] text-[#333333] relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-40 left-40 w-60 h-60 bg-[#284139]/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-[#80907E]/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-40 left-40 w-60 h-60 bg-[#A38E78]/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-[#B5A68B]/8 rounded-full blur-3xl"></div>
       </div>
       
       <div className="relative container mx-auto px-4">
@@ -19,22 +19,22 @@ export default function MeditationSpaDay() {
           <div className="space-y-8">
             <div>
               <h2 className="text-5xl font-light mb-4">
-                <span className="text-[#F8D794]">SIGNATURE</span><br />
+                <span className="text-[#A38E78]">SIGNATURE</span><br />
                 TREATMENTS
               </h2>
-              <div className="text-2xl text-[#B86330] font-light italic">
+              <div className="text-2xl text-[#8B7A67] font-light italic">
                 Tailored Aesthetic Experiences
               </div>
             </div>
             
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <p className="text-lg text-[#777777] leading-relaxed">
               At Beyond MediSpa, we blend medical expertise with luxurious care 
               to create transformative experiences. Whether you're seeking subtle 
               enhancements or comprehensive rejuvenation, our treatments promote 
               natural beauty and wellbeing through personalized care.
             </p>
             
-            <p className="text-gray-400">
+            <p className="text-[#888888]">
               Our signature approach combines advanced medical techniques with 
               holistic wellness principles, ensuring every treatment not only 
               enhances your appearance but also promotes your overall sense of confidence and wellbeing.

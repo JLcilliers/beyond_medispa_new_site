@@ -25,13 +25,13 @@ const features = [
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-[#111A19] via-[#284139] to-[#111A19]">
+    <section className="py-20 bg-gradient-to-br from-[#FFFFFF] via-[#FAF8F5] to-[#F5F1EC]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-light text-white mb-6">
-            Why Choose <span className="text-[#F8D794]">Beyond MediSpa</span>
+          <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
+            Why Choose <span className="text-[#A38E78]">Beyond MediSpa</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-[#777777] max-w-3xl mx-auto">
             With clinics in London and Edinburgh, we combine medical expertise with luxury care 
             to deliver exceptional results that enhance your natural beauty.
           </p>
@@ -45,33 +45,33 @@ export default function WhyChooseUsSection() {
                 key={index}
                 className="text-center group hover:transform hover:scale-105 transition-all duration-300"
               >
-                <div className="bg-[#F8D794]/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:bg-[#F8D794]/20 transition-colors duration-300">
-                  <Icon className="w-10 h-10 text-[#F8D794]" />
+                <div className="bg-[#A38E78]/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:bg-[#A38E78]/20 transition-colors duration-300">
+                  <Icon className="w-10 h-10 text-[#A38E78]" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-4">{feature.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-[#333333] mb-4">{feature.title}</h3>
+                <p className="text-[#777777] leading-relaxed">{feature.description}</p>
               </div>
             )
           })}
         </div>
 
-        <div className="mt-16 bg-[#284139]/20 rounded-2xl p-8 md:p-12">
+        <div className="mt-16 bg-[#A38E78]/5 rounded-2xl p-8 md:p-12">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-light text-white mb-6">
+              <h3 className="text-3xl font-light text-[#333333] mb-6">
                 Two Premium Locations
               </h3>
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-[#F8D794] font-semibold text-lg mb-2">London Clinic</h4>
-                  <p className="text-gray-300">
+                  <h4 className="text-[#A38E78] font-semibold text-lg mb-2">London Clinic</h4>
+                  <p className="text-[#777777]">
                     Located in the heart of London, our flagship clinic offers the full range of treatments 
                     in a luxurious, modern setting with the latest aesthetic technologies.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-[#F8D794] font-semibold text-lg mb-2">Edinburgh Clinic</h4>
-                  <p className="text-gray-300">
+                  <h4 className="text-[#A38E78] font-semibold text-lg mb-2">Edinburgh Clinic</h4>
+                  <p className="text-[#777777]">
                     Our Edinburgh location brings the same high standards of care and expertise to Scotland, 
                     serving clients with personalized treatments in an elegant environment.
                   </p>
@@ -80,21 +80,21 @@ export default function WhyChooseUsSection() {
             </div>
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-[#F8D794]/10 rounded-lg p-6 text-center">
-                  <div className="text-2xl font-bold text-[#F8D794] mb-1">500+</div>
-                  <div className="text-sm text-gray-300">Monthly Treatments</div>
+                <div className="bg-[#A38E78]/10 rounded-lg p-6 text-center">
+                  <div className="text-2xl font-bold text-[#A38E78] mb-1">500+</div>
+                  <div className="text-sm text-[#777777]">Monthly Treatments</div>
                 </div>
-                <div className="bg-[#F8D794]/10 rounded-lg p-6 text-center">
-                  <div className="text-2xl font-bold text-[#F8D794] mb-1">98%</div>
-                  <div className="text-sm text-gray-300">Client Retention</div>
+                <div className="bg-[#A38E78]/10 rounded-lg p-6 text-center">
+                  <div className="text-2xl font-bold text-[#A38E78] mb-1">98%</div>
+                  <div className="text-sm text-[#777777]">Client Retention</div>
                 </div>
-                <div className="bg-[#F8D794]/10 rounded-lg p-6 text-center">
-                  <div className="text-2xl font-bold text-[#F8D794] mb-1">15+</div>
-                  <div className="text-sm text-gray-300">Expert Practitioners</div>
+                <div className="bg-[#A38E78]/10 rounded-lg p-6 text-center">
+                  <div className="text-2xl font-bold text-[#A38E78] mb-1">15+</div>
+                  <div className="text-sm text-[#777777]">Expert Practitioners</div>
                 </div>
-                <div className="bg-[#F8D794]/10 rounded-lg p-6 text-center">
-                  <div className="text-2xl font-bold text-[#F8D794] mb-1">2</div>
-                  <div className="text-sm text-gray-300">Premium Locations</div>
+                <div className="bg-[#A38E78]/10 rounded-lg p-6 text-center">
+                  <div className="text-2xl font-bold text-[#A38E78] mb-1">2</div>
+                  <div className="text-sm text-[#777777]">Premium Locations</div>
                 </div>
               </div>
             </div>

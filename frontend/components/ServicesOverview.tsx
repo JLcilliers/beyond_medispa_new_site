@@ -73,13 +73,13 @@ export default function ServicesOverview() {
   }
 
   return (
-    <section className="py-20 bg-[#111A19]">
+    <section className="py-20 bg-[#F5F1EC]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-light text-white mb-6">
-            Our Comprehensive <span className="text-[#F8D794]">Treatments</span>
+          <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
+            Our Comprehensive <span className="text-[#A38E78]">Treatments</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-[#777777] max-w-3xl mx-auto">
             From medical-grade injectables to advanced skin therapies, we offer a complete range of treatments 
             to help you achieve your aesthetic goals naturally and safely.
           </p>
@@ -94,8 +94,8 @@ export default function ServicesOverview() {
                   onClick={() => setActiveCategory(index)}
                   className={`w-full text-left p-4 rounded-lg transition-all duration-300 ${
                     activeCategory === index
-                      ? 'bg-[#F8D794] text-[#111A19]'
-                      : 'bg-[#284139]/30 text-white hover:bg-[#284139]/50'
+                      ? 'bg-[#A38E78] text-white'
+                      : 'bg-white/50 text-[#333333] hover:bg-white/80 border border-[#E5E5E5]'
                   }`}
                 >
                   <h3 className="font-semibold text-lg mb-1">{category.title}</h3>
@@ -106,20 +106,20 @@ export default function ServicesOverview() {
           </div>
 
           <div className="lg:col-span-2">
-            <div className="bg-[#284139]/20 rounded-xl p-8">
-              <h3 className="text-2xl font-semibold text-[#F8D794] mb-6">
+            <div className="bg-white/70 rounded-xl p-8 border border-[#E5E5E5]">
+              <h3 className="text-2xl font-semibold text-[#A38E78] mb-6">
                 {serviceCategories[activeCategory].title}
               </h3>
               <div className="grid gap-4">
                 {serviceCategories[activeCategory].services.map((service, index) => (
-                  <div key={index} className="border-b border-[#284139]/30 pb-4 last:border-b-0">
-                    <h4 className="text-white font-medium text-lg mb-2">{service.name}</h4>
-                    <p className="text-gray-300 mb-3">{service.description}</p>
+                  <div key={index} className="border-b border-[#E5E5E5] pb-4 last:border-b-0">
+                    <h4 className="text-[#333333] font-medium text-lg mb-2">{service.name}</h4>
+                    <p className="text-[#777777] mb-3">{service.description}</p>
                     <Button
                       variant="outline"
                       size="sm"
                       onClick={() => handleNavigation('procedures')}
-                      className="bg-[#F8D794] text-black hover:bg-[#F8D794] hover:opacity-90"
+                      className="bg-[#A38E78] text-white hover:bg-[#8B7A67] border-[#A38E78]"
                     >
                       Learn More
                       <ArrowRight className="w-4 h-4 ml-2" />
@@ -135,7 +135,7 @@ export default function ServicesOverview() {
           <Button
             size="lg"
             onClick={() => handleNavigation('procedures')}
-            className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-8 py-4 text-lg"
+            className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-8 py-4 text-lg"
           >
             View All Treatments
             <ArrowRight className="w-5 h-5 ml-2" />

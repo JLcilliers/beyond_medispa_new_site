@@ -44,13 +44,13 @@ export default function FAQSection() {
   }
 
   return (
-    <section className="py-20 bg-[#111A19]">
+    <section className="py-20 bg-[#FFFFFF]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-light text-white mb-6">
-            Frequently Asked <span className="text-[#F8D794]">Questions</span>
+          <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
+            Frequently Asked <span className="text-[#A38E78]">Questions</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-[#777777] max-w-3xl mx-auto">
             Get answers to common questions about our treatments, procedures, and what to expect 
             during your aesthetic journey with Beyond MediSpa.
           </p>
@@ -61,28 +61,28 @@ export default function FAQSection() {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-[#284139]/20 rounded-xl overflow-hidden transition-all duration-300 hover:bg-[#284139]/30"
+                className="bg-[#FAF8F5] border border-[#E5E5E5] rounded-xl overflow-hidden transition-all duration-300 hover:bg-white/80"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none"
                 >
-                  <h3 className="text-lg font-semibold text-white pr-4">
+                  <h3 className="text-lg font-semibold text-[#333333] pr-4">
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0">
                     {openFAQ === index ? (
-                      <ChevronUp className="w-6 h-6 text-[#F8D794]" />
+                      <ChevronUp className="w-6 h-6 text-[#A38E78]" />
                     ) : (
-                      <ChevronDown className="w-6 h-6 text-[#F8D794]" />
+                      <ChevronDown className="w-6 h-6 text-[#A38E78]" />
                     )}
                   </div>
                 </button>
                 
                 {openFAQ === index && (
                   <div className="px-6 pb-6">
-                    <div className="pt-2 border-t border-[#284139]/30">
-                      <p className="text-gray-300 leading-relaxed mt-4">
+                    <div className="pt-2 border-t border-[#E5E5E5]">
+                      <p className="text-[#777777] leading-relaxed mt-4">
                         {faq.answer}
                       </p>
                     </div>
@@ -93,24 +93,24 @@ export default function FAQSection() {
           </div>
 
           <div className="mt-12 text-center">
-            <div className="bg-[#284139]/20 rounded-2xl p-8">
-              <h3 className="text-2xl font-light text-white mb-4">
+            <div className="bg-[#FAF8F5] border border-[#E5E5E5] rounded-2xl p-8">
+              <h3 className="text-2xl font-light text-[#333333] mb-4">
                 Still Have Questions?
               </h3>
-              <p className="text-gray-300 mb-6">
+              <p className="text-[#777777] mb-6">
                 Our expert team is here to help. Contact us for personalized advice 
                 and detailed information about any of our treatments.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
                   href="tel:+442071234567"
-                  className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-6 py-3 rounded-lg font-medium transition-colors"
+                  className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-6 py-3 rounded-lg font-medium transition-colors"
                 >
                   Call Us: +44 (20) 7123 4567
                 </a>
                 <a 
                   href="mailto:info@beyondmedispa.com"
-                  className="border border-[#F8D794] text-[#F8D794] hover:bg-[#F8D794] hover:text-[#111A19] px-6 py-3 rounded-lg font-medium transition-colors"
+                  className="border border-[#A38E78] text-[#A38E78] hover:bg-[#A38E78] hover:text-white px-6 py-3 rounded-lg font-medium transition-colors"
                 >
                   Email Us
                 </a>
