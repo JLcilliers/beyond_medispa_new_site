@@ -6,6 +6,7 @@ import ContactPage from './components/pages/ContactPage'
 import DoctorsPage from './components/pages/DoctorsPage'
 import LocationsPage from './components/pages/LocationsPage'
 import LondonPage from './components/pages/LondonPage'
+import EdinburghPage from './components/pages/EdinburghPage'
 import BookTreatmentPage from './components/pages/BookTreatmentPage'
 import FacialPage from './components/pages/procedures/FacialPage'
 import InjectablesPage from './components/pages/procedures/InjectablesPage'
@@ -65,6 +66,7 @@ export default function App() {
         <Route path="/doctors" element={<DoctorsPage />} />
         <Route path="/locations" element={<LocationsPage />} />
         <Route path="/london" element={<LondonPage />} />
+        <Route path="/edinburgh" element={<EdinburghPage />} />
         <Route path="/book-treatment" element={<BookTreatmentPage />} />
         <Route path="/procedures/facial" element={<FacialPage />} />
         <Route path="/procedures/injectables" element={<InjectablesPage />} />
