@@ -6,7 +6,8 @@ export default function AntiWrinkleTreatmentPage() {
     title: "Invest in Your Youth with",
     subtitle: "Aesthetic Lab",
     description: "Advanced anti-wrinkle treatments using precision techniques to restore your skin's youthful smoothness.",
-    buttonText: "BOOK CONSULTATION"
+    buttonText: "BOOK CONSULTATION",
+    heroImage: "/anti-wrinkle-hero.png"
   }
 
   const treatmentInfo = {
