@@ -1,5 +1,5 @@
 import Navigation from '../Navigation'
-import RussianFooter from '../RussianFooter'
+import Footer from '../Footer'
 import { Button } from '@/components/ui/button'
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
 
@@ -302,7 +302,7 @@ export default function ContactPage() {
         </section>
       </div>
       
-      <RussianFooter />
+      <Footer />
     </div>
   )
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import ProcedurePageTemplate from '../../ProcedurePageTemplate';
+import ProcedurePageTemplate from '../../../ProcedurePageTemplate';
 
 export default function ObagiPage() {
-  const heroData = {
+  const hero = {
     tagline: "OBAGI PROFESSIONAL",
     title: "Physician-Strength Peels",
     subtitle: "Medical-Grade Transformation",
@@ -27,9 +27,9 @@ export default function ObagiPage() {
 
   return (
     <ProcedurePageTemplate
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
-      procedureType="peel"
+
     />
   );
 }

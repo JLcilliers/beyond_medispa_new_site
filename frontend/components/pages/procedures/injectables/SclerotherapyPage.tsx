@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const SclerotherapyPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "SCLEROTHERAPY",
     title: "Spider Vein Treatment",
     subtitle: "Effective Varicose & Spider Vein Removal",
@@ -24,7 +24,7 @@ const SclerotherapyPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

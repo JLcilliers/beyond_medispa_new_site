@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const PolynucleotidesPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "POLYNUCLEOTIDES",
     title: "Polynucleotide Therapy",
     subtitle: "Advanced Bio-Regenerative Treatment",
@@ -24,7 +24,7 @@ const PolynucleotidesPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

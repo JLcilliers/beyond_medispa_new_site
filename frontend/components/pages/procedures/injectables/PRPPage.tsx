@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const PRPPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "PRP THERAPY",
     title: "Platelet-Rich Plasma Treatment",
     subtitle: "Harness Your Body's Natural Healing",
@@ -24,7 +24,7 @@ const PRPPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

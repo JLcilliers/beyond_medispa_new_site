@@ -1,8 +1,8 @@
 import React from 'react';
-import ProcedurePageTemplate from '../../ProcedurePageTemplate';
+import ProcedurePageTemplate from '../../../ProcedurePageTemplate';
 
 export default function ZOEdinburghPage() {
-  const heroData = {
+  const hero = {
     tagline: "ZO SKIN HEALTH EDINBURGH",
     title: "Climate-Adapted Peels",
     subtitle: "Scottish Weather Solutions",
@@ -27,9 +27,9 @@ export default function ZOEdinburghPage() {
 
   return (
     <ProcedurePageTemplate
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
-      procedureType="peel"
+
     />
   );
 }

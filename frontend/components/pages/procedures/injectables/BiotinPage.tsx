@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const BiotinPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "BIOTIN INJECTIONS",
     title: "Biotin Injection Therapy",
     subtitle: "Strengthen Hair, Skin & Nails",
@@ -24,7 +24,7 @@ const BiotinPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

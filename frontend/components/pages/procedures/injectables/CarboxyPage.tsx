@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const CarboxyPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "CARBOXY THERAPY",
     title: "Carbon Dioxide Therapy",
     subtitle: "Innovative Skin Rejuvenation",
@@ -24,7 +24,7 @@ const CarboxyPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

@@ -1,5 +1,5 @@
 import Navigation from '../Navigation'
-import RussianFooter from '../RussianFooter'
+import Footer from '../Footer'
 import { Award, Users, Heart, Sparkles, Clock } from 'lucide-react'
 
 const stats = [
@@ -212,7 +212,7 @@ export default function AboutPage() {
         </section>
       </div>
       
-      <RussianFooter />
+      <Footer />
     </div>
   )
 }

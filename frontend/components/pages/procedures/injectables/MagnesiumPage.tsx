@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const MagnesiumPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "MAGNESIUM INJECTIONS",
     title: "Magnesium Injection Therapy",
     subtitle: "Essential Mineral for Muscle & Nerve Function",
@@ -24,7 +24,7 @@ const MagnesiumPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

@@ -1,5 +1,5 @@
 import Navigation from '../Navigation'
-import RussianFooter from '../RussianFooter'
+import Footer from '../Footer'
 import { Button } from '@/components/ui/button'
 import { Calendar, Clock, User, Award } from 'lucide-react'
 import { useState } from 'react'
@@ -257,7 +257,7 @@ export default function BookTreatmentPage() {
         </section>
       </div>
       
-      <RussianFooter />
+      <Footer />
     </div>
   )
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import ProcedurePageTemplate from '../../ProcedurePageTemplate';
+import ProcedurePageTemplate from '../../../ProcedurePageTemplate';
 
 export default function Medik8LondonPage() {
-  const heroData = {
+  const hero = {
     tagline: "MEDIK8 LONDON",
     title: "Professional Chemical Peels",
     subtitle: "Advanced Skin Resurfacing",
@@ -27,9 +27,9 @@ export default function Medik8LondonPage() {
 
   return (
     <ProcedurePageTemplate
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
-      procedureType="peel"
+
     />
   );
 }

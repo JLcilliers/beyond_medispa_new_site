@@ -1,5 +1,5 @@
 import Navigation from '../Navigation'
-import RussianFooter from '../RussianFooter'
+import Footer from '../Footer'
 import { Button } from '@/components/ui/button'
 import { Award, Users, MapPin, Star, Phone, Mail } from 'lucide-react'
 
@@ -251,7 +251,7 @@ export default function DoctorsPage() {
         </section>
       </div>
       
-      <RussianFooter />
+      <Footer />
     </div>
   )
 }

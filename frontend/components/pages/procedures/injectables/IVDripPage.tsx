@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const IVDripPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "IV VITAMIN DRIPS",
     title: "IV Vitamin Therapy",
     subtitle: "Ultimate Hydration & Nutrient Delivery",
@@ -24,7 +24,7 @@ const IVDripPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

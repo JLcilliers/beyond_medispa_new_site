@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const ProfhiloPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "PROFHILO TREATMENT",
     title: "Profhilo Bio-Remodeling",
     subtitle: "Revolutionary Skin Bio-Remodeling",
@@ -24,7 +24,7 @@ const ProfhiloPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

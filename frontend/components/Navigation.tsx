@@ -1,16 +1,17 @@
 import { Button } from '@/components/ui/button'
 import { Phone, MapPin, MessageCircle, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const menuItems = [
   { 
     name: 'Home', 
-    route: 'home',
+    route: '/',
     type: 'single'
   },
   { 
     name: 'About', 
-    route: 'about',
+    route: '/about',
     type: 'single'
   },
   { 
@@ -19,73 +20,69 @@ const menuItems = [
     categories: [
       {
         title: 'Injectables',
-        route: 'procedures-injectables',
+        route: '/procedures/injectables',
         items: [
-          { name: 'Anti-Wrinkle Treatment', route: 'anti-wrinkle-treatment' },
-          { name: 'Dermal & Facial Fillers', route: 'dermal-facial-fillers' },
-          { name: 'Lip Enhancement', route: 'lip-enhancement' },
-          { name: 'Cheek Enhancement', route: 'cheek-enhancement' },
-          { name: 'Nasolabial Lines', route: 'nasolabial-lines' },
-          { name: 'Under Eye Correction', route: 'under-eye-correction' },
-          { name: 'Facial Balancing', route: 'facial-balancing' },
-          { name: 'Profhilo', route: 'profhilo' },
-          { name: 'Nucleofill', route: 'nucleofill' },
-          { name: 'Fat Dissolving Injectables', route: 'fat-dissolving-injectables' },
-          { name: 'B12 Injections', route: 'b12-injections' }
+          { name: 'Anti-Wrinkle Treatment', route: '/procedures/injectables/anti-wrinkle' },
+          { name: 'Dermal Filler', route: '/procedures/injectables/dermal-filler' },
+          { name: 'Profhilo', route: '/procedures/injectables/profhilo' },
+          { name: 'Polynucleotides', route: '/procedures/injectables/polynucleotides' },
+          { name: 'Biofiller Edinburgh', route: '/procedures/injectables/biofiller-edinburgh' },
+          { name: 'Biofiller London', route: '/procedures/injectables/biofiller-london' },
+          { name: 'PRP', route: '/procedures/injectables/prp' },
+          { name: 'Carboxy Therapy', route: '/procedures/injectables/carboxy' },
+          { name: 'Sclerotherapy', route: '/procedures/injectables/sclerotherapy' },
+          { name: 'Mole Removal', route: '/procedures/injectables/mole-removal' },
+          { name: 'Neofound', route: '/procedures/injectables/neofound' },
+          { name: 'IV Drip Therapy', route: '/procedures/injectables/iv-drip' },
+          { name: 'Vitamin D', route: '/procedures/injectables/vitamin-d' },
+          { name: 'B12 Injections', route: '/procedures/injectables/b12' },
+          { name: 'Biotin', route: '/procedures/injectables/biotin' },
+          { name: 'Glutathione', route: '/procedures/injectables/glutathione' },
+          { name: 'Magnesium', route: '/procedures/injectables/magnesium' },
+          { name: 'Allergy Testing', route: '/procedures/injectables/allergy' }
         ]
       },
       {
-        title: 'Skin Treatments',
-        route: 'procedures-skin-treatments',
+        title: 'Facial Treatments',
+        route: '/procedures/facial',
         items: [
-          { name: 'HydraFacial', route: 'hydrafacial' },
-          { name: 'Hydratite Facial', route: 'hydratite-facial' },
-          { name: 'Oxygen Facial', route: 'oxygen-facial' },
-          { name: 'Hydro Peptide', route: 'hydro-peptide' },
-          { name: 'LED Light Therapy Facial', route: 'led-light-therapy-facial' },
-          { name: 'Microneedling', route: 'microneedling' },
-          { name: 'PRP for Hair Growth', route: 'prp-hair-growth' },
-          { name: 'Exosomes / DEC Exosomes', route: 'exosomes-dec' },
-          { name: 'ZO Facial by Zein Obagi', route: 'zo-facial-zein-obagi' },
-          { name: 'Obagi Blue Radiance Peel', route: 'obagi-blue-radiance-peel' },
-          { name: 'Exilis Elite Facial Skin Tightening', route: 'exilis-elite-facial' },
-          { name: 'Cool Laser', route: 'cool-laser' },
-          { name: 'Elos IPL Skin Rejuvenation', route: 'elos-ipl-skin-rejuvenation' }
+          { name: 'HydraFacial Edinburgh', route: '/procedures/facial/hydrafacial-edinburgh' },
+          { name: 'HydraFacial London', route: '/procedures/facial/hydrafacial-london' },
+          { name: 'Microneedling Edinburgh', route: '/procedures/facial/microneedling-edinburgh' },
+          { name: 'Microneedling London', route: '/procedures/facial/microneedling-london' },
+          { name: 'Dermaplaning', route: '/procedures/facial/dermaplaning' },
+          { name: 'Exosome Therapy', route: '/procedures/facial/exosome' },
+          { name: 'HydraTite Facial', route: '/procedures/facial/hydratite' },
+          { name: 'Keravive', route: '/procedures/facial/keravive' },
+          { name: 'LED Facial', route: '/procedures/facial/led-facial' },
+          { name: 'Oxygen Facial', route: '/procedures/facial/oxygen-facial' },
+          { name: 'Skin Scanner', route: '/procedures/facial/skin-scanner' }
         ]
       },
       {
-        title: 'Body Contouring & Fat Reduction',
-        route: 'procedures-body-contouring',
+        title: 'Body Treatments',
+        route: '/procedures/body',
         items: [
-          { name: 'CoolSculpting', route: 'coolsculpting' },
-          { name: 'CoolSculpting for Men', route: 'coolsculpting-men' },
-          { name: 'Fat Freezing', route: 'fat-freezing' },
-          { name: 'CM Slim', route: 'cm-slim' },
-          { name: 'Exilis Elite Body', route: 'exilis-elite-body' },
-          { name: 'Vanquish', route: 'vanquish' },
-          { name: 'Buttocks Enhancement', route: 'buttocks-enhancement' }
+          { name: 'Laser Hair Removal', route: '/procedures/body/laser-hair-removal' },
+          { name: 'CoolSculpting', route: '/procedures/body/coolsculpting' },
+          { name: 'Exilis Elite', route: '/procedures/body/exilis' },
+          { name: 'Vanquish ME', route: '/procedures/body/vanquish' },
+          { name: 'HIFU Body', route: '/procedures/body/hifu' },
+          { name: 'CM Slim', route: '/procedures/body/cmslim' },
+          { name: 'Cool Laser', route: '/procedures/body/cool-laser' },
+          { name: 'Electrolysis', route: '/procedures/body/electrolysis' },
+          { name: 'Unison', route: '/procedures/body/unison' }
         ]
       },
       {
-        title: 'Skin Concerns',
-        route: 'procedures-skin-concerns',
+        title: 'Peels',
+        route: '/procedures/peels',
         items: [
-          { name: 'Treatments for Anti-Ageing', route: 'treatments-anti-ageing' },
-          { name: 'Treatments for Acne and Scarring', route: 'treatments-acne-scarring' },
-          { name: 'Treatments for Sun Damage and Pigmentation', route: 'treatments-sun-damage-pigmentation' },
-          { name: 'Treatments for Sensitive Skin', route: 'treatments-sensitive-skin' },
-          { name: 'Mole & Skin Tag Removal', route: 'mole-skin-tag-removal' }
-        ]
-      },
-      {
-        title: 'Wellbeing & Specialist Therapies',
-        route: 'procedures-wellbeing',
-        items: [
-          { name: 'Anti-Cellulite Treatment / Alidya', route: 'anti-cellulite-alidya' },
-          { name: 'Intuitive Healing', route: 'intuitive-healing' },
-          { name: 'The Harmony Massage', route: 'harmony-massage' },
-          { name: 'Mesotherapy', route: 'mesotherapy' },
-          { name: 'Sarah Carolides (Nutritionist & Skin Health)', route: 'sarah-carolides-nutritionist' }
+          { name: 'Medik8 Peel Edinburgh', route: '/procedures/peels/medik8-edinburgh' },
+          { name: 'Medik8 Peel London', route: '/procedures/peels/medik8-london' },
+          { name: 'ZO Peel Edinburgh', route: '/procedures/peels/zo-edinburgh' },
+          { name: 'ZO Peel London', route: '/procedures/peels/zo-london' },
+          { name: 'Obagi Blue Peel', route: '/procedures/peels/obagi' }
         ]
       }
     ]
@@ -94,45 +91,29 @@ const menuItems = [
     name: 'Locations', 
     type: 'dropdown',
     items: [
-      { name: 'All Locations', route: 'locations' },
-      { name: 'London', route: 'london' },
-      { name: 'Edinburgh', route: 'edinburgh' }
+      { name: 'All Locations', route: '/locations' },
+      { name: 'London', route: '/london' }
     ]
   },
   { 
     name: 'Doctors', 
-    type: 'dropdown',
-    items: [
-      { name: 'All Doctors', route: 'doctors' },
-      { name: 'London Team', route: 'doctors-london' },
-      { name: 'Edinburgh Team', route: 'doctors-edinburgh' }
-    ]
+    route: '/doctors',
+    type: 'single'
   },
   { 
     name: 'Contact', 
-    route: 'contact',
-    type: 'single'
-  },
-  { 
-    name: 'Blog', 
-    route: 'blog',
+    route: '/contact',
     type: 'single'
   }
 ]
-
-const handleNavigation = (route: string) => {
-  if (window.navigateTo) {
-    window.navigateTo!(route)
-  }
-}
 
 export default function Navigation() {
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 bg-[#2C2C2C]/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <button 
-            onClick={() => handleNavigation('home')}
+          <Link 
+            to="/"
             className="flex items-center cursor-pointer"
           >
             <img 
@@ -140,7 +121,7 @@ export default function Navigation() {
               alt="Beyond Medispa Logo" 
               className="h-12 w-auto"
             />
-          </button>
+          </Link>
           
           <div className="hidden lg:flex items-center space-x-6">
             {menuItems.map((item, index) => (
@@ -149,12 +130,12 @@ export default function Navigation() {
                 className="relative group"
               >
                 {item.type === 'single' ? (
-                  <button 
-                    onClick={() => handleNavigation(item.route!)}
+                  <Link 
+                    to={item.route!}
                     className="text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium"
                   >
                     {item.name}
-                  </button>
+                  </Link>
                 ) : item.type === 'mega-dropdown' ? (
                   <div>
                     <button className="flex items-center text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium">
@@ -162,28 +143,24 @@ export default function Navigation() {
                       <ChevronDown className="w-4 h-4 ml-1" />
                     </button>
                     
-                    <div className="absolute top-full left-0 mt-1 bg-[#FAF8F5] border border-[#E5E5E5] rounded-lg shadow-xl min-w-[800px] p-6 grid grid-cols-3 gap-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="absolute top-full left-0 mt-1 bg-[#FAF8F5] border border-[#E5E5E5] rounded-lg shadow-xl min-w-[800px] p-6 grid grid-cols-4 gap-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                       {item.categories?.map((category, catIndex) => (
                         <div key={catIndex} className="space-y-3">
-                          <button
-                            onClick={() => {
-                              handleNavigation(category.route)
-                            }}
+                          <Link
+                            to={category.route}
                             className="block text-[#333333] font-bold text-sm hover:text-[#A38E78] transition-colors mb-2"
                           >
                             {category.title}
-                          </button>
+                          </Link>
                           <div className="space-y-1">
                             {category.items.map((subItem, subIndex) => (
-                              <button
+                              <Link
                                 key={subIndex}
-                                onClick={() => {
-                                  handleNavigation(subItem.route)
-                                }}
+                                to={subItem.route}
                                 className="block w-full text-left text-[#777777] hover:text-[#A38E78] transition-colors text-xs py-1"
                               >
                                 {subItem.name}
-                              </button>
+                              </Link>
                             ))}
                           </div>
                         </div>
@@ -199,15 +176,13 @@ export default function Navigation() {
                     
                     <div className="absolute top-full left-0 mt-1 bg-[#FAF8F5] border border-[#E5E5E5] rounded-lg shadow-xl min-w-48 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                       {item.items?.map((subItem, subIndex) => (
-                        <button
+                        <Link
                           key={subIndex}
-                          onClick={() => {
-                            handleNavigation(subItem.route)
-                          }}
+                          to={subItem.route}
                           className="block w-full text-left px-4 py-2 text-[#777777] hover:text-[#A38E78] hover:bg-[#A38E78]/10 transition-colors text-sm"
                         >
                           {subItem.name}
-                        </button>
+                        </Link>
                       ))}
                     </div>
                   </div>

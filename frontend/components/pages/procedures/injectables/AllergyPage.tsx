@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const AllergyPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "ALLERGY INJECTIONS",
     title: "Allergy Treatment Injections",
     subtitle: "Relief from Seasonal & Environmental Allergies",
@@ -24,7 +24,7 @@ const AllergyPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

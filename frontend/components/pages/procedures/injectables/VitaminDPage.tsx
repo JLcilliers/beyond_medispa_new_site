@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const VitaminDPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "VITAMIN D INJECTIONS",
     title: "Vitamin D Injection Therapy",
     subtitle: "Essential Sunshine Vitamin Support",
@@ -24,7 +24,7 @@ const VitaminDPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

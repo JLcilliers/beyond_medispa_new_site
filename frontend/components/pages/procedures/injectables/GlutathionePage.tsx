@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const GlutathionePage = () => {
-  const heroData = {
+  const hero = {
     tagline: "GLUTATHIONE INJECTIONS",
     title: "Glutathione Injection Therapy",
     subtitle: "Master Antioxidant for Skin Brightening",
@@ -24,7 +24,7 @@ const GlutathionePage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

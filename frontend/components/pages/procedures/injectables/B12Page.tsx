@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const B12Page = () => {
-  const heroData = {
+  const hero = {
     tagline: "VITAMIN B12 INJECTIONS",
     title: "Vitamin B12 Injection Therapy",
     subtitle: "Boost Energy & Mental Clarity",
@@ -24,7 +24,7 @@ const B12Page = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

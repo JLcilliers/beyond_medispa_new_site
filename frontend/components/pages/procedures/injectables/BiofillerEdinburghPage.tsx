@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const BiofillerEdinburghPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "BIOFILLER EDINBURGH",
     title: "Advanced Biofiller Treatments",
     subtitle: "Premium Bio-Remodeling in Edinburgh",
@@ -24,7 +24,7 @@ const BiofillerEdinburghPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

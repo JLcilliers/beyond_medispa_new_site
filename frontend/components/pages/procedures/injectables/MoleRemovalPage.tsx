@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const MoleRemovalPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "MOLE REMOVAL",
     title: "Professional Mole Removal",
     subtitle: "Safe & Effective Removal Procedures",
@@ -24,7 +24,7 @@ const MoleRemovalPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

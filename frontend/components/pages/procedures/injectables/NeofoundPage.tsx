@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const NeofoundPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "NEOFOUND TREATMENT",
     title: "Neofound Skin Rejuvenation",
     subtitle: "Next-Generation Skin Enhancement",
@@ -24,7 +24,7 @@ const NeofoundPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

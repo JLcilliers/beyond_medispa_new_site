@@ -1,7 +1,7 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 const DermalFillerPage = () => {
-  const heroData = {
+  const hero = {
     tagline: "DERMAL FILLERS",
     title: "Premium Dermal Filler Treatments",
     subtitle: "Restore Volume & Enhance Features",
@@ -24,7 +24,7 @@ const DermalFillerPage = () => {
 
   return (
     <ProcedurePageTemplate 
-      heroData={heroData}
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );
