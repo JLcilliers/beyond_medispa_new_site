@@ -25,7 +25,7 @@ export default function ExilisPage() {
 
   const testimonials = [
     {
-      text: "The Exilis treatment exceeded my expectations. My skin feels tighter and looks more youthful. The team at Beyond MediSpa made me feel comfortable throughout the entire process.",
+      text: "The Exilis treatment exceeded my expectations. My skin feels tighter and looks more youthful. The team at Beyond Aesthetic Clinic made me feel comfortable throughout the entire process.",
       client: "Sarah M."
     },
     {
@@ -33,7 +33,7 @@ export default function ExilisPage() {
       client: "James T."
     },
     {
-      text: "After trying various treatments, Exilis Elite has given me the best results for skin tightening. The professionalism and expertise at Beyond MediSpa are outstanding.",
+      text: "After trying various treatments, Exilis Elite has given me the best results for skin tightening. The professionalism and expertise at Beyond Aesthetic Clinic are outstanding.",
       client: "Emma L."
     }
   ]
@@ -123,7 +123,7 @@ export default function ExilisPage() {
                 Exilis Elite: Reduce Wrinkles & Tighten Sagging Skin
               </h1>
               <p className="text-xl text-[#F5F1EC] mb-8 leading-relaxed">
-                Experience the revolutionary power of Exilis Elite at Beyond MediSpa. This non-invasive, medically-guided treatment effectively lifts and tightens sagging skin on the face and body – no needles, no scarring, no downtime.
+                Experience the revolutionary power of Exilis Elite at Beyond Aesthetic Clinic. This non-invasive, medically-guided treatment effectively lifts and tightens sagging skin on the face and body – no needles, no scarring, no downtime.
               </p>
               <p className="text-lg text-[#F5F1EC] mb-8">
                 Achieve visibly smoother, firmer skin after just one session and rediscover a youthful, radiant look. Book yours today.
@@ -329,7 +329,7 @@ export default function ExilisPage() {
                 Leave Sagging Skin Looking Tighter & Radiant
               </h2>
               <p className="text-lg text-[#F5F1EC] mb-8 max-w-2xl mx-auto">
-                Experience the transformative power of Exilis Elite at Beyond MediSpa. Achieve firmer, lifted skin with no surgery, no scarring, and remarkable results.
+                Experience the transformative power of Exilis Elite at Beyond Aesthetic Clinic. Achieve firmer, lifted skin with no surgery, no scarring, and remarkable results.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button 
