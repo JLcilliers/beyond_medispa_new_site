@@ -106,7 +106,7 @@ export default function AboutPage() {
                 Our Vision, Mission, <span className="text-[#C6A77D]">& Values</span>
               </h1>
               <h3 className="text-2xl font-light text-white/80 mb-8">
-                Learn more about Beyond MediSpa
+                Learn more about Beyond Aesthetic Clinic
               </h3>
               <p className="text-xl text-white/90 leading-relaxed mb-12">
                 Here at Beyond MediSpa, we go beyond expectations to deliver advanced aesthetic treatments that enhance your natural beauty. With a patient-first approach, expert practitioners, and cutting-edge technology, we create a bespoke experience tailored to your unique goals, ensuring exceptional results every time.

@@ -14,7 +14,7 @@ export default function HifuPage() {
     
     const metaDescription = document.querySelector('meta[name="description"]')
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Experience the transformative HiFu London treatment at Beyond MediSpa. Lift, tighten, and regenerate your skin for a more youthful and radiant appearance.")
+      metaDescription.setAttribute("content", "Experience the transformative HiFu London treatment at Beyond Aesthetic Clinic. Lift, tighten, and regenerate your skin for a more youthful and radiant appearance.")
     } else {
       const meta = document.createElement("meta")
       meta.name = "description"

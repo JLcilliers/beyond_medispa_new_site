@@ -18,7 +18,7 @@ export default function ExilisPage() {
     } else {
       const meta = document.createElement("meta")
       meta.name = "description"
-      meta.content = "Experience revolutionary Exilis Elite at Beyond MediSpa. Non-invasive treatment to lift and tighten sagging skin. No needles, no scarring, no downtime. Book today."
+      meta.content = "Experience revolutionary Exilis Elite at Beyond Aesthetic Clinic. Non-invasive treatment to lift and tighten sagging skin. No needles, no scarring, no downtime. Book today."
       document.head.appendChild(meta)
     }
   }, [])

@@ -62,7 +62,7 @@ const treatments = [
 
 const faqs = [
   {
-    question: 'Where is Beyond MediSpa Edinburgh located?',
+    question: 'Where is Beyond Aesthetic Clinic Edinburgh located?',
     answer: 'Our Edinburgh clinic is conveniently located on the second floor of Harvey Nichols, 30-34 St Andrew Square, in the heart of the city. Easily accessible from Hanover Street and Easter Road, we offer world-class aesthetic treatments in a luxurious, professional setting.'
   },
   {
