@@ -10,7 +10,7 @@ export default function HifuPage() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
 
   useEffect(() => {
-    document.title = "HiFu London Treatment | Skin Lifting & Regeneration | Beyond MediSpa"
+    document.title = "HiFu London Treatment | Skin Lifting & Regeneration | Beyond Aesthetic Clinic"
     
     const metaDescription = document.querySelector('meta[name="description"]')
     if (metaDescription) {

@@ -44,7 +44,7 @@ export default function PromotionsSection() {
           </h2>
           <p className="text-xl text-[#777777] max-w-3xl mx-auto">
             Take advantage of our current promotions and start your aesthetic journey 
-            with exceptional value at Beyond MediSpa.
+            with exceptional value at Beyond Aesthetic Clinic.
           </p>
         </div>
 

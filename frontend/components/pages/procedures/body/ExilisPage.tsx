@@ -14,7 +14,7 @@ export default function ExilisPage() {
     
     const metaDescription = document.querySelector('meta[name="description"]')
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Experience revolutionary Exilis Elite at Beyond MediSpa. Non-invasive treatment to lift and tighten sagging skin. No needles, no scarring, no downtime. Book today.")
+      metaDescription.setAttribute("content", "Experience revolutionary Exilis Elite at Beyond Aesthetic Clinic. Non-invasive treatment to lift and tighten sagging skin. No needles, no scarring, no downtime. Book today.")
     } else {
       const meta = document.createElement("meta")
       meta.name = "description"

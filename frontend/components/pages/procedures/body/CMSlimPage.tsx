@@ -303,7 +303,7 @@ export default function CMSlimPage() {
             <div className="text-center mb-12">
               <p className="text-sm text-[#C6A77D] tracking-widest mb-4">START YOUR TRANSFORMATION</p>
               <h2 className="text-4xl lg:text-5xl font-light mb-8">
-                Experience CM Slim at Beyond MediSpa
+                Experience CM Slim at Beyond Aesthetic Clinic
               </h2>
               <p className="text-xl text-[#F5F1EC] mb-8 max-w-2xl mx-auto">
                 Begin your journey to a stronger, more sculpted you. Book your consultation today and discover the power of CM Slim.

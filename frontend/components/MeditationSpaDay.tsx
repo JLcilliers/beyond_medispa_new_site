@@ -29,7 +29,7 @@ export default function MeditationSpaDay() {
             </div>
             
             <p className="text-lg text-[#777777] leading-relaxed">
-              At Beyond MediSpa, we blend medical expertise with luxurious care 
+              At Beyond Aesthetic Clinic, we blend medical expertise with luxurious care 
               to create transformative experiences. Whether you're seeking subtle 
               enhancements or comprehensive rejuvenation, our treatments promote 
               natural beauty and wellbeing through personalized care.

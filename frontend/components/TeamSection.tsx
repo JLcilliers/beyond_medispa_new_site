@@ -53,7 +53,7 @@ const teamMembers = [
   {
     name: 'Leanne',
     image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Leanne.jpg',
-    description: 'Leanne has 6+ years of experience in customer service, providing a professional and welcoming presence at Beyond MediSpa.',
+    description: 'Leanne has 6+ years of experience in customer service, providing a professional and welcoming presence at Beyond Aesthetic Clinic.',
     role: 'Client Relations'
   },
   {

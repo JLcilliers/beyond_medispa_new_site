@@ -62,7 +62,7 @@ const treatments = [
 
 const faqs = [
   {
-    question: 'Where is Beyond MediSpa London located?',
+    question: 'Where is Beyond Aesthetic Clinic London located?',
     answer: 'Beyond MediSpa London is situated on the fourth floor of Harvey Nichols in Knightsbridge, just a short walk from Knightsbridge tube station. Our luxury aesthetic clinic provides world-class beauty and skin treatments in a tranquil setting.'
   },
   {

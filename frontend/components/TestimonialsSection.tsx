@@ -21,7 +21,7 @@ const testimonials = [
     name: 'James Wilson',
     location: 'London',
     rating: 5,
-    text: 'CoolSculpting at Beyond MediSpa was life-changing. The team was incredibly professional and the results speak for themselves. Highly recommend!',
+    text: 'CoolSculpting at Beyond Aesthetic Clinic was life-changing. The team was incredibly professional and the results speak for themselves. Highly recommend!',
     treatment: 'CoolSculpting'
   },
   {

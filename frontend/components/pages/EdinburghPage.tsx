@@ -43,7 +43,7 @@ const treatments = [
   {
     tag: 'YOUR IDEAL SILHOUETTE',
     title: 'Body Contouring',
-    description: 'Beyond MediSpa Edinburgh offers non-invasive body sculpting treatments such as fat freezing, skin tightening, and cellulite reduction to help shape and tone your body for a sleek, contoured look.',
+    description: 'Beyond Aesthetic Clinic Edinburgh offers non-invasive body sculpting treatments such as fat freezing, skin tightening, and cellulite reduction to help shape and tone your body for a sleek, contoured look.',
     link: '/edinburgh/body'
   },
   {
