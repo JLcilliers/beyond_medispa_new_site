@@ -8,11 +8,6 @@ import { useTranslations } from '../locales/translations'
 
 const menuItems = [
   { 
-    name: 'Home', 
-    route: '/',
-    type: 'single'
-  },
-  { 
     name: 'About', 
     route: '/about',
     type: 'single'
@@ -176,8 +171,7 @@ export default function Navigation() {
           
           <div className="hidden lg:flex items-center space-x-6">
             {menuItems.map((item, index) => {
-              const translatedName = item.name === 'Home' ? t.nav.home :
-                item.name === 'About' ? t.nav.about :
+              const translatedName = item.name === 'About' ? t.nav.about :
                 item.name === 'London Treatments' ? t.nav.londonTreatments :
                 item.name === 'Edinburgh Treatments' ? t.nav.edinburghTreatments :
                 item.name === 'Doctors' ? t.nav.doctors :
