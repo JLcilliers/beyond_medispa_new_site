@@ -53,24 +53,30 @@ export default function ProgramSection() {
             OUR TREATMENT JOURNEY
           </h2>
           
-          <div className="grid md:grid-cols-4 gap-8 mb-16">
-            {programs.map((program) => (
-              <div key={program.id} className="text-center group">
-                <div className="relative mb-4">
-                  <div className="w-24 h-24 rounded-full mx-auto bg-[#A38E78]/10 border-4 border-[#A38E78]/30 group-hover:border-[#A38E78] transition-colors flex items-center justify-center">
-                    <img 
-                      src={program.image} 
-                      alt={program.title}
-                      className="w-12 h-12 object-contain"
-                    />
+          <div className="flex items-center justify-center mb-16">
+            {programs.map((program, index) => (
+              <>
+                <div key={program.id} className="text-center group">
+                  <div className="relative mb-4">
+                    <div className="w-24 h-24 rounded-full mx-auto bg-[#A38E78]/10 border-4 border-[#A38E78]/30 group-hover:border-[#A38E78] transition-colors flex items-center justify-center">
+                      <img 
+                        src={program.image} 
+                        alt={program.title}
+                        className="w-12 h-12 object-contain"
+                      />
+                    </div>
                   </div>
-                  <div className="absolute top-0 left-0 bg-[#A38E78] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
-                    {program.id}
-                  </div>
+                  <h3 className="text-sm font-medium mb-2 text-[#333333]">{program.title}</h3>
+                  <p className="text-xs text-[#777777]">{program.description}</p>
                 </div>
-                <h3 className="text-sm font-medium mb-2 text-[#333333]">{program.title}</h3>
-                <p className="text-xs text-[#777777]">{program.description}</p>
-              </div>
+                {index < programs.length - 1 && (
+                  <div className="flex items-center justify-center mx-8">
+                    <svg className="w-8 h-8 text-[#A38E78]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                )}
+              </>
             ))}
           </div>
         </div>
