@@ -6,7 +6,8 @@ export default function CheekEnhancementPage() {
     title: "Invest in Your Cheeks with",
     subtitle: "Aesthetic Lab",
     description: "Achieve beautifully sculpted and defined cheekbones with our expert cheek enhancement treatments for natural-looking facial contouring.",
-    buttonText: "BOOK CONSULTATION"
+    buttonText: "BOOK CONSULTATION",
+    backgroundImage: "/cheek-enhancement-hero.png"
   }
 
   const treatmentInfo = {
