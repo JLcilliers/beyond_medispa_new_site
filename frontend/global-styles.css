@@ -77,14 +77,14 @@ span[class*="rounded"], p[class*="rounded"] {
 
 @media (min-width: 1024px) {
   .container {
-    padding-left: 120px !important;
-    padding-right: 120px !important;
+    padding-left: 240px !important;
+    padding-right: 240px !important;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
-    padding-left: 6rem !important;
-    padding-right: 6rem !important;
+    padding-left: 220px !important;
+    padding-right: 220px !important;
   }
 }
