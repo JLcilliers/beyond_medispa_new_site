@@ -1,12 +1,12 @@
 import MaintenanceNavigation from './MaintenanceNavigation'
-import HeroSection from './HeroSection'
+import MaintenanceHeroSection from './MaintenanceHeroSection'
 import WhyChooseUsSection from './WhyChooseUsSection'
-import ServicesOverview from './ServicesOverview'
+import MaintenanceServicesOverview from './MaintenanceServicesOverview'
 import MeditationSpaDay from './MeditationSpaDay'
 import ProgramSection from './ProgramSection'
-import TeamSection from './TeamSection'
+import MaintenanceTeamSection from './MaintenanceTeamSection'
 import TestimonialsSection from './TestimonialsSection'
-import PromotionsSection from './PromotionsSection'
+import MaintenancePromotionsSection from './MaintenancePromotionsSection'
 import FAQSection from './FAQSection'
 import RussianFooter from './RussianFooter'
 
@@ -14,14 +14,14 @@ export default function MaintenancePage() {
   return (
     <div className="min-h-screen">
       <MaintenanceNavigation />
-      <HeroSection />
+      <MaintenanceHeroSection />
       <WhyChooseUsSection />
-      <ServicesOverview />
+      <MaintenanceServicesOverview />
       <MeditationSpaDay />
       <ProgramSection />
-      <TeamSection />
+      <MaintenanceTeamSection />
       <TestimonialsSection />
-      <PromotionsSection />
+      <MaintenancePromotionsSection />
       <FAQSection />
       <RussianFooter />
     </div>
