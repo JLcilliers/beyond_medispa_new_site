@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import backend from '~backend/client'
 import Homepage from './components/Homepage'
 import AboutPage from './components/pages/AboutPage'
 import ContactPage from './components/pages/ContactPage'
@@ -123,6 +124,9 @@ export default function App() {
   useEffect(() => {
     // Make navigation function globally available
     (window as any).navigateTo = setCurrentPage
+    
+    // Establish backend connection
+    backend.web.health().catch(console.error)
   }, [])
   
   const CurrentPageComponent = routes[currentPage as keyof typeof routes] || Homepage
