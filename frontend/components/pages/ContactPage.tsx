@@ -149,7 +149,7 @@ export default function ContactPage() {
                     ></textarea>
                   </div>
                   
-                  <Button className="w-full bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] py-4 text-lg font-medium">
+                  <Button className="w-full bg-[#F8D794] hover:bg-[#F8D794] text-black py-4 text-lg font-medium hover:opacity-90">
                     Send Message
                   </Button>
                 </form>

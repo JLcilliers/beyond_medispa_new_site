@@ -204,7 +204,7 @@ export default function Navigation() {
                           onClick={() => {
                             handleNavigation(subItem.route)
                           }}
-                          className="block w-full text-left px-4 py-2 text-black hover:text-[#F8D794] hover:bg-gray-100 transition-colors text-sm"
+                          className="block w-full text-left px-4 py-2 text-white hover:text-[#F8D794] hover:bg-[#284139]/30 transition-colors text-sm"
                         >
                           {subItem.name}
                         </button>
@@ -217,7 +217,7 @@ export default function Navigation() {
           </div>
           
           <div className="flex items-center space-x-4">
-            <div className="hidden xl:flex items-center space-x-4 text-black text-sm">
+            <div className="hidden xl:flex items-center space-x-4 text-white text-sm">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 text-[#F8D794]" />
                 <span>+44 (20) 7123 4567</span>

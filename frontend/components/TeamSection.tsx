@@ -81,7 +81,7 @@ export default function TeamSection() {
     <section className="py-20 bg-gradient-to-br from-[#284139] via-[#111A19] to-[#284139]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-light text-black mb-6">
+          <h2 className="text-4xl lg:text-5xl font-light text-white mb-6">
             Meet Our <span className="text-[#F8D794]">Expert Team</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
