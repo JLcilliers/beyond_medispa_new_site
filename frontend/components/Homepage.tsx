@@ -1,12 +1,12 @@
 import Navigation from './Navigation'
 import HeroSection from './HeroSection'
+import TestimonialsSection from './TestimonialsSection'
 import WhyChooseUsSection from './WhyChooseUsSection'
 import ServicesOverview from './ServicesOverview'
-import MeditationSpaDay from './MeditationSpaDay'
+import GetMoreSection from './GetMoreSection'
 import ProgramSection from './ProgramSection'
-import TeamSection from './TeamSection'
-import TestimonialsSection from './TestimonialsSection'
-import PromotionsSection from './PromotionsSection'
+import ExpertMedicineSection from './ExpertMedicineSection'
+import Locations from './Locations'
 import FAQSection from './FAQSection'
 import Footer from './Footer'
 
@@ -15,13 +15,13 @@ export default function Homepage() {
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
+      <TestimonialsSection />
       <WhyChooseUsSection />
       <ServicesOverview />
-      <MeditationSpaDay />
+      <GetMoreSection />
       <ProgramSection />
-      <TeamSection />
-      <TestimonialsSection />
-      <PromotionsSection />
+      <ExpertMedicineSection />
+      <Locations />
       <FAQSection />
       <Footer />
     </div>

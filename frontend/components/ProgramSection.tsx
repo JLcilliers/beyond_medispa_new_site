@@ -27,20 +27,20 @@ const programs = [
 
 const details = [
   {
-    title: "Comprehensive Consultation",
-    description: "Every journey begins with a detailed consultation where our medical experts assess your skin, understand your goals, and discuss your medical history. We take time to educate you about available options and ensure you feel confident about your treatment plan."
+    title: "1. Consult & Assess",
+    description: "We offer a personalised consultation to assess your goals and recommend the best skin, body, or facial aesthetic treatments for you. Through initial consulting and assessment, our expert team ensures every treatment enhances your natural beauty while delivering real, noticeable results."
   },
   {
-    title: "Personalized Treatment Plan",
-    description: "Based on your consultation, we create a bespoke treatment plan that may include injectables, skin therapies, or body contouring. Our approach considers your lifestyle, budget, and desired timeline to achieve optimal results naturally."
+    title: "2. Bespoke Treatment Plan",
+    description: "Following your consultation, we create a tailored treatment plan designed around your unique treatment preferences, lifestyle, and goals. Whether you're looking to refresh your skin, sculpt your body, or achieve subtle facial enhancements, your plan is personalised to deliver safe, effective, and lasting results."
   },
   {
-    title: "Expert Treatment Delivery",
-    description: "Our qualified doctors and practitioners use the latest techniques and premium products to deliver your treatment safely and effectively. We prioritize your comfort throughout the process while maintaining the highest medical standards."
+    title: "3. Cutting Edge Treatments",
+    description: "We combine advanced techniques with the latest aesthetic technology to ensure your treatments are both innovative and results-driven. From Carboxytherapy and Biofiller to HydraFacial and Microneedling with Exosomes, we stay on the cutting edge of aesthetics to ensure you always get the best treatment options. Our clinically proven injectables to medical-grade skin therapies mean every procedure is carried out with precision, safety, and artistry by our highly trained professionals."
   },
   {
-    title: "Comprehensive Aftercare",
-    description: "Your journey doesn't end with treatment. We provide detailed aftercare instructions, follow-up appointments, and ongoing support to ensure optimal healing and long-lasting results. Our team is always available for any questions or concerns."
+    title: "4. Results & Aftercare",
+    description: "Your journey doesn't end after treatment. We provide ongoing support and aftercare to maximise and maintain your results. Our team offers expert guidance on recovery, skincare, and follow-up sessions, ensuring you feel confident, comfortable, and fully supported at every stage."
   }
 ]
 
@@ -49,8 +49,8 @@ export default function ProgramSection() {
     <section className="py-20 bg-[#F5F1EC] text-[#333333]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-light text-[#A38E78] mb-8">
-            OUR TREATMENT JOURNEY
+          <h2 className="text-4xl font-light text-[#333333] mb-8">
+            A Personalised Approach to <span className="text-[#A38E78]">Aesthetics</span>
           </h2>
           
           <div className="flex items-center justify-center mb-16">

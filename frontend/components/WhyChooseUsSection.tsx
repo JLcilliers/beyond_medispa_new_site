@@ -3,23 +3,18 @@ import { Award, Zap, Heart, Sparkles } from 'lucide-react'
 const features = [
   {
     icon: Award,
-    title: 'Award-Winning Clinic',
-    description: 'Recognized for excellence in aesthetic medicine with multiple industry awards and certifications from leading medical bodies.'
+    title: 'Award-Winning, Doctor-Led Medical Aesthetic Clinic',
+    description: 'Our clinic is led by highly qualified doctors, nurse prescribers, and experienced aestheticians who have successfully provided revitalising beauty treatments to thousands of patients worldwide. Recognised for excellence in aesthetic medicine, we combine medical expertise with a commitment to natural, safe, and effective results.'
   },
   {
     icon: Zap,
-    title: 'Cutting-Edge Technology',
-    description: 'State-of-the-art equipment including CoolSculpting, HydraFacial, and the latest laser technologies for optimal results.'
+    title: 'Cutting-Edge Technology & Medical-Grade Products',
+    description: 'We routinely invest in the latest aesthetic technologies and use only medical-grade, clinically proven products. This ensures every treatment is safe, comfortable, and results-driven; never compromising on quality, innovation, or your wellbeing.'
   },
   {
     icon: Heart,
-    title: 'Personalized Care',
-    description: 'Comprehensive consultations and bespoke treatment plans tailored to your unique needs, goals, and skin type.'
-  },
-  {
-    icon: Sparkles,
-    title: 'Natural Results',
-    description: 'Our expert practitioners specialize in subtle enhancements that highlight your natural beauty and boost confidence.'
+    title: 'Treatment Plans for Natural-Looking Results',
+    description: 'Every patient is unique, which is why we create bespoke treatment plans tailored to your goals, skin type, and lifestyle. Our approach is focused on enhancing your natural beauty, delivering results that are subtle, balanced, and long-lasting.'
   }
 ]
 
@@ -29,23 +24,22 @@ export default function WhyChooseUsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-            Why Choose <span className="text-[#A38E78]">Beyond MediSpa</span>
+            Aesthetic Excellence Redefined: <span className="text-[#A38E78]">It's Who We Are</span>
           </h2>
           <p className="text-xl text-[#777777] max-w-3xl mx-auto">
-            With clinics in London and Edinburgh, we combine medical expertise with luxury care 
-            to deliver exceptional results that enhance your natural beauty.
+            At Beyond Aesthetic Clinic, we're redefining aesthetic excellence.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
           {features.map((feature, index) => {
             const Icon = feature.icon
             return (
               <div
                 key={index}
-                className="text-center group hover:transform hover:scale-105 transition-all duration-300"
+                className="group hover:transform hover:scale-105 transition-all duration-300"
               >
-                <div className="bg-[#A38E78]/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:bg-[#A38E78]/20 transition-colors duration-300">
+                <div className="bg-[#A38E78]/10 rounded-full w-20 h-20 flex items-center justify-center mb-6 group-hover:bg-[#A38E78]/20 transition-colors duration-300">
                   <Icon className="w-10 h-10 text-[#A38E78]" />
                 </div>
                 <h3 className="text-xl font-semibold text-[#333333] mb-4">{feature.title}</h3>

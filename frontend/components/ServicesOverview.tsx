@@ -77,12 +77,8 @@ export default function ServicesOverview() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-            Our Comprehensive <span className="text-[#A38E78]">Treatments</span>
+            What Can We <span className="text-[#A38E78]">Help With?</span>
           </h2>
-          <p className="text-xl text-[#777777] max-w-3xl mx-auto">
-            From medical-grade injectables to advanced skin therapies, we offer a complete range of treatments 
-            to help you achieve your aesthetic goals naturally and safely.
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
