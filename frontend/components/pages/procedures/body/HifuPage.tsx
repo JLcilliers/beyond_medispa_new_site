@@ -18,7 +18,7 @@ export default function HifuPage() {
     } else {
       const meta = document.createElement("meta")
       meta.name = "description"
-      meta.content = "Experience the transformative HiFu London treatment at Beyond MediSpa. Lift, tighten, and regenerate your skin for a more youthful and radiant appearance."
+      meta.content = "Experience the transformative HiFu London treatment at Beyond Aesthetic Clinic. Lift, tighten, and regenerate your skin for a more youthful and radiant appearance."
       document.head.appendChild(meta)
     }
   }, [])

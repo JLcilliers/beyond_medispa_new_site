@@ -66,7 +66,7 @@ const faqs = [
     answer: 'Beyond Aesthetic Clinic London is situated on the fourth floor of Harvey Nichols in Knightsbridge, just a short walk from Knightsbridge tube station. Our luxury aesthetic clinic provides world-class beauty and skin treatments in a tranquil setting.'
   },
   {
-    question: 'What treatments are available at Beyond MediSpa London?',
+    question: 'What treatments are available at Beyond Aesthetic Clinic London?',
     answer: 'We offer a wide range of advanced aesthetic and medical-grade treatments, including skin tightening, dermal fillers, facial treatments, body contouring, laser hair removal, fat reduction and more. Our expert team provides tailored solutions to enhance your natural beauty.'
   },
   {

@@ -70,7 +70,7 @@ const faqs = [
     answer: 'We provide a full range of medical aesthetics, including anti-wrinkle injections, dermal fillers, fat loss injections, HIFU skin tightening, laser hair removal, skin rejuvenation, and body contouring. Our expert team personalises every procedure to enhance your natural beauty with amazing results.'
   },
   {
-    question: 'Who performs the treatments at Beyond MediSpa Edinburgh?',
+    question: 'Who performs the treatments at Beyond Aesthetic Clinic Edinburgh?',
     answer: 'Our treatments are carried out by experienced consultants, leading aesthetic professionals, and our specialist medical aesthetics team. With many years of expertise, we ensure the highest standards of care, safety, and natural-looking results.'
   },
   {

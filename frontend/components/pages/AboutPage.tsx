@@ -109,7 +109,7 @@ export default function AboutPage() {
                 Learn more about Beyond Aesthetic Clinic
               </h3>
               <p className="text-xl text-white/90 leading-relaxed mb-12">
-                Here at Beyond MediSpa, we go beyond expectations to deliver advanced aesthetic treatments that enhance your natural beauty. With a patient-first approach, expert practitioners, and cutting-edge technology, we create a bespoke experience tailored to your unique goals, ensuring exceptional results every time.
+                Here at Beyond Aesthetic Clinic, we go beyond expectations to deliver advanced aesthetic treatments that enhance your natural beauty. With a patient-first approach, expert practitioners, and cutting-edge technology, we create a bespoke experience tailored to your unique goals, ensuring exceptional results every time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/book-treatment">
