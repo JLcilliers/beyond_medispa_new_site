@@ -1,5 +1,5 @@
 import Navigation from './Navigation'
-import RussianFooter from './RussianFooter'
+import Footer from './Footer'
 import TestimonialsSection from './TestimonialsSection'
 import SpaWelcome from './SpaWelcome'
 import ExpertiseSection from './ExpertiseSection'
@@ -163,7 +163,7 @@ export default function ProcedurePageTemplate({
         )}
       </div>
       
-      <RussianFooter />
+      <Footer />
     </div>
   )
 }

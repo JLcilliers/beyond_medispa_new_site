@@ -1,65 +1,91 @@
 import CategoryPageTemplate from '../../CategoryPageTemplate'
 
-const bodyTreatments = [
-  {
-    name: "Body Contouring",
-    description: "Advanced non-surgical body sculpting to target stubborn fat areas",
-    duration: "60-90 minutes",
-    price: "From £450",
-    image: "/api/placeholder/400/300",
-    benefits: ["Fat reduction", "Skin tightening", "Improved contours", "Non-invasive"],
-    route: "body-contouring"
-  },
-  {
-    name: "Cellulite Treatment",
-    description: "Comprehensive cellulite reduction using cutting-edge technology", 
-    duration: "45-60 minutes",
-    price: "From £300",
-    image: "/api/placeholder/400/300",
-    benefits: ["Smoother skin", "Improved texture", "Enhanced circulation", "Long-lasting results"],
-    route: "cellulite-treatment"
-  },
-  {
-    name: "CoolSculpting",
-    description: "Revolutionary fat freezing technology for permanent fat reduction",
-    duration: "45-90 minutes",
-    price: "From £450",
-    image: "/api/placeholder/400/300", 
-    benefits: ["Permanent fat reduction", "No surgery", "Zero downtime", "FDA-approved"],
-    route: "coolsculpting"
-  },
-  {
-    name: "Vanquish ME",
-    description: "Non-contact fat reduction for body contouring without surgery",
-    duration: "45 minutes", 
-    price: "From £350",
-    image: "/api/placeholder/400/300",
-    benefits: ["Non-contact treatment", "No downtime", "Large area coverage", "Comfortable"],
-    route: "vanquish"
-  }
-]
-
 export default function BodyPage() {
-  const heroProps = {
+  const hero = {
     title: "Body",
     subtitle: "Treatments",
-    description: "Transform your body with our comprehensive range of non-surgical treatments. From body contouring to skin rejuvenation, achieve your ideal silhouette with confidence."
+    description: "Transform your body with our advanced non-invasive treatments designed to sculpt, tone, and rejuvenate your skin."
   }
 
-  const processSteps = [
-    { step: "1", title: "Consultation", description: "Detailed assessment and body analysis" },
-    { step: "2", title: "Planning", description: "Customized treatment plan creation" },
-    { step: "3", title: "Treatment", description: "Professional body contouring sessions" },
-    { step: "4", title: "Results", description: "Ongoing support and maintenance" }
+  const treatments = [
+    {
+      name: "Exilis",
+      description: "Revolutionary radiofrequency technology for skin tightening and body contouring without surgery.",
+      duration: "45-60 minutes",
+      price: "From £250",
+      benefits: ["Skin tightening", "Body contouring", "Cellulite reduction", "Non-invasive"],
+      route: "procedures/body/exilis"
+    },
+    {
+      name: "Hifu",
+      description: "High-Intensity Focused Ultrasound for precise body contouring and skin lifting.",
+      duration: "60-90 minutes", 
+      price: "From £350",
+      benefits: ["Deep tissue lifting", "Precise targeting", "Long-lasting results", "No downtime"],
+      route: "procedures/body/hifu"
+    },
+    {
+      name: "CM Slim",
+      description: "Advanced electromagnetic muscle stimulation for muscle building and fat reduction.",
+      duration: "30 minutes",
+      price: "From £200",
+      benefits: ["Muscle building", "Fat reduction", "Core strengthening", "Quick sessions"],
+      route: "procedures/body/cm-slim"
+    },
+    {
+      name: "Cool Laser",
+      description: "Innovative cold laser technology for targeted fat reduction and body sculpting.",
+      duration: "45 minutes",
+      price: "From £180",
+      benefits: ["Targeted fat reduction", "Pain-free treatment", "No recovery time", "Immediate results"],
+      route: "procedures/body/cool-laser"
+    },
+    {
+      name: "CoolSculpting",
+      description: "FDA-approved cryolipolysis treatment that freezes and eliminates stubborn fat cells.",
+      duration: "35-60 minutes",
+      price: "From £400",
+      benefits: ["FDA approved", "Permanent fat reduction", "No surgery required", "Proven results"],
+      route: "procedures/body/coolsculpting"
+    },
+    {
+      name: "Unison",
+      description: "Multi-technology platform combining radiofrequency and ultrasound for comprehensive body treatments.",
+      duration: "60 minutes",
+      price: "From £300",
+      benefits: ["Multi-technology approach", "Comprehensive results", "Customizable treatment", "Professional grade"],
+      route: "procedures/body/unison"
+    },
+    {
+      name: "Vanquish",
+      description: "Contactless radiofrequency technology for circumferential fat reduction across large treatment areas.",
+      duration: "45 minutes",
+      price: "From £280",
+      benefits: ["Contactless treatment", "Large area coverage", "Comfortable sessions", "Gradual natural results"],
+      route: "procedures/body/vanquish"
+    },
+    {
+      name: "Laser Hair Removal",
+      description: "Professional laser hair removal for smooth, hair-free skin on any area of the body.",
+      duration: "15-60 minutes",
+      price: "From £50",
+      benefits: ["Permanent hair reduction", "All skin types", "Quick treatments", "Smooth results"],
+      route: "procedures/body/laser-hair-removal"
+    },
+    {
+      name: "Electrolysis",
+      description: "The only FDA-approved method for permanent hair removal, suitable for all hair and skin types.",
+      duration: "15-45 minutes",
+      price: "From £30",
+      benefits: ["100% permanent", "All hair types", "All skin tones", "FDA approved"],
+      route: "procedures/body/electrolysis"
+    }
   ]
 
   return (
     <CategoryPageTemplate 
-      hero={heroProps}
-      treatments={bodyTreatments}
-      processSteps={processSteps}
-      showTreatmentGrid={true}
-      showProcess={true}
+      hero={hero}
+      treatments={treatments}
     />
   )
 }

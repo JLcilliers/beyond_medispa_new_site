@@ -1,5 +1,5 @@
 import Navigation from './Navigation'
-import RussianFooter from './RussianFooter'
+import Footer from './Footer'
 import { Button } from '@/components/ui/button'
 import { Clock } from 'lucide-react'
 
@@ -195,7 +195,7 @@ export default function CategoryPageTemplate({
         </section>
       </div>
       
-      <RussianFooter />
+      <Footer />
     </div>
   )
 }
