@@ -13,6 +13,7 @@ import SkinTreatmentsPage from './components/pages/procedures/SkinTreatmentsPage
 import BodyContouringPage from './components/pages/procedures/BodyContouringPage'
 import SkinConcernsPage from './components/pages/procedures/SkinConcernsPage'
 import WellbeingPage from './components/pages/procedures/WellbeingPage'
+import WhatsAppWidget from './components/WhatsAppWidget'
 
 import AntiWrinkleTreatmentPage from './components/pages/procedures/individual/AntiWrinkleTreatmentPage'
 import LipEnhancementPage from './components/pages/procedures/individual/LipEnhancementPage'
@@ -126,5 +127,10 @@ export default function App() {
   
   const CurrentPageComponent = routes[currentPage as keyof typeof routes] || Homepage
   
-  return <CurrentPageComponent />
+  return (
+    <>
+      <CurrentPageComponent />
+      <WhatsAppWidget />
+    </>
+  )
 }

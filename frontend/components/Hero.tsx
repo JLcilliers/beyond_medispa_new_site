@@ -27,7 +27,7 @@ export default function Hero() {
             Descoperiți tratamentele estetice de ultimă generație pentru o piele perfectă și strălucitoare
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex justify-start">
             <Button 
               size="lg" 
               onClick={() => {
@@ -35,22 +35,11 @@ export default function Hero() {
                   (window as any).navigateTo('book-treatment')
                 }
               }}
-              className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-8 py-4 text-lg group"
+              className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-12 py-6 text-xl group"
             >
               Book Now
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </Button>
-            
-            <a 
-              href="https://wa.me/442071234567" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-[#25D366] hover:text-white px-8 py-4 text-lg group">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                WhatsApp
-              </Button>
-            </a>
           </div>
         </div>
       </div>

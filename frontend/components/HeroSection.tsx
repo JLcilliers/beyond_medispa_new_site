@@ -33,7 +33,7 @@ export default function HeroSection() {
             Discover personalized medical and aesthetic treatments that enhance your natural features. From anti-aging injectables to advanced skin therapies, our expert team in London and Edinburgh delivers holistic care for body, skin, and wellbeing. Experience results that feel authentically you.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex justify-start">
             <Button 
               size="lg" 
               onClick={() => {
@@ -41,22 +41,11 @@ export default function HeroSection() {
                   (window as any).navigateTo('book-treatment')
                 }
               }}
-              className="bg-[#C6A77D] hover:bg-[#A38E78] text-white px-8 py-4 text-lg group transition-colors font-medium"
+              className="bg-[#C6A77D] hover:bg-[#A38E78] text-white px-12 py-6 text-xl group transition-colors font-medium"
             >
               Book Now
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </Button>
-            
-            <a 
-              href="https://wa.me/442071234567" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-[#2C2C2C] px-8 py-4 text-lg group">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                WhatsApp
-              </Button>
-            </a>
           </div>
         </div>
       </div>
