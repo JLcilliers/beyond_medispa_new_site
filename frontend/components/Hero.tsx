@@ -15,7 +15,7 @@ export default function Hero() {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 h-screen flex items-center">
+      <div className="relative z-10 container mx-auto px-4 lg:px-16 h-screen flex items-center">
         <div className="max-w-2xl text-white">
           <h1 className="text-5xl md:text-7xl font-light mb-6 leading-tight">
             Investește în <br />
