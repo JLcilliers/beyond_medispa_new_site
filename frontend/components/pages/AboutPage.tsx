@@ -12,67 +12,67 @@ const stats = [
 const teamMembers = [
   {
     name: 'Dr Azadeh Manesh',
-    image: '/team/azadeh-manesh.png',
+    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Azadeh-Manesh.png',
     description: 'Dr Azadeh Manesh specialises in non‑surgical aesthetics, offering natural‑looking results and holistic skin consultations tailored to individual needs.',
     role: 'Aesthetic Doctor'
   },
   {
     name: 'Dr Sana Sadiq',
-    image: '/team/dr-sana-sadiq.jpg',
+    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/DR-SANA-SADIQ.jpeg',
     description: 'Dr Sana Sadiq focuses on full‑face beautification, combining corrective and preventive treatments for stunning, natural results.',
     role: 'Aesthetic Doctor'
   },
   {
     name: 'Marianne',
-    image: '/team/marianne.jpg',
+    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/MARIANNE.jpg',
     description: 'Marianne focuses on natural enhancements and subtle tweaks to highlight your facial contours.',
     role: 'Senior Aesthetic Practitioner'
   },
   {
     name: 'Ewelina Roguska',
-    image: '/team/ewelina-roguska.png',
+    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Ewelina-Roguska-1.png',
     description: 'Ewelina has 9+ years of experience and a passion for treating acne and post‑acne skin with advanced skin therapies.',
     role: 'Senior Aesthetic Practitioner'
   },
   {
     name: 'Louise Walker',
-    image: '/team/louise-walker.jpg',
+    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Louise-Walker-1.jpg',
     description: 'Louise customises skin treatments using medical‑grade devices and advanced skincare techniques with 18+ years in aesthetics.',
     role: 'Senior Aesthetic Practitioner'
   },
   {
     name: 'Joanna Pullar',
-    image: '/team/joanna-pullar.webp',
+    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Joanna-Pullar-1.webp',
     description: 'Joanna is a Senior Aesthetic Practitioner with expertise in electrolysis and advanced skin treatments.',
     role: 'Senior Aesthetic Practitioner'
   },
   {
     name: 'Nazish Aman',
-    image: '/team/nazish-aman.jpg',
+    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Nazish-Aman.jpg',
     description: 'With 11+ years in aesthetics, Naz assists front‑of‑house operations and provides tailored skincare treatments.',
     role: 'Aesthetic Practitioner'
   },
   {
     name: 'Reza',
-    image: '/team/reza.png',
+    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Reza.png',
     description: 'Known for his five‑star service, Reza ensures clients feel comfortable while delivering expert aesthetic advice.',
     role: 'Aesthetic Practitioner'
   },
   {
     name: 'Leanne',
-    image: '/team/leanne.jpg',
+    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Leanne.jpg',
     description: 'Leanne has 6+ years of experience in customer service, providing a professional and welcoming presence at Beyond MediSpa.',
     role: 'Client Relations'
   },
   {
     name: 'Ruxi',
-    image: '/team/ruxi.png',
+    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Ruxi.png',
     description: 'With over a decade in aesthetics, Ruxi specialises in modern skincare treatments and practitioner training.',
     role: 'Senior Aesthetic Practitioner'
   },
   {
     name: 'Claire Hill',
-    image: '/team/claire-hill.png',
+    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Claire-Hill.png',
     description: 'A Senior Aesthetician with 14+ years of experience, Claire specialises in laser hair and tattoo removal treatments.',
     role: 'Senior Aesthetic Practitioner'
   }
