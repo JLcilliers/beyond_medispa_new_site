@@ -57,11 +57,13 @@ export default function ProgramSection() {
             {programs.map((program) => (
               <div key={program.id} className="text-center group">
                 <div className="relative mb-4">
-                  <img 
-                    src={program.image} 
-                    alt={program.title}
-                    className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-[#A38E78]/30 group-hover:border-[#A38E78] transition-colors"
-                  />
+                  <div className="w-24 h-24 rounded-full mx-auto bg-[#A38E78]/10 border-4 border-[#A38E78]/30 group-hover:border-[#A38E78] transition-colors flex items-center justify-center">
+                    <img 
+                      src={program.image} 
+                      alt={program.title}
+                      className="w-12 h-12 object-contain"
+                    />
+                  </div>
                   <div className="absolute -top-2 -right-2 bg-[#A38E78] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
                     {program.id}
                   </div>

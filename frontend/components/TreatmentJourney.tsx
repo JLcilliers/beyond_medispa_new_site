@@ -73,11 +73,13 @@ export default function TreatmentJourney() {
                 <div className="flex-1">
                   <div className="flex items-center gap-4 mb-2">
                     <h3 className="text-xl font-semibold text-[#333333]">{step.title}</h3>
-                    <img 
-                      src={step.image} 
-                      alt={step.title}
-                      className="w-16 h-16 rounded-lg object-cover shadow-lg"
-                    />
+                    <div className="w-16 h-16 rounded-full bg-[#A38E78]/10 flex items-center justify-center shadow-lg">
+                      <img 
+                        src={step.image} 
+                        alt={step.title}
+                        className="w-8 h-8 object-contain"
+                      />
+                    </div>
                   </div>
                   <p className="text-[#777777] leading-relaxed">{step.description}</p>
                 </div>
