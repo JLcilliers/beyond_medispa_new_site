@@ -77,8 +77,8 @@ span[class*="rounded"], p[class*="rounded"] {
 
 @media (min-width: 1024px) {
   .container {
-    padding-left: 5rem !important;
-    padding-right: 5rem !important;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
   }
 }
 
