@@ -25,30 +25,30 @@ export default function ExilisPage() {
 
   const testimonials = [
     {
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu mauris, cursus laoreet mi ac, sollicitudin tincidunt felis.",
-      client: "Client Name"
+      text: "The Exilis treatment exceeded my expectations. My skin feels tighter and looks more youthful. The team at Beyond MediSpa made me feel comfortable throughout the entire process.",
+      client: "Sarah M."
     },
     {
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu mauris, cursus laoreet mi ac, sollicitudin tincidunt felis.",
-      client: "Client Name"
+      text: "I noticed visible results after just a few sessions. The non-invasive approach was exactly what I was looking for, and there was absolutely no downtime. Highly recommend!",
+      client: "James T."
     },
     {
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu mauris, cursus laoreet mi ac, sollicitudin tincidunt felis.",
-      client: "Client Name"
+      text: "After trying various treatments, Exilis Elite has given me the best results for skin tightening. The professionalism and expertise at Beyond MediSpa are outstanding.",
+      client: "Emma L."
     }
   ]
 
   const blogPosts = [
     {
-      title: "Lorem ipsum dolor sit amet consectetur",
+      title: "The Science Behind Radiofrequency Skin Tightening: What You Need to Know",
       image: "/api/placeholder/400/300"
     },
     {
-      title: "Lorem ipsum dolor sit amet consectetur",
+      title: "Non-Surgical Face Lifts: How Modern Technology Transforms Ageing Skin",
       image: "/api/placeholder/400/300"
     },
     {
-      title: "Lorem ipsum dolor sit amet consectetur",
+      title: "5 Signs Your Skin Could Benefit from Professional Tightening Treatments",
       image: "/api/placeholder/400/300"
     }
   ]
