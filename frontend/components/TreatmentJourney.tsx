@@ -67,21 +67,23 @@ export default function TreatmentJourney() {
           <div className="space-y-8">
             {steps.map((step, index) => (
               <div key={index} className="flex items-start">
-                <div className="bg-[#A38E78] text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg mr-6 flex-shrink-0">
-                  {step.step}
-                </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-4 mb-2">
-                    <h3 className="text-xl font-semibold text-[#333333]">{step.title}</h3>
-                    <div className="w-16 h-16 rounded-full bg-[#A38E78]/10 flex items-center justify-center shadow-lg">
+                    <div className="bg-[#A38E78] text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                      {step.step}
+                    </div>
+                    <div className="w-16 h-16 rounded-full bg-[#A38E78]/10 flex items-center justify-center shadow-lg flex-shrink-0">
                       <img 
                         src={step.image} 
                         alt={step.title}
                         className="w-8 h-8 object-contain"
                       />
                     </div>
+                    <h3 className="text-xl font-semibold text-[#333333]">{step.title}</h3>
                   </div>
-                  <p className="text-[#777777] leading-relaxed">{step.description}</p>
+                  <div className="ml-20">
+                    <p className="text-[#777777] leading-relaxed">{step.description}</p>
+                  </div>
                 </div>
               </div>
             ))}
