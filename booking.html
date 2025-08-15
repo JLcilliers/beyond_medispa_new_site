@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Beyond Medispa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Location Selector Modal -->
+    <div id="locationModal" class="modal">
+        <div class="modal-content">
+            <h2>Select Your Location</h2>
+            <p>Choose your preferred Beyond Medispa location for personalized services and pricing</p>
+            <div class="location-options">
+                <button class="location-btn" data-location="location1">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Downtown Location</h3>
+                    <p>123 Main Street, Suite 100</p>
+                </button>
+                <button class="location-btn" data-location="location2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Uptown Location</h3>
+                    <p>456 Oak Avenue, Suite 200</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header (Same as homepage) -->
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> <span class="location-phone">(555) 123-4567</span></span>
+                        <span><i class="fas fa-envelope"></i> info@beyondmedispa.com</span>
+                    </div>
+                    <div class="location-switcher">
+                        <button id="locationSwitcher" class="location-switch-btn">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="current-location">Downtown</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Beyond Medispa">
+                    </div>
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="services/facial-treatments.html">Facial Treatments</a></li>
+                                    <li><a href="services/body-contouring.html">Body Contouring</a></li>
+                                    <li><a href="services/laser-treatments.html">Laser Treatments</a></li>
+                                    <li><a href="services/injectables.html">Injectables & Fillers</a></li>
+                                    <li><a href="services/wellness.html">Wellness & IV Therapy</a></li>
+                                    <li><a href="services/skincare.html">Medical Grade Skincare</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#treatments">Treatments <i class="fas fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="treatments/botox.html">Botox</a></li>
+                                    <li><a href="treatments/dermal-fillers.html">Dermal Fillers</a></li>
+                                    <li><a href="treatments/microneedling.html">Microneedling</a></li>
+                                    <li><a href="treatments/chemical-peels.html">Chemical Peels</a></li>
+                                    <li><a href="treatments/prp-therapy.html">PRP Therapy</a></li>
+                                    <li><a href="treatments/coolsculpting.html">CoolSculpting</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li class="cta-btn"><a href="booking.html" class="active">Book Now</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Booking Page Content -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-header">
+                <h1>Book Your Appointment</h1>
+                <p>Schedule your visit to Beyond Medispa</p>
+            </div>
+
+            <div class="booking-container">
+                <!-- Progress Steps -->
+                <div class="booking-progress">
+                    <div class="progress-step active" data-step="1">
+                        <div class="step-circle">1</div>
+                        <span>Select Service</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="2">
+                        <div class="step-circle">2</div>
+                        <span>Choose Date & Time</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="3">
+                        <div class="step-circle">3</div>
+                        <span>Your Information</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="4">
+                        <div class="step-circle">4</div>
+                        <span>Confirmation</span>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <form class="booking-form" id="bookingForm">
+                    <!-- Step 1: Service Selection -->
+                    <div class="form-step active" data-step="1">
+                        <h2>Select Your Service</h2>
+                        <div class="service-categories">
+                            <div class="category-tabs">
+                                <button type="button" class="category-tab active" data-category="facial">Facial Treatments</button>
+                                <button type="button" class="category-tab" data-category="injectable">Injectables</button>
+                                <button type="button" class="category-tab" data-category="laser">Laser Treatments</button>
+                                <button type="button" class="category-tab" data-category="body">Body Contouring</button>
+                                <button type="button" class="category-tab" data-category="wellness">Wellness</button>
+                            </div>
+                            
+                            <div class="services-list">
+                                <div class="service-category active" data-category="facial">
+                                    <label class="service-option">
+                                        <input type="radio" name="service" value="hydrafacial">
+                                        <div class="service-details">
+                                            <h4>HydraFacial</h4>
+                                            <p>Deep cleansing and hydrating treatment</p>
+                                            <span class="service-duration">60 min</span>
+                                            <span class="service-price location-price" data-location1="$199" data-location2="$249">$199</span>
+                                        </div>
+                                    </label>
+                                    <label class="service-option">
+                                        <input type="radio" name="service" value="microneedling">
+                                        <div class="service-details">
+                                            <h4>Microneedling</h4>
+                                            <p>Collagen stimulation for skin renewal</p>
+                                            <span class="service-duration">45 min</span>
+                                            <span class="service-price location-price" data-location1="$350" data-location2="$425">$350</span>
+                                        </div>
+                                    </label>
+                                    <label class="service-option">
+                                        <input type="radio" name="service" value="chemical-peel">
+                                        <div class="service-details">
+                                            <h4>Chemical Peel</h4>
+                                            <p>Exfoliation for smoother skin</p>
+                                            <span class="service-duration">30-60 min</span>
+                                            <span class="service-price location-price" data-location1="$150" data-location2="$195">$150</span>
+                                        </div>
+                                    </label>
+                                    <label class="service-option">
+                                        <input type="radio" name="service" value="custom-facial">
+                                        <div class="service-details">
+                                            <h4>Custom Signature Facial</h4>
+                                            <p>Personalized treatment for your skin</p>
+                                            <span class="service-duration">75 min</span>
+                                            <span class="service-price location-price" data-location1="$175" data-location2="$225">$175</span>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="service-category" data-category="injectable">
+                                    <label class="service-option">
+                                        <input type="radio" name="service" value="botox">
+                                        <div class="service-details">
+                                            <h4>Botox</h4>
+                                            <p>Wrinkle reduction treatment</p>
+                                            <span class="service-duration">30 min</span>
+                                            <span class="service-price location-price" data-location1="$12/unit" data-location2="$14/unit">$12/unit</span>
+                                        </div>
+                                    </label>
+                                    <label class="service-option">
+                                        <input type="radio" name="service" value="fillers">
+                                        <div class="service-details">
+                                            <h4>Dermal Fillers</h4>
+                                            <p>Volume restoration and contouring</p>
+                                            <span class="service-duration">45 min</span>
+                                            <span class="service-price location-price" data-location1="$650" data-location2="$750">$650</span>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <!-- Add more service categories as needed -->
+                            </div>
+                        </div>
+                        
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn-primary next-step">Continue</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Date & Time Selection -->
+                    <div class="form-step" data-step="2">
+                        <h2>Choose Your Preferred Date & Time</h2>
+                        
+                        <div class="datetime-selection">
+                            <div class="calendar-section">
+                                <h3>Select Date</h3>
+                                <div class="calendar-wrapper">
+                                    <div class="calendar-header">
+                                        <button type="button" class="calendar-nav prev"><i class="fas fa-chevron-left"></i></button>
+                                        <span class="calendar-month">December 2024</span>
+                                        <button type="button" class="calendar-nav next"><i class="fas fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="calendar-grid">
+                                        <!-- Calendar will be generated by JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="time-section">
+                                <h3>Available Times</h3>
+                                <div class="time-slots">
+                                    <button type="button" class="time-slot" data-time="09:00">9:00 AM</button>
+                                    <button type="button" class="time-slot" data-time="09:30">9:30 AM</button>
+                                    <button type="button" class="time-slot" data-time="10:00">10:00 AM</button>
+                                    <button type="button" class="time-slot" data-time="10:30">10:30 AM</button>
+                                    <button type="button" class="time-slot" data-time="11:00">11:00 AM</button>
+                                    <button type="button" class="time-slot" data-time="11:30">11:30 AM</button>
+                                    <button type="button" class="time-slot" data-time="14:00">2:00 PM</button>
+                                    <button type="button" class="time-slot" data-time="14:30">2:30 PM</button>
+                                    <button type="button" class="time-slot" data-time="15:00">3:00 PM</button>
+                                    <button type="button" class="time-slot" data-time="15:30">3:30 PM</button>
+                                    <button type="button" class="time-slot" data-time="16:00">4:00 PM</button>
+                                    <button type="button" class="time-slot" data-time="16:30">4:30 PM</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="selected-datetime">
+                            <p>Selected: <span id="selectedDateTime">Please select a date and time</span></p>
+                        </div>
+                        
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn-outline prev-step">Back</button>
+                            <button type="button" class="btn btn-primary next-step">Continue</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Personal Information -->
+                    <div class="form-step" data-step="3">
+                        <h2>Your Information</h2>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dob">Date of Birth</label>
+                                <input type="date" id="dob" name="dob">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender">
+                                    <option value="">Select</option>
+                                    <option value="female">Female</option>
+                                    <option value="male">Male</option>
+                                    <option value="other">Other</option>
+                                    <option value="prefer-not">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="notes">Special Requests or Notes</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Any allergies, preferences, or special requests?"></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="firstVisit" value="yes">
+                                This is my first visit to Beyond Medispa
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="newsletter" value="yes">
+                                I'd like to receive special offers and updates via email
+                            </label>
+                        </div>
+                        
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn-outline prev-step">Back</button>
+                            <button type="button" class="btn btn-primary next-step">Continue to Review</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Confirmation -->
+                    <div class="form-step" data-step="4">
+                        <h2>Review Your Appointment</h2>
+                        
+                        <div class="appointment-summary">
+                            <div class="summary-card">
+                                <h3>Appointment Details</h3>
+                                <div class="summary-item">
+                                    <span class="label">Service:</span>
+                                    <span class="value" id="summaryService">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Date:</span>
+                                    <span class="value" id="summaryDate">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Time:</span>
+                                    <span class="value" id="summaryTime">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Location:</span>
+                                    <span class="value" id="summaryLocation">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Price:</span>
+                                    <span class="value" id="summaryPrice">-</span>
+                                </div>
+                            </div>
+                            
+                            <div class="summary-card">
+                                <h3>Your Information</h3>
+                                <div class="summary-item">
+                                    <span class="label">Name:</span>
+                                    <span class="value" id="summaryName">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Email:</span>
+                                    <span class="value" id="summaryEmail">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Phone:</span>
+                                    <span class="value" id="summaryPhone">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="terms-agreement">
+                            <label>
+                                <input type="checkbox" name="terms" required>
+                                I agree to the <a href="terms.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>
+                            </label>
+                        </div>
+                        
+                        <div class="cancellation-policy">
+                            <p><strong>Cancellation Policy:</strong> Please provide at least 24 hours notice for cancellations or rescheduling to avoid a cancellation fee.</p>
+                        </div>
+                        
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn-outline prev-step">Back</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Confirm Appointment</button>
+                        </div>
+                    </div>
+
+                    <!-- Success Message -->
+                    <div class="booking-success" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h2>Appointment Confirmed!</h2>
+                        <p>Thank you for booking with Beyond Medispa. We've sent a confirmation email to your address.</p>
+                        <div class="confirmation-details">
+                            <p><strong>Confirmation Number:</strong> <span id="confirmationNumber">BM-2024-12345</span></p>
+                        </div>
+                        <div class="success-actions">
+                            <a href="index.html" class="btn btn-outline">Return Home</a>
+                            <button type="button" class="btn btn-primary" onclick="window.print()">Print Confirmation</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as homepage) -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Beyond Medispa</h4>
+                    <p>Premier medical spa offering advanced aesthetic treatments with a focus on natural-looking results and patient satisfaction.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="booking.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services/facial-treatments.html">Facial Treatments</a></li>
+                        <li><a href="services/injectables.html">Injectables</a></li>
+                        <li><a href="services/laser-treatments.html">Laser Treatments</a></li>
+                        <li><a href="services/body-contouring.html">Body Contouring</a></li>
+                        <li><a href="services/wellness.html">Wellness Therapy</a></li>
+                        <li><a href="services/skincare.html">Medical Skincare</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Downtown Location:</strong><br>
+                            123 Main Street, Suite 100<br>
+                            <span class="location-phone">(555) 123-4567</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Uptown Location:</strong><br>
+                            456 Oak Avenue, Suite 200<br>
+                            <span class="location-phone-2">(555) 987-6543</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@beyondmedispa.com">info@beyondmedispa.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beyond Medispa. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
