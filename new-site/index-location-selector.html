@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond MediSpa - Select Your Location</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #5E3D6F;
+            --primary-dark: #4B3059;
+            --primary-light: #EDE7F1;
+            --secondary: #C7A27A;
+            --white: #FFFFFF;
+            --text-dark: #111111;
+            --text-body: #333333;
+            --text-muted: #777777;
+            --shadow-lg: 0 12px 28px rgba(17,17,17,0.12);
+            --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-body);
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--white) 50%, var(--primary-light) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .location-selector {
+            max-width: 900px;
+            width: 100%;
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            animation: fadeInUp 0.6s ease;
+        }
+        
+        .location-header {
+            text-align: center;
+            padding: 60px 40px 40px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+        }
+        
+        .logo {
+            height: 60px;
+            margin-bottom: 30px;
+        }
+        
+        .logo img {
+            height: 100%;
+            width: auto;
+            filter: brightness(0) invert(1);
+        }
+        
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle {
+            font-size: 1.125rem;
+            opacity: 0.95;
+        }
+        
+        .locations-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 400px;
+        }
+        
+        .location-option {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 40px;
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: var(--transition);
+            overflow: hidden;
+        }
+        
+        .location-option::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--primary);
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .location-option:hover::before {
+            opacity: 0.05;
+        }
+        
+        .location-option:first-child {
+            border-right: 1px solid #E6E6E9;
+        }
+        
+        .location-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+        
+        .location-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            transition: var(--transition);
+        }
+        
+        .location-option:hover .location-icon {
+            background: var(--primary);
+            transform: scale(1.1);
+        }
+        
+        .location-icon i {
+            font-size: 2rem;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+        
+        .location-option:hover .location-icon i {
+            color: var(--white);
+        }
+        
+        .location-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+        
+        .location-address {
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .location-phone {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 25px;
+        }
+        
+        .enter-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 30px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .location-option:hover .enter-btn {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(94, 61, 111, 0.3);
+        }
+        
+        .enter-btn i {
+            transition: transform var(--transition);
+        }
+        
+        .location-option:hover .enter-btn i {
+            transform: translateX(4px);
+        }
+        
+        .location-features {
+            list-style: none;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        
+        .location-features li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .location-features i {
+            color: var(--secondary);
+            font-size: 0.8rem;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .location-selector {
+                border-radius: 0;
+                min-height: 100vh;
+            }
+            
+            .location-header {
+                padding: 40px 20px 30px;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            .locations-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .location-option:first-child {
+                border-right: none;
+                border-bottom: 1px solid #E6E6E9;
+            }
+            
+            .location-option {
+                padding: 40px 20px;
+            }
+            
+            .location-name {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="location-selector">
+        <div class="location-header">
+            <div class="logo">
+                <img src="images/beyond-logo.png" alt="Beyond MediSpa">
+            </div>
+            <h1>Welcome to Beyond MediSpa</h1>
+            <p class="subtitle">Please select your preferred location to continue</p>
+        </div>
+        
+        <div class="locations-grid">
+            <!-- London Location -->
+            <a href="london.html" class="location-option">
+                <div class="location-content">
+                    <div class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h2 class="location-name">London</h2>
+                    <p class="location-address">
+                        109-125 Knightsbridge<br>
+                        London SW1X 7RJ
+                    </p>
+                    <p class="location-phone">020 7123 4567</p>
+                    <span class="enter-btn">
+                        Enter London Site
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                    <ul class="location-features">
+                        <li><i class="fas fa-check"></i> Harvey Nichols Location</li>
+                        <li><i class="fas fa-check"></i> Premium Treatments</li>
+                        <li><i class="fas fa-check"></i> Expert Practitioners</li>
+                    </ul>
+                </div>
+            </a>
+            
+            <!-- Edinburgh Location -->
+            <a href="edinburgh.html" class="location-option">
+                <div class="location-content">
+                    <div class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h2 class="location-name">Edinburgh</h2>
+                    <p class="location-address">
+                        30-34 St Andrew Square<br>
+                        Edinburgh EH2 2AD
+                    </p>
+                    <p class="location-phone">0131 456 7890</p>
+                    <span class="enter-btn">
+                        Enter Edinburgh Site
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                    <ul class="location-features">
+                        <li><i class="fas fa-check"></i> City Centre Location</li>
+                        <li><i class="fas fa-check"></i> Full Service Clinic</li>
+                        <li><i class="fas fa-check"></i> Award-Winning Team</li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        // Store location preference when clicked
+        document.querySelectorAll('.location-option').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const location = this.href.includes('london') ? 'london' : 'edinburgh';
+                localStorage.setItem('beyondLocation', location);
+                sessionStorage.setItem('beyondLocation', location);
+            });
+        });
+        
+        // Optional: Auto-redirect if user has visited before
+        const savedLocation = localStorage.getItem('beyondLocation');
+        if (savedLocation && window.location.pathname.endsWith('index-location-selector.html')) {
+            // Uncomment to enable auto-redirect
+            // window.location.href = savedLocation + '.html';
+        }
+    </script>
+</body>
+</html>
