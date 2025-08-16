@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Medispa - Premium Medical Spa Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sovous-enhancements.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Location Selector Modal -->
+    <div id="locationModal" class="modal">
+        <div class="modal-content">
+            <h2>Select Your Location</h2>
+            <p>Choose your preferred Beyond Medispa location for personalized services and pricing</p>
+            <div class="location-options">
+                <button class="location-btn" data-location="location1">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Downtown Location</h3>
+                    <p>123 Main Street, Suite 100</p>
+                </button>
+                <button class="location-btn" data-location="location2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Uptown Location</h3>
+                    <p>456 Oak Avenue, Suite 200</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with Mega Menu -->
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> <span class="location-phone">(555) 123-4567</span></span>
+                        <span><i class="fas fa-envelope"></i> info@beyondmedispa.com</span>
+                    </div>
+                    <div class="location-switcher">
+                        <button id="locationSwitcher" class="location-switch-btn">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="current-location">Downtown</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="header-search">
+                        <form class="search-form">
+                            <input type="search" placeholder="Search treatments...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Beyond Medispa">
+                    </div>
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                                <div class="mega-menu">
+                                    <div class="mega-menu-container">
+                                        <div class="mega-menu-grid">
+                                            <div class="mega-menu-column">
+                                                <h4>Facial Treatments</h4>
+                                                <ul>
+                                                    <li><a href="#">HydraFacial MD</a></li>
+                                                    <li><a href="#">Microdermabrasion</a></li>
+                                                    <li><a href="#">Chemical Peels</a></li>
+                                                    <li><a href="#">LED Light Therapy</a></li>
+                                                    <li><a href="#">Oxygen Facial</a></li>
+                                                    <li><a href="#">Custom Facials</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>Injectables</h4>
+                                                <ul>
+                                                    <li><a href="#">Botox/Dysport</a></li>
+                                                    <li><a href="#">Juvederm</a></li>
+                                                    <li><a href="#">Restylane</a></li>
+                                                    <li><a href="#">Sculptra</a></li>
+                                                    <li><a href="#">Kybella</a></li>
+                                                    <li><a href="#">PDO Threads</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>Body Treatments</h4>
+                                                <ul>
+                                                    <li><a href="#">CoolSculpting Elite</a></li>
+                                                    <li><a href="#">EmSculpt Neo</a></li>
+                                                    <li><a href="#">Cellulite Reduction</a></li>
+                                                    <li><a href="#">Skin Tightening</a></li>
+                                                    <li><a href="#">Body Contouring</a></li>
+                                                    <li><a href="#">Stretch Mark Treatment</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column mega-menu-featured">
+                                                <h4>Featured Treatment</h4>
+                                                <img src="images/featured-treatment.jpg" alt="Featured">
+                                                <h5>Summer Special: HydraFacial</h5>
+                                                <p>Get glowing skin with our signature treatment</p>
+                                                <a href="#" class="btn btn-sm">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#treatments">Treatments <i class="fas fa-chevron-down"></i></a>
+                                <div class="mega-menu">
+                                    <div class="mega-menu-container">
+                                        <div class="mega-menu-grid">
+                                            <div class="mega-menu-column">
+                                                <h4>Laser Treatments</h4>
+                                                <ul>
+                                                    <li><a href="#">Laser Hair Removal</a></li>
+                                                    <li><a href="#">IPL Photofacial</a></li>
+                                                    <li><a href="#">Laser Skin Resurfacing</a></li>
+                                                    <li><a href="#">Vein Removal</a></li>
+                                                    <li><a href="#">Tattoo Removal</a></li>
+                                                    <li><a href="#">Pigmentation Treatment</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>Wellness</h4>
+                                                <ul>
+                                                    <li><a href="#">IV Therapy</a></li>
+                                                    <li><a href="#">Vitamin Injections</a></li>
+                                                    <li><a href="#">NAD+ Therapy</a></li>
+                                                    <li><a href="#">Hormone Therapy</a></li>
+                                                    <li><a href="#">Weight Management</a></li>
+                                                    <li><a href="#">Peptide Therapy</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>Advanced Treatments</h4>
+                                                <ul>
+                                                    <li><a href="#">PRP/PRF Therapy</a></li>
+                                                    <li><a href="#">Microneedling RF</a></li>
+                                                    <li><a href="#">Ultherapy</a></li>
+                                                    <li><a href="#">Thermage</a></li>
+                                                    <li><a href="#">Exosomes</a></li>
+                                                    <li><a href="#">Stem Cell Therapy</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>Medical Grade Skincare</h4>
+                                                <ul>
+                                                    <li><a href="#">SkinCeuticals</a></li>
+                                                    <li><a href="#">ZO Skin Health</a></li>
+                                                    <li><a href="#">Obagi</a></li>
+                                                    <li><a href="#">EltaMD</a></li>
+                                                    <li><a href="#">Custom Formulations</a></li>
+                                                    <li><a href="#">Shop Products</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li class="cta-btn"><a href="booking.html">Book Now</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Enhanced Hero Section with Parallax -->
+    <section class="hero-section parallax scroll-reveal">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-image" style="background-image: url('images/hero-1.jpg')"></div>
+                <div class="parallax-overlay"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <h1 class="hero-title">Discover Your Natural Beauty</h1>
+                        <p class="hero-subtitle">Experience premium medical spa treatments with personalized care</p>
+                        <div class="hero-buttons">
+                            <a href="booking.html" class="btn btn-primary">Book Consultation</a>
+                            <a href="services.html" class="btn btn-outline">View Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Procedures Section -->
+    <section class="feature-procedures">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Featured Procedures</h2>
+                <p>Discover our most popular and effective treatments</p>
+            </div>
+            <div class="procedures-grid">
+                <div class="procedure-card scroll-reveal">
+                    <div class="procedure-image">
+                        <img src="images/procedure-botox.jpg" alt="Botox Treatment">
+                        <div class="procedure-overlay"></div>
+                    </div>
+                    <div class="procedure-content">
+                        <h3 class="procedure-title">Botox & Neurotoxins</h3>
+                        <p class="procedure-description">Smooth fine lines and wrinkles with our expert injection techniques</p>
+                        <ul class="procedure-features">
+                            <li>FDA-approved treatments</li>
+                            <li>Natural-looking results</li>
+                            <li>Minimal downtime</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="procedure-card scroll-reveal">
+                    <div class="procedure-image">
+                        <img src="images/procedure-hydrafacial.jpg" alt="HydraFacial">
+                        <div class="procedure-overlay"></div>
+                    </div>
+                    <div class="procedure-content">
+                        <h3 class="procedure-title">HydraFacial MD</h3>
+                        <p class="procedure-description">Revolutionary skin resurfacing treatment for glowing skin</p>
+                        <ul class="procedure-features">
+                            <li>Deep cleansing & hydration</li>
+                            <li>Customizable serums</li>
+                            <li>Instant results</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="procedure-card scroll-reveal">
+                    <div class="procedure-image">
+                        <img src="images/procedure-coolsculpting.jpg" alt="CoolSculpting">
+                        <div class="procedure-overlay"></div>
+                    </div>
+                    <div class="procedure-content">
+                        <h3 class="procedure-title">CoolSculpting Elite</h3>
+                        <p class="procedure-description">Non-invasive fat reduction with proven results</p>
+                        <ul class="procedure-features">
+                            <li>FDA-cleared technology</li>
+                            <li>No surgery or downtime</li>
+                            <li>Permanent results</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview with Flexy Layout -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Our Premium Services</h2>
+                <p>Comprehensive medical spa treatments tailored to your unique needs</p>
+            </div>
+            <div class="services-grid flexy flexy-row">
+                <div class="service-card flexy-item scroll-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Facial Treatments</h3>
+                    <p>Advanced facial therapies including HydraFacial, microdermabrasion, and customized facials</p>
+                    <a href="services/facial-treatments.html" class="learn-more link-reveal">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card flexy-item scroll-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Injectables</h3>
+                    <p>Botox, dermal fillers, and advanced injection techniques for natural-looking results</p>
+                    <a href="services/injectables.html" class="learn-more link-reveal">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card flexy-item scroll-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Laser Treatments</h3>
+                    <p>State-of-the-art laser technology for hair removal, skin resurfacing, and more</p>
+                    <a href="services/laser-treatments.html" class="learn-more link-reveal">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card flexy-item scroll-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3>Body Contouring</h3>
+                    <p>Non-invasive body sculpting treatments including CoolSculpting and radiofrequency</p>
+                    <a href="services/body-contouring.html" class="learn-more link-reveal">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card flexy-item scroll-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Wellness Therapy</h3>
+                    <p>IV therapy, vitamin injections, and wellness treatments for optimal health</p>
+                    <a href="services/wellness.html" class="learn-more link-reveal">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card flexy-item scroll-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Medical Skincare</h3>
+                    <p>Professional-grade skincare products and customized treatment plans</p>
+                    <a href="services/skincare.html" class="learn-more link-reveal">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="image-gallery">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Before & After Gallery</h2>
+                <p>See the remarkable transformations from our treatments</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-reveal">
+                    <img src="images/gallery-1.jpg" alt="Treatment Result">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4 class="gallery-title">Botox Treatment</h4>
+                            <p class="gallery-category">Wrinkle Reduction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="images/gallery-2.jpg" alt="Treatment Result">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4 class="gallery-title">Dermal Fillers</h4>
+                            <p class="gallery-category">Volume Restoration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="images/gallery-3.jpg" alt="Treatment Result">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4 class="gallery-title">CoolSculpting</h4>
+                            <p class="gallery-category">Body Contouring</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="images/gallery-4.jpg" alt="Treatment Result">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4 class="gallery-title">HydraFacial</h4>
+                            <p class="gallery-category">Skin Rejuvenation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Testimonials with Swiper -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>What Our Clients Say</h2>
+                <p>Real results from real people</p>
+            </div>
+            <div class="testimonials-swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">"The staff at Beyond Medispa is incredible! They made me feel comfortable throughout my treatment, and the results exceeded my expectations. I couldn't be happier with my experience."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">
+                                        <img src="images/avatar-1.jpg" alt="Sarah M.">
+                                    </div>
+                                    <div class="testimonial-info">
+                                        <div class="testimonial-name">Sarah Mitchell</div>
+                                        <div class="testimonial-treatment">Botox & Dermal Fillers</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">"Professional, knowledgeable, and caring. The HydraFacial treatment transformed my skin! I've never received so many compliments on my complexion."</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">
+                                        <img src="images/avatar-2.jpg" alt="Jennifer L.">
+                                    </div>
+                                    <div class="testimonial-info">
+                                        <div class="testimonial-name">Jennifer Lopez</div>
+                                        <div class="testimonial-treatment">HydraFacial MD</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">"CoolSculpting at Beyond Medispa helped me achieve the body contouring results I've been dreaming of. The process was comfortable and the results are amazing!"</p>
+                                <div class="testimonial-author">
+                                    <div class="testimonial-avatar">
+                                        <img src="images/avatar-3.jpg" alt="Michael R.">
+                                    </div>
+                                    <div class="testimonial-info">
+                                        <div class="testimonial-name">Michael Roberts</div>
+                                        <div class="testimonial-treatment">CoolSculpting Elite</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section class="consultation-section">
+        <div class="container">
+            <div class="consultation-content">
+                <h2 class="consultation-title">Start Your Transformation Journey</h2>
+                <p class="consultation-subtitle">Book a complimentary consultation with our expert team</p>
+                <div class="consultation-features">
+                    <div class="consultation-feature">
+                        <div class="consultation-feature-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Expert Consultation</h4>
+                        <p>Meet with our certified practitioners</p>
+                    </div>
+                    <div class="consultation-feature">
+                        <div class="consultation-feature-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h4>Personalized Plan</h4>
+                        <p>Customized treatment recommendations</p>
+                    </div>
+                    <div class="consultation-feature">
+                        <div class="consultation-feature-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4>Clear Pricing</h4>
+                        <p>Transparent cost breakdown</p>
+                    </div>
+                    <div class="consultation-feature">
+                        <div class="consultation-feature-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h4>Flexible Scheduling</h4>
+                        <p>Convenient appointment times</p>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="booking.html" class="btn btn-primary btn-lg">Book Free Consultation</a>
+                    <a href="tel:5551234567" class="btn btn-outline btn-lg"><i class="fas fa-phone"></i> Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Ratings -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-ratings">
+                <div class="rating-item">
+                    <i class="fas fa-star"></i>
+                    <span class="rating-score">4.9</span>
+                    <span class="rating-platform">Google Reviews</span>
+                </div>
+                <div class="rating-item">
+                    <i class="fas fa-star"></i>
+                    <span class="rating-score">5.0</span>
+                    <span class="rating-platform">Facebook</span>
+                </div>
+                <div class="rating-item">
+                    <i class="fas fa-star"></i>
+                    <span class="rating-score">4.8</span>
+                    <span class="rating-platform">Yelp</span>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Beyond Medispa</h4>
+                    <p>Premier medical spa offering advanced aesthetic treatments with a focus on natural-looking results and patient satisfaction.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html" class="link-reveal">About Us</a></li>
+                        <li><a href="services.html" class="link-reveal">Services</a></li>
+                        <li><a href="gallery.html" class="link-reveal">Gallery</a></li>
+                        <li><a href="pricing.html" class="link-reveal">Pricing</a></li>
+                        <li><a href="contact.html" class="link-reveal">Contact</a></li>
+                        <li><a href="booking.html" class="link-reveal">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services/facial-treatments.html" class="link-reveal">Facial Treatments</a></li>
+                        <li><a href="services/injectables.html" class="link-reveal">Injectables</a></li>
+                        <li><a href="services/laser-treatments.html" class="link-reveal">Laser Treatments</a></li>
+                        <li><a href="services/body-contouring.html" class="link-reveal">Body Contouring</a></li>
+                        <li><a href="services/wellness.html" class="link-reveal">Wellness Therapy</a></li>
+                        <li><a href="services/skincare.html" class="link-reveal">Medical Skincare</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Downtown Location:</strong><br>
+                            123 Main Street, Suite 100<br>
+                            <span class="location-phone">(555) 123-4567</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Uptown Location:</strong><br>
+                            456 Oak Avenue, Suite 200<br>
+                            <span class="location-phone-2">(555) 987-6543</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@beyondmedispa.com">info@beyondmedispa.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beyond Medispa. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/enhancements.js"></script>
+</body>
+</html>

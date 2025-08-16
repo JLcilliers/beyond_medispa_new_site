@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Treatments - Beyond Medispa</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Location Selector Modal -->
+    <div id="locationModal" class="modal">
+        <div class="modal-content">
+            <h2>Select Your Location</h2>
+            <p>Choose your preferred Beyond Medispa location for personalized services and pricing</p>
+            <div class="location-options">
+                <button class="location-btn" data-location="location1">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Downtown Location</h3>
+                    <p>123 Main Street, Suite 100</p>
+                </button>
+                <button class="location-btn" data-location="location2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Uptown Location</h3>
+                    <p>456 Oak Avenue, Suite 200</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header (Same as homepage) -->
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> <span class="location-phone">(555) 123-4567</span></span>
+                        <span><i class="fas fa-envelope"></i> info@beyondmedispa.com</span>
+                    </div>
+                    <div class="location-switcher">
+                        <button id="locationSwitcher" class="location-switch-btn">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="current-location">Downtown</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <img src="../images/logo.png" alt="Beyond Medispa">
+                    </div>
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="active">Services <i class="fas fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="facial-treatments.html" class="active">Facial Treatments</a></li>
+                                    <li><a href="body-contouring.html">Body Contouring</a></li>
+                                    <li><a href="laser-treatments.html">Laser Treatments</a></li>
+                                    <li><a href="injectables.html">Injectables & Fillers</a></li>
+                                    <li><a href="wellness.html">Wellness & IV Therapy</a></li>
+                                    <li><a href="skincare.html">Medical Grade Skincare</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#treatments">Treatments <i class="fas fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../treatments/botox.html">Botox</a></li>
+                                    <li><a href="../treatments/dermal-fillers.html">Dermal Fillers</a></li>
+                                    <li><a href="../treatments/microneedling.html">Microneedling</a></li>
+                                    <li><a href="../treatments/chemical-peels.html">Chemical Peels</a></li>
+                                    <li><a href="../treatments/prp-therapy.html">PRP Therapy</a></li>
+                                    <li><a href="../treatments/coolsculpting.html">CoolSculpting</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a href="../gallery.html">Gallery</a></li>
+                            <li><a href="../pricing.html">Pricing</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                            <li class="cta-btn"><a href="../booking.html">Book Now</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Facial Treatments</h1>
+                <p>Advanced facial therapies for radiant, youthful skin</p>
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <a href="#">Services</a>
+                    <span>/</span>
+                    <span>Facial Treatments</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Introduction -->
+    <section class="service-intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Rejuvenate Your Skin with Expert Care</h2>
+                    <p>At Beyond Medispa, we offer a comprehensive range of facial treatments designed to address your unique skin concerns. Our experienced aestheticians use the latest technology and medical-grade products to deliver exceptional results.</p>
+                    <p>Whether you're looking to combat signs of aging, improve skin texture, or achieve a radiant glow, our customized facial treatments will help you reach your skincare goals.</p>
+                    <div class="intro-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Customized Treatment Plans</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Medical-Grade Products</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert Aestheticians</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Visible Results</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <img src="../images/facial-treatment-intro.jpg" alt="Facial Treatment">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Options -->
+    <section class="treatment-options">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Facial Treatment Options</h2>
+                <p>Choose from our selection of advanced facial treatments</p>
+            </div>
+            <div class="treatments-grid">
+                <div class="treatment-card">
+                    <div class="treatment-image">
+                        <img src="../images/hydrafacial.jpg" alt="HydraFacial">
+                        <div class="treatment-badge">Most Popular</div>
+                    </div>
+                    <div class="treatment-details">
+                        <h3>HydraFacial</h3>
+                        <p class="treatment-description">A revolutionary treatment that cleanses, extracts, and hydrates skin with super serums filled with antioxidants, peptides, and hyaluronic acid.</p>
+                        <div class="treatment-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>60 minutes</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>No downtime</span>
+                            </div>
+                        </div>
+                        <div class="treatment-price">
+                            <span class="price-label">Starting at</span>
+                            <span class="price-amount location-price" data-location1="$199" data-location2="$249">$199</span>
+                        </div>
+                        <a href="../treatments/hydrafacial.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-image">
+                        <img src="../images/microneedling.jpg" alt="Microneedling">
+                    </div>
+                    <div class="treatment-details">
+                        <h3>Microneedling</h3>
+                        <p class="treatment-description">Stimulate collagen production and improve skin texture with controlled micro-injuries that trigger your body's natural healing process.</p>
+                        <div class="treatment-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>45 minutes</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>1-2 days downtime</span>
+                            </div>
+                        </div>
+                        <div class="treatment-price">
+                            <span class="price-label">Starting at</span>
+                            <span class="price-amount location-price" data-location1="$350" data-location2="$425">$350</span>
+                        </div>
+                        <a href="../treatments/microneedling.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-image">
+                        <img src="../images/chemical-peel.jpg" alt="Chemical Peels">
+                    </div>
+                    <div class="treatment-details">
+                        <h3>Chemical Peels</h3>
+                        <p class="treatment-description">Reveal fresher, smoother skin by removing dead skin cells and stimulating new cell growth with medical-grade chemical solutions.</p>
+                        <div class="treatment-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>30-60 minutes</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>3-7 days peeling</span>
+                            </div>
+                        </div>
+                        <div class="treatment-price">
+                            <span class="price-label">Starting at</span>
+                            <span class="price-amount location-price" data-location1="$150" data-location2="$195">$150</span>
+                        </div>
+                        <a href="../treatments/chemical-peels.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-image">
+                        <img src="../images/dermaplaning.jpg" alt="Dermaplaning">
+                    </div>
+                    <div class="treatment-details">
+                        <h3>Dermaplaning</h3>
+                        <p class="treatment-description">Gently exfoliate the skin's surface to remove dead skin cells and peach fuzz, revealing smoother, brighter skin.</p>
+                        <div class="treatment-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>30 minutes</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>No downtime</span>
+                            </div>
+                        </div>
+                        <div class="treatment-price">
+                            <span class="price-label">Starting at</span>
+                            <span class="price-amount location-price" data-location1="$125" data-location2="$150">$125</span>
+                        </div>
+                        <a href="../treatments/dermaplaning.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-image">
+                        <img src="../images/custom-facial.jpg" alt="Custom Facial">
+                    </div>
+                    <div class="treatment-details">
+                        <h3>Custom Signature Facial</h3>
+                        <p class="treatment-description">A personalized facial treatment tailored to your specific skin type and concerns, combining multiple techniques for optimal results.</p>
+                        <div class="treatment-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>75 minutes</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>No downtime</span>
+                            </div>
+                        </div>
+                        <div class="treatment-price">
+                            <span class="price-label">Starting at</span>
+                            <span class="price-amount location-price" data-location1="$175" data-location2="$225">$175</span>
+                        </div>
+                        <a href="../treatments/custom-facial.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-image">
+                        <img src="../images/led-therapy.jpg" alt="LED Therapy">
+                    </div>
+                    <div class="treatment-details">
+                        <h3>LED Light Therapy</h3>
+                        <p class="treatment-description">Harness the power of different light wavelengths to treat acne, reduce inflammation, and stimulate collagen production.</p>
+                        <div class="treatment-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>30 minutes</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>No downtime</span>
+                            </div>
+                        </div>
+                        <div class="treatment-price">
+                            <span class="price-label">Starting at</span>
+                            <span class="price-amount location-price" data-location1="$95" data-location2="$120">$95</span>
+                        </div>
+                        <a href="../treatments/led-therapy.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Process -->
+    <section class="treatment-process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your Treatment Journey</h2>
+                <p>What to expect during your facial treatment experience</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Consultation</h3>
+                    <p>We begin with a thorough skin analysis and discuss your concerns and goals</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Customization</h3>
+                    <p>Your treatment is tailored to address your specific skin needs</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Treatment</h3>
+                    <p>Relax while our expert aestheticians perform your customized facial</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Aftercare</h3>
+                    <p>Receive personalized skincare recommendations and follow-up care instructions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How often should I get facial treatments?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For optimal results, we recommend facial treatments every 4-6 weeks. However, the frequency depends on your skin type, concerns, and the specific treatment. Our aestheticians will create a personalized treatment schedule during your consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are facial treatments safe for sensitive skin?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer treatments specifically designed for sensitive skin. During your consultation, we'll assess your skin sensitivity and customize treatments accordingly, using gentle products and techniques suitable for your skin type.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I wear makeup after a facial treatment?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>It depends on the treatment. For most gentle facials, you can apply makeup immediately. However, for more intensive treatments like chemical peels or microneedling, we recommend waiting 24-48 hours. Your aesthetician will provide specific aftercare instructions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What's the difference between medical-grade and spa facials?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Medical-grade facials use professional-strength products and advanced technology that penetrate deeper into the skin, delivering more dramatic results. They're performed by trained medical aestheticians and can address specific skin conditions more effectively than traditional spa facials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="service-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready for Radiant Skin?</h2>
+                <p>Schedule your personalized facial treatment consultation today</p>
+                <div class="cta-buttons">
+                    <a href="../booking.html" class="btn btn-primary btn-lg">Book Consultation</a>
+                    <a href="../contact.html" class="btn btn-outline btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as homepage) -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Beyond Medispa</h4>
+                    <p>Premier medical spa offering advanced aesthetic treatments with a focus on natural-looking results and patient satisfaction.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../pricing.html">Pricing</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../booking.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="facial-treatments.html">Facial Treatments</a></li>
+                        <li><a href="injectables.html">Injectables</a></li>
+                        <li><a href="laser-treatments.html">Laser Treatments</a></li>
+                        <li><a href="body-contouring.html">Body Contouring</a></li>
+                        <li><a href="wellness.html">Wellness Therapy</a></li>
+                        <li><a href="skincare.html">Medical Skincare</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Downtown Location:</strong><br>
+                            123 Main Street, Suite 100<br>
+                            <span class="location-phone">(555) 123-4567</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Uptown Location:</strong><br>
+                            456 Oak Avenue, Suite 200<br>
+                            <span class="location-phone-2">(555) 987-6543</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@beyondmedispa.com">info@beyondmedispa.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beyond Medispa. All rights reserved. | <a href="../privacy.html">Privacy Policy</a> | <a href="../terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/services.js"></script>
+</body>
+</html>

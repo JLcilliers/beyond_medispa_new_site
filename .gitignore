@@ -1,0 +1,41 @@
+# WordPress core files
+www.beyondmedispa.com/
+WordPress Code/
+
+# Year directories (old backups)
+2020/
+2021/
+2022/
+2023/
+2024/
+2025/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Claude files
+.claude/
+
+# Logs
+*.log
+error_log
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Node modules (if any)
+node_modules/
+
+# Environment files
+.env
+.env.local

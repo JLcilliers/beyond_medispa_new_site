@@ -1,0 +1,123 @@
+================================================================================
+FILEZILLA UPLOAD GUIDE FOR RTL FIX - BEYOND MEDISPA
+================================================================================
+
+FILES TO UPLOAD:
+----------------
+1. rtl-fix.css
+2. functions.php (UPDATED)
+
+================================================================================
+STEP-BY-STEP INSTRUCTIONS:
+================================================================================
+
+STEP 1: LOCATE THE FILES ON YOUR COMPUTER
+------------------------------------------
+The files are in this folder:
+C:\Users\johan\OneDrive\Desktop\Beyond Medispa Site\
+
+Files:
+- rtl-fix.css (location: www.beyondmedispa.com\wp-content\themes\onelife\css\)
+- functions.php (location: www.beyondmedispa.com\wp-content\themes\onelife\)
+
+================================================================================
+
+STEP 2: CONNECT TO YOUR SERVER WITH FILEZILLA
+----------------------------------------------
+1. Open FileZilla
+2. Connect to your server using your FTP credentials
+3. Navigate to your WordPress installation directory
+
+================================================================================
+
+STEP 3: UPLOAD THE RTL-FIX.CSS FILE
+------------------------------------
+LOCAL SIDE (Left panel in FileZilla):
+Navigate to: C:\Users\johan\OneDrive\Desktop\Beyond Medispa Site\www.beyondmedispa.com\wp-content\themes\onelife\css\
+
+REMOTE SIDE (Right panel in FileZilla):
+Navigate to: /public_html/wp-content/themes/onelife/css/
+(or /www/wp-content/themes/onelife/css/ depending on your server)
+
+ACTION:
+- Find "rtl-fix.css" in the local panel
+- Right-click and select "Upload"
+- The file will be uploaded to the server
+
+================================================================================
+
+STEP 4: BACKUP AND UPLOAD FUNCTIONS.PHP
+----------------------------------------
+IMPORTANT: BACKUP FIRST!
+
+REMOTE SIDE (Right panel in FileZilla):
+Navigate to: /public_html/wp-content/themes/onelife/
+
+BACKUP THE ORIGINAL:
+1. Find "functions.php" in the remote panel
+2. Right-click and select "Download"
+3. Save it as "functions-backup.php" on your computer
+
+UPLOAD THE NEW FILE:
+LOCAL SIDE (Left panel in FileZilla):
+Navigate to: C:\Users\johan\OneDrive\Desktop\Beyond Medispa Site\www.beyondmedispa.com\wp-content\themes\onelife\
+
+ACTION:
+- Find "functions.php" in the local panel
+- Right-click and select "Upload"
+- When asked to overwrite, click "Yes"
+
+================================================================================
+
+FILE LOCATIONS SUMMARY:
+-----------------------
+
+File 1: rtl-fix.css
+FROM: C:\Users\johan\OneDrive\Desktop\Beyond Medispa Site\www.beyondmedispa.com\wp-content\themes\onelife\css\rtl-fix.css
+TO:   /public_html/wp-content/themes/onelife/css/rtl-fix.css
+
+File 2: functions.php
+FROM: C:\Users\johan\OneDrive\Desktop\Beyond Medispa Site\www.beyondmedispa.com\wp-content\themes\onelife\functions.php
+TO:   /public_html/wp-content/themes/onelife/functions.php
+
+================================================================================
+
+AFTER UPLOAD CHECKLIST:
+------------------------
+1. ✓ rtl-fix.css uploaded to /wp-content/themes/onelife/css/
+2. ✓ functions.php backed up
+3. ✓ functions.php uploaded to /wp-content/themes/onelife/
+4. ✓ Clear your website cache (if you have caching plugin)
+5. ✓ Visit an Arabic page on your site
+6. ✓ Check if the layout is now correct (text right-aligned, columns right-to-left)
+
+================================================================================
+
+TESTING THE FIX:
+----------------
+1. Go to your website
+2. Navigate to any Arabic page
+3. The page should now display correctly with:
+   - Text aligned to the right
+   - Columns ordered from right to left
+   - Navigation menu properly aligned
+   - Forms with right-aligned text
+
+================================================================================
+
+IF SOMETHING GOES WRONG:
+-------------------------
+1. Upload the backup functions.php file you saved
+2. Delete the rtl-fix.css file from the server
+3. Contact support if needed
+
+================================================================================
+
+NOTES:
+------
+- The fix only affects Arabic pages, English pages remain unchanged
+- The fix works with the TranslatePress plugin
+- No database changes are needed
+- The changes are theme-specific and will need to be reapplied if you update the theme
+
+================================================================================
