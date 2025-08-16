@@ -1,0 +1,25 @@
+# GitHub Pages Configuration
+title: Beyond MediSpa
+description: Premium Aesthetic Treatments in London & Edinburgh
+baseurl: ""
+url: "https://jlcilliers.github.io/beyond_medispa_new_site"
+
+# Build settings
+markdown: kramdown
+
+# Exclude files from build
+exclude:
+  - README.md
+  - DESIGN-*.md
+  - HOW-TO-COMMUNICATE-DESIGN.md
+  - GITHUB-UPLOAD-INSTRUCTIONS.md
+  - FILEZILLA-UPLOAD-GUIDE.txt
+  - .gitignore
+  - WordPress Code/
+  - www.beyondmedispa.com/
+  - images/2020/
+  - images/2021/
+  - images/2022/
+  - images/2023/
+  - images/2024/
+  - images/2025/
