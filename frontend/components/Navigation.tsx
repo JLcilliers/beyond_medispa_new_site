@@ -169,7 +169,7 @@ export default function Navigation() {
                             onClick={() => {
                               handleNavigation(category.route)
                             }}
-                            className="block text-[#F8D794] font-semibold text-sm hover:text-black transition-colors mb-2"
+                            className="block text-black font-bold text-sm hover:text-[#F8D794] transition-colors mb-2"
                           >
                             {category.title}
                           </button>
@@ -204,7 +204,7 @@ export default function Navigation() {
                           onClick={() => {
                             handleNavigation(subItem.route)
                           }}
-                          className="block w-full text-left px-4 py-2 text-white hover:text-[#F8D794] hover:bg-[#284139]/30 transition-colors text-sm"
+                          className="block w-full text-left px-4 py-2 text-black hover:text-[#F8D794] hover:bg-[#284139]/30 transition-colors text-sm"
                         >
                           {subItem.name}
                         </button>
