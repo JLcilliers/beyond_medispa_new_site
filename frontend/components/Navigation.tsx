@@ -128,7 +128,7 @@ const handleNavigation = (route: string) => {
 
 export default function Navigation() {
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm">
+    <nav className="absolute top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <button 
@@ -151,13 +151,13 @@ export default function Navigation() {
                 {item.type === 'single' ? (
                   <button 
                     onClick={() => handleNavigation(item.route!)}
-                    className="text-black hover:text-[#F8D794] transition-colors text-sm py-2"
+                    className="text-white hover:text-[#F8D794] transition-colors text-sm py-2"
                   >
                     {item.name}
                   </button>
                 ) : item.type === 'mega-dropdown' ? (
                   <div>
-                    <button className="flex items-center text-black hover:text-[#F8D794] transition-colors text-sm py-2">
+                    <button className="flex items-center text-white hover:text-[#F8D794] transition-colors text-sm py-2">
                       {item.name}
                       <ChevronDown className="w-4 h-4 ml-1" />
                     </button>
@@ -192,7 +192,7 @@ export default function Navigation() {
                   </div>
                 ) : (
                   <div>
-                    <button className="flex items-center text-black hover:text-[#F8D794] transition-colors text-sm py-2">
+                    <button className="flex items-center text-white hover:text-[#F8D794] transition-colors text-sm py-2">
                       {item.name}
                       <ChevronDown className="w-4 h-4 ml-1" />
                     </button>
