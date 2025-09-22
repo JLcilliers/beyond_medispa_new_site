@@ -4,5 +4,6 @@ export default defineConfig({
   test: {
     environment: 'node',
     globals: true,
+    include: ['**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
   },
 });
