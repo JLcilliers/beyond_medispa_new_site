@@ -8,7 +8,6 @@ const locations = [
     phone: "+44 (20) 7123 4567",
     hours: "Monday - Friday: 9:00 - 18:00\nSaturday: 9:00 - 17:00\nSunday: Closed",
     parking: "Street parking available",
-    image: "/api/placeholder/600/400",
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.628183492772!2d-0.1624627224548056!3d51.50169031111937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605397680ad09%3A0x68bb8e672eb273a1!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20MediSpa!5e0!3m2!1sen!2sza!4v1758541805476!5m2!1sen!2sza"
   },
   {
@@ -18,7 +17,6 @@ const locations = [
     phone: "+44 (131) 123 4567",
     hours: "Monday - Friday: 9:00 - 18:00\nSaturday: 9:00 - 16:00\nSunday: Closed",
     parking: "Nearby parking available",
-    image: "/api/placeholder/600/400",
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.678446141864!2d-3.194440922303394!3d55.954944976402295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766ac0abf29af5%3A0xe8c125ae82237941!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20Medispa!5e0!3m2!1sen!2sza!4v1758541860806!5m2!1sen!2sza"
   }
 ]
@@ -112,22 +110,9 @@ export default function Locations() {
                 </div>
               </div>
               
-              {/* Map & Image */}
-              <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                {/* Clinic Image */}
-                <div className="relative">
-                  <img 
-                    src={location.image} 
-                    alt={`Beyond MediSpa ${location.city}`}
-                    className="w-full h-64 object-cover rounded-2xl shadow-lg"
-                  />
-                  <div className="absolute top-4 left-4 bg-[#A38E78] bg-opacity-90 backdrop-blur-sm px-4 py-2 rounded-full">
-                    <span className="text-white font-medium">{location.city}</span>
-                  </div>
-                </div>
-                
-                {/* Google Maps Embed */}
-                <div className="relative h-64 rounded-2xl overflow-hidden">
+              {/* Google Maps Embed */}
+              <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
+                <div className="relative h-80 rounded-2xl overflow-hidden">
                   <iframe 
                     src={location.mapEmbed}
                     width="100%" 

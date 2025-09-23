@@ -11,7 +11,7 @@ const locations = [
     address: "123 Harley Street, London W1G 6BA",
     phone: "+44 (20) 7123 4567",
     email: "london@magispa.co.uk",
-    image: "/api/placeholder/600/400",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.628183492772!2d-0.1624627224548056!3d51.50169031111937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605397680ad09%3A0x68bb8e672eb273a1!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20MediSpa!5e0!3m2!1sen!2sza!4v1758541805476!5m2!1sen!2sza",
     description: "Our flagship clinic in the heart of London's medical district, offering the full range of aesthetic treatments in a luxurious setting.",
     features: [
       "10 treatment rooms",
@@ -33,7 +33,7 @@ const locations = [
     address: "45 George Street, Edinburgh EH2 2HT",
     phone: "+44 (131) 456 7890",
     email: "edinburgh@magispa.co.uk",
-    image: "/api/placeholder/600/400",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.678446141864!2d-3.194440922303394!3d55.954944976402295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766ac0abf29af5%3A0xe8c125ae82237941!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20Medispa!5e0!3m2!1sen!2sza!4v1758541860806!5m2!1sen!2sza",
     description: "Located in Edinburgh's prestigious New Town, our Scottish clinic combines traditional elegance with modern aesthetic medicine.",
     features: [
       "8 treatment rooms",
@@ -206,11 +206,18 @@ export default function LocationsPage() {
                 </div>
                 
                 <div className={index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>
-                  <img 
-                    src={location.image} 
-                    alt={`${location.city} clinic`}
-                    className="rounded-3xl shadow-2xl w-full"
-                  />
+                  <div className="relative h-80 rounded-2xl overflow-hidden">
+                    <iframe 
+                      src={location.mapEmbed}
+                      width="100%" 
+                      height="100%" 
+                      style={{border: 0}} 
+                      allowFullScreen 
+                      loading="lazy" 
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="w-full h-full"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
