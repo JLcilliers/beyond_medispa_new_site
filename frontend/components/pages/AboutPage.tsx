@@ -98,20 +98,10 @@ export default function AboutPage() {
                   Our commitment to excellence and innovation has made us the trusted 
                   choice for thousands of clients across London and Edinburgh.
                 </p>
-                <div className="flex items-center space-x-8">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-[#C6A77D]">2008</div>
-                    <div className="text-sm text-white/70">Founded</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-[#C6A77D]">2</div>
-                    <div className="text-sm text-white/70">Locations</div>
-                  </div>
-                </div>
               </div>
               <div className="relative">
                 <img 
-                  src="/api/placeholder/600/500" 
+                  src="https://i.ibb.co/FkqZrcR1/Gemini-Generated-Image-w7zyv8w7zyv8w7zy.png" 
                   alt="Beyond MediSpa clinic interior"
                   className="rounded-3xl shadow-2xl"
                 />
