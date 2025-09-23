@@ -213,6 +213,74 @@ export default function ContactPage() {
           </div>
         </section>
 
+        {/* Maps Section */}
+        <section className="py-20 bg-[#F8D794]/10">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-light text-[#111A19] mb-6">
+                Find Our <span className="text-[#284139]">Locations</span>
+              </h2>
+              <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+                Easily locate our clinics in London and Edinburgh using the interactive maps below.
+              </p>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* London Map */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg">
+                <h3 className="text-2xl font-semibold text-[#111A19] mb-4">London - Harley Street</h3>
+                <div className="relative h-80 rounded-xl overflow-hidden mb-4">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.628183492772!2d-0.1624627224548056!3d51.50169031111937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605397680ad09%3A0x68bb8e672eb273a1!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20MediSpa!5e0!3m2!1sen!2sza!4v1758541805476!5m2!1sen!2sza"
+                    width="100%" 
+                    height="100%" 
+                    style={{border: 0}} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-full"
+                  />
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-gray-700 text-sm">123 Harley Street, London W1G 6BA</p>
+                    <p className="text-[#284139] font-medium">+44 (20) 7123 4567</p>
+                  </div>
+                  <Button size="sm" className="bg-[#284139] hover:bg-[#111A19] text-white">
+                    Get Directions
+                  </Button>
+                </div>
+              </div>
+
+              {/* Edinburgh Map */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg">
+                <h3 className="text-2xl font-semibold text-[#111A19] mb-4">Edinburgh - George Street</h3>
+                <div className="relative h-80 rounded-xl overflow-hidden mb-4">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.678446141864!2d-3.194440922303394!3d55.954944976402295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766ac0abf29af5%3A0xe8c125ae82237941!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20Medispa!5e0!3m2!1sen!2sza!4v1758541860806!5m2!1sen!2sza"
+                    width="100%" 
+                    height="100%" 
+                    style={{border: 0}} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-full"
+                  />
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-gray-700 text-sm">45 George Street, Edinburgh EH2 2HT</p>
+                    <p className="text-[#284139] font-medium">+44 (131) 456 7890</p>
+                  </div>
+                  <Button size="sm" className="bg-[#284139] hover:bg-[#111A19] text-white">
+                    Get Directions
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Quick Contact */}
         <section className="py-20 bg-[#284139] text-white">
           <div className="container mx-auto px-4 text-center">
