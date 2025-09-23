@@ -1,89 +1,33 @@
-import Navigation from '../../../Navigation'
-import RussianFooter from '../../../RussianFooter'
-import TestimonialsSection from '../../../TestimonialsSection'
-import SpaWelcome from '../../../SpaWelcome'
-import ExpertiseSection from '../../../ExpertiseSection'
-import ProfessionalProductsSection from '../../../ProfessionalProductsSection'
-import TreatmentJourney from '../../../TreatmentJourney'
-import PromotionsSection from '../../../PromotionsSection'
-import BeautySection from '../../../BeautySection'
-import Locations from '../../../Locations'
-import FAQSection from '../../../FAQSection'
-import { Button } from '@/components/ui/button'
-
-const handleNavigation = (route: string) => {
-  if ((window as any).navigateTo) {
-    (window as any).navigateTo(route)
-  }
-}
+import ProcedurePageTemplate from '../../../ProcedurePageTemplate'
 
 export default function AntiAgeingTreatmentsPage() {
+  const heroProps = {
+    tagline: "TIMELESS BEAUTY",
+    title: "Invest in Your Youth with",
+    subtitle: "Aesthetic Lab",
+    description: "Turn back time with our comprehensive anti-aging treatments designed to restore your youthful radiance and vitality.",
+    buttonText: "BOOK CONSULTATION"
+  }
+
+  const treatmentInfo = {
+    duration: "45-90 minutes",
+    results: "2-4 weeks",
+    price: "From £250",
+    benefits: [
+      "Reduced signs of aging",
+      "Improved skin elasticity",
+      "Enhanced radiance",
+      "Comprehensive approach",
+      "Customized treatments",
+      "Long-lasting results"
+    ]
+  }
+
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
-      
-      <div className="pt-20">
-        {/* Hero Section */}
-        <section className="relative min-h-screen bg-gradient-to-br from-[#111A19] to-[#284139] text-white overflow-hidden">
-          <div className="absolute inset-0">
-            <img 
-              src="/api/placeholder/1920/1080" 
-              alt="Anti-ageing treatments"
-              className="w-full h-full object-cover opacity-60"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#111A19]/80 to-transparent"></div>
-          </div>
-          
-          <div className="relative container mx-auto px-4 py-32 flex items-center min-h-screen">
-            <div className="max-w-2xl">
-              <p className="text-[#F8D794] text-lg mb-4 tracking-wider">DISCOVER TIMELESS BEAUTY</p>
-              <h1 className="text-5xl lg:text-7xl font-light leading-tight mb-8">
-                Invest in Your Skin with<br />
-                <span className="text-[#F8D794]">Aesthetic Lab</span>
-              </h1>
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-lg">
-                Experience the pinnacle of anti-ageing treatments with our comprehensive approach 
-                to facial rejuvenation and skin restoration.
-              </p>
-              <Button 
-                onClick={() => handleNavigation('book-treatment')}
-                className="bg-transparent border-2 border-[#F8D794] text-[#F8D794] hover:bg-[#F8D794] hover:text-[#111A19] px-8 py-4 text-lg font-light tracking-wide transition-all duration-300"
-              >
-                BOOK CONSULTATION
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonials Section */}
-        <TestimonialsSection />
-
-        {/* Spa Welcome Section */}
-        <SpaWelcome />
-
-        {/* Expertise Section */}
-        <ExpertiseSection />
-
-        {/* Professional Products Section */}
-        <ProfessionalProductsSection />
-
-        {/* Treatment Journey Section */}
-        <TreatmentJourney />
-
-        {/* Special Offers Section */}
-        <PromotionsSection />
-
-        {/* Beauty Section */}
-        <BeautySection />
-
-        {/* Locations Section */}
-        <Locations />
-
-        {/* FAQ Section */}
-        <FAQSection />
-      </div>
-      
-      <RussianFooter />
-    </div>
+    <ProcedurePageTemplate 
+      hero={heroProps}
+      treatmentInfo={treatmentInfo}
+      showStandardSections={true}
+    />
   )
 }
