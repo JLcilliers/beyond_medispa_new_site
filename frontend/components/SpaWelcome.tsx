@@ -1,60 +1,107 @@
 import { Button } from '@/components/ui/button'
-import { Sparkles, Award, Clock } from 'lucide-react'
+import { Heart, Star, Users } from 'lucide-react'
 
 export default function SpaWelcome() {
+  const handleNavigation = (route: string) => {
+    if ((window as any).navigateTo) {
+      (window as any).navigateTo(route)
+    }
+  }
+
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[#F8F9FA]">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Side - Image */}
           <div className="relative">
-            <img 
-              src="/api/placeholder/600/500" 
-              alt="Spa center interior"
-              className="rounded-2xl shadow-2xl"
-            />
-          </div>
-          
-          <div>
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
-              Bun venit la <br />
-              <span className="text-[#284139]">Aesthetic Lab</span>
-            </h2>
-            
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              La Aesthetic Lab, combinăm tehnologia de ultimă generație cu expertiza medicală pentru 
-              a vă oferi tratamente estetice sigure și eficiente. Fiecare client primește o atenție 
-              personalizată și un plan de tratament adaptat nevoilor sale specifice.
-            </p>
-            
-            <div className="grid sm:grid-cols-3 gap-6 mb-8">
-              <div className="text-center">
-                <div className="bg-[#80907E]/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Sparkles className="w-8 h-8 text-[#284139]" />
-                </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Tehnologie Avansată</h4>
-                <p className="text-gray-600 text-sm">Echipamente de ultimă generație</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-[#80907E]/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Award className="w-8 h-8 text-[#284139]" />
-                </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Medici Certificați</h4>
-                <p className="text-gray-600 text-sm">Experiență și profesionalism</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-[#80907E]/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Clock className="w-8 h-8 text-[#284139]" />
-                </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Rezultate Rapide</h4>
-                <p className="text-gray-600 text-sm">Efecte vizibile imediat</p>
-              </div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img 
+                src="/api/placeholder/600/700" 
+                alt="Welcome to Spa Center"
+                className="w-full h-[600px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
             
-            <Button size="lg" className="bg-[#F8D794] hover:bg-[#F8D794] text-black px-8 py-4 hover:opacity-90">
-              Despre Noi
-            </Button>
+            {/* Stats overlay */}
+            <div className="absolute -bottom-8 -right-8 bg-white rounded-2xl p-6 shadow-xl">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-[#111A19] mb-1">98%</div>
+                <div className="text-sm text-gray-600">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side - Content */}
+          <div>
+            <div className="mb-8">
+              <h2 className="text-4xl lg:text-5xl font-light text-[#111A19] mb-6 leading-tight">
+                Welcome to <span className="text-[#284139]">Spa Center</span>
+              </h2>
+              <div className="w-20 h-1 bg-[#F8D794] mb-6"></div>
+            </div>
+
+            <p className="text-xl text-gray-700 leading-relaxed mb-8">
+              Experience the ultimate in aesthetic wellness at our state-of-the-art spa center. 
+              Our expert team combines advanced medical techniques with luxurious spa treatments 
+              to deliver transformative results in a serene, welcoming environment.
+            </p>
+
+            <div className="space-y-6 mb-10">
+              <div className="flex items-start space-x-4">
+                <div className="bg-[#284139]/10 p-3 rounded-full">
+                  <Heart className="w-6 h-6 text-[#284139]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-[#111A19] mb-2">Personalized Care</h3>
+                  <p className="text-gray-600">
+                    Every treatment is customized to your unique needs and aesthetic goals
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="bg-[#284139]/10 p-3 rounded-full">
+                  <Star className="w-6 h-6 text-[#284139]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-[#111A19] mb-2">Expert Practitioners</h3>
+                  <p className="text-gray-600">
+                    Highly qualified medical professionals with years of aesthetic experience
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="bg-[#284139]/10 p-3 rounded-full">
+                  <Users className="w-6 h-6 text-[#284139]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-[#111A19] mb-2">Trusted by Thousands</h3>
+                  <p className="text-gray-600">
+                    Over 1000+ satisfied clients across our London and Edinburgh locations
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                size="lg"
+                onClick={() => handleNavigation('book-treatment')}
+                className="bg-[#284139] hover:bg-[#111A19] text-white px-8 py-4"
+              >
+                Book Consultation
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => handleNavigation('about')}
+                className="border-[#284139] text-[#284139] hover:bg-[#284139] hover:text-white px-8 py-4"
+              >
+                Learn More
+              </Button>
+            </div>
           </div>
         </div>
       </div>
