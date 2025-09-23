@@ -163,47 +163,37 @@ export default function ContactPage() {
                 
                 {locations.map((location, index) => (
                   <div key={index} className="bg-[#F8D794]/10 rounded-2xl p-8">
-                    <div className="grid md:grid-cols-2 gap-6 items-center">
-                      <div>
-                        <h3 className="text-2xl font-semibold text-[#111A19] mb-4">{location.city}</h3>
-                        <div className="space-y-3">
-                          <div className="flex items-start">
-                            <MapPin className="w-5 h-5 text-[#284139] mr-3 mt-1" />
-                            <p className="text-gray-700">{location.address}</p>
-                          </div>
-                          <div className="flex items-center">
-                            <Phone className="w-5 h-5 text-[#284139] mr-3" />
-                            <p className="text-gray-700">{location.phone}</p>
-                          </div>
-                          <div className="flex items-center">
-                            <Mail className="w-5 h-5 text-[#284139] mr-3" />
-                            <p className="text-gray-700">{location.email}</p>
-                          </div>
+                    <div>
+                      <h3 className="text-2xl font-semibold text-[#111A19] mb-4">{location.city}</h3>
+                      <div className="space-y-3">
+                        <div className="flex items-start">
+                          <MapPin className="w-5 h-5 text-[#284139] mr-3 mt-1" />
+                          <p className="text-gray-700">{location.address}</p>
                         </div>
-                        
-                        <div className="flex space-x-3 mt-6">
-                          <Button 
-                            size="sm" 
-                            className="bg-[#284139] hover:bg-[#111A19] text-white"
-                          >
-                            Get Directions
-                          </Button>
-                          <Button 
-                            size="sm" 
-                            variant="outline"
-                            className="border-[#284139] text-[#284139] hover:bg-[#284139] hover:text-white"
-                          >
-                            Book Now
-                          </Button>
+                        <div className="flex items-center">
+                          <Phone className="w-5 h-5 text-[#284139] mr-3" />
+                          <p className="text-gray-700">{location.phone}</p>
+                        </div>
+                        <div className="flex items-center">
+                          <Mail className="w-5 h-5 text-[#284139] mr-3" />
+                          <p className="text-gray-700">{location.email}</p>
                         </div>
                       </div>
                       
-                      <div>
-                        <img 
-                          src={location.image} 
-                          alt={`${location.city} clinic`}
-                          className="rounded-xl shadow-lg w-full h-48 object-cover"
-                        />
+                      <div className="flex space-x-3 mt-6">
+                        <Button 
+                          size="sm" 
+                          className="bg-[#284139] hover:bg-[#111A19] text-white"
+                        >
+                          Get Directions
+                        </Button>
+                        <Button 
+                          size="sm" 
+                          variant="outline"
+                          className="border-[#284139] text-[#284139] hover:bg-[#284139] hover:text-white"
+                        >
+                          Book Now
+                        </Button>
                       </div>
                     </div>
                   </div>
