@@ -85,34 +85,34 @@ export default function AboutPage() {
       
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-[#111A19] via-[#284139] to-[#111A19] text-white">
+        <section className="py-20 bg-gradient-to-br from-[#2C2C2C] via-[#333333] to-[#2C2C2C] text-white">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
                 <h1 className="text-5xl lg:text-6xl font-light mb-6">
-                  About <span className="text-[#F8D794]">MagiSpa</span>
+                  About <span className="text-[#C6A77D]">Beyond MediSpa</span>
                 </h1>
-                <p className="text-xl text-gray-300 leading-relaxed mb-8">
+                <p className="text-xl text-white/90 leading-relaxed mb-8">
                   Founded with a vision to provide world-class aesthetic treatments, 
-                  MagiSpa has become a leading destination for beauty and wellness. 
+                  Beyond MediSpa has become a leading destination for beauty and wellness. 
                   Our commitment to excellence and innovation has made us the trusted 
                   choice for thousands of clients across London and Edinburgh.
                 </p>
                 <div className="flex items-center space-x-8">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-[#F8D794]">2008</div>
-                    <div className="text-sm text-gray-400">Founded</div>
+                    <div className="text-3xl font-bold text-[#C6A77D]">2008</div>
+                    <div className="text-sm text-white/70">Founded</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-[#F8D794]">2</div>
-                    <div className="text-sm text-gray-400">Locations</div>
+                    <div className="text-3xl font-bold text-[#C6A77D]">2</div>
+                    <div className="text-sm text-white/70">Locations</div>
                   </div>
                 </div>
               </div>
               <div className="relative">
                 <img 
                   src="/api/placeholder/600/500" 
-                  alt="MagiSpa clinic interior"
+                  alt="Beyond MediSpa clinic interior"
                   className="rounded-3xl shadow-2xl"
                 />
               </div>
@@ -121,16 +121,16 @@ export default function AboutPage() {
         </section>
 
         {/* Stats Section */}
-        <section className="py-20 bg-[#F8D794]/10">
+        <section className="py-20 bg-gradient-to-br from-[#FAF8F5] via-[#FFFFFF] to-[#F5F1EC]">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="bg-[#284139] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <stat.icon className="w-10 h-10 text-[#F8D794]" />
+                  <div className="bg-[#A38E78] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <stat.icon className="w-10 h-10 text-white" />
                   </div>
-                  <div className="text-4xl font-bold text-[#111A19] mb-2">{stat.number}</div>
-                  <div className="text-gray-600">{stat.label}</div>
+                  <div className="text-4xl font-bold text-[#333333] mb-2">{stat.number}</div>
+                  <div className="text-[#777777]">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -141,11 +141,11 @@ export default function AboutPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-light text-[#111A19] mb-8">
-                Our <span className="text-[#284139]">Mission</span>
+              <h2 className="text-4xl font-light text-[#333333] mb-8">
+                Our <span className="text-[#A38E78]">Mission</span>
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-12">
-                At MagiSpa, we believe that everyone deserves to feel confident and beautiful. 
+              <p className="text-lg text-[#777777] leading-relaxed mb-12">
+                At Beyond MediSpa, we believe that everyone deserves to feel confident and beautiful. 
                 Our mission is to provide exceptional aesthetic treatments using the latest 
                 technology and techniques, delivered by highly skilled professionals in a 
                 luxurious and welcoming environment.
@@ -153,27 +153,27 @@ export default function AboutPage() {
               
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="bg-[#284139] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Award className="w-8 h-8 text-[#F8D794]" />
+                  <div className="bg-[#A38E78] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Award className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-[#111A19] mb-3">Excellence</h3>
-                  <p className="text-gray-600">We maintain the highest standards in all our treatments and services.</p>
+                  <h3 className="text-xl font-semibold text-[#333333] mb-3">Excellence</h3>
+                  <p className="text-[#777777]">We maintain the highest standards in all our treatments and services.</p>
                 </div>
                 
                 <div className="text-center">
-                  <div className="bg-[#284139] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Heart className="w-8 h-8 text-[#F8D794]" />
+                  <div className="bg-[#A38E78] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Heart className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-[#111A19] mb-3">Care</h3>
-                  <p className="text-gray-600">Every client receives personalized attention and care tailored to their needs.</p>
+                  <h3 className="text-xl font-semibold text-[#333333] mb-3">Care</h3>
+                  <p className="text-[#777777]">Every client receives personalized attention and care tailored to their needs.</p>
                 </div>
                 
                 <div className="text-center">
-                  <div className="bg-[#284139] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Sparkles className="w-8 h-8 text-[#F8D794]" />
+                  <div className="bg-[#A38E78] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Sparkles className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-[#111A19] mb-3">Innovation</h3>
-                  <p className="text-gray-600">We use cutting-edge technology and stay updated with the latest techniques.</p>
+                  <h3 className="text-xl font-semibold text-[#333333] mb-3">Innovation</h3>
+                  <p className="text-[#777777]">We use cutting-edge technology and stay updated with the latest techniques.</p>
                 </div>
               </div>
             </div>
@@ -181,13 +181,13 @@ export default function AboutPage() {
         </section>
 
         {/* Team Section */}
-        <section className="py-20 bg-[#284139] text-white">
+        <section className="py-20 bg-gradient-to-br from-[#FAF8F5] via-[#FFFFFF] to-[#F5F1EC]">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-light mb-4">
-                Meet Our <span className="text-[#F8D794]">Expert Team</span>
+              <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
+                Meet Our <span className="text-[#A38E78]">Expert Team</span>
               </h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              <p className="text-xl text-[#777777] max-w-3xl mx-auto">
                 Our highly qualified doctors and practitioners combine medical expertise with artistic vision 
                 to deliver exceptional results in a safe, professional environment.
               </p>
@@ -197,7 +197,7 @@ export default function AboutPage() {
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
-                  className="bg-[#111A19]/80 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group"
+                  className="bg-white/90 border border-[#E5E5E5] rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group shadow-lg"
                 >
                   <div className="aspect-[3/4] overflow-hidden">
                     <img
@@ -208,12 +208,12 @@ export default function AboutPage() {
                   </div>
                   <div className="p-6">
                     <div className="mb-2">
-                      <span className="text-xs text-[#F8D794] font-medium uppercase tracking-wider">
+                      <span className="text-xs text-[#A38E78] font-medium uppercase tracking-wider">
                         {member.role}
                       </span>
                     </div>
-                    <h3 className="text-xl font-semibold text-white mb-3">{member.name}</h3>
-                    <p className="text-gray-300 text-sm leading-relaxed">{member.description}</p>
+                    <h3 className="text-xl font-semibold text-[#333333] mb-3">{member.name}</h3>
+                    <p className="text-[#777777] text-sm leading-relaxed">{member.description}</p>
                   </div>
                 </div>
               ))}
