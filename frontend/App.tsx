@@ -124,9 +124,6 @@ export default function App() {
   useEffect(() => {
     // Make navigation function globally available
     (window as any).navigateTo = setCurrentPage
-    
-    // Establish backend connection
-    backend.web.health().catch(console.error)
   }, [])
   
   const CurrentPageComponent = routes[currentPage as keyof typeof routes] || Homepage

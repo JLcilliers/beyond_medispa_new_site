@@ -33,7 +33,6 @@ const BROWSER = typeof globalThis === "object" && ("window" in globalThis);
  * Client is an API client for the  Encore application.
  */
 export class Client {
-    public readonly web: web.ServiceClient
     private readonly options: ClientOptions
     private readonly target: string
 
@@ -48,7 +47,6 @@ export class Client {
         this.target = target
         this.options = options ?? {}
         const base = new BaseClient(this.target, this.options)
-        this.web = new web.ServiceClient(base)
     }
 
     /**
@@ -77,29 +75,6 @@ export interface ClientOptions {
 
     /** Default RequestInit to be used for the client */
     requestInit?: Omit<RequestInit, "headers"> & { headers?: Record<string, string> }
-}
-
-/**
- * Import the endpoint handlers to derive the types for the client.
- */
-import { health as api_web_health_health } from "~backend/web/health";
-
-export namespace web {
-
-    export class ServiceClient {
-        private baseClient: BaseClient
-
-        constructor(baseClient: BaseClient) {
-            this.baseClient = baseClient
-            this.health = this.health.bind(this)
-        }
-
-        public async health(): Promise<ResponseType<typeof api_web_health_health>> {
-            // Now make the actual call to the API
-            const resp = await this.baseClient.callTypedAPI(`/health`, {method: "GET", body: undefined})
-            return JSON.parse(await resp.text(), dateReviver) as ResponseType<typeof api_web_health_health>
-        }
-    }
 }
 
 
