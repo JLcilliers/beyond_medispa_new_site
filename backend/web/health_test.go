@@ -1,11 +1,12 @@
 package web
 
 import (
+	"context"
 	"testing"
 )
 
 func TestHealth(t *testing.T) {
-	resp, err := Health()
+	resp, err := Health(context.Background())
 	if err != nil {
 		t.Fatalf("Health() failed: %v", err)
 	}
