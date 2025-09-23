@@ -12,7 +12,8 @@ export default function MeditationSpaDay() {
             <img 
               src="https://www.beyondmedispa.com/wp-content/uploads/2025/08/cosmetologist-applying-cream-on-female-face-with-b-2025-04-19-20-19-52-utc-scaled.jpg" 
               alt="Aesthetic treatment experience"
-              className="rounded-3xl shadow-2xl w-full"
+              className="rounded-3xl shadow-2xl w-full h-96 object-cover"
+              loading="lazy"
             />
           </div>
           
