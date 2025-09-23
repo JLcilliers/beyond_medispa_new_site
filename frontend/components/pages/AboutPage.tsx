@@ -101,7 +101,7 @@ export default function AboutPage() {
               </div>
               <div className="relative">
                 <img 
-                  src="https://i.ibb.co/FkqZrcR1/Gemini-Generated-Image-w7zyv8w7zyv8w7zy.png" 
+                  src="https://www.beyondmedispa.com/wp-content/uploads/2025/09/Gemini_Generated_Image_w7zyv8w7zyv8w7zy.png" 
                   alt="Beyond MediSpa clinic interior"
                   className="rounded-3xl shadow-2xl"
                 />
