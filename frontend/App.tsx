@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import backend from '~backend/client'
+import './global-styles.css'
 import Homepage from './components/Homepage'
 import AboutPage from './components/pages/AboutPage'
 import ContactPage from './components/pages/ContactPage'
