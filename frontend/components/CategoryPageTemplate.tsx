@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Clock } from 'lucide-react'
 
 const handleNavigation = (route: string) => {
-  if ((window as any).navigateTo) {
+  if (window.navigateTo) {
     (window as any).navigateTo(route)
   }
 }

@@ -30,7 +30,7 @@ const promotions = [
 
 export default function PromotionsSection() {
   const handleNavigation = (route: string) => {
-    if ((window as any).navigateTo) {
+    if (window.navigateTo) {
       (window as any).navigateTo(route)
     }
   }

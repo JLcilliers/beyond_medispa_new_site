@@ -12,7 +12,7 @@ import FAQSection from './FAQSection'
 import { Button } from '@/components/ui/button'
 
 const handleNavigation = (route: string) => {
-  if ((window as any).navigateTo) {
+  if (window.navigateTo) {
     (window as any).navigateTo(route)
   }
 }

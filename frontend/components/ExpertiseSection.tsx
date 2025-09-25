@@ -3,7 +3,7 @@ import { Award, Clock, Shield, Sparkles } from 'lucide-react'
 
 export default function ExpertiseSection() {
   const handleNavigation = (route: string) => {
-    if ((window as any).navigateTo) {
+    if (window.navigateTo) {
       (window as any).navigateTo(route)
     }
   }

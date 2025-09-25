@@ -31,8 +31,8 @@ export default function Hero() {
             <Button 
               size="lg" 
               onClick={() => {
-                if ((window as any).navigateTo) {
-                  (window as any).navigateTo('book-treatment')
+                if (window.navigateTo) {
+                  window.navigateTo!('book-treatment')
                 }
               }}
               className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-12 py-6 text-xl group"

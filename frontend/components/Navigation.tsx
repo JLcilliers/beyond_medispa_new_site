@@ -121,8 +121,8 @@ const menuItems = [
 ]
 
 const handleNavigation = (route: string) => {
-  if ((window as any).navigateTo) {
-    (window as any).navigateTo(route)
+  if (window.navigateTo) {
+    window.navigateTo!(route)
   }
 }
 

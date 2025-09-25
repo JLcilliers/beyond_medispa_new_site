@@ -37,8 +37,8 @@ export default function HeroSection() {
             <Button 
               size="lg" 
               onClick={() => {
-                if ((window as any).navigateTo) {
-                  (window as any).navigateTo('book-treatment')
+                if (window.navigateTo) {
+                  window.navigateTo!('book-treatment')
                 }
               }}
               className="bg-[#C6A77D] hover:bg-[#A38E78] text-white px-12 py-6 text-xl group transition-colors font-medium"

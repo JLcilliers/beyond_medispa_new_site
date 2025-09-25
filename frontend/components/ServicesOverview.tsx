@@ -67,7 +67,7 @@ export default function ServicesOverview() {
   const [activeCategory, setActiveCategory] = useState(0)
 
   const handleNavigation = (route: string) => {
-    if ((window as any).navigateTo) {
+    if (window.navigateTo) {
       (window as any).navigateTo(route)
     }
   }

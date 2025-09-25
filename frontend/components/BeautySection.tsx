@@ -24,7 +24,7 @@ const services = [
 
 export default function BeautySection() {
   const handleNavigation = (route: string) => {
-    if ((window as any).navigateTo) {
+    if (window.navigateTo) {
       (window as any).navigateTo(route)
     }
   }

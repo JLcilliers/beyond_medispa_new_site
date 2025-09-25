@@ -3,7 +3,7 @@ import { Heart, Star, Users } from 'lucide-react'
 
 export default function SpaWelcome() {
   const handleNavigation = (route: string) => {
-    if ((window as any).navigateTo) {
+    if (window.navigateTo) {
       (window as any).navigateTo(route)
     }
   }
