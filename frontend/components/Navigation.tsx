@@ -136,8 +136,8 @@ export default function Navigation() {
             className="flex items-center cursor-pointer"
           >
             <img 
-              src="/logo.png" 
-              alt="Logo" 
+              src="https://www.beyondmedispa.com/wp-content/uploads/2025/09/logo_w_edge_to_top_bottom.png" 
+              alt="Beyond Medispa Logo" 
               className="h-12 w-auto"
             />
           </button>
