@@ -92,7 +92,8 @@ const menuItems = [
     type: 'dropdown',
     items: [
       { name: 'All Locations', route: '/locations' },
-      { name: 'London', route: '/london' }
+      { name: 'London', route: '/london' },
+      { name: 'Edinburgh', route: '/edinburgh' }
     ]
   },
   { 
