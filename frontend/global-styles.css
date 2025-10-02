@@ -60,3 +60,24 @@ span[class*="rounded"], p[class*="rounded"] {
 *[style*="border-radius"] {
   border-radius: 0 !important;
 }
+
+/* Reduce margins globally - make content wider */
+.container {
+  max-width: 100% !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
