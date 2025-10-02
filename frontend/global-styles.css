@@ -64,20 +64,27 @@ span[class*="rounded"], p[class*="rounded"] {
 /* Reduce margins globally - make content wider */
 .container {
   max-width: 100% !important;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
 }
 
 @media (min-width: 768px) {
   .container {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
   }
 }
