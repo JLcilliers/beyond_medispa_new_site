@@ -7,7 +7,6 @@ import ProfessionalProductsSection from './ProfessionalProductsSection'
 import TreatmentJourney from './TreatmentJourney'
 import PromotionsSection from './PromotionsSection'
 import BeautySection from './BeautySection'
-import Locations from './Locations'
 import FAQSection from './FAQSection'
 import { Button } from '@/components/ui/button'
 
@@ -157,7 +156,6 @@ export default function ProcedurePageTemplate({
             <TreatmentJourney />
             <PromotionsSection />
             <BeautySection />
-            <Locations />
             <FAQSection />
           </>
         )}
