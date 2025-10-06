@@ -88,26 +88,6 @@ const menuItems = [
         ]
       },
       {
-        title: 'Injectables',
-        route: '/edinburgh/injectables',
-        items: [
-          { name: 'Allergy', route: '/procedures/injectables/allergy' },
-          { name: 'Anti Wrinkle', route: '/procedures/injectables/anti-wrinkle' },
-          { name: 'B12', route: '/procedures/injectables/b12' },
-          { name: 'Biofiller', route: '/procedures/injectables/biofiller-edinburgh' },
-          { name: 'Biotin', route: '/procedures/injectables/biotin' },
-          { name: 'Dermal', route: '/procedures/injectables/dermal-filler' },
-          { name: 'Glutathione', route: '/procedures/injectables/glutathione' },
-          { name: 'IV Drip', route: '/procedures/injectables/iv-drip' },
-          { name: 'Magnesium', route: '/procedures/injectables/magnesium' },
-          { name: 'Neofound', route: '/procedures/injectables/neofound' },
-          { name: 'Polynucleotides', route: '/procedures/injectables/polynucleotides' },
-          { name: 'PRP', route: '/procedures/injectables/prp' },
-          { name: 'Sclerotherapy', route: '/procedures/injectables/sclerotherapy' },
-          { name: 'Vitamin D', route: '/procedures/injectables/vitamin-d' }
-        ]
-      },
-      {
         title: 'Peels',
         route: '/edinburgh/peels',
         items: [
@@ -127,6 +107,26 @@ const menuItems = [
           { name: 'LED facial', route: '/procedures/facial/led-facial' },
           { name: 'Microneedling', route: '/procedures/facial/microneedling-edinburgh' },
           { name: 'Skin Scanner', route: '/procedures/facial/skin-scanner' }
+        ]
+      },
+      {
+        title: 'Injectables',
+        route: '/edinburgh/injectables',
+        items: [
+          { name: 'Allergy', route: '/procedures/injectables/allergy' },
+          { name: 'Anti Wrinkle', route: '/procedures/injectables/anti-wrinkle' },
+          { name: 'B12', route: '/procedures/injectables/b12' },
+          { name: 'Biofiller', route: '/procedures/injectables/biofiller-edinburgh' },
+          { name: 'Biotin', route: '/procedures/injectables/biotin' },
+          { name: 'Dermal', route: '/procedures/injectables/dermal-filler' },
+          { name: 'Glutathione', route: '/procedures/injectables/glutathione' },
+          { name: 'IV Drip', route: '/procedures/injectables/iv-drip' },
+          { name: 'Magnesium', route: '/procedures/injectables/magnesium' },
+          { name: 'Neofound', route: '/procedures/injectables/neofound' },
+          { name: 'Polynucleotides', route: '/procedures/injectables/polynucleotides' },
+          { name: 'PRP', route: '/procedures/injectables/prp' },
+          { name: 'Sclerotherapy', route: '/procedures/injectables/sclerotherapy' },
+          { name: 'Vitamin D', route: '/procedures/injectables/vitamin-d' }
         ]
       }
     ]
