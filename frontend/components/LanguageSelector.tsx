@@ -34,8 +34,8 @@ export default function LanguageSelector() {
         className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-[#F5F1EC] transition-colors"
         aria-label="Select language"
       >
-        <Globe className="w-5 h-5 text-[#A38E78]" />
-        <span className="text-sm font-light text-[#2C2C2C]">
+        <Globe className="w-5 h-5 text-[#C6A77D]" />
+        <span className="text-sm font-light text-[#C6A77D]">
           {currentLanguage?.nativeName}
         </span>
       </button>
