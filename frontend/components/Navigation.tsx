@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Phone, MapPin, MessageCircle, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import LanguageSelector from './LanguageSelector'
 
 const menuItems = [
   { 
@@ -247,6 +248,7 @@ export default function Navigation() {
                 <span>London & Edinburgh</span>
               </div>
             </div>
+            <LanguageSelector />
           </div>
         </div>
       </div>

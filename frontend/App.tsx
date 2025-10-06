@@ -1,5 +1,6 @@
 import './global-styles.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { LanguageProvider } from './contexts/LanguageContext'
 import Homepage from './components/Homepage'
 import AboutPage from './components/pages/AboutPage'
 import ContactPage from './components/pages/ContactPage'
@@ -66,8 +67,9 @@ import EdinburghInjectablesPage from './components/pages/locations/EdinburghInje
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <LanguageProvider>
+      <BrowserRouter>
+        <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -131,7 +133,8 @@ export default function App() {
         <Route path="/edinburgh/facial" element={<EdinburghFacialPage />} />
         <Route path="/london/injectables" element={<LondonInjectablesPage />} />
         <Route path="/edinburgh/injectables" element={<EdinburghInjectablesPage />} />
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </LanguageProvider>
   )
 }
