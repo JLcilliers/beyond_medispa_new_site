@@ -36,14 +36,14 @@ const locations = [
     address: "123 Harley Street, London W1G 6BA",
     phone: "+44 (20) 7123 4567",
     email: "london@magispa.co.uk",
-    image: "/api/placeholder/400/300"
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg"
   },
   {
     city: "Edinburgh", 
     address: "45 George Street, Edinburgh EH2 2HT",
     phone: "+44 (131) 456 7890",
     email: "edinburgh@magispa.co.uk",
-    image: "/api/placeholder/400/300"
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg"
   }
 ]
 

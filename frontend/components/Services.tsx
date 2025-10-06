@@ -3,7 +3,7 @@ const services = [
     id: 1,
     title: "Botox & Fillers",
     description: "Reducerea ridurilor și volumizarea naturală a feței",
-    image: "/api/placeholder/400/300",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg",
     price: "De la 350 RON",
     features: ["Rezultate naturale", "Fără timp de recuperare", "Efecte imediate"]
   },
@@ -11,7 +11,7 @@ const services = [
     id: 2,
     title: "Tratamente Faciale",
     description: "Hidratare profundă și regenerarea pielii",
-    image: "/api/placeholder/400/300",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg",
     price: "De la 200 RON",
     features: ["Piele hidratată", "Strălucire naturală", "Textura îmbunătățită"]
   },
@@ -19,7 +19,7 @@ const services = [
     id: 3,
     title: "Terapie Laser",
     description: "Eliminarea imperfecțiunilor și închiderea porilor",
-    image: "/api/placeholder/400/300",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/laser-hair-removal-london-edinburgh-beyond-medispa.jpg",
     price: "De la 400 RON",
     features: ["Fără durere", "Precizie maximă", "Rezultate durabile"]
   },
@@ -27,7 +27,7 @@ const services = [
     id: 4,
     title: "Mezoterapia",
     description: "Tratament revitalizant cu substanțe active",
-    image: "/api/placeholder/400/300",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg",
     price: "De la 300 RON",
     features: ["Nutriție celulară", "Efecte anti-aging", "Piele fermă"]
   },
@@ -35,7 +35,7 @@ const services = [
     id: 5,
     title: "Peeling Chimic",
     description: "Exfoliere profundă pentru o piele netedă",
-    image: "/api/placeholder/400/300",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Chemical-Peels-London-Edinburgh-Beyond-Medispa.jpg",
     price: "De la 250 RON",
     features: ["Regenerare rapidă", "Uniformizare ton", "Textură fină"]
   },
@@ -43,7 +43,7 @@ const services = [
     id: 6,
     title: "Lifting Non-Invaziv",
     description: "Întărirea și tonifierea pielii fără chirurgie",
-    image: "/api/placeholder/400/300",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Profhilo-Treatment-London-Edinburgh-Beyond-MediSpa.jpg",
     price: "De la 500 RON",
     features: ["Fără incizii", "Recuperare rapidă", "Efect lifting"]
   }

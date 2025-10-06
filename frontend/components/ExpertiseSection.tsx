@@ -17,7 +17,7 @@ export default function ExpertiseSection() {
             <div className="space-y-6">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <img 
-                  src="/api/placeholder/300/400" 
+                  src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg" 
                   alt="Aesthetic treatment expertise"
                   className="w-full h-80 object-cover"
                 />
@@ -25,7 +25,7 @@ export default function ExpertiseSection() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <img 
-                  src="/api/placeholder/300/300" 
+                  src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg" 
                   alt="Professional skincare"
                   className="w-full h-60 object-cover"
                 />
@@ -35,7 +35,7 @@ export default function ExpertiseSection() {
             <div className="space-y-6 mt-12">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <img 
-                  src="/api/placeholder/300/300" 
+                  src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg" 
                   alt="Advanced equipment"
                   className="w-full h-60 object-cover"
                 />
@@ -43,7 +43,7 @@ export default function ExpertiseSection() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <img 
-                  src="/api/placeholder/300/400" 
+                  src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/Chemical-Peels-London-Edinburgh-Beyond-Medispa.jpg" 
                   alt="Luxury treatment room"
                   className="w-full h-80 object-cover"
                 />

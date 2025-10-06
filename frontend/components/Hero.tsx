@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="/api/placeholder/1200/800" 
+          src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg" 
           alt="Elegant woman touching her face"
           className="w-full h-full object-cover opacity-40"
         />

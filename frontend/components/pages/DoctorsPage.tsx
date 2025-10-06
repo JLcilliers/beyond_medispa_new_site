@@ -6,10 +6,10 @@ import { Award, Users, MapPin, Star, Phone, Mail } from 'lucide-react'
 const doctors = [
   {
     id: 1,
-    name: "Dr. Elena Marinescu",
+    name: "Dr. Sana Sadiq",
     title: "Lead Dermatologist & Medical Director",
     location: "London",
-    image: "/api/placeholder/400/500",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Dr-Sana-Sadiq.jpg",
     specialties: ["Anti-aging", "Dermal Fillers", "Laser Treatments", "Skin Analysis"],
     experience: "15 years",
     qualifications: [
@@ -23,10 +23,10 @@ const doctors = [
   },
   {
     id: 2,
-    name: "Dr. James Wilson",
+    name: "Dr. Reza Manesh",
     title: "Aesthetic Medicine Specialist", 
     location: "London",
-    image: "/api/placeholder/400/500",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Reza.png",
     specialties: ["Botox", "Chemical Peels", "Body Contouring", "Thread Lifts"],
     experience: "12 years",
     qualifications: [
@@ -40,10 +40,10 @@ const doctors = [
   },
   {
     id: 3,
-    name: "Dr. Sarah Mitchell",
+    name: "Joanna Pullar",
     title: "Wellness & Spa Director",
     location: "Edinburgh", 
-    image: "/api/placeholder/400/500",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Joanna-Pullar.webp",
     specialties: ["Holistic Treatments", "Wellness Consultation", "Medical Spa", "Skincare"],
     experience: "10 years",
     qualifications: [
@@ -57,10 +57,10 @@ const doctors = [
   },
   {
     id: 4,
-    name: "Dr. Michael Thompson",
+    name: "Ruxi Marinov",
     title: "Laser & Technology Specialist",
     location: "Edinburgh",
-    image: "/api/placeholder/400/500", 
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Ruxi.png", 
     specialties: ["Laser Hair Removal", "Skin Resurfacing", "Pigmentation", "Vascular Treatments"],
     experience: "8 years",
     qualifications: [

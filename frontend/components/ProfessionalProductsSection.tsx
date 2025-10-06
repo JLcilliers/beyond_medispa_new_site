@@ -5,13 +5,13 @@ const products = [
   {
     title: "Advanced Skincare",
     description: "Medical-grade skincare products for optimal results",
-    image: "/api/placeholder/400/500",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg",
     features: ["Clinical strength", "Dermatologist approved", "Visible results"]
   },
   {
     title: "Injectable Treatments", 
     description: "Premium injectables for natural enhancement",
-    image: "/api/placeholder/400/500",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg",
     features: ["FDA approved", "Long-lasting", "Minimal downtime"]
   }
 ]
@@ -70,7 +70,7 @@ export default function ProfessionalProductsSection() {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="/api/placeholder/600/800" 
+                src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg" 
                 alt="Professional treatment application"
                 className="w-full h-[600px] object-cover"
               />

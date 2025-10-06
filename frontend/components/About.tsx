@@ -2,21 +2,21 @@ import { Award, Users, Heart, Sparkles } from 'lucide-react'
 
 const team = [
   {
-    name: "Dr. Elena Marinescu",
+    name: "Dr. Sana Sadiq",
     role: "Medic Primar Dermatologie",
-    image: "/api/placeholder/300/300",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Dr-Sana-Sadiq.jpg",
     experience: "15 ani experiență"
   },
   {
-    name: "Dr. Andrei Popescu",
+    name: "Dr. Reza Manesh",
     role: "Specialist Medicină Estetică", 
-    image: "/api/placeholder/300/300",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Reza.png",
     experience: "12 ani experiență"
   },
   {
-    name: "Maria Ionescu",
+    name: "Joanna Pullar",
     role: "Specialist Cosmetologie",
-    image: "/api/placeholder/300/300", 
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Joanna-Pullar.webp", 
     experience: "8 ani experiență"
   }
 ]
@@ -78,7 +78,7 @@ export default function About() {
           
           <div className="relative">
             <img 
-              src="/api/placeholder/600/500" 
+              src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg" 
               alt="Aesthetic Lab clinic"
               className="rounded-2xl shadow-2xl"
             />

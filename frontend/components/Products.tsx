@@ -3,7 +3,7 @@ const products = [
     id: 1,
     name: "Ser Anti-Aging Premium",
     brand: "Aesthetic Lab",
-    image: "/api/placeholder/300/300",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg",
     price: "299 RON",
     description: "Ser concentrat cu acid hialuronic și peptide"
   },
@@ -11,7 +11,7 @@ const products = [
     id: 2,
     name: "Cremă Hidratantă Intensivă",
     brand: "Aesthetic Lab",
-    image: "/api/placeholder/300/300",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg",
     price: "189 RON",
     description: "Hidratare profundă pentru toate tipurile de piele"
   },
@@ -19,7 +19,7 @@ const products = [
     id: 3,
     name: "Protecție Solară SPF 50",
     brand: "Aesthetic Lab",
-    image: "/api/placeholder/300/300",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Profhilo-Treatment-London-Edinburgh-Beyond-MediSpa.jpg",
     price: "149 RON",
     description: "Protecție maximă cu textura ușoară"
   },
@@ -27,7 +27,7 @@ const products = [
     id: 4,
     name: "Masca Regenerantă",
     brand: "Aesthetic Lab",
-    image: "/api/placeholder/300/300",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Chemical-Peels-London-Edinburgh-Beyond-Medispa.jpg",
     price: "219 RON",
     description: "Tratament intensiv pentru regenerarea celulară"
   }

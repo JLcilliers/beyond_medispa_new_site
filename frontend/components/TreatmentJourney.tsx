@@ -45,7 +45,7 @@ export default function TreatmentJourney() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="/api/placeholder/600/400" 
+                src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg" 
                 alt="Treatment process"
                 className="w-full h-96 object-cover"
               />

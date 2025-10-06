@@ -7,7 +7,7 @@ const testimonials = [
     location: "București",
     rating: 5,
     text: "Rezultatele au depășit toate așteptările! Echipa Aesthetic Lab este incredibil de profesionistă și atentă la detalii.",
-    image: "/api/placeholder/80/80",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Ewelina-Roguska.png",
     treatment: "Botox & Fillers"
   },
   {
@@ -16,7 +16,7 @@ const testimonials = [
     location: "Cluj-Napoca",
     rating: 5,
     text: "Cea mai bună experiență pe care am avut-o vreodată la o clinică estetică. Recomand cu încredere!",
-    image: "/api/placeholder/80/80",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Azadeh-Manesh.png",
     treatment: "Facial Treatment"
   },
   {
@@ -25,7 +25,7 @@ const testimonials = [
     location: "Timișoara",
     rating: 5,
     text: "Personalul este extraordinar, iar rezultatele sunt vizibile imediat. Mă întorc cu siguranță!",
-    image: "/api/placeholder/80/80",
+    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Claire-Hill.png",
     treatment: "Laser Therapy"
   }
 ]

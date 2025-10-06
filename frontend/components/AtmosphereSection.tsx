@@ -2,12 +2,12 @@ import { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const images = [
-  { id: 1, src: "/api/placeholder/600/400", title: "Купальный зал", category: "main" },
-  { id: 2, src: "/api/placeholder/300/200", title: "Зона отдыха", category: "small" },
-  { id: 3, src: "/api/placeholder/300/200", title: "Массажная комната", category: "small" },
-  { id: 4, src: "/api/placeholder/300/200", title: "Ресепшн", category: "small" },
-  { id: 5, src: "/api/placeholder/300/200", title: "Фитобочка", category: "small" },
-  { id: 6, src: "/api/placeholder/300/200", title: "Релакс зона", category: "small" }
+  { id: 1, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg", title: "Купальный зал", category: "main" },
+  { id: 2, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg", title: "Зона отдыха", category: "small" },
+  { id: 3, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg", title: "Массажная комната", category: "small" },
+  { id: 4, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Chemical-Peels-London-Edinburgh-Beyond-Medispa.jpg", title: "Ресепшн", category: "small" },
+  { id: 5, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Profhilo-Treatment-London-Edinburgh-Beyond-MediSpa.jpg", title: "Фитобочка", category: "small" },
+  { id: 6, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Coolsculpting-Body-Contouring-London-Edinburgh-Beyond-Medispa.jpg", title: "Релакс зона", category: "small" }
 ]
 
 export default function AtmosphereSection() {

@@ -100,7 +100,7 @@ export default function BeautySection() {
               <div className="space-y-6">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="/api/placeholder/300/350" 
+                    src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg" 
                     alt="Facial treatment"
                     className="w-full h-72 object-cover"
                   />
@@ -113,7 +113,7 @@ export default function BeautySection() {
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="/api/placeholder/300/280" 
+                    src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg" 
                     alt="Injectable treatments"
                     className="w-full h-56 object-cover"
                   />
@@ -128,7 +128,7 @@ export default function BeautySection() {
               <div className="space-y-6 mt-8">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="/api/placeholder/300/280" 
+                    src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/Coolsculpting-Body-Contouring-London-Edinburgh-Beyond-Medispa.jpg" 
                     alt="Body contouring"
                     className="w-full h-56 object-cover"
                   />
@@ -141,7 +141,7 @@ export default function BeautySection() {
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="/api/placeholder/300/350" 
+                    src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg" 
                     alt="Wellness treatments"
                     className="w-full h-72 object-cover"
                   />
