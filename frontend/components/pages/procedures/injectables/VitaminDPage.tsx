@@ -1,24 +1,24 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const VitaminDPage = () => {
+export default function VitaminDPage() {
   const hero = {
-    tagline: "VITAMIN D INJECTIONS",
-    title: "Vitamin D Injection Therapy",
-    subtitle: "Essential Sunshine Vitamin Support",
-    description: "Optimize your vitamin D levels with our professional injection therapy. These high-potency injections provide essential vitamin D directly to your system, supporting bone health, immune function, and overall wellbeing, especially during darker months."
+    tagline: "SUNSHINE VITAMIN",
+    title: "Vitamin D Injections",
+    subtitle: "Energy & Immune Support",
+    description: "Support your energy, health, and immune system with vitamin D injections. Convenient dosing corrects deficiency and improves mood and wellbeing over weeks.",
   };
 
   const treatmentInfo = {
-    duration: "10-15 minutes",
-    results: "Improved levels within 24-48 hours",
-    price: "From £75",
+    duration: "10–15 minutes",
+    results: "Levels improve over weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Supports bone health",
-      "Boosts immune system",
-      "Improves mood and energy",
-      "Better than oral supplements",
-      "Quick treatment",
-      "Essential for overall health"
+      "Supports energy and health",
+      "Immune support",
+      "Improved mood & wellbeing",
+      "Convenient dosing",
+      "Corrects deficiency",
+      "Quick injection"
     ]
   };
 
@@ -28,6 +28,4 @@ const VitaminDPage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default VitaminDPage;
+}

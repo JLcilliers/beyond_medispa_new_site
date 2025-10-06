@@ -1,24 +1,24 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const AllergyPage = () => {
+export default function AllergyPage() {
   const hero = {
-    tagline: "ALLERGY INJECTIONS",
-    title: "Allergy Treatment Injections",
-    subtitle: "Relief from Seasonal & Environmental Allergies",
-    description: "Find relief from troublesome allergies with our professional allergy injection treatments. Our carefully administered immunotherapy helps reduce allergic reactions and improve your quality of life through personalized treatment plans."
+    tagline: "ALLERGY TESTING",
+    title: "Allergy Testing",
+    subtitle: "Comprehensive Allergy Assessment",
+    description: "Identify your allergy triggers with comprehensive testing. Get quick results, clinician supervision, and a personalized plan for long-term control within days.",
   };
 
   const treatmentInfo = {
-    duration: "15-30 minutes",
-    results: "Gradual improvement over several months",
-    price: "From £120",
+    duration: "30–60 minutes",
+    results: "Results within days",
+    price: "Contact for pricing",
     benefits: [
-      "Reduces allergic reactions",
-      "Long-term allergy relief",
-      "Personalized treatment plan",
-      "Professional administration",
-      "Improves quality of life",
-      "Safe and effective"
+      "Identify triggers",
+      "Personalised plan",
+      "Quick tests",
+      "Clinician supervised",
+      "Actionable advice",
+      "Long-term control"
     ]
   };
 
@@ -28,6 +28,4 @@ const AllergyPage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default AllergyPage;
+}

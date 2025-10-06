@@ -1,29 +1,31 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 export default function CoolLaserPage() {
+  const hero = {
+    tagline: "ADVANCED LASER REJUVENATION",
+    title: "Cool Laser",
+    subtitle: "Skin Resurfacing & Rejuvenation",
+    description: "Transform your skin with Cool Laser technology. This innovative treatment reduces fine lines, improves texture and tone, targets pigmentation, and stimulates collagen production for comprehensive skin rejuvenation.",
+  };
+
+  const treatmentInfo = {
+    duration: "30–60 minutes",
+    results: "Immediate glow with continued improvement over several weeks",
+    price: "Contact for pricing",
+    benefits: [
+      "Reduces fine lines",
+      "Improves texture & tone",
+      "Targets pigmentation",
+      "Helps acne scarring",
+      "Minimal downtime",
+      "Stimulates collagen"
+    ]
+  };
+
   return (
-    <ProcedurePageTemplate
-      hero={{
-        tagline: "Advanced Fat Reduction",
-        title: "Cool Laser",
-        subtitle: "Cold Laser Fat Reduction",
-        description: "Innovative cold laser technology that safely penetrates skin to target fat cells, causing them to release their contents and shrink. A gentle, pain-free approach to body contouring with immediate results."
-      }}
-      treatmentInfo={{
-        duration: "20-30 minutes",
-        results: "Immediate inch loss, continued improvement over 2-4 weeks",
-        price: "Starting at $200 per session",
-        benefits: [
-          "Immediate inch loss",
-          "Pain-free treatment",
-          "No side effects",
-          "Quick treatment sessions",
-          "No downtime required",
-          "Safe for all skin types",
-          "Targets stubborn fat areas",
-          "Clinically proven results"
-        ]
-      }}
+    <ProcedurePageTemplate 
+      hero={hero}
+      treatmentInfo={treatmentInfo}
     />
   );
 }

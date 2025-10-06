@@ -1,24 +1,24 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const MoleRemovalPage = () => {
+export default function MoleRemovalPage() {
   const hero = {
-    tagline: "MOLE REMOVAL",
-    title: "Professional Mole Removal",
-    subtitle: "Safe & Effective Removal Procedures",
-    description: "Remove unwanted moles safely and effectively with our professional mole removal services. Our qualified practitioners use advanced techniques to ensure minimal scarring and optimal healing results."
+    tagline: "SAFE LESION REMOVAL",
+    title: "Mole Removal",
+    subtitle: "Professional Skin Lesion Treatment",
+    description: "Safely remove unwanted moles and skin lesions with our professional treatment. Quick procedures under local anesthetic with minimal downtime and scar-minimizing techniques.",
   };
 
   const treatmentInfo = {
-    duration: "15-30 minutes per mole",
-    results: "Immediate removal, healing in 2-4 weeks",
-    price: "From £180",
+    duration: "20–45 minutes",
+    results: "Immediate removal; healing 1–3 weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Safe and effective removal",
-      "Minimal scarring techniques",
-      "Professional assessment",
-      "Quick procedure",
-      "Comprehensive aftercare",
-      "Peace of mind"
+      "Quick under local anaesthetic",
+      "Precise",
+      "Minimal downtime",
+      "Option for histology",
+      "Suitable for many lesions",
+      "Scar-minimising"
     ]
   };
 
@@ -28,6 +28,4 @@ const MoleRemovalPage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default MoleRemovalPage;
+}

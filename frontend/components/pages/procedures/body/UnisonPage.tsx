@@ -1,29 +1,31 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 export default function UnisonPage() {
+  const hero = {
+    tagline: "CELLULITE REDUCTION",
+    title: "Unison",
+    subtitle: "Advanced Cellulite Treatment",
+    description: "Reduce the appearance of cellulite and improve skin elasticity with Unison treatment. This comfortable, non-invasive solution enhances circulation, smooths texture, and treats all skin types with minimal downtime.",
+  };
+
+  const treatmentInfo = {
+    duration: "20–30 minutes per area",
+    results: "Cellulite appearance improves over 2–8 weeks",
+    price: "Contact for pricing",
+    benefits: [
+      "Reduces cellulite",
+      "Improves elasticity",
+      "Enhances circulation",
+      "Comfortable, no downtime",
+      "Treats all skin types",
+      "Smooths texture"
+    ]
+  };
+
   return (
-    <ProcedurePageTemplate
-      hero={{
-        tagline: "Multi-Technology Platform",
-        title: "Unison",
-        subtitle: "Comprehensive Body Transformation",
-        description: "Revolutionary multi-technology platform combining radiofrequency, ultrasound, and vacuum therapy in one treatment. Unison delivers comprehensive body contouring, skin tightening, and cellulite reduction for complete transformation."
-      }}
-      treatmentInfo={{
-        duration: "60-75 minutes",
-        results: "Progressive improvement over 6-8 weeks, optimal after 6-10 sessions",
-        price: "Starting at $400 per session",
-        benefits: [
-          "Multi-technology treatment",
-          "Fat reduction and skin tightening",
-          "Cellulite improvement",
-          "Lymphatic drainage",
-          "Enhanced circulation",
-          "Comfortable treatment",
-          "No downtime required",
-          "Comprehensive body contouring"
-        ]
-      }}
+    <ProcedurePageTemplate 
+      hero={hero}
+      treatmentInfo={treatmentInfo}
     />
   );
 }

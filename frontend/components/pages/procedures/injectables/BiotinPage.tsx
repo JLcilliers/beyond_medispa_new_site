@@ -1,24 +1,24 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const BiotinPage = () => {
+export default function BiotinPage() {
   const hero = {
-    tagline: "BIOTIN INJECTIONS",
-    title: "Biotin Injection Therapy",
-    subtitle: "Strengthen Hair, Skin & Nails",
-    description: "Enhance your natural beauty from within with biotin injection therapy. These targeted injections provide essential biotin directly to your system, promoting stronger hair, healthier skin, and more resilient nails for a radiant appearance."
+    tagline: "HAIR, SKIN & NAILS",
+    title: "Biotin Injections",
+    subtitle: "Beauty Vitamin Support",
+    description: "Support healthy hair, skin, and nails with biotin injections. This quick treatment addresses deficiency and supports healthy metabolism with minimal downtime.",
   };
 
   const treatmentInfo = {
-    duration: "10-15 minutes",
-    results: "Improvements visible in 4-6 weeks",
-    price: "From £55",
+    duration: "10–15 minutes",
+    results: "Benefits typically seen over several weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Strengthens hair and nails",
-      "Improves skin health",
-      "Supports metabolic function",
-      "Better absorption than oral",
-      "Quick treatment",
-      "Natural beauty enhancement"
+      "Supports hair/skin/nails",
+      "Healthy metabolism",
+      "Quick",
+      "Adjunct for deficiency",
+      "Minimal downtime",
+      "Simple injection"
     ]
   };
 
@@ -28,6 +28,4 @@ const BiotinPage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default BiotinPage;
+}

@@ -2,31 +2,29 @@ import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 export default function OxygenFacialPage() {
   const hero = {
-    tagline: "Breathe New Life",
-    title: "Oxygen Infusion Facial",
-    subtitle: "Revitalizing Oxygen-Infused Treatment",
-    description: "Revitalize your skin with our oxygen infusion facial that delivers pure, pressurized oxygen directly to your skin cells. This celebrity-favorite treatment promotes cellular regeneration, boosts collagen production, and creates an immediate healthy glow.",
+    tagline: "INSTANT RADIANCE",
+    title: "Oxygen Facial",
+    subtitle: "Hydrating & Soothing Treatment",
+    description: "Boost your skin's radiance with an oxygen facial. This gentle treatment hydrates and soothes, perfect for sensitive skin, while softening fine lines and improving product absorption with no downtime.",
   };
 
   const treatmentInfo = {
-    duration: "50-60 minutes",
-    results: "Instant glow, lasting 1-2 weeks",
-    price: "From £190",
+    duration: "45–60 minutes",
+    results: "Instant plump/glow; cumulative with a course",
+    price: "Contact for pricing",
     benefits: [
-      "Pure oxygen infusion for cellular revitalization",
-      "Immediate brightening and radiance boost",
-      "Enhanced circulation for healthy skin tone",
-      "Accelerated healing and skin repair",
-      "Reduction in fine lines and wrinkles",
-      "Deep hydration with vitamin-enriched serums",
-      "Suitable for sensitive and all skin types",
-      "No downtime with instant visible results"
+      "Boosts radiance",
+      "Hydrates & soothes",
+      "Great for sensitive skin",
+      "Softens fine lines",
+      "Improves absorption",
+      "No downtime"
     ]
   };
 
   return (
     <ProcedurePageTemplate 
-      hero={hero} 
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

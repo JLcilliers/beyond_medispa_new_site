@@ -2,31 +2,29 @@ import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 export default function LEDFacialPage() {
   const hero = {
-    tagline: "Light Therapy Innovation",
-    title: "LED Light Facial",
-    subtitle: "Advanced Phototherapy for Skin Rejuvenation",
-    description: "Harness the power of medical-grade LED light therapy to stimulate cellular regeneration, reduce inflammation, and promote healing. Our multi-wavelength LED treatment addresses various skin concerns using scientifically proven light frequencies.",
+    tagline: "LIGHT THERAPY TREATMENT",
+    title: "LED Facial",
+    subtitle: "Advanced Light-Based Skin Therapy",
+    description: "Harness the power of LED light therapy to reduce inflammation, combat acne, and stimulate collagen production. This gentle, non-invasive treatment speeds healing and improves skin tone with no downtime.",
   };
 
   const treatmentInfo = {
-    duration: "30-45 minutes",
-    results: "Progressive improvement over 4-6 weeks",
-    price: "From £120",
+    duration: "20–30 minutes",
+    results: "Cumulative benefits over 4–6 weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Medical-grade LED light therapy technology",
-      "Multi-wavelength treatment for comprehensive results",
-      "Stimulates collagen and elastin production",
-      "Reduces inflammation and accelerates healing",
-      "Improves acne and blemish-prone skin",
-      "Enhances overall skin tone and texture",
-      "Completely non-invasive with no downtime",
-      "Suitable for all skin types and ages"
+      "Reduces inflammation",
+      "Helps acne",
+      "Stimulates collagen",
+      "Speeds healing",
+      "Improves tone",
+      "No downtime"
     ]
   };
 
   return (
     <ProcedurePageTemplate 
-      hero={hero} 
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

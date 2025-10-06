@@ -1,24 +1,24 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const SclerotherapyPage = () => {
+export default function SclerotherapyPage() {
   const hero = {
-    tagline: "SCLEROTHERAPY",
-    title: "Spider Vein Treatment",
-    subtitle: "Effective Varicose & Spider Vein Removal",
-    description: "Eliminate unsightly spider veins and small varicose veins with sclerotherapy. This proven treatment involves injecting a solution directly into the veins, causing them to collapse and fade away for clearer, more confident skin."
+    tagline: "VEIN TREATMENT",
+    title: "Sclerotherapy",
+    subtitle: "Spider Vein Removal",
+    description: "Eliminate spider veins with minimally invasive sclerotherapy. This proven outpatient technique targets veins to improve leg appearance with high patient satisfaction.",
   };
 
   const treatmentInfo = {
-    duration: "30-45 minutes",
-    results: "Gradual fading over 3-6 weeks",
-    price: "From £220",
+    duration: "30–60 minutes",
+    results: "Spider veins fade over 4–12 weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Eliminates spider veins",
+      "Minimally invasive",
+      "Targets veins",
       "Improves leg appearance",
-      "Minimal discomfort",
-      "Quick treatment sessions",
-      "Proven effective method",
-      "Boosts confidence"
+      "Outpatient",
+      "Proven technique",
+      "High satisfaction"
     ]
   };
 
@@ -28,6 +28,4 @@ const SclerotherapyPage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default SclerotherapyPage;
+}

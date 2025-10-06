@@ -2,31 +2,29 @@ import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 export default function ExosomePage() {
   const hero = {
-    tagline: "Cutting-Edge Science",
+    tagline: "REGENERATIVE THERAPY",
     title: "Exosome Therapy",
-    subtitle: "Revolutionary Regenerative Skin Treatment",
-    description: "Experience the future of skin rejuvenation with our advanced exosome therapy. These powerful cellular messengers promote rapid healing, regeneration, and renewal at the deepest levels, delivering transformative results for aging, damaged, or problematic skin.",
+    subtitle: "Advanced Skin Regeneration",
+    description: "Experience cutting-edge exosome therapy for enhanced healing and visible improvements. This innovative treatment reduces redness, improves texture and tone, brightens, boosts collagen, and calms inflammation.",
   };
 
   const treatmentInfo = {
-    duration: "75-90 minutes",
-    results: "Progressive improvement over 4-8 weeks",
-    price: "From £450",
+    duration: "45–60 minutes",
+    results: "Faster recovery and visible quality improvements in 1–4 weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Revolutionary exosome technology for skin regeneration",
-      "Promotes rapid cellular healing and renewal",
-      "Stimulates natural growth factors and stem cells",
-      "Addresses advanced signs of aging and damage",
-      "Improves skin texture, tone, and elasticity",
-      "Reduces inflammation and accelerates recovery",
-      "Long-lasting regenerative effects",
-      "Suitable for complex skin concerns and conditions"
+      "Enhances healing",
+      "Reduces redness",
+      "Improves texture & tone",
+      "Brightens",
+      "Boosts collagen",
+      "Calms inflammation"
     ]
   };
 
   return (
     <ProcedurePageTemplate 
-      hero={hero} 
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );

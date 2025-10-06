@@ -1,24 +1,24 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const GlutathionePage = () => {
+export default function GlutathionePage() {
   const hero = {
-    tagline: "GLUTATHIONE INJECTIONS",
-    title: "Glutathione Injection Therapy",
-    subtitle: "Master Antioxidant for Skin Brightening",
-    description: "Experience the powerful antioxidant benefits of glutathione injection therapy. Known as the body's master antioxidant, these injections help brighten skin, reduce oxidative stress, and support overall cellular health for a radiant glow."
+    tagline: "MASTER ANTIOXIDANT",
+    title: "Glutathione",
+    subtitle: "Antioxidant & Skin Brightening",
+    description: "Harness the power of glutathione for antioxidant protection and skin brightening. Support detox, boost immunity, and achieve a radiant glow with IV/IM administration.",
   };
 
   const treatmentInfo = {
-    duration: "15-20 minutes",
-    results: "Skin brightening in 4-8 weeks",
-    price: "From £85",
+    duration: "15–30 minutes",
+    results: "Skin/antioxidant benefits accrue over weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Powerful antioxidant effects",
-      "Brightens and evens skin tone",
-      "Reduces oxidative stress",
-      "Supports liver detoxification",
-      "Anti-aging properties",
-      "Boosts immune system"
+      "Antioxidant",
+      "Brightens skin",
+      "Detox support",
+      "Immune support",
+      "Minimal downtime",
+      "IV/IM administration"
     ]
   };
 
@@ -28,6 +28,4 @@ const GlutathionePage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default GlutathionePage;
+}

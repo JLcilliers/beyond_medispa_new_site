@@ -1,24 +1,25 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const ProfhiloPage = () => {
+export default function ProfhiloPage() {
   const hero = {
-    tagline: "PROFHILO TREATMENT",
-    title: "Profhilo Bio-Remodeling",
-    subtitle: "Revolutionary Skin Bio-Remodeling",
-    description: "Transform your skin with Profhilo, the revolutionary bio-remodeling treatment. This innovative injectable treatment stimulates collagen and elastin production, providing deep hydration and skin remodeling for a naturally youthful appearance."
+    tagline: "BIO-REMODELLING",
+    title: "Profhilo",
+    subtitle: "Intense Hydration & Skin Quality",
+    description: "Experience intense hydration and improved elasticity with Profhilo. This bio-remodelling treatment enhances skin quality in just 2 sessions, delivering a natural look with minimal downtime.",
+    backgroundImage: "/profhilo-hero.png"
   };
 
   const treatmentInfo = {
-    duration: "30-45 minutes",
-    results: "Visible improvement in 4 weeks, optimal results in 8 weeks",
-    price: "From £320",
+    duration: "15–30 minutes",
+    results: "Hydration/elasticity improve in 2–4 weeks; typically 2 sessions",
+    price: "Contact for pricing",
     benefits: [
-      "Deep skin hydration",
-      "Stimulates collagen and elastin",
-      "Improves skin laxity",
-      "Natural bio-remodeling",
-      "Minimal injection points",
-      "Long-lasting skin improvement"
+      "Intense hydration",
+      "Improves elasticity",
+      "Enhances skin quality",
+      "Minimal downtime",
+      "Natural look",
+      "Bio-remodelling"
     ]
   };
 
@@ -28,6 +29,4 @@ const ProfhiloPage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default ProfhiloPage;
+}

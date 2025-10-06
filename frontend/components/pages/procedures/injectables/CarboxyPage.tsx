@@ -1,24 +1,24 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const CarboxyPage = () => {
+export default function CarboxyPage() {
   const hero = {
-    tagline: "CARBOXY THERAPY",
-    title: "Carbon Dioxide Therapy",
-    subtitle: "Innovative Skin Rejuvenation",
-    description: "Experience the rejuvenating benefits of carboxy therapy, a cutting-edge treatment that uses controlled CO2 injections to improve skin texture, reduce cellulite, and enhance overall skin health through improved circulation."
+    tagline: "CIRCULATION & REJUVENATION",
+    title: "Carboxy Therapy",
+    subtitle: "CO2 Skin Revitalization",
+    description: "Improve circulation and brighten your complexion with carboxy therapy. This innovative treatment reduces dark circles, stimulates collagen, and helps cellulite with minimal downtime.",
   };
 
   const treatmentInfo = {
-    duration: "45-60 minutes",
-    results: "Gradual improvement over 6-8 weeks",
-    price: "From £150",
+    duration: "30–45 minutes",
+    results: "Brighter, firmer look develops over 2–4 weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Improves skin elasticity and texture",
-      "Reduces appearance of cellulite",
-      "Enhances blood circulation",
-      "Stimulates collagen production",
-      "Non-surgical body contouring",
-      "Minimal side effects"
+      "Improves circulation",
+      "Brightens",
+      "Reduces dark circles",
+      "Stimulates collagen",
+      "Helps cellulite",
+      "Minimal downtime"
     ]
   };
 
@@ -28,6 +28,4 @@ const CarboxyPage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default CarboxyPage;
+}

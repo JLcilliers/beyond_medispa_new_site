@@ -1,24 +1,24 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const BiofillerLondonPage = () => {
+export default function BiofillerLondonPage() {
   const hero = {
-    tagline: "BIOFILLER LONDON",
-    title: "Advanced Biofiller Treatments",
-    subtitle: "Premium Bio-Remodeling in London",
-    description: "Discover our exclusive biofiller treatments available at our London clinic. Using innovative bio-compatible materials, we enhance facial volume and improve skin quality for natural, long-lasting results."
+    tagline: "NATURAL VOLUME RESTORATION",
+    title: "Biofiller London",
+    subtitle: "Autologous Plasma Treatment",
+    description: "Experience natural volume restoration with biofiller using your own plasma. This innovative treatment provides immediate results with biostimulation benefits, low allergy risk, and suitability for delicate areas.",
   };
 
   const treatmentInfo = {
-    duration: "60-90 minutes",
-    results: "Immediate enhancement, optimal results in 4-6 weeks",
-    price: "From £350",
+    duration: "60–90 minutes",
+    results: "Immediate volume with biostimulation over weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Bio-compatible and safe materials",
-      "Natural-looking enhancement",
-      "Stimulates natural collagen",
-      "Long-lasting results",
-      "Minimal recovery time",
-      "Expert London practitioners"
+      "Autologous (uses plasma)",
+      "Restores volume",
+      "Stimulates collagen",
+      "Low allergy risk",
+      "Improves texture",
+      "Suitable for delicate areas"
     ]
   };
 
@@ -28,6 +28,4 @@ const BiofillerLondonPage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default BiofillerLondonPage;
+}

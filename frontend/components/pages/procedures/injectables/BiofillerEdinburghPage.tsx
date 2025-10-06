@@ -1,24 +1,24 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const BiofillerEdinburghPage = () => {
+export default function BiofillerEdinburghPage() {
   const hero = {
-    tagline: "BIOFILLER EDINBURGH",
-    title: "Advanced Biofiller Treatments",
-    subtitle: "Premium Bio-Remodeling in Edinburgh",
-    description: "Experience our cutting-edge biofiller treatments at our Edinburgh clinic. Our specialized approach combines innovative bio-compatible materials with expert technique to deliver exceptional facial enhancement and skin improvement."
+    tagline: "NATURAL VOLUME RESTORATION",
+    title: "Biofiller Edinburgh",
+    subtitle: "Autologous Plasma Treatment",
+    description: "Experience natural volume restoration with biofiller using your own plasma. This innovative treatment provides immediate results with biostimulation benefits, low allergy risk, and suitability for delicate areas.",
   };
 
   const treatmentInfo = {
-    duration: "60-90 minutes",
-    results: "Immediate enhancement, optimal results in 4-6 weeks",
-    price: "From £350",
+    duration: "60–90 minutes",
+    results: "Immediate volume with biostimulation over weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Bio-compatible and safe materials",
-      "Natural-looking enhancement",
-      "Stimulates natural collagen",
-      "Long-lasting results",
-      "Minimal recovery time",
-      "Expert Edinburgh practitioners"
+      "Autologous (uses plasma)",
+      "Restores volume",
+      "Stimulates collagen",
+      "Low allergy risk",
+      "Improves texture",
+      "Suitable for delicate areas"
     ]
   };
 
@@ -28,6 +28,4 @@ const BiofillerEdinburghPage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default BiofillerEdinburghPage;
+}

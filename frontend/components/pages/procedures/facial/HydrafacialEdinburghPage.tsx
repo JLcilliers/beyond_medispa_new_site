@@ -9,18 +9,16 @@ export default function HydrafacialEdinburghPage() {
   };
 
   const treatmentInfo = {
-    duration: "45-60 minutes",
-    results: "Immediate radiance, 1-2 weeks duration",
-    price: "From £165",
+    duration: "30–60 minutes",
+    results: "Immediate glow; clearer, hydrated skin for days to weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Climate-adapted treatment for Edinburgh's weather conditions",
-      "Deep moisture replenishment for wind and cold damage",
-      "Protection against seasonal skin sensitivity",
-      "Customized serums for Scottish environmental factors",
-      "Gentle exfoliation suitable for reactive skin",
-      "Barrier repair for harsh weather exposure",
-      "Immediate hydration and comfort",
-      "Professional aftercare for optimal results"
+      "Cleanses, exfoliates, extracts, hydrates",
+      "No downtime",
+      "All skin types",
+      "Improves tone & texture",
+      "Reduces congestion",
+      "Boosts radiance"
     ]
   };
 

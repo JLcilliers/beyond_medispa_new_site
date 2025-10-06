@@ -1,35 +1,31 @@
-import React from 'react';
-import ProcedurePageTemplate from '../../../ProcedurePageTemplate';
+import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 export default function ObagiPage() {
   const hero = {
-    tagline: "OBAGI PROFESSIONAL",
-    title: "Physician-Strength Peels",
-    subtitle: "Medical-Grade Transformation",
-    description: "Harness the power of Obagi's physician-strength chemical peels for dramatic skin transformation. These medical-grade treatments are designed to address severe skin concerns and deliver professional results under expert supervision."
+    tagline: "MEDICAL-GRADE SKINCARE",
+    title: "Obagi Treatments",
+    subtitle: "Professional Skin Transformation",
+    description: "Transform your skin with medical-grade Obagi treatments. Target hyperpigmentation, improve texture and tone, support acne control, and achieve anti-aging benefits with brightening formulations.",
   };
 
   const treatmentInfo = {
-    duration: "60-75 minutes",
-    results: "Significant improvement in 2-4 weeks",
-    price: "From £220",
+    duration: "30–60 minutes",
+    results: "Improvements in 1–4 weeks for peels; ongoing with homecare",
+    price: "Contact for pricing",
     benefits: [
-      "Medical-grade formulation",
-      "Treats severe photoaging",
-      "Reduces deep wrinkles",
-      "Corrects melasma and age spots",
-      "Improves acne scarring",
-      "Stimulates cellular renewal",
-      "Professional supervision",
-      "Dramatic, lasting results"
+      "Targets hyperpigmentation",
+      "Improves texture & tone",
+      "Supports acne control",
+      "Anti-ageing",
+      "Brightens",
+      "Medical-grade formulations"
     ]
   };
 
   return (
-    <ProcedurePageTemplate
+    <ProcedurePageTemplate 
       hero={hero}
       treatmentInfo={treatmentInfo}
-
     />
   );
 }

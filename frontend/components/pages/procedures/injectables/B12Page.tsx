@@ -1,24 +1,24 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const B12Page = () => {
+export default function B12Page() {
   const hero = {
-    tagline: "VITAMIN B12 INJECTIONS",
-    title: "Vitamin B12 Injection Therapy",
-    subtitle: "Boost Energy & Mental Clarity",
-    description: "Revitalize your energy levels and mental clarity with our vitamin B12 injection therapy. These powerful injections provide essential nutrients directly into your system for optimal absorption and immediate benefits to your overall wellbeing."
+    tagline: "VITAMIN B12 INJECTION",
+    title: "B12 Injections",
+    subtitle: "Energy & Wellbeing Boost",
+    description: "Address B12 deficiency and support energy metabolism with quick intramuscular injections. Boost your energy and nervous system health with minimal downtime.",
   };
 
   const treatmentInfo = {
-    duration: "10-15 minutes",
-    results: "Increased energy within 24-48 hours",
-    price: "From £45",
+    duration: "10–15 minutes",
+    results: "Energy and wellbeing may improve over days to weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Boosts energy levels",
-      "Improves mental clarity",
-      "Supports nervous system",
-      "Enhances metabolism",
-      "Quick and convenient",
-      "Better than oral supplements"
+      "Addresses deficiency",
+      "Supports energy metabolism",
+      "Nervous system support",
+      "Quick",
+      "Minimal downtime",
+      "Intramuscular"
     ]
   };
 
@@ -28,6 +28,4 @@ const B12Page = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default B12Page;
+}

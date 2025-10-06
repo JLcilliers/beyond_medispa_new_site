@@ -1,35 +1,31 @@
-import React from 'react';
-import ProcedurePageTemplate from '../../../ProcedurePageTemplate';
+import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 export default function ZOLondonPage() {
   const hero = {
-    tagline: "ZO SKIN HEALTH LONDON",
-    title: "Environmental Protection Peels",
-    subtitle: "Urban Skin Defense",
-    description: "ZO Skin Health's innovative chemical peels specifically designed for London's demanding urban environment. These treatments combine powerful resurfacing with environmental protection for optimal skin health in the city."
+    tagline: "PROFESSIONAL-STRENGTH SKINCARE",
+    title: "ZO Skin Health London",
+    subtitle: "Advanced Skin Solutions",
+    description: "Experience ZO Skin Health professional treatments in London. Improve pigmentation, refine texture and pores, achieve anti-aging results, and control acne/oil with hydrating, calming formulations.",
   };
 
   const treatmentInfo = {
-    duration: "50-65 minutes",
-    results: "Visible changes in 1-2 weeks",
-    price: "From £195",
+    duration: "30–60 minutes",
+    results: "Peel/facial results in days to weeks; longer-term with program use",
+    price: "Contact for pricing",
     benefits: [
-      "Environmental damage protection",
-      "Anti-pollution technology",
-      "Improves skin resilience",
-      "Reduces urban stress signs",
-      "Enhances natural glow",
-      "Targets multiple concerns",
-      "Scientifically proven",
-      "Customizable intensity"
+      "Improves pigmentation",
+      "Refines texture & pores",
+      "Anti-ageing",
+      "Supports acne/oil control",
+      "Hydrates & calms",
+      "Professional-strength"
     ]
   };
 
   return (
-    <ProcedurePageTemplate
+    <ProcedurePageTemplate 
       hero={hero}
       treatmentInfo={treatmentInfo}
-
     />
   );
 }

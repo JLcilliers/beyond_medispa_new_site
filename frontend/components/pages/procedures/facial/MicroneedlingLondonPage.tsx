@@ -9,18 +9,16 @@ export default function MicroneedlingLondonPage() {
   };
 
   const treatmentInfo = {
-    duration: "60-90 minutes",
-    results: "Visible improvement in 2-4 weeks",
-    price: "From £280",
+    duration: "45–60 minutes",
+    results: "Collagen remodeling over 4–6 weeks; course recommended",
+    price: "Contact for pricing",
     benefits: [
-      "Professional-grade microneedling for optimal results",
-      "Stimulates natural collagen and elastin production",
-      "Reduces appearance of scars and skin texture issues",
-      "Minimizes fine lines and wrinkles",
-      "Improves skin tone and radiance",
-      "Enhances product absorption for better results",
-      "Addresses urban pollution and environmental damage",
-      "Customized depth settings for individual skin needs"
+      "Improves texture",
+      "Softens scars",
+      "Minimizes pores",
+      "Reduces lines",
+      "Evens tone",
+      "Enhances absorption"
     ]
   };
 

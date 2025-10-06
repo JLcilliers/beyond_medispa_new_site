@@ -9,18 +9,16 @@ export default function HydrafacialLondonPage() {
   };
 
   const treatmentInfo = {
-    duration: "45-60 minutes",
-    results: "Immediate glow, lasting 1-2 weeks",
-    price: "From £180",
+    duration: "30–60 minutes",
+    results: "Immediate glow; clearer, hydrated skin for days to weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Deep cleansing to remove urban pollution and impurities",
-      "Gentle extraction of blackheads and congestion",
-      "Intense hydration with hyaluronic acid infusion",
-      "Customized serums for London's climate conditions",
-      "No downtime - perfect for busy London lifestyle",
-      "Antioxidant protection against environmental damage",
-      "Improved skin texture and radiance",
-      "Suitable for all skin types and concerns"
+      "Cleanses, exfoliates, extracts, hydrates",
+      "No downtime",
+      "All skin types",
+      "Improves tone & texture",
+      "Reduces congestion",
+      "Boosts radiance"
     ]
   };
 

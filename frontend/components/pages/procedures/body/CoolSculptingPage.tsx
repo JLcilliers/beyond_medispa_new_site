@@ -1,29 +1,31 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 export default function CoolSculptingPage() {
+  const hero = {
+    tagline: "NON-SURGICAL FAT REDUCTION",
+    title: "CoolSculpting",
+    subtitle: "FDA-Cleared Fat Freezing Technology",
+    description: "Experience the world's leading non-invasive fat reduction treatment. CoolSculpting uses controlled cooling to eliminate stubborn fat cells permanently, helping you achieve your desired body contours without surgery or downtime.",
+  };
+
+  const treatmentInfo = {
+    duration: "35–60 minutes per cycle",
+    results: "Fat reduction visible in 8–12 weeks",
+    price: "Contact for pricing",
+    benefits: [
+      "Non-surgical fat reduction",
+      "Targets stubborn fat",
+      "Minimal downtime",
+      "Permanent fat-cell removal",
+      "Contour improvement",
+      "Clinically proven"
+    ]
+  };
+
   return (
-    <ProcedurePageTemplate
-      hero={{
-        tagline: "Fat Freezing Technology",
-        title: "CoolSculpting",
-        subtitle: "Cryolipolysis Fat Reduction",
-        description: "FDA-cleared fat reduction treatment that freezes stubborn fat cells to eliminate them naturally. CoolSculpting targets specific areas of unwanted fat without surgery, needles, or downtime for lasting body contouring results."
-      }}
-      treatmentInfo={{
-        duration: "35-60 minutes per area",
-        results: "Initial results at 3 weeks, full results at 2-3 months",
-        price: "Starting at $600 per cycle",
-        benefits: [
-          "FDA-cleared treatment",
-          "Permanent fat cell elimination",
-          "Non-surgical procedure",
-          "Targets stubborn fat areas",
-          "No downtime required",
-          "Natural-looking results",
-          "Multiple areas can be treated",
-          "Proven clinical efficacy"
-        ]
-      }}
+    <ProcedurePageTemplate 
+      hero={hero}
+      treatmentInfo={treatmentInfo}
     />
   );
 }

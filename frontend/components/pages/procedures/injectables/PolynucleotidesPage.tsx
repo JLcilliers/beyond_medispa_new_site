@@ -1,24 +1,24 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const PolynucleotidesPage = () => {
+export default function PolynucleotidesPage() {
   const hero = {
-    tagline: "POLYNUCLEOTIDES",
-    title: "Polynucleotide Therapy",
-    subtitle: "Advanced Bio-Regenerative Treatment",
-    description: "Experience the revolutionary benefits of polynucleotide therapy. This advanced bio-regenerative treatment stimulates natural healing processes, improves skin quality, and promotes tissue regeneration for remarkable anti-aging results."
+    tagline: "NATURAL REVITALIZATION",
+    title: "Polynucleotides",
+    subtitle: "Advanced Skin Regeneration",
+    description: "Naturally revitalize your skin with polynucleotides. This innovative treatment improves elasticity, hydrates, reduces lines, and brightens, with excellent safety for delicate areas.",
   };
 
   const treatmentInfo = {
-    duration: "45-60 minutes",
-    results: "Progressive improvement over 8-12 weeks",
-    price: "From £450",
+    duration: "30–45 minutes",
+    results: "Skin quality improves in 2–6 weeks; course advised",
+    price: "Contact for pricing",
     benefits: [
-      "Stimulates natural regeneration",
-      "Improves skin texture and tone",
-      "Reduces inflammation",
-      "Promotes tissue healing",
-      "Long-lasting anti-aging effects",
-      "Scientifically proven treatment"
+      "Naturally revitalises",
+      "Improves elasticity",
+      "Hydrates & smooths",
+      "Reduces lines",
+      "Brightens",
+      "Safe for delicate areas"
     ]
   };
 
@@ -28,6 +28,4 @@ const PolynucleotidesPage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default PolynucleotidesPage;
+}

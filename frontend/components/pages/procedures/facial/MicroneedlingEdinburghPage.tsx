@@ -9,18 +9,16 @@ export default function MicroneedlingEdinburghPage() {
   };
 
   const treatmentInfo = {
-    duration: "60-90 minutes",
-    results: "Noticeable improvement in 2-4 weeks",
-    price: "From £260",
+    duration: "45–60 minutes",
+    results: "Collagen remodeling over 4–6 weeks; course recommended",
+    price: "Contact for pricing",
     benefits: [
-      "Climate-adapted microneedling for Scottish conditions",
-      "Professional collagen induction therapy",
-      "Repairs weather-damaged and sensitive skin",
-      "Reduces scarring and skin texture irregularities",
-      "Enhances skin resilience and barrier function",
-      "Improves hydration and moisture retention",
-      "Customized treatment depth for skin sensitivity",
-      "Professional aftercare for optimal healing"
+      "Improves texture",
+      "Softens scars",
+      "Minimizes pores",
+      "Reduces lines",
+      "Evens tone",
+      "Enhances absorption"
     ]
   };
 

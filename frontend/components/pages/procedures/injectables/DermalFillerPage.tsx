@@ -1,24 +1,25 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const DermalFillerPage = () => {
+export default function DermalFillerPage() {
   const hero = {
-    tagline: "DERMAL FILLERS",
-    title: "Premium Dermal Filler Treatments",
-    subtitle: "Restore Volume & Enhance Features",
-    description: "Transform your appearance with our premium dermal filler treatments. Our expert practitioners use high-quality hyaluronic acid fillers to restore facial volume, enhance features, and achieve natural-looking results."
+    tagline: "VOLUME & CONTOUR",
+    title: "Dermal Fillers",
+    subtitle: "Natural Enhancement & Rejuvenation",
+    description: "Restore volume and sculpt contours with our dermal filler treatments. Immediate, customizable results smooth folds and enhance features with dissolvable HA technology.",
+    backgroundImage: "/dermal-fillers-hero.png"
   };
 
   const treatmentInfo = {
-    duration: "45-75 minutes",
-    results: "Immediate results, lasting 6-18 months",
-    price: "From £280",
+    duration: "30–60 minutes",
+    results: "Immediate results; settles over 1–2 weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Restores facial volume",
-      "Enhances natural features",
-      "Smooths wrinkles and lines",
-      "Immediate visible results",
-      "Reversible treatment",
-      "Minimal downtime required"
+      "Restores volume",
+      "Sculpts contours",
+      "Smooths folds",
+      "Quick",
+      "Customisable",
+      "Dissolvable HA"
     ]
   };
 
@@ -28,6 +29,4 @@ const DermalFillerPage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default DermalFillerPage;
+}

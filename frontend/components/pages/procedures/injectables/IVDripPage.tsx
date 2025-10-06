@@ -1,24 +1,24 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
-const IVDripPage = () => {
+export default function IVDripPage() {
   const hero = {
-    tagline: "IV VITAMIN DRIPS",
-    title: "IV Vitamin Therapy",
-    subtitle: "Ultimate Hydration & Nutrient Delivery",
-    description: "Rejuvenate your body with our premium IV vitamin drip therapy. These customized nutrient infusions deliver essential vitamins, minerals, and hydration directly into your bloodstream for maximum absorption and immediate benefits."
+    tagline: "HYDRATION & WELLNESS",
+    title: "IV Drip Therapy",
+    subtitle: "Rapid Nutrient Replenishment",
+    description: "Experience rapid rehydration and energy support with IV drip therapy. Customizable blends deliver immediate hydration and nutrient replenishment with professional administration.",
   };
 
   const treatmentInfo = {
-    duration: "45-90 minutes",
-    results: "Immediate hydration and energy boost",
-    price: "From £180",
+    duration: "30–60 minutes",
+    results: "Immediate hydration/energy; recovery in hours to days",
+    price: "Contact for pricing",
     benefits: [
-      "Immediate hydration",
-      "100% nutrient absorption",
-      "Boosts energy levels",
-      "Supports immune system",
-      "Customizable formulations",
-      "Relaxing treatment experience"
+      "Rapid rehydration",
+      "Replenishes nutrients",
+      "Energy support",
+      "Customisable blends",
+      "Professional administration",
+      "Fast absorption"
     ]
   };
 
@@ -28,6 +28,4 @@ const IVDripPage = () => {
       treatmentInfo={treatmentInfo}
     />
   );
-};
-
-export default IVDripPage;
+}

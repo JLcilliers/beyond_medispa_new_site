@@ -1,29 +1,31 @@
 import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 export default function VanquishPage() {
+  const hero = {
+    tagline: "CONTACTLESS FAT REDUCTION",
+    title: "Vanquish",
+    subtitle: "Non-Invasive Body Contouring",
+    description: "Experience contactless fat reduction with Vanquish. This innovative treatment uses uniform heating to target the abdomen and flanks, reducing circumference without any downtime in a comfortable, non-invasive procedure.",
+  };
+
+  const treatmentInfo = {
+    duration: "45 minutes",
+    results: "Circumferential reduction over 4–8 weeks after a course",
+    price: "Contact for pricing",
+    benefits: [
+      "Contactless fat reduction",
+      "Targets abdomen/flanks",
+      "No downtime",
+      "Uniform heating",
+      "Non-invasive",
+      "Comfortable"
+    ]
+  };
+
   return (
-    <ProcedurePageTemplate
-      hero={{
-        tagline: "Contactless Body Sculpting",
-        title: "Vanquish",
-        subtitle: "Contactless Radiofrequency",
-        description: "Revolutionary contactless radiofrequency technology that treats the entire abdominal area without touching the skin. Vanquish selectively targets fat cells while leaving surrounding tissue unharmed for safe, effective body contouring."
-      }}
-      treatmentInfo={{
-        duration: "45 minutes",
-        results: "Gradual improvement over 2-3 months, optimal after 4-6 treatments",
-        price: "Starting at $375 per session",
-        benefits: [
-          "Contactless treatment",
-          "Large area coverage",
-          "Selective fat targeting",
-          "Comfortable experience",
-          "No skin contact needed",
-          "FDA-cleared technology",
-          "No downtime required",
-          "Safe for all skin types"
-        ]
-      }}
+    <ProcedurePageTemplate 
+      hero={hero}
+      treatmentInfo={treatmentInfo}
     />
   );
 }

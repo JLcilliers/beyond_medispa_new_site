@@ -2,31 +2,29 @@ import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
 
 export default function HydraTitePage() {
   const hero = {
-    tagline: "Hydration + Lifting",
-    title: "HydraTite Treatment",
-    subtitle: "Dual-Action Hydrating and Tightening Facial",
-    description: "Experience the perfect combination of intense hydration and skin tightening in one revolutionary treatment. HydraTite addresses multiple signs of aging while delivering deep moisture for plump, firm, and radiant skin that looks years younger.",
+    tagline: "DEEP CLEANSING & TIGHTENING",
+    title: "HydraTite",
+    subtitle: "Advanced Hydration & Firming Treatment",
+    description: "Experience the ultimate combination of deep cleansing, hydration, and skin tightening. HydraTite delivers immediate results with a clean glow and firmer feel, while stimulating collagen for long-term benefits.",
   };
 
   const treatmentInfo = {
-    duration: "60-75 minutes",
-    results: "Immediate lift, lasting 2-3 weeks",
-    price: "From £220",
+    duration: "60 minutes",
+    results: "Immediate clean glow with firmer feel; collagen builds over weeks",
+    price: "Contact for pricing",
     benefits: [
-      "Dual-action hydration and skin tightening technology",
-      "Immediate lifting effect with long-lasting results",
-      "Deep moisture infusion with advanced hyaluronic acid",
-      "Collagen stimulation for improved skin elasticity",
-      "Reduction in fine lines and wrinkles",
-      "Firmer, more toned facial contours",
-      "Enhanced skin texture and smoothness",
-      "No downtime with progressive improvements"
+      "Deep cleansing & hydration",
+      "Tightening",
+      "Stimulates collagen",
+      "Refines pores",
+      "Improves firmness",
+      "Minimal downtime"
     ]
   };
 
   return (
     <ProcedurePageTemplate 
-      hero={hero} 
+      hero={hero}
       treatmentInfo={treatmentInfo}
     />
   );
