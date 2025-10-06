@@ -3,6 +3,8 @@ import { Phone, MapPin, MessageCircle, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import LanguageSelector from './LanguageSelector'
+import { useLanguage } from '../contexts/LanguageContext'
+import { useTranslations } from '../locales/translations'
 
 const menuItems = [
   { 
@@ -154,6 +156,9 @@ const menuItems = [
 ]
 
 export default function Navigation() {
+  const { language } = useLanguage()
+  const t = useTranslations(language)
+  
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#2C2C2C]/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4">
@@ -170,24 +175,34 @@ export default function Navigation() {
           </Link>
           
           <div className="hidden lg:flex items-center space-x-6">
-            {menuItems.map((item, index) => (
-              <div 
-                key={index} 
-                className="relative group"
-              >
-                {item.type === 'single' ? (
-                  <Link 
-                    to={item.route!}
-                    className="text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium"
-                  >
-                    {item.name}
-                  </Link>
-                ) : item.type === 'mega-dropdown' ? (
-                  <div>
-                    <button className="flex items-center text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium">
-                      {item.name}
-                      <ChevronDown className="w-4 h-4 ml-1" />
-                    </button>
+            {menuItems.map((item, index) => {
+              const translatedName = item.name === 'Home' ? t.nav.home :
+                item.name === 'About' ? t.nav.about :
+                item.name === 'London Treatments' ? t.nav.londonTreatments :
+                item.name === 'Edinburgh Treatments' ? t.nav.edinburghTreatments :
+                item.name === 'Doctors' ? t.nav.doctors :
+                item.name === 'Contact' ? t.nav.contact :
+                item.name === 'Locations' ? 'Locations' :
+                item.name;
+              
+              return (
+                <div 
+                  key={index} 
+                  className="relative group"
+                >
+                  {item.type === 'single' ? (
+                    <Link 
+                      to={item.route!}
+                      className="text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium"
+                    >
+                      {translatedName}
+                    </Link>
+                  ) : item.type === 'mega-dropdown' ? (
+                    <div>
+                      <button className="flex items-center text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium">
+                        {translatedName}
+                        <ChevronDown className="w-4 h-4 ml-1" />
+                      </button>
                     
                     <div className="absolute top-full left-0 mt-1 bg-[#FAF8F5] border border-[#E5E5E5] rounded-lg shadow-xl min-w-[800px] p-6 grid grid-cols-4 gap-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                       {item.categories?.map((category, catIndex) => (
@@ -213,12 +228,12 @@ export default function Navigation() {
                       ))}
                     </div>
                   </div>
-                ) : (
-                  <div>
-                    <button className="flex items-center text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium">
-                      {item.name}
-                      <ChevronDown className="w-4 h-4 ml-1" />
-                    </button>
+                  ) : (
+                    <div>
+                      <button className="flex items-center text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium">
+                        {translatedName}
+                        <ChevronDown className="w-4 h-4 ml-1" />
+                      </button>
                     
                     <div className="absolute top-full left-0 mt-1 bg-[#FAF8F5] border border-[#E5E5E5] rounded-lg shadow-xl min-w-48 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                       {item.items?.map((subItem, subIndex) => (
@@ -231,10 +246,11 @@ export default function Navigation() {
                         </Link>
                       ))}
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
+                    </div>
+                  )}
+                </div>
+              )
+            })}
           </div>
           
           <div className="flex items-center space-x-4">

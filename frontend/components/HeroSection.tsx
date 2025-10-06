@@ -1,8 +1,12 @@
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { useLanguage } from '../contexts/LanguageContext'
+import { useTranslations } from '../locales/translations'
 
 export default function HeroSection() {
+  const { language } = useLanguage()
+  const t = useTranslations(language)
   return (
     <section className="relative min-h-screen overflow-hidden">
       <div className="absolute inset-0 w-full h-full">
@@ -60,7 +64,7 @@ export default function HeroSection() {
                 size="lg" 
                 className="bg-[#C6A77D] hover:bg-[#A38E78] text-white px-12 py-6 text-xl group transition-colors font-medium"
               >
-                Book Now
+                {t.nav.bookNow}
                 <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
