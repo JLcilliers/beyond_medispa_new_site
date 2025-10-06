@@ -21,19 +21,19 @@ const dates = [
 export default function BookingSection() {
   const [selectedDate, setSelectedDate] = useState(8)
   const [selectedTime, setSelectedTime] = useState("10:00 - 13:00")
-  const [personalMaster, setPersonalMaster] = useState(false)
+  const [personalData, setPersonalData] = useState(false)
 
   return (
     <section className="py-20 bg-[#111A19] text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-4xl font-light text-center mb-12">
-            <span className="text-[#F8D794]">БРОНИРОВАНИЕ</span> ДАТЫ
+            <span className="text-[#F8D794]">Book Your</span> Appointment
           </h2>
           
           <div className="bg-[#284139]/30 backdrop-blur-sm rounded-3xl p-8 space-y-8">
             <div>
-              <label className="block text-lg mb-4 text-[#F8D794]">ВЫБЕРИТЕ ДАТУ</label>
+              <label className="block text-lg mb-4 text-[#F8D794]">Select Date</label>
               <div className="grid grid-cols-7 gap-3">
                 {dates.map((date) => (
                   <button
@@ -57,7 +57,7 @@ export default function BookingSection() {
             </div>
             
             <div>
-              <label className="block text-lg mb-4 text-[#F8D794]">ВРЕМЯ</label>
+              <label className="block text-lg mb-4 text-[#F8D794]">Time</label>
               <div className="space-y-3">
                 {timeSlots.map((slot) => (
                   <button
@@ -76,7 +76,7 @@ export default function BookingSection() {
                   >
                     <div className="flex items-center justify-between">
                       <span>{slot.time}</span>
-                      {!slot.available && <span className="text-sm">Занято</span>}
+                      {!slot.available && <span className="text-sm">Booked</span>}
                     </div>
                   </button>
                 ))}
@@ -86,21 +86,21 @@ export default function BookingSection() {
             <div className="flex items-center space-x-3">
               <input
                 type="checkbox"
-                id="personalMaster"
-                checked={personalMaster}
-                onChange={(e) => setPersonalMaster(e.target.checked)}
+                id="personalData"
+                checked={personalData}
+                onChange={(e) => setPersonalData(e.target.checked)}
                 className="w-5 h-5 rounded border-[#80907E] text-[#F8D794] focus:ring-[#F8D794]"
               />
-              <label htmlFor="personalMaster" className="text-sm text-gray-300">
-                Я согласен на обработку персональных данных
+              <label htmlFor="personalData" className="text-sm text-gray-300">
+                I agree to the processing of personal data
               </label>
             </div>
             
             <Button 
               className="w-full bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] py-4 text-lg font-medium rounded-xl transition-all duration-300"
-              disabled={!personalMaster}
+              disabled={!personalData}
             >
-              ЗАБРОНИРОВАТЬ
+              Book Appointment
             </Button>
           </div>
         </div>

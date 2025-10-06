@@ -4,32 +4,32 @@ import { Clock, Star, Percent } from 'lucide-react'
 const offers = [
   {
     id: 1,
-    title: "Pachet Complet Anti-Aging",
-    originalPrice: "1500 RON",
-    discountPrice: "999 RON",
+    title: "Complete Anti-Aging Package",
+    originalPrice: "£1500",
+    discountPrice: "£999",
     discount: "33%",
-    includes: ["Botox", "Filler", "Mezoterapie", "Consultație gratuită"],
-    validUntil: "31 Decembrie 2024",
+    includes: ["Botox", "Filler", "Mesotherapy", "Free consultation"],
+    validUntil: "31 December 2024",
     popular: true
   },
   {
     id: 2,
-    title: "Primul Tratament",
-    originalPrice: "400 RON", 
-    discountPrice: "199 RON",
+    title: "First Treatment",
+    originalPrice: "£400", 
+    discountPrice: "£199",
     discount: "50%",
-    includes: ["Consultație", "Tratament facial", "Produse acasă"],
-    validUntil: "Permanent",
+    includes: ["Consultation", "Facial treatment", "Home care products"],
+    validUntil: "Ongoing",
     popular: false
   },
   {
     id: 3,
-    title: "Abonament 6 Luni",
-    originalPrice: "2400 RON",
-    discountPrice: "1800 RON",
+    title: "6-Month Membership",
+    originalPrice: "£2400",
+    discountPrice: "£1800",
     discount: "25%",
-    includes: ["6 tratamente", "Produse incluse", "Suport permanent"],
-    validUntil: "Ofertă limitată",
+    includes: ["6 treatments", "Products included", "Ongoing support"],
+    validUntil: "Limited offer",
     popular: false
   }
 ]
@@ -40,10 +40,10 @@ export default function SpecialOffers() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light mb-4">
-            Oferte <span className="text-[#F8D794]">Speciale</span>
+            Special <span className="text-[#F8D794]">Offers</span>
           </h2>
           <p className="text-xl text-[#80907E] max-w-2xl mx-auto">
-            Profită acum de prețurile noastre avantajoase pentru transformarea ta
+            Take advantage of our special pricing for your transformation
           </p>
         </div>
         
@@ -54,7 +54,7 @@ export default function SpecialOffers() {
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-full text-sm font-bold flex items-center">
                     <Star className="w-4 h-4 mr-1 fill-current" />
-                    Cel mai popular
+                    Most Popular
                   </div>
                 </div>
               )}
@@ -85,13 +85,13 @@ export default function SpecialOffers() {
               
               <div className="flex items-center justify-center text-sm text-[#80907E] mb-6">
                 <Clock className="w-4 h-4 mr-2" />
-                Valabil până: {offer.validUntil}
+                Valid until: {offer.validUntil}
               </div>
               
               <Button 
                 className={`w-full py-4 ${offer.popular ? 'bg-yellow-400 hover:bg-yellow-500 text-gray-900' : 'bg-white hover:bg-gray-100 text-gray-900'} font-semibold`}
               >
-                Rezervă Acum
+                Book Now
               </Button>
             </div>
           ))}

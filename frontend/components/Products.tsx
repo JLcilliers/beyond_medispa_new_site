@@ -1,35 +1,35 @@
 const products = [
   {
     id: 1,
-    name: "Ser Anti-Aging Premium",
-    brand: "Aesthetic Lab",
+    name: "Premium Anti-Aging Serum",
+    brand: "Beyond MediSpa",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg",
-    price: "299 RON",
-    description: "Ser concentrat cu acid hialuronic și peptide"
+    price: "£299",
+    description: "Concentrated serum with hyaluronic acid and peptides"
   },
   {
     id: 2,
-    name: "Cremă Hidratantă Intensivă",
-    brand: "Aesthetic Lab",
+    name: "Intensive Hydrating Cream",
+    brand: "Beyond MediSpa",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg",
-    price: "189 RON",
-    description: "Hidratare profundă pentru toate tipurile de piele"
+    price: "£189",
+    description: "Deep hydration for all skin types"
   },
   {
     id: 3,
-    name: "Protecție Solară SPF 50",
-    brand: "Aesthetic Lab",
+    name: "Sun Protection SPF 50",
+    brand: "Beyond MediSpa",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Profhilo-Treatment-London-Edinburgh-Beyond-MediSpa.jpg",
-    price: "149 RON",
-    description: "Protecție maximă cu textura ușoară"
+    price: "£149",
+    description: "Maximum protection with lightweight texture"
   },
   {
     id: 4,
-    name: "Masca Regenerantă",
-    brand: "Aesthetic Lab",
+    name: "Regenerating Mask",
+    brand: "Beyond MediSpa",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Chemical-Peels-London-Edinburgh-Beyond-Medispa.jpg",
-    price: "219 RON",
-    description: "Tratament intensiv pentru regenerarea celulară"
+    price: "£219",
+    description: "Intensive treatment for cellular regeneration"
   }
 ]
 
@@ -39,10 +39,10 @@ export default function Products() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">
-            Produse <span className="text-[#284139]">Profesionale</span>
+            Professional <span className="text-[#284139]">Products</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Gama noastră exclusivă de produse cosmetice pentru îngrijirea pielii acasă
+            Our exclusive range of cosmetic products for skincare at home
           </p>
         </div>
         
@@ -64,7 +64,7 @@ export default function Products() {
                 <div className="text-2xl font-bold text-gray-900 mb-4">{product.price}</div>
                 
                 <button className="w-full bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] py-3 rounded-lg font-medium transition-colors">
-                  Adaugă în Coș
+                  Add to Cart
                 </button>
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function Products() {
         
         <div className="text-center mt-12">
           <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-medium">
-            Vezi Toate Produsele
+            View All Products
           </button>
         </div>
       </div>

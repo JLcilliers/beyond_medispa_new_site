@@ -3,28 +3,28 @@ import { Star } from 'lucide-react'
 const testimonials = [
   {
     id: 1,
-    name: "Maria Popescu",
-    location: "București",
+    name: "Sarah Johnson",
+    location: "London",
     rating: 5,
-    text: "Rezultatele au depășit toate așteptările! Echipa Aesthetic Lab este incredibil de profesionistă și atentă la detalii.",
+    text: "The results exceeded all my expectations! The Beyond MediSpa team is incredibly professional and attentive to detail.",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Ewelina-Roguska.png",
     treatment: "Botox & Fillers"
   },
   {
     id: 2,
-    name: "Ana Ionescu",
-    location: "Cluj-Napoca",
+    name: "Emma Wilson",
+    location: "Edinburgh",
     rating: 5,
-    text: "Cea mai bună experiență pe care am avut-o vreodată la o clinică estetică. Recomand cu încredere!",
+    text: "The best experience I've ever had at an aesthetic clinic. I highly recommend with confidence!",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Azadeh-Manesh.png",
     treatment: "Facial Treatment"
   },
   {
     id: 3,
-    name: "Elena Radu",
-    location: "Timișoara",
+    name: "Grace Thompson",
+    location: "London",
     rating: 5,
-    text: "Personalul este extraordinar, iar rezultatele sunt vizibile imediat. Mă întorc cu siguranță!",
+    text: "The staff is extraordinary, and the results are visible immediately. I will definitely be back!",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Claire-Hill.png",
     treatment: "Laser Therapy"
   }
@@ -36,10 +36,10 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">
-            Ce spun <span className="text-[#284139]">clienții noștri</span>
+            What Our <span className="text-[#284139]">Clients Say</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Peste 1000 de clienți mulțumiți care și-au transformat viața prin tratamentele noastre
+            Over 1000 satisfied clients who have transformed their lives through our treatments
           </p>
         </div>
         

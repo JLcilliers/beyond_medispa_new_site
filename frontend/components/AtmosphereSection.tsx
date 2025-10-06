@@ -2,12 +2,12 @@ import { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const images = [
-  { id: 1, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg", title: "Купальный зал", category: "main" },
-  { id: 2, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg", title: "Зона отдыха", category: "small" },
-  { id: 3, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg", title: "Массажная комната", category: "small" },
-  { id: 4, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Chemical-Peels-London-Edinburgh-Beyond-Medispa.jpg", title: "Ресепшн", category: "small" },
-  { id: 5, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Profhilo-Treatment-London-Edinburgh-Beyond-MediSpa.jpg", title: "Фитобочка", category: "small" },
-  { id: 6, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Coolsculpting-Body-Contouring-London-Edinburgh-Beyond-Medispa.jpg", title: "Релакс зона", category: "small" }
+  { id: 1, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg", title: "Treatment Room", category: "main" },
+  { id: 2, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg", title: "Relaxation Zone", category: "small" },
+  { id: 3, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg", title: "Massage Room", category: "small" },
+  { id: 4, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Chemical-Peels-London-Edinburgh-Beyond-Medispa.jpg", title: "Reception", category: "small" },
+  { id: 5, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Profhilo-Treatment-London-Edinburgh-Beyond-MediSpa.jpg", title: "Private Suite", category: "small" },
+  { id: 6, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Coolsculpting-Body-Contouring-London-Edinburgh-Beyond-Medispa.jpg", title: "Wellness Area", category: "small" }
 ]
 
 export default function AtmosphereSection() {
@@ -28,13 +28,13 @@ export default function AtmosphereSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-light mb-4">
-            <span className="text-[#F8D794]">ЧАРУЮЩАЯ</span> АТМОСФЕРА
+            <span className="text-[#F8D794]">Enchanting</span> Atmosphere
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            Мы создали уникальную атмосферу в Азия стиле, 
-            где обязательно получите лучший и мягкий опыт в тишь места. Современное
-            постройки MagiSpa заставят вас позабыть о суете и стрессе современного
-            мира и погрузиться в атмосферу спокойствия и релаксации.
+            We have created a unique atmosphere in an Asian style, 
+            where you will definitely get the best and softest experience in the quiet of the place. The modern
+            building of Beyond MediSpa will make you forget about the hustle and stress of the modern
+            world and immerse yourself in an atmosphere of calm and relaxation.
           </p>
         </div>
         

@@ -22,30 +22,28 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    // Form data would be processed here
   }
 
   const contactInfo = [
     {
       icon: Phone,
-      title: "Telefon",
-      details: ["+40 21 123 4567", "+40 21 123 4568"]
+      title: "Phone",
+      details: ["+44 (20) 7123 4567", "+44 (131) 456 7890"]
     },
     {
       icon: Mail,
       title: "Email", 
-      details: ["contact@aestheticlab.ro", "rezervari@aestheticlab.ro"]
+      details: ["contact@beyondmedispa.co.uk", "bookings@beyondmedispa.co.uk"]
     },
     {
       icon: MapPin,
-      title: "Adresă",
-      details: ["Strada Frumuseții Nr. 123", "Sector 1, București"]
+      title: "Address",
+      details: ["London & Edinburgh", "United Kingdom"]
     },
     {
       icon: Clock,
-      title: "Program",
-      details: ["Luni - Vineri: 9:00 - 20:00", "Sâmbătă: 9:00 - 17:00"]
+      title: "Hours",
+      details: ["Mon - Fri: 9:00 AM - 8:00 PM", "Sat: 9:00 AM - 5:00 PM"]
     }
   ]
 
@@ -54,28 +52,27 @@ export default function ContactForm() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">
-            Contactează-ne <span className="text-[#284139]">Acum</span>
+            Contact Us <span className="text-[#284139]">Now</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Suntem aici să răspundem la toate întrebările tale și să programăm consultația
+            We're here to answer all your questions and schedule your consultation
           </p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-16">
-          {/* Contact Form */}
           <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Trimite-ne un mesaj</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Send Us a Message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Nume complet</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
                   <Input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    placeholder="Numele tău"
+                    placeholder="Your name"
                     required
                   />
                 </div>
@@ -86,7 +83,7 @@ export default function ContactForm() {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    placeholder="email@exemple.ro"
+                    placeholder="email@example.com"
                     required
                   />
                 </div>
@@ -94,18 +91,18 @@ export default function ContactForm() {
               
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Telefon</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
                   <Input
                     type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    placeholder="+40 XXX XXX XXX"
+                    placeholder="+44 XXX XXX XXX"
                     required
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Serviciul dorit</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Desired Service</label>
                   <select
                     name="service"
                     value={formData.service}
@@ -113,35 +110,34 @@ export default function ContactForm() {
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#284139]"
                     required
                   >
-                    <option value="">Selectează serviciul</option>
+                    <option value="">Select service</option>
                     <option value="botox">Botox & Fillers</option>
-                    <option value="facial">Tratamente Faciale</option>
-                    <option value="laser">Terapie Laser</option>
-                    <option value="mezoterapie">Mezoterapia</option>
-                    <option value="peeling">Peeling Chimic</option>
-                    <option value="lifting">Lifting Non-Invaziv</option>
+                    <option value="facial">Facial Treatments</option>
+                    <option value="laser">Laser Therapy</option>
+                    <option value="mesotherapy">Mesotherapy</option>
+                    <option value="peeling">Chemical Peel</option>
+                    <option value="lifting">Non-Invasive Lifting</option>
                   </select>
                 </div>
               </div>
               
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Mesaj</label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
                 <Textarea
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Descrie-ne nevoile tale..."
+                  placeholder="Tell us about your needs..."
                   rows={4}
                 />
               </div>
               
               <Button type="submit" size="lg" className="w-full bg-[#F8D794] hover:bg-[#F8D794] text-black hover:opacity-90">
-                Trimite Mesajul
+                Send Message
               </Button>
             </form>
           </div>
           
-          {/* Contact Information */}
           <div className="space-y-8">
             {contactInfo.map((info, index) => (
               <div key={index} className="flex items-start">
@@ -157,12 +153,11 @@ export default function ContactForm() {
               </div>
             ))}
             
-            {/* Call to Action */}
             <div className="bg-rose-500 text-white p-8 rounded-2xl">
-              <h4 className="text-xl font-semibold mb-4">Programează o consultație gratuită</h4>
-              <p className="mb-6">Vorbește cu specialiștii noștri pentru a afla cel mai potrivit tratament pentru tine.</p>
+              <h4 className="text-xl font-semibold mb-4">Schedule a Free Consultation</h4>
+              <p className="mb-6">Speak with our specialists to find the most suitable treatment for you.</p>
               <Button variant="outline" className="border-white text-white hover:bg-white hover:text-rose-500">
-                Sună Acum
+                Call Now
               </Button>
             </div>
           </div>

@@ -4,43 +4,43 @@ import { ChevronDown, ChevronUp } from 'lucide-react'
 const faqs = [
   {
     id: 1,
-    question: "Sunt tratamentele dureroase?",
-    answer: "Majoritatea tratamentelor noastre sunt minim invazive și se efectuează cu anestezie locală. Nivelul de disconfort este minimal și temporar. Echipa noastră se asigură că vă simțiți confortabil pe toată durata procedurilor."
+    question: "Are the treatments painful?",
+    answer: "Most of our treatments are minimally invasive and are performed with local anesthesia. The level of discomfort is minimal and temporary. Our team ensures that you feel comfortable throughout the procedures."
   },
   {
     id: 2,
-    question: "Cât timp durează o sesiune de tratament?",
-    answer: "Durata variază în funcție de tipul de tratament. O sesiune de Botox durează aproximativ 15-30 minute, în timp ce tratamentele faciale pot dura între 60-90 minute. Vă vom informa exact despre durata tratamentului la consultația inițială."
+    question: "How long does a treatment session last?",
+    answer: "The duration varies depending on the type of treatment. A Botox session lasts approximately 15-30 minutes, while facial treatments can take between 60-90 minutes. We will inform you exactly about the treatment duration at the initial consultation."
   },
   {
     id: 3,
-    question: "Când voi vedea rezultatele?",
-    answer: "Rezultatele variază în funcție de tratament. Pentru Botox și fillers, efectele sunt vizibile în 3-7 zile. Pentru tratamentele faciale, pielea arată mai bună imediat după procedură, iar rezultatele se îmbunătățesc progresiv în următoarele săptămâni."
+    question: "When will I see results?",
+    answer: "Results vary depending on the treatment. For Botox and fillers, effects are visible in 3-7 days. For facial treatments, the skin looks better immediately after the procedure, and results improve progressively in the following weeks."
   },
   {
     id: 4,
-    question: "Sunt tratamentele sigure?",
-    answer: "Da, toate tratamentele sunt efectuate de medici specializați folosind produse certificate și echipamente de ultimă generație. Respectăm toate protocoalele de siguranță și igienă. Fiecare pacient primește o evaluare detaliată înainte de tratament."
+    question: "Are the treatments safe?",
+    answer: "Yes, all treatments are performed by specialist doctors using certified products and state-of-the-art equipment. We respect all safety and hygiene protocols. Each patient receives a detailed evaluation before treatment."
   },
   {
     id: 5,
-    question: "Care este perioada de recuperare?",
-    answer: "Majoritatea tratamentelor nu necesită timp de recuperare. Puteți reveni la activitățile normale imediat după procedură. Pentru anumite tratamente, putem recomanda evitarea expunerii la soare sau a exercițiilor intense pentru 24-48 ore."
+    question: "What is the recovery period?",
+    answer: "Most treatments do not require recovery time. You can return to normal activities immediately after the procedure. For certain treatments, we may recommend avoiding sun exposure or intense exercise for 24-48 hours."
   },
   {
     id: 6,
-    question: "Cât de des trebuie să repet tratamentele?",
-    answer: "Frecvența depinde de tipul de tratament. Botox durează 4-6 luni, fillerii 6-18 luni, iar tratamentele faciale se recomandă lunar. Vă vom oferi un plan personalizat de menținere a rezultatelor."
+    question: "How often should I repeat treatments?",
+    answer: "Frequency depends on the type of treatment. Botox lasts 4-6 months, fillers 6-18 months, and facial treatments are recommended monthly. We will provide you with a personalized plan to maintain your results."
   },
   {
     id: 7,
-    question: "Pot combina mai multe tratamente?",
-    answer: "Da, multe tratamente pot fi combinate pentru rezultate optime. De exemplu, Botox cu filleri sau tratamente faciale cu mezoterapia. Medicul specialist va evalua ce combinații sunt potrivite pentru dvs."
+    question: "Can I combine multiple treatments?",
+    answer: "Yes, many treatments can be combined for optimal results. For example, Botox with fillers or facial treatments with mesotherapy. The specialist doctor will evaluate which combinations are suitable for you."
   },
   {
     id: 8,
-    question: "Care sunt costurile tratamentelor?",
-    answer: "Prețurile variază în funcție de tipul și complexitatea tratamentului. Oferim consultații gratuite pentru a evalua nevoile dvs. și a vă oferi un plan de tratament cu costuri transparente. Avem și pachete avantajoase disponibile."
+    question: "What are the treatment costs?",
+    answer: "Prices vary depending on the type and complexity of the treatment. We offer free consultations to evaluate your needs and provide you with a treatment plan with transparent costs. We also have advantageous packages available."
   }
 ]
 
@@ -60,10 +60,10 @@ export default function FAQ() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">
-            Întrebări <span className="text-[#284139]">Frecvente</span>
+            Frequently Asked <span className="text-[#284139]">Questions</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Răspunsuri la cele mai comune întrebări despre tratamentele noastre
+            Answers to the most common questions about our treatments
           </p>
         </div>
         
@@ -95,9 +95,9 @@ export default function FAQ() {
           </div>
           
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-6">Nu ai găsit răspunsul la întrebarea ta?</p>
+            <p className="text-gray-600 mb-6">Didn't find the answer to your question?</p>
             <button className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-8 py-4 rounded-lg font-medium transition-colors">
-              Contactează-ne Direct
+              Contact Us Directly
             </button>
           </div>
         </div>

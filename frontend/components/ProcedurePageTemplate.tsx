@@ -54,7 +54,7 @@ export default function ProcedurePageTemplate({
         <section className="relative min-h-screen bg-gradient-to-br from-[#2C2C2C] to-[#A38E78] text-white overflow-hidden">
           <div className="absolute inset-0">
             <img 
-              src={hero.backgroundImage || "/api/placeholder/1920/1080"} 
+              src={hero.backgroundImage || "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg"} 
               alt={hero.title}
               className="w-full h-full object-cover opacity-60"
             />

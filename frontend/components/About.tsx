@@ -3,29 +3,29 @@ import { Award, Users, Heart, Sparkles } from 'lucide-react'
 const team = [
   {
     name: "Dr. Sana Sadiq",
-    role: "Medic Primar Dermatologie",
+    role: "Lead Dermatologist",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Dr-Sana-Sadiq.jpg",
-    experience: "15 ani experiență"
+    experience: "15 years experience"
   },
   {
     name: "Dr. Reza Manesh",
-    role: "Specialist Medicină Estetică", 
+    role: "Aesthetic Medicine Specialist", 
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Reza.png",
-    experience: "12 ani experiență"
+    experience: "12 years experience"
   },
   {
     name: "Joanna Pullar",
-    role: "Specialist Cosmetologie",
+    role: "Cosmetology Specialist",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Joanna-Pullar.webp", 
-    experience: "8 ani experiență"
+    experience: "8 years experience"
   }
 ]
 
 const stats = [
-  { number: "5000+", label: "Clienți Mulțumiți", icon: Users },
-  { number: "15+", label: "Ani de Experiență", icon: Award },
-  { number: "98%", label: "Rate de Satisfacție", icon: Heart },
-  { number: "50+", label: "Tratamente Disponibile", icon: Sparkles }
+  { number: "5000+", label: "Satisfied Clients", icon: Users },
+  { number: "15+", label: "Years of Experience", icon: Award },
+  { number: "98%", label: "Satisfaction Rate", icon: Heart },
+  { number: "50+", label: "Available Treatments", icon: Sparkles }
 ]
 
 export default function About() {
@@ -49,29 +49,29 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
             <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
-              Despre <span className="text-[#284139]">Aesthetic Lab</span>
+              About <span className="text-[#284139]">Beyond MediSpa</span>
             </h2>
             
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Aesthetic Lab este o clinică de medicină estetică de renume, dedicată oferirii 
-              celor mai avansate tratamente pentru frumusețe și sănătatea pielii. Cu o echipă 
-              de medici specialiști și o tehnologie de vârf, ne angajăm să vă oferim rezultate 
-              excepționale într-un mediu sigur și confortabil.
+              Beyond MediSpa is a renowned aesthetic medicine clinic, dedicated to providing 
+              the most advanced treatments for beauty and skin health. With a team 
+              of specialist doctors and cutting-edge technology, we are committed to offering you 
+              exceptional results in a safe and comfortable environment.
             </p>
             
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Misiunea noastră este să vă ajutăm să vă simțiți încrezători în pielea voastră, 
-              oferind tratamente personalizate care respectă frumusețea naturală a fiecărui client.
+              Our mission is to help you feel confident in your own skin, 
+              offering personalized treatments that respect the natural beauty of each client.
             </p>
             
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="bg-[#F8D794]/30 p-6 rounded-xl">
-                <h4 className="font-semibold text-gray-900 mb-2">Certificări Internaționale</h4>
-                <p className="text-gray-600 text-sm">Echipa noastră deține certificări de la organismele medicale de prestigiu</p>
+                <h4 className="font-semibold text-gray-900 mb-2">International Certifications</h4>
+                <p className="text-gray-600 text-sm">Our team holds certifications from prestigious medical organizations</p>
               </div>
               <div className="bg-[#F8D794]/30 p-6 rounded-xl">
-                <h4 className="font-semibold text-gray-900 mb-2">Tehnologie Avansată</h4>
-                <p className="text-gray-600 text-sm">Utilizăm doar echipamente de ultimă generație pentru rezultate optime</p>
+                <h4 className="font-semibold text-gray-900 mb-2">Advanced Technology</h4>
+                <p className="text-gray-600 text-sm">We use only state-of-the-art equipment for optimal results</p>
               </div>
             </div>
           </div>
@@ -88,10 +88,10 @@ export default function About() {
         {/* Team Section */}
         <div className="text-center mb-12">
           <h3 className="text-3xl font-light text-gray-900 mb-4">
-            Echipa <span className="text-[#284139]">Noastră</span>
+            Our <span className="text-[#284139]">Team</span>
           </h3>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Profesioniști dedicați cu experiență vastă în medicina estetică
+            Dedicated professionals with extensive experience in aesthetic medicine
           </p>
         </div>
         

@@ -3,26 +3,26 @@ import { Play } from 'lucide-react'
 const steps = [
   {
     step: "01",
-    title: "Consultația Inițială",
-    description: "Evaluare completă a pielii și stabilirea planului de tratament personalizat",
+    title: "Initial Consultation",
+    description: "Complete skin assessment and personalized treatment plan development",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/consultation.png"
   },
   {
     step: "02", 
-    title: "Pregătirea Tratamentului",
-    description: "Curățarea și pregătirea pielii pentru procedura selectată",
+    title: "Treatment Preparation",
+    description: "Cleansing and preparing the skin for the selected procedure",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/web-design.png"
   },
   {
     step: "03",
-    title: "Aplicarea Tratamentului",
-    description: "Executarea procedurilor cu echipamente de ultimă generație",
+    title: "Treatment Application",
+    description: "Performing procedures with state-of-the-art equipment",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/laser.png"
   },
   {
     step: "04",
-    title: "Îngrijirea Post-Tratament",
-    description: "Recomandări pentru menținerea rezultatelor și programul de urmărire",
+    title: "Post-Treatment Care",
+    description: "Recommendations for maintaining results and follow-up schedule",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/solidarity.png"
   }
 ]
@@ -33,15 +33,14 @@ export default function TreatmentJourney() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-[#333333] mb-4">
-            Parcursul Tău de <span className="text-[#A38E78]">Transformare</span>
+            Your <span className="text-[#A38E78]">Transformation</span> Journey
           </h2>
           <p className="text-xl text-[#777777] max-w-2xl mx-auto">
-            Un proces simplu și eficient pentru rezultate remarcabile
+            A simple and efficient process for remarkable results
           </p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Video Section */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
@@ -58,12 +57,11 @@ export default function TreatmentJourney() {
             <div className="absolute -bottom-6 -left-6 bg-[#A38E78] text-white p-6 rounded-2xl">
               <div className="text-center">
                 <div className="text-2xl font-bold">98%</div>
-                <div className="text-sm">Satisfacție Clienți</div>
+                <div className="text-sm">Client Satisfaction</div>
               </div>
             </div>
           </div>
           
-          {/* Steps Section */}
           <div className="space-y-8">
             {steps.map((step, index) => (
               <div key={index} className="flex items-start gap-6">

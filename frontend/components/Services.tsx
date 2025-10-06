@@ -2,50 +2,50 @@ const services = [
   {
     id: 1,
     title: "Botox & Fillers",
-    description: "Reducerea ridurilor și volumizarea naturală a feței",
+    description: "Wrinkle reduction and natural facial volumization",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg",
-    price: "De la 350 RON",
-    features: ["Rezultate naturale", "Fără timp de recuperare", "Efecte imediate"]
+    price: "From £350",
+    features: ["Natural results", "No downtime", "Immediate effects"]
   },
   {
     id: 2,
-    title: "Tratamente Faciale",
-    description: "Hidratare profundă și regenerarea pielii",
+    title: "Facial Treatments",
+    description: "Deep hydration and skin regeneration",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg",
-    price: "De la 200 RON",
-    features: ["Piele hidratată", "Strălucire naturală", "Textura îmbunătățită"]
+    price: "From £200",
+    features: ["Hydrated skin", "Natural glow", "Improved texture"]
   },
   {
     id: 3,
-    title: "Terapie Laser",
-    description: "Eliminarea imperfecțiunilor și închiderea porilor",
+    title: "Laser Therapy",
+    description: "Removal of imperfections and pore minimization",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/laser-hair-removal-london-edinburgh-beyond-medispa.jpg",
-    price: "De la 400 RON",
-    features: ["Fără durere", "Precizie maximă", "Rezultate durabile"]
+    price: "From £400",
+    features: ["Pain-free", "Maximum precision", "Long-lasting results"]
   },
   {
     id: 4,
-    title: "Mezoterapia",
-    description: "Tratament revitalizant cu substanțe active",
+    title: "Mesotherapy",
+    description: "Revitalizing treatment with active substances",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg",
-    price: "De la 300 RON",
-    features: ["Nutriție celulară", "Efecte anti-aging", "Piele fermă"]
+    price: "From £300",
+    features: ["Cellular nutrition", "Anti-aging effects", "Firm skin"]
   },
   {
     id: 5,
-    title: "Peeling Chimic",
-    description: "Exfoliere profundă pentru o piele netedă",
+    title: "Chemical Peel",
+    description: "Deep exfoliation for smooth skin",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Chemical-Peels-London-Edinburgh-Beyond-Medispa.jpg",
-    price: "De la 250 RON",
-    features: ["Regenerare rapidă", "Uniformizare ton", "Textură fină"]
+    price: "From £250",
+    features: ["Fast regeneration", "Even tone", "Fine texture"]
   },
   {
     id: 6,
-    title: "Lifting Non-Invaziv",
-    description: "Întărirea și tonifierea pielii fără chirurgie",
+    title: "Non-Invasive Lifting",
+    description: "Skin firming and toning without surgery",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Profhilo-Treatment-London-Edinburgh-Beyond-MediSpa.jpg",
-    price: "De la 500 RON",
-    features: ["Fără incizii", "Recuperare rapidă", "Efect lifting"]
+    price: "From £500",
+    features: ["No incisions", "Quick recovery", "Lifting effect"]
   }
 ]
 
@@ -55,10 +55,10 @@ export default function Services() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light mb-4">
-            Serviciile <span className="text-[#284139]">Noastre</span>
+            Our <span className="text-[#284139]">Services</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Descoperă gama completă de tratamente estetice adaptate nevoilor tale
+            Discover our complete range of aesthetic treatments tailored to your needs
           </p>
         </div>
         
@@ -90,7 +90,7 @@ export default function Services() {
                 </ul>
                 
                 <button className="w-full bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] py-3 rounded-lg font-medium transition-colors">
-                  Rezervă Acum
+                  Book Now
                 </button>
               </div>
             </div>
