@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
+import { useTranslations } from '../locales/translations'
 
 const faqs = [
   {
@@ -37,6 +39,8 @@ const faqs = [
 ]
 
 export default function FAQSection() {
+  const { language } = useLanguage()
+  const t = useTranslations(language)
   const [openFAQ, setOpenFAQ] = useState<number | null>(null)
 
   const toggleFAQ = (index: number) => {
@@ -48,7 +52,7 @@ export default function FAQSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-            Beyond Aesthetic Clinic Medical Aesthetic Clinic: <span className="text-[#A38E78]">FAQs</span>
+            {t.faq.title.split(':')[0]}: <span className="text-[#A38E78]">{t.faq.title.split(':')[1]?.trim()}</span>
           </h2>
         </div>
 
@@ -91,17 +95,17 @@ export default function FAQSection() {
           <div className="mt-12 text-center">
             <div className="bg-[#FAF8F5] border border-[#E5E5E5] rounded-2xl p-8">
               <h3 className="text-2xl font-light text-[#333333] mb-4">
-                Visit Our Aesthetic Clinic In London Or Edinburgh Today
+                {t.faq.visitTitle}
               </h3>
               <p className="text-[#777777] mb-6">
-                Experience expert aesthetic care in a luxurious, calming setting. Visit our London or Edinburgh clinics and start your beauty journey today.
+                {t.faq.visitDesc}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
                   href="tel:02072018595"
                   className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-6 py-3 rounded-lg font-medium transition-colors"
                 >
-                  Call Us: 020 7201 8595
+                  {t.faq.callUs}
                 </a>
                 <a 
                   href="/book-treatment"

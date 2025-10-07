@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
+import { useTranslations } from '../locales/translations'
 
 const testimonials = [
   {
@@ -48,6 +50,8 @@ const testimonials = [
 ]
 
 export default function TestimonialsSection() {
+  const { language } = useLanguage()
+  const t = useTranslations(language)
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
 
   const nextTestimonial = () => {
@@ -63,11 +67,10 @@ export default function TestimonialsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-            What Our <span className="text-[#A38E78]">Clients Say</span>
+            {t.testimonials.title.split(' ').slice(0, -2).join(' ')} <span className="text-[#A38E78]">{t.testimonials.title.split(' ').slice(-2).join(' ')}</span>
           </h2>
           <p className="text-xl text-[#777777] max-w-3xl mx-auto">
-            Don't just take our word for it. Hear from our satisfied clients who have experienced 
-            the Beyond Aesthetic Clinic difference across our London and Edinburgh clinics.
+            {t.testimonials.subtitle}
           </p>
         </div>
 
@@ -130,15 +133,15 @@ export default function TestimonialsSection() {
           <div className="grid md:grid-cols-3 gap-6 mt-12">
             <div className="text-center">
               <div className="text-3xl font-bold text-[#F8D794] mb-2">1000+</div>
-              <p className="text-gray-300">Happy Clients</p>
+              <p className="text-gray-300">{t.testimonials.happyClients}</p>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-[#F8D794] mb-2">15+</div>
-              <p className="text-gray-300">Years Experience</p>
+              <p className="text-gray-300">{t.testimonials.yearsExperience}</p>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-[#F8D794] mb-2">95%</div>
-              <p className="text-gray-300">Satisfaction Rate</p>
+              <p className="text-gray-300">{t.testimonials.satisfactionRate}</p>
             </div>
           </div>
         </div>
