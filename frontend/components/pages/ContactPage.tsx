@@ -2,8 +2,8 @@ import Navigation from '../Navigation'
 import Footer from '../Footer'
 import { Button } from '@/components/ui/button'
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
-import { useLanguage } from '../../contexts/LanguageContext'
-import { useTranslations } from '../../locales/translations'
+import { useLanguage } from '../../../contexts/LanguageContext'
+import { useTranslations } from '../../../locales/translations'
 import { splitHighlight } from '../../lib/intl'
 
 export default function ContactPage() {

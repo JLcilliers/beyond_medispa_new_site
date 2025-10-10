@@ -1,5 +1,5 @@
-import { useLanguage } from '../../contexts/LanguageContext'
-import { useTranslations } from '../../locales/translations'
+import { useLanguage } from '../../../contexts/LanguageContext'
+import { useTranslations } from '../../../locales/translations'
 import CategoryPageTemplate from '../../CategoryPageTemplate'
 
 export default function BodyPage() {
