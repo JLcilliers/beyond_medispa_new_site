@@ -2,8 +2,8 @@ import Navigation from '../Navigation'
 import Footer from '../Footer'
 import { Button } from '@/components/ui/button'
 import { Award, Users, MapPin, Star, Phone, Mail } from 'lucide-react'
-import { useLanguage } from '../../../contexts/LanguageContext'
-import { useTranslations } from '../../../locales/translations'
+import { useLanguage } from '../../contexts/LanguageContext'
+import { useTranslations } from '../../locales/translations'
 
 const doctors = [
   {

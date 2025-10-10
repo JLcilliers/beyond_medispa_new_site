@@ -5,8 +5,8 @@ import Locations from '../Locations'
 import { Award, Users, Heart, Shield, Phone, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
-import { useLanguage } from '../../../contexts/LanguageContext'
-import { useTranslations } from '../../../locales/translations'
+import { useLanguage } from '../../contexts/LanguageContext'
+import { useTranslations } from '../../locales/translations'
 
 export default function AboutPage() {
   const { language } = useLanguage()
