@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black overflow-hidden">
       <div className="absolute inset-0">
-        <img 
-          src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg" 
+        <img
+          src="https://i.ibb.co/Y7Q2vjLx/beautiful-woman-getting-facial-skincare-treatment-2025-02-24-12-22-50-utc.webp"
           alt="Elegant woman touching her face"
           className="w-full h-full object-cover opacity-40"
         />
@@ -18,7 +18,7 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-light mb-6 leading-tight">
             Invest in <br />
             <span className="text-[#B86330] font-normal">your skin</span> <br />
-            with Beyond MediSpa
+            with Beyond Aesthetic Clinic
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-300 font-light">

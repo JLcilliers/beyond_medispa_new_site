@@ -5,95 +5,45 @@ import Locations from '../Locations'
 import { Award, Users, Heart, Shield, Phone, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
-
-const teamMembers = [
-  {
-    name: 'Dr Azadeh Manesh',
-    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Azadeh-Manesh.png',
-    description: 'Dr Azadeh Manesh specialises in non‑surgical aesthetics, offering natural‑looking results and holistic skin consultations tailored to individual needs.',
-    role: 'Aesthetic Doctor'
-  },
-  {
-    name: 'Dr Sana Sadiq',
-    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/DR-SANA-SADIQ.jpeg',
-    description: 'Dr Sana Sadiq focuses on full‑face beautification, combining corrective and preventive treatments for stunning, natural results.',
-    role: 'Aesthetic Doctor'
-  },
-  {
-    name: 'Marianne',
-    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/MARIANNE.jpg',
-    description: 'Marianne focuses on natural enhancements and subtle tweaks to highlight your facial contours.',
-    role: 'Senior Aesthetic Practitioner'
-  },
-  {
-    name: 'Ewelina Roguska',
-    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Ewelina-Roguska-1.png',
-    description: 'Ewelina has 9+ years of experience and a passion for treating acne and post‑acne skin with advanced skin therapies.',
-    role: 'Senior Aesthetic Practitioner'
-  },
-  {
-    name: 'Louise Walker',
-    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Louise-Walker-1.jpg',
-    description: 'Louise customises skin treatments using medical‑grade devices and advanced skincare techniques with 18+ years in aesthetics.',
-    role: 'Senior Aesthetic Practitioner'
-  },
-  {
-    name: 'Joanna Pullar',
-    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Joanna-Pullar-1.webp',
-    description: 'Joanna is a Senior Aesthetic Practitioner with expertise in electrolysis and advanced skin treatments.',
-    role: 'Senior Aesthetic Practitioner'
-  },
-  {
-    name: 'Nazish Aman',
-    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Nazish-Aman.jpg',
-    description: 'With 11+ years in aesthetics, Naz assists front‑of‑house operations and provides tailored skincare treatments.',
-    role: 'Aesthetic Practitioner'
-  },
-  {
-    name: 'Reza',
-    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Reza.png',
-    description: 'Known for his five‑star service, Reza ensures clients feel comfortable while delivering expert aesthetic advice.',
-    role: 'Aesthetic Practitioner'
-  },
-  {
-    name: 'Leanne',
-    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Leanne.jpg',
-    description: 'Leanne has 6+ years of experience in customer service, providing a professional and welcoming presence at Beyond Aesthetic Clinic.',
-    role: 'Client Relations'
-  },
-  {
-    name: 'Ruxi',
-    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Ruxi.png',
-    description: 'With over a decade in aesthetics, Ruxi specialises in modern skincare treatments and practitioner training.',
-    role: 'Senior Aesthetic Practitioner'
-  },
-  {
-    name: 'Claire Hill',
-    image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Claire-Hill.png',
-    description: 'A Senior Aesthetician with 14+ years of experience, Claire specialises in laser hair and tattoo removal treatments.',
-    role: 'Senior Aesthetic Practitioner'
-  }
-]
-
-const differentiators = [
-  {
-    icon: Award,
-    title: 'Trusted Experts in Aesthetic Medicine',
-    description: 'Our team of qualified doctors and practitioners deliver safe, effective treatments backed by science.'
-  },
-  {
-    icon: Heart,
-    title: 'Honest Advice, Real Results',
-    description: 'We provide transparent consultations and realistic expectations, ensuring you make informed decisions.'
-  },
-  {
-    icon: Users,
-    title: 'Aesthetic Excellence with a Family Touch',
-    description: 'We combine professional expertise with a warm, welcoming approach that makes you feel at home.'
-  }
-]
+import { useLanguage } from '../../contexts/LanguageContext'
+import { useTranslations } from '../../locales/translations'
 
 export default function AboutPage() {
+  const { language } = useLanguage()
+  const t = useTranslations(language)
+
+  const differentiators = [
+    {
+      icon: Award,
+      title: t.about.trustedExperts,
+      description: t.about.trustedExpertsDesc
+    },
+    {
+      icon: Heart,
+      title: t.about.honestAdvice,
+      description: t.about.honestAdviceDesc
+    },
+    {
+      icon: Users,
+      title: t.about.familyTouch,
+      description: t.about.familyTouchDesc
+    }
+  ]
+
+  const getTeamRoleTranslation = (role: string) => {
+    switch (role) {
+      case 'Aesthetic Doctor':
+        return t.teamRoles.aestheticDoctor
+      case 'Senior Aesthetic Practitioner':
+        return t.teamRoles.seniorPractitioner
+      case 'Aesthetic Practitioner':
+        return t.teamRoles.aestheticPractitioner
+      case 'Client Relations':
+        return t.teamRoles.clientRelations
+      default:
+        return role
+    }
+  }
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -103,18 +53,18 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-5xl lg:text-6xl font-light mb-6">
-                Our Vision, Mission, <span className="text-[#C6A77D]">& Values</span>
+                {t.about.pageTitle} <span className="text-[#C6A77D]">{t.about.pageSubtitle}</span>
               </h1>
               <h3 className="text-2xl font-light text-white/80 mb-8">
-                Learn more about Beyond Aesthetic Clinic
+                {t.about.pageSubtitle}
               </h3>
               <p className="text-xl text-white/90 leading-relaxed mb-12">
-                Here at Beyond Aesthetic Clinic, we go beyond expectations to deliver advanced aesthetic treatments that enhance your natural beauty. With a patient-first approach, expert practitioners, and cutting-edge technology, we create a bespoke experience tailored to your unique goals, ensuring exceptional results every time.
+                {t.about.pageDescription}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/book-treatment">
                   <Button className="bg-[#C6A77D] hover:bg-[#A38E78] text-white px-8 py-4 text-lg">
-                    Make a Booking Today
+                    {t.about.makeBooking}
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
@@ -132,7 +82,7 @@ export default function AboutPage() {
         <section className="py-16 bg-gradient-to-br from-[#FAF8F5] via-[#FFFFFF] to-[#F5F1EC]">
           <div className="container mx-auto px-4">
             <h3 className="text-center text-xl text-[#777777] mb-8">
-              Tried and Trusted By Top Aesthetic Professionals
+              {t.about.trustedBy}
             </h3>
           </div>
         </section>
@@ -140,39 +90,39 @@ export default function AboutPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">OUR MISSION</h4>
+              <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">{t.about.ourMission}</h4>
               <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-12">
-                Going Above & Beyond In <span className="text-[#A38E78]">Medical Aesthetics</span>
+                {t.about.missionTitle}
               </h2>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
               <div>
-                <img 
-                  src="https://www.beyondmedispa.com/wp-content/uploads/2025/09/Gemini_Generated_Image_w7zyv8w7zyv8w7zy.png" 
-                  alt="Elevating Aesthetic Care"
+                <img
+                  src="https://i.ibb.co/BKgy3QK1/beautician-doing-facial-skin-procedure-with-electr-2024-11-25-19-06-27-utc.webp"
+                  alt={t.about.elevatingCare}
                   className="rounded-3xl shadow-xl w-full"
                 />
               </div>
               <div>
-                <h3 className="text-3xl font-light text-[#333333] mb-6">Elevating Aesthetic Care</h3>
+                <h3 className="text-3xl font-light text-[#333333] mb-6">{t.about.elevatingCare}</h3>
                 <p className="text-lg text-[#777777] leading-relaxed">
-                  We believe that beauty should be approached with expertise, precision, and care. Our highly skilled team provides safe, effective, and scientifically backed treatments, ensuring that every patient receives world-class results in a welcoming, luxurious environment.
+                  {t.about.elevatingCareDesc}
                 </p>
               </div>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <h3 className="text-3xl font-light text-[#333333] mb-6">Your Journey, Our Expertise</h3>
+                <h3 className="text-3xl font-light text-[#333333] mb-6">{t.about.yourJourney}</h3>
                 <p className="text-lg text-[#777777] leading-relaxed">
-                  Your journey is just as important as the outcome. Through detailed consultations, personalised treatment plans, and industry-leading techniques, we help you achieve your desired look while maintaining a natural and refreshed appearance.
+                  {t.about.yourJourneyDesc}
                 </p>
               </div>
               <div className="order-1 lg:order-2">
-                <img 
-                  src="https://www.beyondmedispa.com/wp-content/uploads/2025/09/Gemini_Generated_Image_w7zyv8w7zyv8w7zy.png" 
-                  alt="Your Journey, Our Expertise"
+                <img
+                  src="https://i.ibb.co/whcTHZ9L/beautician-makes-laser-procedures-on-a-female-face-2024-11-27-11-44-52-utc.webp"
+                  alt={t.about.yourJourney}
                   className="rounded-3xl shadow-xl w-full"
                 />
               </div>
@@ -183,7 +133,7 @@ export default function AboutPage() {
         <section className="py-20 bg-gradient-to-br from-[#FAF8F5] via-[#FFFFFF] to-[#F5F1EC]">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl lg:text-5xl font-light text-[#333333] text-center mb-16">
-              What Makes Us <span className="text-[#A38E78]">Different?</span>
+              {t.about.whatMakesUsDifferent}<span className="text-[#A38E78]">{t.about.whatMakesUsDifferentHighlight}</span>
             </h2>
             <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
               {differentiators.map((item, index) => {
@@ -205,24 +155,24 @@ export default function AboutPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-12">
-              Who We <span className="text-[#A38E78]">Are</span>
+              {t.about.whoWeAre}<span className="text-[#A38E78]">{t.about.whoWeAreHighlight}</span>
             </h2>
             <div className="grid lg:grid-cols-2 gap-16 items-center mb-12">
               <div>
-                <img 
-                  src="https://www.beyondmedispa.com/wp-content/uploads/2025/09/Gemini_Generated_Image_w7zyv8w7zyv8w7zy.png" 
-                  alt="Who We Are"
+                <img
+                  src="https://i.ibb.co/qYdNFxHJ/lovely-woman-receiving-facial-treatment-at-wellnes-2025-03-24-09-37-28-utc.webp"
+                  alt={t.about.whoWeAre}
                   className="rounded-3xl shadow-xl w-full"
                 />
               </div>
               <div>
                 <p className="text-lg text-[#777777] leading-relaxed">
-                  With locations in London and Edinburgh, since 2006, Beyond MediSpa has established itself as a leader in medical aesthetics. Our expert team provides facial and body treatments designed to enhance your confidence and well-being. We prioritise safety, innovation, and personalised care, ensuring that every treatment plan is tailored to meet the unique needs of our patients. From skin rejuvenation to body contouring, we are committed to delivering exceptional results.
+                  {t.about.whoWeAreDesc}
                 </p>
                 <div className="flex gap-4 mt-8">
                   <Link to="/book-treatment">
                     <Button className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-6 py-3">
-                      Make a Booking
+                      {t.about.makeBooking}
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                   </Link>
@@ -237,17 +187,17 @@ export default function AboutPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">SPECIALISTS IN BEAUTY</h4>
+              <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">{t.about.specialistsInBeauty}</h4>
               <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-                Meet Our <span className="text-[#A38E78]">Team</span>
+                {t.about.meetOurTeam}<span className="text-[#A38E78]">{t.about.meetOurTeamHighlight}</span>
               </h2>
               <p className="text-xl text-[#777777] max-w-3xl mx-auto">
-                Behind every exceptional result is an expert you can trust. Our handpicked team of aesthetic specialists includes leading doctors, nurses, and advanced practitioners dedicated to tailoring treatments to your needs.
+                {t.about.teamSubtitle}
               </p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              {teamMembers.map((member, index) => (
+              {t.teamMembers.map((member, index) => (
                 <div
                   key={index}
                   className="bg-white/90 border border-[#E5E5E5] rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group shadow-lg"
@@ -262,7 +212,7 @@ export default function AboutPage() {
                   <div className="p-6">
                     <div className="mb-2">
                       <span className="text-xs text-[#A38E78] font-medium uppercase tracking-wider">
-                        {member.role}
+                        {getTeamRoleTranslation(member.role)}
                       </span>
                     </div>
                     <h3 className="text-xl font-semibold text-[#333333] mb-3">{member.name}</h3>
@@ -277,9 +227,9 @@ export default function AboutPage() {
         <section className="py-20 bg-gradient-to-br from-[#FAF8F5] via-[#FFFFFF] to-[#F5F1EC]">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">GALLERY</h4>
+              <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">{t.about.gallery}</h4>
               <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-                Inside <span className="text-[#A38E78]">Beyond MediSpa</span>
+                {t.about.insideClinic}<span className="text-[#A38E78]">{t.about.insideClinicHighlight}</span>
               </h2>
             </div>
           </div>
@@ -290,16 +240,16 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
               <div>
                 <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-                  Trust, Honesty, <span className="text-[#A38E78]">Expertise</span>
+                  {t.about.trustHonestyExpertise}<span className="text-[#A38E78]">{t.about.trustHonestyExpertiseHighlight}</span>
                 </h2>
                 <p className="text-lg text-[#777777] leading-relaxed">
-                  We are committed to delivering outstanding aesthetic results with integrity and professionalism. Our approach is built on trust, honesty, and clinical excellence, ensuring that every patient receives treatments tailored to their unique needs.
+                  {t.about.trustDesc}
                 </p>
               </div>
               <div>
-                <img 
-                  src="https://www.beyondmedispa.com/wp-content/uploads/2025/09/Gemini_Generated_Image_w7zyv8w7zyv8w7zy.png" 
-                  alt="Trust and Expertise"
+                <img
+                  src="https://i.ibb.co/1f6XFgtK/woman-having-facial-treatment-in-beauty-salon-clo-2025-02-12-23-00-09-utc-1.webp"
+                  alt={t.about.trustHonestyExpertise}
                   className="rounded-3xl shadow-xl w-full"
                 />
               </div>
@@ -307,18 +257,18 @@ export default function AboutPage() {
 
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <img 
-                  src="https://www.beyondmedispa.com/wp-content/uploads/2025/09/Gemini_Generated_Image_w7zyv8w7zyv8w7zy.png" 
-                  alt="Personalised Experience"
+                <img
+                  src="https://i.ibb.co/G4zfSnGV/studio-shot-of-a-beautiful-young-woman-with-flower-2025-04-06-07-14-47-utc.webp"
+                  alt={t.about.personalisedExperience}
                   className="rounded-3xl shadow-xl w-full"
                 />
               </div>
               <div className="order-1 lg:order-2">
                 <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-                  A Truly <span className="text-[#A38E78]">Personalised Experience</span>
+                  {t.about.personalisedExperience}<span className="text-[#A38E78]">{t.about.personalisedExperienceHighlight}</span>
                 </h2>
                 <p className="text-lg text-[#777777] leading-relaxed">
-                  Every individual is unique, and so is our approach to aesthetic care. We take the time to understand your goals, crafting a bespoke treatment plan that enhances your natural beauty while prioritising long-term skin health.
+                  {t.about.personalisedDesc}
                 </p>
               </div>
             </div>
@@ -329,18 +279,18 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
-                <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">OUR COMMITMENT</h4>
+                <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">{t.about.ourCommitment}</h4>
                 <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-                  Safety & <span className="text-[#A38E78]">Innovation</span>
+                  {t.about.safetyInnovation}<span className="text-[#A38E78]">{t.about.safetyInnovationHighlight}</span>
                 </h2>
                 <p className="text-lg text-[#777777] leading-relaxed">
-                  Patient safety is always our top priority. We use only the most advanced, clinically approved technologies and techniques to ensure every treatment is safe, effective, and tailored to your needs. Our team continually undergoes training to stay ahead in the industry.
+                  {t.about.safetyDesc}
                 </p>
               </div>
               <div>
-                <img 
-                  src="https://www.beyondmedispa.com/wp-content/uploads/2025/09/Gemini_Generated_Image_w7zyv8w7zyv8w7zy.png" 
-                  alt="Safety and Innovation"
+                <img
+                  src="https://www.beyondmedispa.com/wp-content/uploads/2024/10/Claire-Hill.png"
+                  alt={t.about.safetyInnovation}
                   className="rounded-3xl shadow-xl w-full"
                 />
               </div>
@@ -351,16 +301,16 @@ export default function AboutPage() {
         <section className="py-20 bg-gradient-to-br from-[#A38E78] to-[#8B7A67] text-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h4 className="text-sm text-white/80 font-semibold tracking-wider mb-4">BOOK YOUR APPOINTMENT</h4>
+              <h4 className="text-sm text-white/80 font-semibold tracking-wider mb-4">{t.nav.bookNow.toUpperCase()}</h4>
               <h2 className="text-4xl lg:text-5xl font-light mb-6">
-                Visit Us In London Or Edinburgh Today
+                {t.about.visitUsToday}
               </h2>
               <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-                Experience expert aesthetic care in a luxurious, calming setting. Visit our London or Edinburgh clinics and start your beauty journey today.
+                {t.about.visitDesc}
               </p>
               <Link to="/book-treatment">
                 <Button size="lg" className="bg-white text-[#A38E78] hover:bg-white/90 px-8 py-4 text-lg">
-                  Book Now
+                  {t.buttons.bookNow}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
@@ -371,9 +321,9 @@ export default function AboutPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">TWO LOCATIONS – ONE PREMIUM AESTHETIC BRAND</h4>
+              <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">{t.about.twoLocations}</h4>
               <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-                Where To <span className="text-[#A38E78]">Find Us</span>
+                {t.about.whereToFindUs}<span className="text-[#A38E78]">{t.about.whereToFindUsHighlight}</span>
               </h2>
             </div>
             <Locations />

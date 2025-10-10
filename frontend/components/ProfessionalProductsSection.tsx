@@ -5,13 +5,13 @@ const products = [
   {
     title: "Advanced Skincare",
     description: "Medical-grade skincare products for optimal results",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg",
+    image: "https://i.ibb.co/Kj4wWGcD/beauty-salon-beautician-applies-cooling-gel-to-cli-2025-01-09-05-05-23-utc-1.webp",
     features: ["Clinical strength", "Dermatologist approved", "Visible results"]
   },
   {
-    title: "Injectable Treatments", 
+    title: "Injectable Treatments",
     description: "Premium injectables for natural enhancement",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg",
+    image: "https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp",
     features: ["FDA approved", "Long-lasting", "Minimal downtime"]
   }
 ]
@@ -69,8 +69,8 @@ export default function ProfessionalProductsSection() {
           {/* Left Side - Large Image */}
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <img 
-                src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg" 
+              <img
+                src="https://i.ibb.co/Zz6VZvZS/a-drop-of-gel-pours-from-a-syringe-for-cosmetic-pr-2025-03-16-09-14-11-utc.webp"
                 alt="Professional treatment application"
                 className="w-full h-[600px] object-cover"
               />

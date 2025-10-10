@@ -4,3 +4,40 @@ encore.gen.cue
 /.encore
 node_modules
 /encore.gen
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist
+build
+.vite
+.turbo
+
+# Dependencies
+node_modules
+bun.lockb
+package-lock.json
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs
+
+# Temporary files
+*.tmp
+nul
+*.temp

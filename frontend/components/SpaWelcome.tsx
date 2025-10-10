@@ -15,8 +15,8 @@ export default function SpaWelcome() {
           {/* Left Side - Image */}
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <img 
-                src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg" 
+              <img
+                src="https://i.ibb.co/Zz6VZvZS/a-drop-of-gel-pours-from-a-syringe-for-cosmetic-pr-2025-03-16-09-14-11-utc.webp"
                 alt="Welcome to Spa Center"
                 className="w-full h-[600px] object-cover"
               />

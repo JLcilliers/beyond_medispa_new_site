@@ -49,11 +49,11 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
             <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
-              About <span className="text-[#284139]">Beyond MediSpa</span>
+              About <span className="text-[#284139]">Beyond Aesthetic Clinic</span>
             </h2>
-            
+
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Beyond MediSpa is a renowned aesthetic medicine clinic, dedicated to providing 
+              Beyond Aesthetic Clinic is a renowned aesthetic medicine clinic, dedicated to providing 
               the most advanced treatments for beauty and skin health. With a team 
               of specialist doctors and cutting-edge technology, we are committed to offering you 
               exceptional results in a safe and comfortable environment.
@@ -77,8 +77,8 @@ export default function About() {
           </div>
           
           <div className="relative">
-            <img 
-              src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg" 
+            <img
+              src="https://i.ibb.co/PvpR3n95/calm-pleased-lady-undergoing-a-cosmetic-procedure-2025-03-06-21-00-06-utc.webp"
               alt="Aesthetic Lab clinic"
               className="rounded-2xl shadow-2xl"
             />

@@ -2,12 +2,12 @@ import { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const images = [
-  { id: 1, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg", title: "Treatment Room", category: "main" },
-  { id: 2, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg", title: "Relaxation Zone", category: "small" },
-  { id: 3, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg", title: "Massage Room", category: "small" },
-  { id: 4, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Chemical-Peels-London-Edinburgh-Beyond-Medispa.jpg", title: "Reception", category: "small" },
-  { id: 5, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Profhilo-Treatment-London-Edinburgh-Beyond-MediSpa.jpg", title: "Private Suite", category: "small" },
-  { id: 6, src: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Coolsculpting-Body-Contouring-London-Edinburgh-Beyond-Medispa.jpg", title: "Wellness Area", category: "small" }
+  { id: 1, src: "https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp", title: "Treatment Room", category: "main" },
+  { id: 2, src: "https://i.ibb.co/Kj4wWGcD/beauty-salon-beautician-applies-cooling-gel-to-cli-2025-01-09-05-05-23-utc-1.webp", title: "Relaxation Zone", category: "small" },
+  { id: 3, src: "https://i.ibb.co/Zz6VZvZS/a-drop-of-gel-pours-from-a-syringe-for-cosmetic-pr-2025-03-16-09-14-11-utc.webp", title: "Massage Room", category: "small" },
+  { id: 4, src: "https://i.ibb.co/nqqyz2vP/a-beautician-wearing-gloves-vacuum-cleans-and-poli-2024-12-02-09-41-13-utc.webp", title: "Reception", category: "small" },
+  { id: 5, src: "https://i.ibb.co/zVSjQZPg/female-at-cosmetic-beauty-spa-clinic-has-facial-ha-2024-10-18-17-49-09-utc-1.webp", title: "Private Suite", category: "small" },
+  { id: 6, src: "https://i.ibb.co/RTZVYtGm/leg-waxing-procedure-in-a-top-notch-beauty-center-2024-10-21-09-02-09-utc.webp", title: "Wellness Area", category: "small" }
 ]
 
 export default function AtmosphereSection() {
@@ -31,9 +31,9 @@ export default function AtmosphereSection() {
             <span className="text-[#F8D794]">Enchanting</span> Atmosphere
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            We have created a unique atmosphere in an Asian style, 
+            We have created a unique atmosphere in an Asian style,
             where you will definitely get the best and softest experience in the quiet of the place. The modern
-            building of Beyond MediSpa will make you forget about the hustle and stress of the modern
+            building of Beyond Aesthetic Clinic will make you forget about the hustle and stress of the modern
             world and immerse yourself in an atmosphere of calm and relaxation.
           </p>
         </div>

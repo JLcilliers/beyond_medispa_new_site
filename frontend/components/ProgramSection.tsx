@@ -1,66 +1,78 @@
-const programs = [
-  {
-    id: 1,
-    title: "Consultation",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/consultation.png",
-    description: "Personalized assessment by our medical experts"
-  },
-  {
-    id: 2,
-    title: "Customization",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/web-design.png", 
-    description: "Tailored treatment plan for your goals"
-  },
-  {
-    id: 3,
-    title: "Treatment",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/laser.png",
-    description: "Safe, advanced procedures for natural results"
-  },
-  {
-    id: 4,
-    title: "Aftercare",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/solidarity.png",
-    description: "Ongoing support for lasting beauty"
-  }
-]
-
-const details = [
-  {
-    title: "1. Consult & Assess",
-    description: "We offer a personalised consultation to assess your goals and recommend the best skin, body, or facial aesthetic treatments for you. Through initial consulting and assessment, our expert team ensures every treatment enhances your natural beauty while delivering real, noticeable results."
-  },
-  {
-    title: "2. Bespoke Treatment Plan",
-    description: "Following your consultation, we create a tailored treatment plan designed around your unique treatment preferences, lifestyle, and goals. Whether you're looking to refresh your skin, sculpt your body, or achieve subtle facial enhancements, your plan is personalised to deliver safe, effective, and lasting results."
-  },
-  {
-    title: "3. Cutting Edge Treatments",
-    description: "We combine advanced techniques with the latest aesthetic technology to ensure your treatments are both innovative and results-driven. From Carboxytherapy and Biofiller to HydraFacial and Microneedling with Exosomes, we stay on the cutting edge of aesthetics to ensure you always get the best treatment options. Our clinically proven injectables to medical-grade skin therapies mean every procedure is carried out with precision, safety, and artistry by our highly trained professionals."
-  },
-  {
-    title: "4. Results & Aftercare",
-    description: "Your journey doesn't end after treatment. We provide ongoing support and aftercare to maximise and maintain your results. Our team offers expert guidance on recovery, skincare, and follow-up sessions, ensuring you feel confident, comfortable, and fully supported at every stage."
-  }
-]
+import { Fragment } from 'react'
+import { useLanguage } from '../contexts/LanguageContext'
+import { useTranslations } from '../locales/translations'
+import { splitHighlight } from '../lib/intl'
 
 export default function ProgramSection() {
+  const { language } = useLanguage()
+  const t = useTranslations(language)
+  const { leading: personalisedTitle, highlight: personalisedHighlight } = splitHighlight(t.personalisedApproach.title)
+
+  const programs = [
+    {
+      id: 1,
+      title: t.personalisedApproach.programs.consultation.title,
+      image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/consultation.png",
+      description: t.personalisedApproach.programs.consultation.description
+    },
+    {
+      id: 2,
+      title: t.personalisedApproach.programs.customization.title,
+      image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/web-design.png",
+      description: t.personalisedApproach.programs.customization.description
+    },
+    {
+      id: 3,
+      title: t.personalisedApproach.programs.treatment.title,
+      image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/laser.png",
+      description: t.personalisedApproach.programs.treatment.description
+    },
+    {
+      id: 4,
+      title: t.personalisedApproach.programs.aftercare.title,
+      image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/solidarity.png",
+      description: t.personalisedApproach.programs.aftercare.description
+    }
+  ]
+
+  const details = [
+    {
+      title: t.personalisedApproach.details.consultAssess.title,
+      description: t.personalisedApproach.details.consultAssess.description
+    },
+    {
+      title: t.personalisedApproach.details.bespokePlan.title,
+      description: t.personalisedApproach.details.bespokePlan.description
+    },
+    {
+      title: t.personalisedApproach.details.cuttingEdge.title,
+      description: t.personalisedApproach.details.cuttingEdge.description
+    },
+    {
+      title: t.personalisedApproach.details.resultsAftercare.title,
+      description: t.personalisedApproach.details.resultsAftercare.description
+    }
+  ]
+
   return (
     <section className="py-20 bg-[#F5F1EC] text-[#333333]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-light text-[#333333] mb-8">
-            A Personalised Approach to <span className="text-[#A38E78]">Aesthetics</span>
+            {personalisedTitle}
+            {personalisedHighlight && (
+              <span className="text-[#A38E78]">{personalisedHighlight}</span>
+            )}
           </h2>
-          
+
           <div className="flex items-center justify-center mb-16">
             {programs.map((program, index) => (
-              <>
-                <div key={program.id} className="text-center group">
+              <Fragment key={program.id}>
+                <div className="text-center group">
                   <div className="relative mb-4">
                     <div className="w-24 h-24 rounded-full mx-auto bg-[#A38E78]/10 border-4 border-[#A38E78]/30 group-hover:border-[#A38E78] transition-colors flex items-center justify-center">
-                      <img 
-                        src={program.image} 
+                      <img
+                        src={program.image}
                         alt={program.title}
                         className="w-12 h-12 object-contain"
                       />
@@ -76,11 +88,11 @@ export default function ProgramSection() {
                     </svg>
                   </div>
                 )}
-              </>
+              </Fragment>
             ))}
           </div>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-12">
           {details.map((detail, index) => (
             <div key={index} className="space-y-4">
@@ -89,16 +101,16 @@ export default function ProgramSection() {
             </div>
           ))}
         </div>
-        
+
         <div className="flex items-center justify-center mt-16 space-x-16">
           <div className="text-center">
-            <div className="text-sm text-[#777777] mb-2">Experience</div>
-            <div className="text-3xl font-light text-[#A38E78]">15+ Years</div>
+            <div className="text-sm text-[#777777] mb-2">{t.personalisedApproach.stats.experienceLabel}</div>
+            <div className="text-3xl font-light text-[#A38E78]">{t.personalisedApproach.stats.experienceValue}</div>
           </div>
           <div className="w-px h-12 bg-[#E5E5E5]"></div>
           <div className="text-center">
-            <div className="text-sm text-[#777777] mb-2">Treatments Start From</div>
-            <div className="text-3xl font-light text-[#A38E78]">£200</div>
+            <div className="text-sm text-[#777777] mb-2">{t.personalisedApproach.stats.priceLabel}</div>
+            <div className="text-3xl font-light text-[#A38E78]">{t.personalisedApproach.stats.priceValue}</div>
           </div>
         </div>
       </div>

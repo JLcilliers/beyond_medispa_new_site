@@ -1,70 +1,76 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { ChevronDown, ArrowRight } from 'lucide-react'
-
-const serviceCategories = [
-  {
-    title: 'Injectables',
-    description: 'Expert anti-aging and enhancement treatments',
-    services: [
-      { name: 'Anti-Wrinkle Treatment', description: 'Reduce fine lines and wrinkles for a youthful appearance' },
-      { name: 'Dermal & Facial Fillers', description: 'Restore volume and enhance facial contours naturally' },
-      { name: 'Lip Enhancement', description: 'Achieve fuller, more defined lips with expert precision' },
-      { name: 'Cheek Enhancement', description: 'Add volume and definition to enhance facial structure' },
-      { name: 'Nasolabial Lines', description: 'Smooth smile lines for a refreshed appearance' },
-      { name: 'Under Eye Correction', description: 'Address dark circles and under-eye concerns' },
-      { name: 'Profhilo', description: 'Bio-remodelling treatment for skin hydration and firmness' },
-      { name: 'B12 Injections', description: 'Boost energy levels and overall wellbeing' }
-    ]
-  },
-  {
-    title: 'Skin Treatments',
-    description: 'Advanced therapies for radiant, healthy skin',
-    services: [
-      { name: 'HydraFacial', description: 'Deep cleansing and hydrating facial treatment' },
-      { name: 'Oxygen Facial', description: 'Revitalizing treatment for glowing skin' },
-      { name: 'LED Light Therapy', description: 'Advanced light therapy for skin rejuvenation' },
-      { name: 'Microneedling', description: 'Stimulate collagen production for smoother skin' },
-      { name: 'Chemical Peels', description: 'Exfoliate and renew skin texture and tone' },
-      { name: 'PRP for Hair Growth', description: 'Platelet-rich plasma therapy for hair restoration' }
-    ]
-  },
-  {
-    title: 'Body Contouring & Fat Reduction',
-    description: 'Non-surgical body sculpting solutions',
-    services: [
-      { name: 'CoolSculpting', description: 'FDA-approved fat freezing technology' },
-      { name: 'Fat Freezing', description: 'Non-invasive fat reduction treatment' },
-      { name: 'Vanquish', description: 'Radiofrequency body contouring' },
-      { name: 'Exilis Elite Body', description: 'Skin tightening and fat reduction combined' },
-      { name: 'Buttocks Enhancement', description: 'Non-surgical buttock lifting and contouring' }
-    ]
-  },
-  {
-    title: 'Skin Concerns',
-    description: 'Targeted treatments for specific skin issues',
-    services: [
-      { name: 'Anti-Ageing Treatments', description: 'Comprehensive approach to age-related skin concerns' },
-      { name: 'Acne and Scarring', description: 'Effective treatments for acne and post-acne scarring' },
-      { name: 'Sun Damage and Pigmentation', description: 'Address hyperpigmentation and sun damage' },
-      { name: 'Sensitive Skin Treatments', description: 'Gentle therapies for reactive skin types' },
-      { name: 'Mole & Skin Tag Removal', description: 'Safe removal of unwanted skin growths' }
-    ]
-  },
-  {
-    title: 'Wellbeing & Specialist Therapies',
-    description: 'Holistic treatments for mind and body wellness',
-    services: [
-      { name: 'Anti-Cellulite Treatment', description: 'Reduce cellulite appearance with Alidya injections' },
-      { name: 'The Harmony Massage', description: 'Relaxing therapeutic massage for stress relief' },
-      { name: 'Mesotherapy', description: 'Targeted nutrient injections for skin health' },
-      { name: 'Nutritionist Consultation', description: 'Expert advice on skin health and nutrition' }
-    ]
-  }
-]
+import { useLanguage } from '../contexts/LanguageContext'
+import { useTranslations } from '../locales/translations'
+import { splitHighlight } from '../lib/intl'
 
 export default function ServicesOverview() {
+  const { language } = useLanguage()
+  const t = useTranslations(language)
   const [activeCategory, setActiveCategory] = useState(0)
+  const { leading: servicesTitle, highlight: servicesHighlight } = splitHighlight(t.services.whatCanWeHelp)
+
+  const serviceCategories = [
+    {
+      title: t.services.injectables,
+      description: t.services.injectablesDesc,
+      services: [
+        { name: t.services.antiWrinkle, description: t.services.antiWrinkleDesc },
+        { name: t.services.dermalFillers, description: t.services.dermalFillersDesc },
+        { name: t.services.lipEnhancement, description: t.services.lipEnhancementDesc },
+        { name: t.services.cheekEnhancement, description: t.services.cheekEnhancementDesc },
+        { name: t.services.nasolabialLines, description: t.services.nasolabialLinesDesc },
+        { name: t.services.underEyeCorrection, description: t.services.underEyeCorrectionDesc },
+        { name: t.services.profhilo, description: t.services.profhiloDesc },
+        { name: t.services.b12Injections, description: t.services.b12InjectionsDesc }
+      ]
+    },
+    {
+      title: t.services.skinTreatments,
+      description: t.services.skinTreatmentsDesc,
+      services: [
+        { name: t.services.hydrafacial, description: t.services.hydrafacialDesc },
+        { name: t.services.oxygenFacial, description: t.services.oxygenFacialDesc },
+        { name: t.services.ledTherapy, description: t.services.ledTherapyDesc },
+        { name: t.services.microneedling, description: t.services.microneedlingDesc },
+        { name: t.services.chemicalPeels, description: t.services.chemicalPeelsDesc },
+        { name: t.services.prpHair, description: t.services.prpHairDesc }
+      ]
+    },
+    {
+      title: t.services.bodyContouring,
+      description: t.services.bodyContouringDesc,
+      services: [
+        { name: t.services.coolsculpting, description: t.services.coolsculptingDesc },
+        { name: t.services.fatFreezing, description: t.services.fatFreezingDesc },
+        { name: t.services.vanquish, description: t.services.vanquishDesc },
+        { name: t.services.exilis, description: t.services.exilisDesc },
+        { name: t.services.buttocksEnhancement, description: t.services.buttocksEnhancementDesc }
+      ]
+    },
+    {
+      title: t.services.skinConcerns,
+      description: t.services.skinConcernsDesc,
+      services: [
+        { name: t.services.antiAgeing, description: t.services.antiAgeingDesc },
+        { name: t.services.acneScarring, description: t.services.acneScarringDesc },
+        { name: t.services.sunDamage, description: t.services.sunDamageDesc },
+        { name: t.services.sensitiveSkin, description: t.services.sensitiveSkinDesc },
+        { name: t.services.moleRemoval, description: t.services.moleRemovalDesc }
+      ]
+    },
+    {
+      title: t.services.wellbeing,
+      description: t.services.wellbeingDesc,
+      services: [
+        { name: t.services.antiCellulite, description: t.services.antiCelluliteDesc },
+        { name: t.services.harmonyMassage, description: t.services.harmonyMassageDesc },
+        { name: t.services.mesotherapy, description: t.services.mesotherapyDesc },
+        { name: t.services.nutritionist, description: t.services.nutritionistDesc }
+      ]
+    }
+  ]
 
   const handleNavigation = (route: string) => {
     if (window.navigateTo) {
@@ -77,7 +83,10 @@ export default function ServicesOverview() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-            What Can We <span className="text-[#A38E78]">Help With?</span>
+            {servicesTitle}
+            {servicesHighlight && (
+              <span className="text-[#A38E78]">{servicesHighlight}</span>
+            )}
           </h2>
         </div>
 
@@ -117,7 +126,7 @@ export default function ServicesOverview() {
                       onClick={() => handleNavigation('procedures')}
                       className="bg-[#A38E78] text-white hover:bg-[#8B7A67] border-[#A38E78]"
                     >
-                      Learn More
+                      {t.buttons.learnMore}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
@@ -133,7 +142,7 @@ export default function ServicesOverview() {
             onClick={() => handleNavigation('procedures')}
             className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-8 py-4 text-lg"
           >
-            View All Treatments
+            {t.buttons.viewAllTreatments}
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
         </div>

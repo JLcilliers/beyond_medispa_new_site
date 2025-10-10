@@ -9,8 +9,8 @@ export default function MeditationSpaDay() {
       <div className="relative container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
-            <img 
-              src="https://www.beyondmedispa.com/wp-content/uploads/2025/09/Gemini_Generated_Image_3hhgf03hhgf03hhg-1.png" 
+            <img
+              src="https://i.ibb.co/Kj4wWGcD/beauty-salon-beautician-applies-cooling-gel-to-cli-2025-01-09-05-05-23-utc-1.webp"
               alt="Signature aesthetic treatment experience"
               className="rounded-3xl shadow-2xl w-full h-96 object-cover"
               loading="lazy"

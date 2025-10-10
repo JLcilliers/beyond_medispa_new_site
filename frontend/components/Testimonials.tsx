@@ -6,7 +6,7 @@ const testimonials = [
     name: "Sarah Johnson",
     location: "London",
     rating: 5,
-    text: "The results exceeded all my expectations! The Beyond MediSpa team is incredibly professional and attentive to detail.",
+    text: "The results exceeded all my expectations! The Beyond Aesthetic Clinic team is incredibly professional and attentive to detail.",
     image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Ewelina-Roguska.png",
     treatment: "Botox & Fillers"
   },

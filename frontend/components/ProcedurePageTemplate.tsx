@@ -53,8 +53,8 @@ export default function ProcedurePageTemplate({
         {/* Hero Section */}
         <section className="relative min-h-screen bg-gradient-to-br from-[#2C2C2C] to-[#A38E78] text-white overflow-hidden">
           <div className="absolute inset-0">
-            <img 
-              src={hero.backgroundImage || "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg"} 
+            <img
+              src={hero.backgroundImage || "https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp"}
               alt={hero.title}
               className="w-full h-full object-cover opacity-60"
             />

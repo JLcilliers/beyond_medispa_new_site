@@ -1,12 +1,12 @@
-import { Award, Zap, Heart, Sparkles } from 'lucide-react'
+import { Award, Zap, Heart } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 import { useTranslations } from '../locales/translations'
-
-
+import { splitHighlight } from '../lib/intl'
 
 export default function WhyChooseUsSection() {
   const { language } = useLanguage()
   const t = useTranslations(language)
+  const { leading: whyChooseTitle, highlight: whyChooseHighlight } = splitHighlight(t.whyChooseUs.title)
   
   const features = [
     {
@@ -31,7 +31,10 @@ export default function WhyChooseUsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-            {t.whyChooseUs.title.split(':')[0]}: <span className="text-[#A38E78]">{t.whyChooseUs.title.split(':')[1]}</span>
+            {whyChooseTitle}
+            {whyChooseHighlight && (
+              <span className="text-[#A38E78]">{whyChooseHighlight}</span>
+            )}
           </h2>
           <p className="text-xl text-[#777777] max-w-3xl mx-auto">
             {t.whyChooseUs.subtitle}

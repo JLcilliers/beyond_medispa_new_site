@@ -2,52 +2,58 @@ import Navigation from '../Navigation'
 import Footer from '../Footer'
 import { Button } from '@/components/ui/button'
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
-
-const contactInfo = [
-  {
-    icon: Phone,
-    title: "Phone",
-    details: ["+44 (20) 7123 4567", "+44 (131) 456 7890"],
-    description: "Call us during business hours"
-  },
-  {
-    icon: Mail,
-    title: "Email",
-    details: ["info@magispa.co.uk", "bookings@magispa.co.uk"],
-    description: "We respond within 24 hours"
-  },
-  {
-    icon: MapPin,
-    title: "Locations",
-    details: ["London & Edinburgh"],
-    description: "Two convenient locations"
-  },
-  {
-    icon: Clock,
-    title: "Hours",
-    details: ["Mon-Fri: 9:00 AM - 8:00 PM", "Sat-Sun: 10:00 AM - 6:00 PM"],
-    description: "Extended weekend hours"
-  }
-]
-
-const locations = [
-  {
-    city: "London",
-    address: "123 Harley Street, London W1G 6BA",
-    phone: "+44 (20) 7123 4567",
-    email: "london@magispa.co.uk",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg"
-  },
-  {
-    city: "Edinburgh", 
-    address: "45 George Street, Edinburgh EH2 2HT",
-    phone: "+44 (131) 456 7890",
-    email: "edinburgh@magispa.co.uk",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg"
-  }
-]
+import { useLanguage } from '../../contexts/LanguageContext'
+import { useTranslations } from '../../locales/translations'
+import { splitHighlight } from '../../lib/intl'
 
 export default function ContactPage() {
+  const { language } = useLanguage()
+  const t = useTranslations(language)
+
+  const locationsData = t.locations.locationData
+  const phoneNumbers = [t.contact.primaryPhoneNumber, t.contact.secondaryPhoneNumber].filter(
+    (value): value is string => Boolean(value)
+  )
+  const emailAddresses = [t.contact.primaryEmail, t.contact.secondaryEmail].filter(
+    (value): value is string => Boolean(value)
+  )
+  const locationSummary = `${t.nav.london} ${t.common.and} ${t.nav.edinburgh}`
+  const { leading: heroTitle, highlight: heroHighlight } = splitHighlight(t.contact.pageTitle)
+  const { leading: sendMessageTitle, highlight: sendMessageHighlight } = splitHighlight(t.contact.sendMessage)
+  const { leading: visitClinicsTitle, highlight: visitClinicsHighlight } = splitHighlight(t.contact.visitOurClinics)
+  const { leading: findLocationsTitle, highlight: findLocationsHighlight } = splitHighlight(t.contact.findOurLocations)
+  const { leading: urgentTitle, highlight: urgentHighlight } = splitHighlight(t.contact.needImmediate)
+
+  const londonLocation = locationsData.find((location) => location.id === 1)
+  const edinburghLocation = locationsData.find((location) => location.id === 2)
+
+  const contactInfo = [
+    {
+      icon: Phone,
+      title: t.contact.phone,
+      details: phoneNumbers,
+      description: t.contact.callDuringHours
+    },
+    {
+      icon: Mail,
+      title: t.contact.email,
+      details: emailAddresses,
+      description: t.contact.respondWithin24Hours
+    },
+    {
+      icon: MapPin,
+      title: t.contact.locations,
+      details: [locationSummary],
+      description: t.contact.twoConvenientLocations
+    },
+    {
+      icon: Clock,
+      title: t.contact.hours,
+      details: [t.contact.mondayToFriday, t.contact.saturdayToSunday],
+      description: t.contact.extendedWeekendHours
+    }
+  ]
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -58,10 +64,11 @@ export default function ContactPage() {
           <div className="container mx-auto px-4">
             <div className="text-center">
               <h1 className="text-5xl lg:text-6xl font-light mb-6">
-                Contact <span className="text-[#F8D794]">Us</span>
+                {heroTitle}
+                {heroHighlight && <span className="text-[#F8D794]">{heroHighlight}</span>}
               </h1>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Get in touch with our team to book your consultation or learn more about our treatments.
+                {t.contact.pageDescription}
               </p>
             </div>
           </div>
@@ -94,20 +101,21 @@ export default function ContactPage() {
               {/* Contact Form */}
               <div>
                 <h2 className="text-4xl font-light text-[#111A19] mb-8">
-                  Send us a <span className="text-[#284139]">Message</span>
+                  {sendMessageTitle}
+                  {sendMessageHighlight && <span className="text-[#284139]">{sendMessageHighlight}</span>}
                 </h2>
                 
                 <form className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">{t.contact.firstName}</label>
                       <input 
                         type="text" 
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#284139]"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">{t.contact.lastName}</label>
                       <input 
                         type="text" 
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#284139]"
@@ -116,7 +124,7 @@ export default function ContactPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{t.contact.emailAddress}</label>
                     <input 
                       type="email" 
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#284139]"
@@ -124,7 +132,7 @@ export default function ContactPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{t.contact.phoneNumber}</label>
                     <input 
                       type="tel" 
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#284139]"
@@ -132,25 +140,28 @@ export default function ContactPage() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Preferred Location</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{t.contact.preferredLocation}</label>
                     <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#284139]">
-                      <option>Select Location</option>
-                      <option>London</option>
-                      <option>Edinburgh</option>
+                      <option value="">{t.contact.selectLocation}</option>
+                      {locationsData.map((location) => (
+                        <option key={location.id} value={location.city}>
+                          {location.city}
+                        </option>
+                      ))}
                     </select>
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{t.contact.message}</label>
                     <textarea 
                       rows={5}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#284139]"
-                      placeholder="Tell us about your treatment interests..."
+                      placeholder={t.contact.messagePlaceholder}
                     ></textarea>
                   </div>
                   
                   <Button className="w-full bg-[#F8D794] hover:bg-[#F8D794] text-black py-4 text-lg font-medium hover:opacity-90">
-                    Send Message
+                    {t.buttons.sendMessage}
                   </Button>
                 </form>
               </div>
@@ -158,11 +169,12 @@ export default function ContactPage() {
               {/* Location Cards */}
               <div className="space-y-8">
                 <h2 className="text-4xl font-light text-[#111A19] mb-8">
-                  Visit Our <span className="text-[#284139]">Clinics</span>
+                  {visitClinicsTitle}
+                  {visitClinicsHighlight && <span className="text-[#284139]">{visitClinicsHighlight}</span>}
                 </h2>
                 
-                {locations.map((location, index) => (
-                  <div key={index} className="bg-[#F8D794]/10 rounded-2xl p-8">
+                {locationsData.map((location) => (
+                  <div key={location.id} className="bg-[#F8D794]/10 rounded-2xl p-8">
                     <div>
                       <h3 className="text-2xl font-semibold text-[#111A19] mb-4">{location.city}</h3>
                       <div className="space-y-3">
@@ -174,25 +186,28 @@ export default function ContactPage() {
                           <Phone className="w-5 h-5 text-[#284139] mr-3" />
                           <p className="text-gray-700">{location.phone}</p>
                         </div>
-                        <div className="flex items-center">
-                          <Mail className="w-5 h-5 text-[#284139] mr-3" />
-                          <p className="text-gray-700">{location.email}</p>
-                        </div>
+                        {location.email && (
+                          <div className="flex items-center">
+                            <Mail className="w-5 h-5 text-[#284139] mr-3" />
+                            <p className="text-gray-700">{location.email}</p>
+                          </div>
+                        )}
                       </div>
                       
                       <div className="flex space-x-3 mt-6">
                         <Button 
                           size="sm" 
                           className="bg-[#284139] hover:bg-[#111A19] text-white"
+                          onClick={() => window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`, '_blank')}
                         >
-                          Get Directions
+                          {t.buttons.getDirections}
                         </Button>
                         <Button 
                           size="sm" 
                           variant="outline"
                           className="border-[#284139] text-[#284139] hover:bg-[#284139] hover:text-white"
                         >
-                          Book Now
+                          {t.buttons.bookNow}
                         </Button>
                       </div>
                     </div>
@@ -208,20 +223,21 @@ export default function ContactPage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-light text-[#111A19] mb-6">
-                Find Our <span className="text-[#284139]">Locations</span>
+                {findLocationsTitle}
+                {findLocationsHighlight && <span className="text-[#284139]">{findLocationsHighlight}</span>}
               </h2>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                Easily locate our clinics in London and Edinburgh using the interactive maps below.
+                {t.contact.findLocationsDesc}
               </p>
             </div>
             
             <div className="grid lg:grid-cols-2 gap-8">
               {/* London Map */}
               <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <h3 className="text-2xl font-semibold text-[#111A19] mb-4">London - Harley Street</h3>
+                <h3 className="text-2xl font-semibold text-[#111A19] mb-4">{t.contact.londonHarleyStreet}</h3>
                 <div className="relative h-80 rounded-xl overflow-hidden mb-4">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.628183492772!2d-0.1624627224548056!3d51.50169031111937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605397680ad09%3A0x68bb8e672eb273a1!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20MediSpa!5e0!3m2!1sen!2sza!4v1758541805476!5m2!1sen!2sza"
+                    src={londonLocation?.mapEmbed ?? ''}
                     width="100%" 
                     height="100%" 
                     style={{border: 0}} 
@@ -233,21 +249,30 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-gray-700 text-sm">123 Harley Street, London W1G 6BA</p>
-                    <p className="text-[#284139] font-medium">+44 (20) 7123 4567</p>
+                    <p className="text-gray-700 text-sm">{londonLocation?.address || ''}</p>
+                    <p className="text-[#284139] font-medium">{londonLocation?.phone || ''}</p>
                   </div>
-                  <Button size="sm" className="bg-[#284139] hover:bg-[#111A19] text-white">
-                    Get Directions
+                  <Button
+                    size="sm"
+                    className="bg-[#284139] hover:bg-[#111A19] text-white"
+                    onClick={() =>
+                      window.open(
+                        `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(londonLocation?.address || '')}`,
+                        '_blank'
+                      )
+                    }
+                  >
+                    {t.buttons.getDirections}
                   </Button>
                 </div>
               </div>
 
               {/* Edinburgh Map */}
               <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <h3 className="text-2xl font-semibold text-[#111A19] mb-4">Edinburgh - George Street</h3>
+                <h3 className="text-2xl font-semibold text-[#111A19] mb-4">{t.contact.edinburghGeorgeStreet}</h3>
                 <div className="relative h-80 rounded-xl overflow-hidden mb-4">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.678446141864!2d-3.194440922303394!3d55.954944976402295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766ac0abf29af5%3A0xe8c125ae82237941!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20Medispa!5e0!3m2!1sen!2sza!4v1758541860806!5m2!1sen!2sza"
+                    src={edinburghLocation?.mapEmbed ?? ''}
                     width="100%" 
                     height="100%" 
                     style={{border: 0}} 
@@ -259,11 +284,20 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-gray-700 text-sm">45 George Street, Edinburgh EH2 2HT</p>
-                    <p className="text-[#284139] font-medium">+44 (131) 456 7890</p>
+                    <p className="text-gray-700 text-sm">{edinburghLocation?.address || ''}</p>
+                    <p className="text-[#284139] font-medium">{edinburghLocation?.phone || ''}</p>
                   </div>
-                  <Button size="sm" className="bg-[#284139] hover:bg-[#111A19] text-white">
-                    Get Directions
+                  <Button
+                    size="sm"
+                    className="bg-[#284139] hover:bg-[#111A19] text-white"
+                    onClick={() =>
+                      window.open(
+                        `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(edinburghLocation?.address || '')}`,
+                        '_blank'
+                      )
+                    }
+                  >
+                    {t.buttons.getDirections}
                   </Button>
                 </div>
               </div>
@@ -275,10 +309,11 @@ export default function ContactPage() {
         <section className="py-20 bg-[#284139] text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-light mb-6">
-              Need <span className="text-[#F8D794]">Immediate</span> Assistance?
+              {urgentTitle}
+              {urgentHighlight && <span className="text-[#F8D794]">{urgentHighlight}</span>}
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Contact us directly for urgent inquiries or last-minute bookings.
+              {t.contact.needImmediateDesc}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -287,7 +322,7 @@ export default function ContactPage() {
                 className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-8 py-4"
               >
                 <Phone className="w-5 h-5 mr-2" />
-                Call Now
+                {t.buttons.callNow}
               </Button>
               
               <Button 
@@ -295,7 +330,7 @@ export default function ContactPage() {
                 className="bg-[#25D366] hover:bg-[#128C7E] text-white px-8 py-4"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp
+                {t.buttons.whatsapp}
               </Button>
             </div>
           </div>

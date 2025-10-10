@@ -2,6 +2,8 @@ import Navigation from '../Navigation'
 import Footer from '../Footer'
 import { Button } from '@/components/ui/button'
 import { Award, Users, MapPin, Star, Phone, Mail } from 'lucide-react'
+import { useLanguage } from '../../contexts/LanguageContext'
+import { useTranslations } from '../../locales/translations'
 
 const doctors = [
   {
@@ -75,6 +77,9 @@ const doctors = [
 ]
 
 export default function DoctorsPage() {
+  const { language } = useLanguage()
+  const t = useTranslations(language)
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -85,11 +90,10 @@ export default function DoctorsPage() {
           <div className="container mx-auto px-4">
             <div className="text-center">
               <h1 className="text-5xl lg:text-6xl font-light mb-6">
-                Meet Our <span className="text-[#F8D794]">Doctors</span>
+                {t.doctors.pageTitle.split('Doctors')[0]}<span className="text-[#F8D794]">Doctors</span>
               </h1>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Our team of highly qualified medical professionals brings years of experience 
-                and expertise to deliver exceptional aesthetic treatments with the highest standards of care.
+                {t.doctors.pageDescription}
               </p>
             </div>
           </div>
@@ -104,7 +108,7 @@ export default function DoctorsPage() {
                   <Users className="w-8 h-8 text-[#F8D794]" />
                 </div>
                 <div className="text-3xl font-bold text-[#111A19] mb-2">15+</div>
-                <div className="text-gray-600">Expert Doctors</div>
+                <div className="text-gray-600">{t.doctors.expertDoctors}</div>
               </div>
               
               <div className="text-center">
@@ -112,7 +116,7 @@ export default function DoctorsPage() {
                   <Award className="w-8 h-8 text-[#F8D794]" />
                 </div>
                 <div className="text-3xl font-bold text-[#111A19] mb-2">50+</div>
-                <div className="text-gray-600">Years Combined Experience</div>
+                <div className="text-gray-600">{t.doctors.yearsCombinedExperience}</div>
               </div>
               
               <div className="text-center">
@@ -120,7 +124,7 @@ export default function DoctorsPage() {
                   <Star className="w-8 h-8 text-[#F8D794]" />
                 </div>
                 <div className="text-3xl font-bold text-[#111A19] mb-2">4.9</div>
-                <div className="text-gray-600">Average Rating</div>
+                <div className="text-gray-600">{t.doctors.averageRating}</div>
               </div>
               
               <div className="text-center">
@@ -128,7 +132,7 @@ export default function DoctorsPage() {
                   <MapPin className="w-8 h-8 text-[#F8D794]" />
                 </div>
                 <div className="text-3xl font-bold text-[#111A19] mb-2">2</div>
-                <div className="text-gray-600">Clinic Locations</div>
+                <div className="text-gray-600">{t.doctors.clinicLocations}</div>
               </div>
             </div>
           </div>
@@ -149,7 +153,7 @@ export default function DoctorsPage() {
                         </span>
                       </div>
                       <p className="text-xl text-[#284139] font-medium">{doctor.title}</p>
-                      <p className="text-gray-600">{doctor.experience} experience</p>
+                      <p className="text-gray-600">{doctor.experience} {t.doctors.experience}</p>
                     </div>
                     
                     <p className="text-gray-700 leading-relaxed mb-6">
@@ -157,7 +161,7 @@ export default function DoctorsPage() {
                     </p>
                     
                     <div className="mb-6">
-                      <h4 className="font-semibold text-[#111A19] mb-3">Specialties</h4>
+                      <h4 className="font-semibold text-[#111A19] mb-3">{t.doctors.specialties}</h4>
                       <div className="flex flex-wrap gap-2">
                         {doctor.specialties.map((specialty, idx) => (
                           <span key={idx} className="bg-[#F8D794]/30 text-[#284139] px-3 py-1 rounded-full text-sm">
@@ -168,7 +172,7 @@ export default function DoctorsPage() {
                     </div>
                     
                     <div className="mb-6">
-                      <h4 className="font-semibold text-[#111A19] mb-3">Qualifications</h4>
+                      <h4 className="font-semibold text-[#111A19] mb-3">{t.doctors.qualifications}</h4>
                       <ul className="space-y-2">
                         {doctor.qualifications.map((qual, idx) => (
                           <li key={idx} className="flex items-start">
@@ -180,7 +184,7 @@ export default function DoctorsPage() {
                     </div>
                     
                     <div className="mb-8">
-                      <h4 className="font-semibold text-[#111A19] mb-3">Languages</h4>
+                      <h4 className="font-semibold text-[#111A19] mb-3">{t.doctors.languages}</h4>
                       <p className="text-gray-600">{doctor.languages.join(", ")}</p>
                     </div>
                     
@@ -188,13 +192,13 @@ export default function DoctorsPage() {
                       <Button 
                         className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19]"
                       >
-                        Book with {doctor.name.split(' ')[1]}
+                        {t.buttons.bookWith} {doctor.name.split(' ')[1]}
                       </Button>
                       <Button 
                         variant="outline" 
                         className="border-[#284139] text-[#284139] hover:bg-[#284139] hover:text-white"
                       >
-                        View Profile
+                        {t.buttons.viewProfile}
                       </Button>
                     </div>
                   </div>
@@ -209,7 +213,7 @@ export default function DoctorsPage() {
                       <div className="absolute -bottom-6 -right-6 bg-[#284139] text-white p-4 rounded-2xl">
                         <div className="text-center">
                           <div className="text-2xl font-bold text-[#F8D794]">{doctor.experience.split(' ')[0]}</div>
-                          <div className="text-sm">Years</div>
+                          <div className="text-sm">{t.common.years}</div>
                         </div>
                       </div>
                     </div>
@@ -224,10 +228,10 @@ export default function DoctorsPage() {
         <section className="py-20 bg-[#284139] text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-light mb-6">
-              Ready to Meet <span className="text-[#F8D794]">Our Team?</span>
+              {t.doctors.readyToMeet.split('Team?')[0]}<span className="text-[#F8D794]">Team?</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Book a consultation with one of our expert doctors and start your aesthetic journey today.
+              {t.doctors.readyToMeetDesc}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -236,7 +240,7 @@ export default function DoctorsPage() {
                 className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-8 py-4"
               >
                 <Phone className="w-5 h-5 mr-2" />
-                Call to Book
+                {t.doctors.callToBook}
               </Button>
               <Button 
                 size="lg" 
@@ -244,7 +248,7 @@ export default function DoctorsPage() {
                 className="border-[#F8D794] text-[#F8D794] hover:bg-[#F8D794] hover:text-[#111A19] px-8 py-4"
               >
                 <Mail className="w-5 h-5 mr-2" />
-                Email Consultation
+                {t.buttons.emailConsultation}
               </Button>
             </div>
           </div>

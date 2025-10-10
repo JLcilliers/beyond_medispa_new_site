@@ -1,51 +1,56 @@
 import { Play } from 'lucide-react'
-
-const steps = [
-  {
-    step: "01",
-    title: "Initial Consultation",
-    description: "Complete skin assessment and personalized treatment plan development",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/consultation.png"
-  },
-  {
-    step: "02", 
-    title: "Treatment Preparation",
-    description: "Cleansing and preparing the skin for the selected procedure",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/web-design.png"
-  },
-  {
-    step: "03",
-    title: "Treatment Application",
-    description: "Performing procedures with state-of-the-art equipment",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/laser.png"
-  },
-  {
-    step: "04",
-    title: "Post-Treatment Care",
-    description: "Recommendations for maintaining results and follow-up schedule",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/solidarity.png"
-  }
-]
+import { useLanguage } from '../contexts/LanguageContext'
+import { useTranslations } from '../locales/translations'
 
 export default function TreatmentJourney() {
+  const { language } = useLanguage()
+  const t = useTranslations(language)
+
+  const steps = [
+    {
+      step: "01",
+      title: t.journey.step1Title,
+      description: t.journey.step1Desc,
+      image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/consultation.png"
+    },
+    {
+      step: "02", 
+      title: t.journey.step2Title,
+      description: t.journey.step2Desc,
+      image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/web-design.png"
+    },
+    {
+      step: "03",
+      title: t.journey.step3Title,
+      description: t.journey.step3Desc,
+      image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/laser.png"
+    },
+    {
+      step: "04",
+      title: t.journey.step4Title,
+      description: t.journey.step4Desc,
+      image: "https://www.beyondmedispa.com/wp-content/uploads/2025/09/solidarity.png"
+    }
+  ]
+
   return (
     <section className="py-20 bg-[#FAF8F5]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-[#333333] mb-4">
-            Your <span className="text-[#A38E78]">Transformation</span> Journey
+            {t.journey.title.split('Journey')[0]}<span className="text-[#A38E78]">Journey</span>
           </h2>
           <p className="text-xl text-[#777777] max-w-2xl mx-auto">
-            A simple and efficient process for remarkable results
+            {t.journey.subtitle}
           </p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg" 
-                alt="Treatment process"
+              <img
+                src="https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp"
+                alt={t.journey.title}
                 className="w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
@@ -57,7 +62,7 @@ export default function TreatmentJourney() {
             <div className="absolute -bottom-6 -left-6 bg-[#A38E78] text-white p-6 rounded-2xl">
               <div className="text-center">
                 <div className="text-2xl font-bold">98%</div>
-                <div className="text-sm">Client Satisfaction</div>
+                <div className="text-sm">{t.journey.clientSatisfaction}</div>
               </div>
             </div>
           </div>

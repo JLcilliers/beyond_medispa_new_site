@@ -16,16 +16,16 @@ export default function ExpertiseSection() {
           <div className="grid grid-cols-2 gap-6">
             <div className="space-y-6">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg" 
+                <img
+                  src="https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp"
                   alt="Aesthetic treatment expertise"
                   className="w-full h-80 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg" 
+                <img
+                  src="https://i.ibb.co/Kj4wWGcD/beauty-salon-beautician-applies-cooling-gel-to-cli-2025-01-09-05-05-23-utc-1.webp"
                   alt="Professional skincare"
                   className="w-full h-60 object-cover"
                 />
@@ -34,16 +34,16 @@ export default function ExpertiseSection() {
             </div>
             <div className="space-y-6 mt-12">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg" 
+                <img
+                  src="https://i.ibb.co/Zz6VZvZS/a-drop-of-gel-pours-from-a-syringe-for-cosmetic-pr-2025-03-16-09-14-11-utc.webp"
                   alt="Advanced equipment"
                   className="w-full h-60 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/Chemical-Peels-London-Edinburgh-Beyond-Medispa.jpg" 
+                <img
+                  src="https://i.ibb.co/nqqyz2vP/a-beautician-wearing-gloves-vacuum-cleans-and-poli-2024-12-02-09-41-13-utc.webp"
                   alt="Luxury treatment room"
                   className="w-full h-80 object-cover"
                 />

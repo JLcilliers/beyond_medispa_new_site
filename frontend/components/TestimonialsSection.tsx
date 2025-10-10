@@ -3,55 +3,13 @@ import { Button } from '@/components/ui/button'
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 import { useTranslations } from '../locales/translations'
-
-const testimonials = [
-  {
-    name: 'Sarah Mitchell',
-    location: 'London',
-    rating: 5,
-    text: 'Dr Azadeh is absolutely amazing! I went for anti-wrinkle treatment and the results exceeded my expectations. The clinic is beautiful and the staff are so professional and welcoming.',
-    treatment: 'Anti-Wrinkle Treatment'
-  },
-  {
-    name: 'Emma Thompson',
-    location: 'Edinburgh',
-    rating: 5,
-    text: 'I had the HydraFacial treatment and my skin has never looked better. Louise was fantastic - she explained everything and made me feel completely at ease throughout.',
-    treatment: 'HydraFacial'
-  },
-  {
-    name: 'James Wilson',
-    location: 'London',
-    rating: 5,
-    text: 'CoolSculpting at Beyond Aesthetic Clinic was life-changing. The team was incredibly professional and the results speak for themselves. Highly recommend!',
-    treatment: 'CoolSculpting'
-  },
-  {
-    name: 'Charlotte Davies',
-    location: 'Edinburgh',
-    rating: 5,
-    text: 'Dr Sana is truly gifted. My dermal filler treatment looks so natural - exactly what I wanted. The whole experience was comfortable and professional.',
-    treatment: 'Dermal Fillers'
-  },
-  {
-    name: 'Michael Brown',
-    location: 'London',
-    rating: 5,
-    text: 'Outstanding service from start to finish. The consultation was thorough and the Profhilo treatment has given me the skin confidence I was looking for.',
-    treatment: 'Profhilo'
-  },
-  {
-    name: 'Lucy Roberts',
-    location: 'Edinburgh',
-    rating: 5,
-    text: 'The best aesthetic clinic I have ever been to. Ewelina treated my acne scarring with microneedling and the improvement is incredible. Thank you!',
-    treatment: 'Microneedling'
-  }
-]
+import { splitHighlight } from '../lib/intl'
 
 export default function TestimonialsSection() {
   const { language } = useLanguage()
   const t = useTranslations(language)
+  const testimonials = t.clientReviews
+  const { leading: testimonialsTitle, highlight: testimonialsHighlight } = splitHighlight(t.testimonials.title)
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
 
   const nextTestimonial = () => {
@@ -67,7 +25,10 @@ export default function TestimonialsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-            {t.testimonials.title.split(' ').slice(0, -2).join(' ')} <span className="text-[#A38E78]">{t.testimonials.title.split(' ').slice(-2).join(' ')}</span>
+            {testimonialsTitle}
+            {testimonialsHighlight && (
+              <span className="text-[#A38E78]">{testimonialsHighlight}</span>
+            )}
           </h2>
           <p className="text-xl text-[#777777] max-w-3xl mx-auto">
             {t.testimonials.subtitle}
@@ -92,7 +53,9 @@ export default function TestimonialsSection() {
                   {testimonials[currentTestimonial].name}
                 </p>
                 <p className="text-[#777777]">
-                  {testimonials[currentTestimonial].treatment} • {testimonials[currentTestimonial].location}
+                  {testimonials[currentTestimonial].treatment}
+                  {' \u2022 '}
+                  {testimonials[currentTestimonial].location}
                 </p>
               </div>
             </div>

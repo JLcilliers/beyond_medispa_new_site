@@ -1,25 +1,7 @@
 import { MapPin, Phone, Clock, Car } from 'lucide-react'
-
-const locations = [
-  {
-    id: 1,
-    city: "London",
-    address: "Premium Location, Central London",
-    phone: "+44 (20) 7123 4567",
-    hours: "Monday - Friday: 9:00 - 18:00\nSaturday: 9:00 - 17:00\nSunday: Closed",
-    parking: "Street parking available",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.628183492772!2d-0.1624627224548056!3d51.50169031111937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605397680ad09%3A0x68bb8e672eb273a1!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20MediSpa!5e0!3m2!1sen!2sza!4v1758541805476!5m2!1sen!2sza"
-  },
-  {
-    id: 2,
-    city: "Edinburgh", 
-    address: "Premium Location, Edinburgh Centre",
-    phone: "+44 (131) 123 4567",
-    hours: "Monday - Friday: 9:00 - 18:00\nSaturday: 9:00 - 16:00\nSunday: Closed",
-    parking: "Nearby parking available",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.678446141864!2d-3.194440922303394!3d55.954944976402295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766ac0abf29af5%3A0xe8c125ae82237941!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20Medispa!5e0!3m2!1sen!2sza!4v1758541860806!5m2!1sen!2sza"
-  }
-]
+import { useLanguage } from '../contexts/LanguageContext'
+import { useTranslations } from '../locales/translations'
+import { splitHighlight } from '../lib/intl'
 
 const handleNavigation = (route: string) => {
   if (window.navigateTo) {
@@ -28,20 +10,27 @@ const handleNavigation = (route: string) => {
 }
 
 export default function Locations() {
+  const { language } = useLanguage()
+  const t = useTranslations(language)
+  const { leading: locationsTitle, highlight: locationsHighlight } = splitHighlight(t.locations.title)
+
   return (
     <section className="py-20 bg-[#FFFFFF]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-[#333333] mb-4">
-            Our <span className="text-[#A38E78]">Locations</span>
+            {locationsTitle}
+            {locationsHighlight && (
+              <span className="text-[#A38E78]">{locationsHighlight}</span>
+            )}
           </h2>
           <p className="text-xl text-[#777777] max-w-2xl mx-auto">
-            Visit our premium clinics in London and Edinburgh for expert aesthetic treatments
+            {t.locations.subtitle}
           </p>
         </div>
         
         <div className="space-y-16">
-          {locations.map((location, index) => (
+          {t.locations.locationData.map((location, index) => (
             <div key={location.id} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
               {/* Location Info */}
               <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
@@ -49,63 +38,63 @@ export default function Locations() {
                   <h3 className="text-3xl font-semibold text-[#333333] mb-4">{location.city}</h3>
                   <div className="w-20 h-1 bg-[#A38E78] mb-6"></div>
                 </div>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start">
                     <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
                       <MapPin className="w-5 h-5 text-[#A38E78]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#333333] mb-1">Address</h4>
+                      <h4 className="font-semibold text-[#333333] mb-1">{t.locations.addressLabel}</h4>
                       <p className="text-[#777777]">{location.address}</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
                       <Phone className="w-5 h-5 text-[#A38E78]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#333333] mb-1">Phone</h4>
+                      <h4 className="font-semibold text-[#333333] mb-1">{t.locations.phoneLabel}</h4>
                       <p className="text-[#777777]">{location.phone}</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
                       <Clock className="w-5 h-5 text-[#A38E78]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#333333] mb-1">Hours</h4>
+                      <h4 className="font-semibold text-[#333333] mb-1">{t.locations.hoursLabel}</h4>
                       <p className="text-[#777777] whitespace-pre-line">{location.hours}</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
                       <Car className="w-5 h-5 text-[#A38E78]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#333333] mb-1">Parking</h4>
+                      <h4 className="font-semibold text-[#333333] mb-1">{t.locations.parkingLabel}</h4>
                       <p className="text-[#777777]">{location.parking}</p>
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                  <button 
+                  <button
                     onClick={() => handleNavigation('book-treatment')}
                     className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-6 py-3 rounded-lg font-medium transition-colors"
                   >
-                    Book Appointment
+                    {t.locations.bookAppointment}
                   </button>
-                  <a 
+                  <a
                     href={`https://www.google.com/maps/search/?api=1&query=Beyond+Aesthetic+Clinic+${location.city}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="border border-[#A38E78] text-[#A38E78] hover:bg-[#A38E78] hover:text-white px-6 py-3 rounded-lg font-medium transition-colors text-center"
                   >
-                    Get Directions
+                    {t.locations.getDirections}
                   </a>
                 </div>
               </div>

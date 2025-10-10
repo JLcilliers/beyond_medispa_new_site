@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/beyond_medispa_new_site/' : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname),
@@ -12,8 +13,8 @@ export default defineConfig({
     },
   },
   plugins: [tailwindcss(), react()],
-  mode: "development",
   build: {
-    minify: false,
+    outDir: 'dist',
+    emptyOutDir: true,
   }
 })

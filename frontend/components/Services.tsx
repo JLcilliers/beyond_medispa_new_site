@@ -3,7 +3,7 @@ const services = [
     id: 1,
     title: "Botox & Fillers",
     description: "Wrinkle reduction and natural facial volumization",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg",
+    image: "https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp",
     price: "From £350",
     features: ["Natural results", "No downtime", "Immediate effects"]
   },
@@ -11,7 +11,7 @@ const services = [
     id: 2,
     title: "Facial Treatments",
     description: "Deep hydration and skin regeneration",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg",
+    image: "https://i.ibb.co/Kj4wWGcD/beauty-salon-beautician-applies-cooling-gel-to-cli-2025-01-09-05-05-23-utc-1.webp",
     price: "From £200",
     features: ["Hydrated skin", "Natural glow", "Improved texture"]
   },
@@ -19,7 +19,7 @@ const services = [
     id: 3,
     title: "Laser Therapy",
     description: "Removal of imperfections and pore minimization",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/laser-hair-removal-london-edinburgh-beyond-medispa.jpg",
+    image: "https://i.ibb.co/RTZVYtGm/leg-waxing-procedure-in-a-top-notch-beauty-center-2024-10-21-09-02-09-utc.webp",
     price: "From £400",
     features: ["Pain-free", "Maximum precision", "Long-lasting results"]
   },
@@ -27,7 +27,7 @@ const services = [
     id: 4,
     title: "Mesotherapy",
     description: "Revitalizing treatment with active substances",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg",
+    image: "https://i.ibb.co/Zz6VZvZS/a-drop-of-gel-pours-from-a-syringe-for-cosmetic-pr-2025-03-16-09-14-11-utc.webp",
     price: "From £300",
     features: ["Cellular nutrition", "Anti-aging effects", "Firm skin"]
   },
@@ -35,7 +35,7 @@ const services = [
     id: 5,
     title: "Chemical Peel",
     description: "Deep exfoliation for smooth skin",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Chemical-Peels-London-Edinburgh-Beyond-Medispa.jpg",
+    image: "https://i.ibb.co/nqqyz2vP/a-beautician-wearing-gloves-vacuum-cleans-and-poli-2024-12-02-09-41-13-utc.webp",
     price: "From £250",
     features: ["Fast regeneration", "Even tone", "Fine texture"]
   },
@@ -43,7 +43,7 @@ const services = [
     id: 6,
     title: "Non-Invasive Lifting",
     description: "Skin firming and toning without surgery",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/03/Profhilo-Treatment-London-Edinburgh-Beyond-MediSpa.jpg",
+    image: "https://i.ibb.co/zVSjQZPg/female-at-cosmetic-beauty-spa-clinic-has-facial-ha-2024-10-18-17-49-09-utc-1.webp",
     price: "From £500",
     features: ["No incisions", "Quick recovery", "Lifting effect"]
   }

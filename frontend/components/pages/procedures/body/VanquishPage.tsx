@@ -1,31 +1,11 @@
-import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
+import { useLanguage } from '../../../../contexts/LanguageContext'
+import { useTranslations } from '../../../../locales/translations'
+import ProcedurePageTemplate from '../../../ProcedurePageTemplate'
 
 export default function VanquishPage() {
-  const hero = {
-    tagline: "CONTACTLESS FAT REDUCTION",
-    title: "Vanquish",
-    subtitle: "Non-Invasive Body Contouring",
-    description: "Experience contactless fat reduction with Vanquish. This innovative treatment uses uniform heating to target the abdomen and flanks, reducing circumference without any downtime in a comfortable, non-invasive procedure.",
-  };
+  const { language } = useLanguage()
+  const t = useTranslations(language)
+  const content = t.procedurePages.bodyDetails.vanquish
 
-  const treatmentInfo = {
-    duration: "45 minutes",
-    results: "Circumferential reduction over 4–8 weeks after a course",
-    price: "Contact for pricing",
-    benefits: [
-      "Contactless fat reduction",
-      "Targets abdomen/flanks",
-      "No downtime",
-      "Uniform heating",
-      "Non-invasive",
-      "Comfortable"
-    ]
-  };
-
-  return (
-    <ProcedurePageTemplate 
-      hero={hero}
-      treatmentInfo={treatmentInfo}
-    />
-  );
+  return <ProcedurePageTemplate hero={content.hero} treatmentInfo={content.treatmentInfo} />
 }

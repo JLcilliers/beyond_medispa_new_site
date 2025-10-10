@@ -99,8 +99,8 @@ export default function BeautySection() {
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-6">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/HydraFacial-London-Edinburgh-Beyond-MediSpa.jpg" 
+                  <img
+                    src="https://i.ibb.co/HTzHnd2r/a-cosmetologist-performs-hydropiling-in-a-beauty-s-2025-03-08-01-46-27-utc.webp"
                     alt="Facial treatment"
                     className="w-full h-72 object-cover"
                   />
@@ -112,8 +112,8 @@ export default function BeautySection() {
                   </div>
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/anti-wrinkle-injections-london-edinburgh-beyond-medispa.jpg" 
+                  <img
+                    src="https://i.ibb.co/ymtcHXZB/close-up-view-of-a-beautician-hands-injecting-hyal-2024-10-20-11-28-06-utc.webp"
                     alt="Injectable treatments"
                     className="w-full h-56 object-cover"
                   />
@@ -127,8 +127,8 @@ export default function BeautySection() {
               </div>
               <div className="space-y-6 mt-8">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/Coolsculpting-Body-Contouring-London-Edinburgh-Beyond-Medispa.jpg" 
+                  <img
+                    src="https://i.ibb.co/nMkByNc2/a-woman-is-getting-a-massage-on-her-stomach-the-m-2025-01-16-02-54-47-utc.webp"
                     alt="Body contouring"
                     className="w-full h-56 object-cover"
                   />
@@ -140,8 +140,8 @@ export default function BeautySection() {
                   </div>
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src="https://www.beyondmedispa.com/wp-content/uploads/2024/03/dermal-filler-london-edinburgh-beyond-medispa.jpg" 
+                  <img
+                    src="https://i.ibb.co/fzMTvxDr/revitalizing-skin-treatment-that-clears-pores-and-2025-03-22-19-33-40-utc-1.webp"
                     alt="Wellness treatments"
                     className="w-full h-72 object-cover"
                   />
