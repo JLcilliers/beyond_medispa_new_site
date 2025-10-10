@@ -4,7 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/beyond_medispa_new_site/' : '/',
+  // Use VITE_BASE_PATH env var if set (for different deployment targets)
+  // Default to '/' for Vercel, use '/beyond_medispa_new_site/' for GitHub Pages
+  base: process.env.VITE_BASE_PATH || '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname),

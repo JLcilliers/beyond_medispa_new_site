@@ -38,6 +38,7 @@ jobs:
           NODE_ENV=production bun run build
         env:
           NODE_ENV: production
+          VITE_BASE_PATH: /beyond_medispa_new_site/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
