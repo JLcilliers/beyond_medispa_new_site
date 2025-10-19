@@ -393,173 +393,176 @@ const bodyProcedurePagesEn: Translations['procedurePages'] = {
     },
   },
   facialDetails: {
-  hydrafacialEdinburgh: {
-    hero: {
-      tagline: 'EDINBURGH EXCELLENCE',
-      title: 'HydraFacial Edinburgh',
-      subtitle: 'Advanced Facial Rejuvenation in Scotland\'s Capital',
-      description:
-        'Experience the revolutionary HydraFacial treatment at our prestigious Edinburgh clinic on Dublin Street. This multi-step facial combines deep cleansing, exfoliation, extraction, and intense hydration using patented vortex technology. Perfect for busy professionals and discerning clients seeking immediate, visible results without downtime. Our expert aestheticians customize each treatment to address your unique skin concerns, from fine lines and hyperpigmentation to congested pores and uneven texture. The HydraFacial is suitable for all skin types and delivers an instant radiance that keeps you glowing long after you leave our elegant Edinburgh location. Discover why this award-winning treatment is trusted by dermatologists and loved by clients worldwide. Book your transformative HydraFacial experience in Edinburgh today.',
+    hydrafacialEdinburgh: {
+      hero: {
+        tagline: 'EDINBURGH EXCELLENCE',
+        title: 'HydraFacial Edinburgh',
+        subtitle: 'Advanced Facial Rejuvenation in Scotland\'s Capital',
+        description:
+          'Experience the revolutionary HydraFacial treatment at our prestigious Edinburgh clinic on Dublin Street. This multi-step facial combines deep cleansing, exfoliation, extraction, and intense hydration using patented vortex technology. Perfect for busy professionals and discerning clients seeking immediate, visible results without downtime. Our expert aestheticians customize each treatment to address your unique skin concerns, from fine lines and hyperpigmentation to congested pores and uneven texture. The HydraFacial is suitable for all skin types and delivers an instant radiance that keeps you glowing long after you leave our elegant Edinburgh location. Discover why this award-winning treatment is trusted by dermatologists and loved by clients worldwide. Book your transformative HydraFacial experience in Edinburgh today.',
+      },
+      treatmentInfo: {
+        duration: '30–60 minutes',
+        results: 'Immediate radiance and glow; progressive improvements over weeks',
+        price: 'From £150 - Contact for personalized package pricing',
+        benefits: [
+          'Deep cleansing and exfoliation',
+          'Painless extractions',
+          'Intense hydration with serums',
+          'Reduces fine lines and wrinkles',
+          'Evens skin tone and texture',
+          'Minimizes pores',
+          'No downtime required',
+          'Suitable for all skin types',
+          'Immediate visible results',
+          'Customizable for your concerns',
+        ],
+      },
     },
-    treatmentInfo: {
-      duration: '30–60 minutes',
-      results: 'Immediate radiance and glow; progressive improvements over weeks',
-      price: 'From £150 - Contact for personalized package pricing',
-      benefits: [
-        'Deep cleansing and exfoliation',
-        'Painless extractions',
-        'Intense hydration with serums',
-        'Reduces fine lines and wrinkles',
-        'Evens skin tone and texture',
-        'Minimizes pores',
-        'No downtime required',
-        'Suitable for all skin types',
-        'Immediate visible results',
-        'Customizable for your concerns',
-      ],
+    hydrafacialLondon: {
+      hero: {
+        tagline: 'KNIGHTSBRIDGE LUXURY',
+        title: 'HydraFacial London',
+        subtitle: 'Premium Facial Treatment in the Heart of Knightsbridge',
+        description:
+          'Indulge in the ultimate HydraFacial experience at our exclusive Knightsbridge clinic. This revolutionary treatment combines cleansing, exfoliation, extraction, and hydration in one seamless procedure using advanced vortex technology. Ideal for London\'s fast-paced lifestyle, the HydraFacial delivers instant luminosity and long-lasting skin health without any downtime. Our highly trained therapists tailor each session to your specific needs, addressing concerns such as fine lines, sun damage, congestion, and dullness. Suitable for all skin types and ages, this treatment is the perfect prelude to any special event or a regular part of your skincare routine. Experience the glowing, rejuvenated complexion that has made HydraFacial a favorite among celebrities and skincare enthusiasts. Book your luxurious HydraFacial in Knightsbridge today.',
+      },
+      treatmentInfo: {
+        duration: '30–60 minutes',
+        results: 'Instant luminosity and smoothness; continued improvements with regular sessions',
+        price: 'From £150 - Contact for bespoke treatment packages',
+        benefits: [
+          'Deep pore cleansing',
+          'Gentle exfoliation',
+          'Painless extraction',
+          'Intensive serum infusion',
+          'Reduces fine lines',
+          'Improves skin texture',
+          'Brightens complexion',
+          'Hydrates deeply',
+          'No recovery time',
+          'Safe for all skin types',
+        ],
+      },
     },
-  },
-  hydrafacialLondon: {
-    hero: {
-      tagline: 'KNIGHTSBRIDGE LUXURY',
-      title: 'HydraFacial London',
-      subtitle: 'Premium Facial Treatment in the Heart of Knightsbridge',
-      description:
-        'Indulge in the ultimate HydraFacial experience at our exclusive Knightsbridge clinic. This revolutionary treatment combines cleansing, exfoliation, extraction, and hydration in one seamless procedure using advanced vortex technology. Ideal for London\'s fast-paced lifestyle, the HydraFacial delivers instant luminosity and long-lasting skin health without any downtime. Our highly trained therapists tailor each session to your specific needs, addressing concerns such as fine lines, sun damage, congestion, and dullness. Suitable for all skin types and ages, this treatment is the perfect prelude to any special event or a regular part of your skincare routine. Experience the glowing, rejuvenated complexion that has made HydraFacial a favorite among celebrities and skincare enthusiasts. Book your luxurious HydraFacial in Knightsbridge today.',
+    microneedlingEdinburgh: {
+      hero: {
+        tagline: 'COMING SOON',
+        title: 'Microneedling Edinburgh',
+        subtitle: 'Advanced Skin Rejuvenation',
+        description: 'Premium microneedling treatments coming soon to our Edinburgh clinic.',
+      },
+      treatmentInfo: {
+        duration: 'TBC',
+        results: 'TBC',
+        price: 'TBC',
+        benefits: ['Coming soon'],
+      },
     },
-    treatmentInfo: {
-      duration: '30–60 minutes',
-      results: 'Instant luminosity and smoothness; continued improvements with regular sessions',
-      price: 'From £150 - Contact for bespoke treatment packages',
-      benefits: [
-        'Deep pore cleansing',
-        'Gentle exfoliation',
-        'Painless extraction',
-        'Intensive serum infusion',
-        'Reduces fine lines',
-        'Improves skin texture',
-        'Brightens complexion',
-        'Hydrates deeply',
-        'No recovery time',
-        'Safe for all skin types',
-      ],
-    },
-  },
-  microneedlingEdinburgh: {
-    hero: {
-      tagline: 'COMING SOON',
-      title: 'Microneedling Edinburgh',
-      subtitle: 'Advanced Skin Rejuvenation',
-      description: 'Premium microneedling treatments coming soon to our Edinburgh clinic.',
-    },
-    treatmentInfo: {
-      duration: 'TBC',
-      results: 'TBC',
-      price: 'TBC',
-      benefits: ['Coming soon'],
-    },
-  },
-  microneedlingLondon: {
-    hero: {
-      tagline: 'COMING SOON',
-      title: 'Microneedling London',
-      subtitle: 'Advanced Skin Rejuvenation',
-      description: 'Premium microneedling treatments coming soon to our Knightsbridge clinic.',
-    },
-    treatmentInfo: {
-      duration: 'TBC',
-      results: 'TBC',
-      price: 'TBC',
-      benefits: ['Coming soon'],
+    microneedlingLondon: {
+      hero: {
+        tagline: 'COMING SOON',
+        title: 'Microneedling London',
+        subtitle: 'Advanced Skin Rejuvenation',
+        description: 'Premium microneedling treatments coming soon to our Knightsbridge clinic.',
+      },
+      treatmentInfo: {
+        duration: 'TBC',
+        results: 'TBC',
+        price: 'TBC',
+        benefits: ['Coming soon'],
+      },
     },
   },
   injectablesDetails: {
-  biofillerEdinburgh: {
-    hero: {
-      tagline: 'COMING SOON',
-      title: 'Bio Filler Edinburgh',
-      subtitle: 'Natural Dermal Fillers',
-      description: 'Natural bio filler treatments coming soon to our Edinburgh clinic.',
+    biofillerEdinburgh: {
+      hero: {
+        tagline: 'COMING SOON',
+        title: 'Bio Filler Edinburgh',
+        subtitle: 'Natural Dermal Fillers',
+        description: 'Natural bio filler treatments coming soon to our Edinburgh clinic.',
+      },
+      treatmentInfo: {
+        duration: 'TBC',
+        results: 'TBC',
+        price: 'TBC',
+        benefits: ['Coming soon'],
+      },
     },
-    treatmentInfo: {
-      duration: 'TBC',
-      results: 'TBC',
-      price: 'TBC',
-      benefits: ['Coming soon'],
-    },
-  },
-  biofillerLondon: {
-    hero: {
-      tagline: 'COMING SOON',
-      title: 'Bio Filler London',
-      subtitle: 'Natural Dermal Fillers',
-      description: 'Natural bio filler treatments coming soon to our Knightsbridge clinic.',
-    },
-    treatmentInfo: {
-      duration: 'TBC',
-      results: 'TBC',
-      price: 'TBC',
-      benefits: ['Coming soon'],
+    biofillerLondon: {
+      hero: {
+        tagline: 'COMING SOON',
+        title: 'Bio Filler London',
+        subtitle: 'Natural Dermal Fillers',
+        description: 'Natural bio filler treatments coming soon to our Knightsbridge clinic.',
+      },
+      treatmentInfo: {
+        duration: 'TBC',
+        results: 'TBC',
+        price: 'TBC',
+        benefits: ['Coming soon'],
+      },
     },
   },
   peelsDetails: {
-  medik8Edinburgh: {
-    hero: {
-      tagline: 'COMING SOON',
-      title: 'Medik8 Peel Edinburgh',
-      subtitle: 'Professional Chemical Peels',
-      description: 'Medik8 professional peel treatments coming soon to our Edinburgh clinic.',
+    medik8Edinburgh: {
+      hero: {
+        tagline: 'COMING SOON',
+        title: 'Medik8 Peel Edinburgh',
+        subtitle: 'Professional Chemical Peels',
+        description: 'Medik8 professional peel treatments coming soon to our Edinburgh clinic.',
+      },
+      treatmentInfo: {
+        duration: 'TBC',
+        results: 'TBC',
+        price: 'TBC',
+        benefits: ['Coming soon'],
+      },
     },
-    treatmentInfo: {
-      duration: 'TBC',
-      results: 'TBC',
-      price: 'TBC',
-      benefits: ['Coming soon'],
+    medik8London: {
+      hero: {
+        tagline: 'COMING SOON',
+        title: 'Medik8 Peel London',
+        subtitle: 'Professional Chemical Peels',
+        description: 'Medik8 professional peel treatments coming soon to our Knightsbridge clinic.',
+      },
+      treatmentInfo: {
+        duration: 'TBC',
+        results: 'TBC',
+        price: 'TBC',
+        benefits: ['Coming soon'],
+      },
+    },
+    zoEdinburgh: {
+      hero: {
+        tagline: 'COMING SOON',
+        title: 'ZO Peel Edinburgh',
+        subtitle: 'Medical-Grade Chemical Peels',
+        description: 'ZO Skin Health peel treatments coming soon to our Edinburgh clinic.',
+      },
+      treatmentInfo: {
+        duration: 'TBC',
+        results: 'TBC',
+        price: 'TBC',
+        benefits: ['Coming soon'],
+      },
+    },
+    zoLondon: {
+      hero: {
+        tagline: 'COMING SOON',
+        title: 'ZO Peel London',
+        subtitle: 'Medical-Grade Chemical Peels',
+        description: 'ZO Skin Health peel treatments coming soon to our Knightsbridge clinic.',
+      },
+      treatmentInfo: {
+        duration: 'TBC',
+        results: 'TBC',
+        price: 'TBC',
+        benefits: ['Coming soon'],
+      },
     },
   },
-  medik8London: {
-    hero: {
-      tagline: 'COMING SOON',
-      title: 'Medik8 Peel London',
-      subtitle: 'Professional Chemical Peels',
-      description: 'Medik8 professional peel treatments coming soon to our Knightsbridge clinic.',
-    },
-    treatmentInfo: {
-      duration: 'TBC',
-      results: 'TBC',
-      price: 'TBC',
-      benefits: ['Coming soon'],
-    },
-  },
-  zoEdinburgh: {
-    hero: {
-      tagline: 'COMING SOON',
-      title: 'ZO Peel Edinburgh',
-      subtitle: 'Medical-Grade Chemical Peels',
-      description: 'ZO Skin Health peel treatments coming soon to our Edinburgh clinic.',
-    },
-    treatmentInfo: {
-      duration: 'TBC',
-      results: 'TBC',
-      price: 'TBC',
-      benefits: ['Coming soon'],
-    },
-  },
-  zoLondon: {
-    hero: {
-      tagline: 'COMING SOON',
-      title: 'ZO Peel London',
-      subtitle: 'Medical-Grade Chemical Peels',
-      description: 'ZO Skin Health peel treatments coming soon to our Knightsbridge clinic.',
-    },
-    treatmentInfo: {
-      duration: 'TBC',
-      results: 'TBC',
-      price: 'TBC',
-      benefits: ['Coming soon'],
-    },
-  },
-}
+};
 
 const bodyProcedurePagesZhTW = {
   body: {
@@ -926,7 +929,7 @@ const bodyProcedurePagesZhTW = {
       },
     },
   },
-}
+};
 
 const bodyProcedurePagesZhCN = {
   body: {
@@ -1293,7 +1296,7 @@ const bodyProcedurePagesZhCN = {
       },
     },
   },
-}
+};
 
 const bodyProcedurePagesAr = {
   body: {
