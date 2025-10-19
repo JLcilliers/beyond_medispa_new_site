@@ -22,6 +22,22 @@ type BodyProcedureKey =
   | 'laserHairRemoval'
   | 'electrolysis'
 
+type FacialProcedureKey =
+  | 'hydrafacialEdinburgh'
+  | 'hydrafacialLondon'
+  | 'microneedlingEdinburgh'
+  | 'microneedlingLondon'
+
+type InjectablesProcedureKey =
+  | 'biofillerEdinburgh'
+  | 'biofillerLondon'
+
+type PeelsProcedureKey =
+  | 'medik8Edinburgh'
+  | 'medik8London'
+  | 'zoEdinburgh'
+  | 'zoLondon'
+
 interface ProcedureCategoryHero {
   title: string
   subtitle: string
@@ -54,6 +70,30 @@ interface ProcedureDetailInfo {
 
 type BodyProcedureDetails = Record<
   BodyProcedureKey,
+  {
+    hero: ProcedureDetailHero
+    treatmentInfo: ProcedureDetailInfo
+  }
+>
+
+type FacialProcedureDetails = Record<
+  FacialProcedureKey,
+  {
+    hero: ProcedureDetailHero
+    treatmentInfo: ProcedureDetailInfo
+  }
+>
+
+type InjectablesProcedureDetails = Record<
+  InjectablesProcedureKey,
+  {
+    hero: ProcedureDetailHero
+    treatmentInfo: ProcedureDetailInfo
+  }
+>
+
+type PeelsProcedureDetails = Record<
+  PeelsProcedureKey,
   {
     hero: ProcedureDetailHero
     treatmentInfo: ProcedureDetailInfo
@@ -349,6 +389,1274 @@ const bodyProcedurePagesEn: Translations['procedurePages'] = {
           'Non-invasive comfort',
           'Supports gradual, natural results',
         ],
+      },
+    },
+  },
+  facialDetails: {
+  hydrafacialEdinburgh: {
+    hero: {
+      tagline: 'EDINBURGH EXCELLENCE',
+      title: 'HydraFacial Edinburgh',
+      subtitle: 'Advanced Facial Rejuvenation in Scotland\'s Capital',
+      description:
+        'Experience the revolutionary HydraFacial treatment at our prestigious Edinburgh clinic on Dublin Street. This multi-step facial combines deep cleansing, exfoliation, extraction, and intense hydration using patented vortex technology. Perfect for busy professionals and discerning clients seeking immediate, visible results without downtime. Our expert aestheticians customize each treatment to address your unique skin concerns, from fine lines and hyperpigmentation to congested pores and uneven texture. The HydraFacial is suitable for all skin types and delivers an instant radiance that keeps you glowing long after you leave our elegant Edinburgh location. Discover why this award-winning treatment is trusted by dermatologists and loved by clients worldwide. Book your transformative HydraFacial experience in Edinburgh today.',
+    },
+    treatmentInfo: {
+      duration: '30–60 minutes',
+      results: 'Immediate radiance and glow; progressive improvements over weeks',
+      price: 'From £150 - Contact for personalized package pricing',
+      benefits: [
+        'Deep cleansing and exfoliation',
+        'Painless extractions',
+        'Intense hydration with serums',
+        'Reduces fine lines and wrinkles',
+        'Evens skin tone and texture',
+        'Minimizes pores',
+        'No downtime required',
+        'Suitable for all skin types',
+        'Immediate visible results',
+        'Customizable for your concerns',
+      ],
+    },
+  },
+  hydrafacialLondon: {
+    hero: {
+      tagline: 'KNIGHTSBRIDGE LUXURY',
+      title: 'HydraFacial London',
+      subtitle: 'Premium Facial Treatment in the Heart of Knightsbridge',
+      description:
+        'Indulge in the ultimate HydraFacial experience at our exclusive Knightsbridge clinic. This revolutionary treatment combines cleansing, exfoliation, extraction, and hydration in one seamless procedure using advanced vortex technology. Ideal for London\'s fast-paced lifestyle, the HydraFacial delivers instant luminosity and long-lasting skin health without any downtime. Our highly trained therapists tailor each session to your specific needs, addressing concerns such as fine lines, sun damage, congestion, and dullness. Suitable for all skin types and ages, this treatment is the perfect prelude to any special event or a regular part of your skincare routine. Experience the glowing, rejuvenated complexion that has made HydraFacial a favorite among celebrities and skincare enthusiasts. Book your luxurious HydraFacial in Knightsbridge today.',
+    },
+    treatmentInfo: {
+      duration: '30–60 minutes',
+      results: 'Instant luminosity and smoothness; continued improvements with regular sessions',
+      price: 'From £150 - Contact for bespoke treatment packages',
+      benefits: [
+        'Deep pore cleansing',
+        'Gentle exfoliation',
+        'Painless extraction',
+        'Intensive serum infusion',
+        'Reduces fine lines',
+        'Improves skin texture',
+        'Brightens complexion',
+        'Hydrates deeply',
+        'No recovery time',
+        'Safe for all skin types',
+      ],
+    },
+  },
+  microneedlingEdinburgh: {
+    hero: {
+      tagline: 'COMING SOON',
+      title: 'Microneedling Edinburgh',
+      subtitle: 'Advanced Skin Rejuvenation',
+      description: 'Premium microneedling treatments coming soon to our Edinburgh clinic.',
+    },
+    treatmentInfo: {
+      duration: 'TBC',
+      results: 'TBC',
+      price: 'TBC',
+      benefits: ['Coming soon'],
+    },
+  },
+  microneedlingLondon: {
+    hero: {
+      tagline: 'COMING SOON',
+      title: 'Microneedling London',
+      subtitle: 'Advanced Skin Rejuvenation',
+      description: 'Premium microneedling treatments coming soon to our Knightsbridge clinic.',
+    },
+    treatmentInfo: {
+      duration: 'TBC',
+      results: 'TBC',
+      price: 'TBC',
+      benefits: ['Coming soon'],
+    },
+  },
+  injectablesDetails: {
+  biofillerEdinburgh: {
+    hero: {
+      tagline: 'COMING SOON',
+      title: 'Bio Filler Edinburgh',
+      subtitle: 'Natural Dermal Fillers',
+      description: 'Natural bio filler treatments coming soon to our Edinburgh clinic.',
+    },
+    treatmentInfo: {
+      duration: 'TBC',
+      results: 'TBC',
+      price: 'TBC',
+      benefits: ['Coming soon'],
+    },
+  },
+  biofillerLondon: {
+    hero: {
+      tagline: 'COMING SOON',
+      title: 'Bio Filler London',
+      subtitle: 'Natural Dermal Fillers',
+      description: 'Natural bio filler treatments coming soon to our Knightsbridge clinic.',
+    },
+    treatmentInfo: {
+      duration: 'TBC',
+      results: 'TBC',
+      price: 'TBC',
+      benefits: ['Coming soon'],
+    },
+  },
+  peelsDetails: {
+  medik8Edinburgh: {
+    hero: {
+      tagline: 'COMING SOON',
+      title: 'Medik8 Peel Edinburgh',
+      subtitle: 'Professional Chemical Peels',
+      description: 'Medik8 professional peel treatments coming soon to our Edinburgh clinic.',
+    },
+    treatmentInfo: {
+      duration: 'TBC',
+      results: 'TBC',
+      price: 'TBC',
+      benefits: ['Coming soon'],
+    },
+  },
+  medik8London: {
+    hero: {
+      tagline: 'COMING SOON',
+      title: 'Medik8 Peel London',
+      subtitle: 'Professional Chemical Peels',
+      description: 'Medik8 professional peel treatments coming soon to our Knightsbridge clinic.',
+    },
+    treatmentInfo: {
+      duration: 'TBC',
+      results: 'TBC',
+      price: 'TBC',
+      benefits: ['Coming soon'],
+    },
+  },
+  zoEdinburgh: {
+    hero: {
+      tagline: 'COMING SOON',
+      title: 'ZO Peel Edinburgh',
+      subtitle: 'Medical-Grade Chemical Peels',
+      description: 'ZO Skin Health peel treatments coming soon to our Edinburgh clinic.',
+    },
+    treatmentInfo: {
+      duration: 'TBC',
+      results: 'TBC',
+      price: 'TBC',
+      benefits: ['Coming soon'],
+    },
+  },
+  zoLondon: {
+    hero: {
+      tagline: 'COMING SOON',
+      title: 'ZO Peel London',
+      subtitle: 'Medical-Grade Chemical Peels',
+      description: 'ZO Skin Health peel treatments coming soon to our Knightsbridge clinic.',
+    },
+    treatmentInfo: {
+      duration: 'TBC',
+      results: 'TBC',
+      price: 'TBC',
+      benefits: ['Coming soon'],
+    },
+  },
+}
+
+const bodyProcedurePagesZhTW = {
+  body: {
+    hero: {
+      title: '身體療程',
+      subtitle: '療程',
+      description: '透過我們先進的非侵入性療程，改造您的身體，專為塑形、緊緻和煥發肌膚而設計。',
+    },
+    treatments: [
+      {
+        key: 'exilis',
+        name: 'Exilis',
+        description: '革命性射頻技術，無需手術即可緊緻肌膚和塑造身體輪廓。',
+        duration: '45-60分鐘',
+        price: '從 250英鎊起',
+        benefits: ['肌膚緊緻', '身體塑形', '減少橘皮組織', '非侵入性'],
+        route: 'procedures/body/exilis',
+      },
+      {
+        key: 'hifu',
+        name: 'HIFU',
+        description: '高強度聚焦超聲波，實現精準提拉、緊緻和持久煥發。',
+        duration: '60-90分鐘',
+        price: '從 735英鎊起',
+        benefits: ['深層提拉', '針對下顎線和面頰', '刺激膠原蛋白', '恢復期短'],
+        route: 'procedures/body/hifu',
+      },
+      {
+        key: 'cmSlim',
+        name: 'CM Slim',
+        description: '先進電磁肌肉刺激技術，同時增加肌肉量和燃燒脂肪。',
+        duration: '30分鐘',
+        price: '從 263英鎊起',
+        benefits: ['增加肌肉', '減少脂肪', '強化核心', '快速療程'],
+        route: 'procedures/body/cm-slim',
+      },
+      {
+        key: 'coolLaser',
+        name: 'Cool Laser',
+        description: '創新冷激光療法，改善膚質、提升膚色，並促進膠原蛋白更新。',
+        duration: '45分鐘',
+        price: '從 735英鎊起',
+        benefits: ['改善膚質和膚色', '針對色素沉澱', '幫助改善痘疤', '恢復期短'],
+        route: 'procedures/body/cool-laser',
+      },
+      {
+        key: 'coolSculpting',
+        name: 'CoolSculpting',
+        description: 'FDA認證冷凍溶脂技術，冷凍並消除頑固脂肪細胞，實現持久輪廓改變。',
+        duration: '35-60分鐘',
+        price: '請洽詢價格',
+        benefits: ['非手術減脂', '針對頑固脂肪', '永久消除脂肪細胞', '經驗證效果'],
+        route: 'procedures/body/coolsculpting',
+      },
+      {
+        key: 'unison',
+        name: 'Unison',
+        description: '結合射頻和超聲波技術，全面平滑橘皮組織和緊緻肌膚。',
+        duration: '60分鐘',
+        price: '從 735英鎊起',
+        benefits: ['減少橘皮組織', '改善彈性', '舒適療程', '可客製化療程'],
+        route: 'procedures/body/unison',
+      },
+      {
+        key: 'vanquish',
+        name: 'Vanquish',
+        description: '非接觸式射頻能量，針對較大區域進行一致性圍度減少。',
+        duration: '45分鐘',
+        price: '從 735英鎊起',
+        benefits: ['非接觸式療程', '大面積覆蓋', '舒適溫熱感', '漸進自然效果'],
+        route: 'procedures/body/vanquish',
+      },
+      {
+        key: 'laserHairRemoval',
+        name: '激光脫毛',
+        description: '專業激光脫毛，旨在減少毛髮再生，使所有部位的肌膚光滑。',
+        duration: '15-60分鐘',
+        price: '從 50英鎊起',
+        benefits: ['長期減少', '快速療程', '精準定位', '光滑效果'],
+        route: 'procedures/body/laser-hair-removal',
+      },
+      {
+        key: 'electrolysis',
+        name: '電解脫毛',
+        description: 'FDA認證的永久脫毛，適用於每種毛髮和膚質類型，包括淺色毛髮。',
+        duration: '15-45分鐘',
+        price: '從 30英鎊起',
+        benefits: ['永久脫除', '所有毛髮類型', '所有膚色', '適合小範圍'],
+        route: 'procedures/body/electrolysis',
+      },
+    ],
+  },
+  bodyDetails: {
+    hifu: {
+      hero: {
+        tagline: '非手術提拉',
+        title: 'HIFU超聲刀',
+        subtitle: '高強度聚焦超聲波',
+        description: '體驗革命性的HIFU療程，實現非侵入性提拉和緊緻。聚焦超聲波能量刺激深層膠原蛋白生成，自然提拉、緊緻和煥發您的輪廓。',
+      },
+      treatmentInfo: {
+        duration: '45-90分鐘',
+        results: '提拉和緊緻效果在8-12週內逐漸顯現，效果可持續12-18個月',
+        price: '從 735英鎊起',
+        benefits: [
+          '非侵入性提拉',
+          '刺激膠原蛋白和彈力蛋白',
+          '塑造下顎線和面頰輪廓',
+          '軟化皺紋',
+          '恢復期短',
+          '持久效果',
+        ],
+      },
+    },
+    cmslim: {
+      hero: {
+        tagline: '增肌減脂',
+        title: 'CM Slim塑形',
+        subtitle: '身體塑形和輪廓雕塑',
+        description: '透過CM Slim電磁技術改造您的體態。療程溫和地塑造您的身體，在短時間內減少脂肪同時增強和強化目標肌肉群。',
+      },
+      treatmentInfo: {
+        duration: '30分鐘',
+        results: '在持續療程2-4週後，緊緻度和線條感會逐漸顯現',
+        price: '從 263英鎊起',
+        benefits: [
+          '透過EMS增肌',
+          '幫助減少脂肪',
+          '強化核心、臀部、大腿和手臂',
+          '無恢復期',
+          '快速療程',
+          '非侵入性',
+        ],
+      },
+    },
+    coolLaser: {
+      hero: {
+        tagline: '先進激光煥膚',
+        title: 'Cool Laser冷激光',
+        subtitle: '肌膚重塑和煥發',
+        description: '透過Cool Laser技術改造您的肌膚。這種創新方法改善膚質、提升光澤、針對色素沉澱，並支持膠原蛋白更新，實現全面煥發。',
+      },
+      treatmentInfo: {
+        duration: '30-60分鐘',
+        results: '立即展現光采，細緻效果在數週內持續累積',
+        price: '請洽詢價格',
+        benefits: [
+          '減少細紋',
+          '改善膚質和膚色',
+          '針對色素沉澱',
+          '幫助改善痘疤',
+          '恢復期短',
+          '刺激膠原蛋白',
+        ],
+      },
+    },
+    coolsculpting: {
+      hero: {
+        tagline: '非手術減脂',
+        title: 'CoolSculpting冷凍溶脂',
+        subtitle: 'FDA認證冷凍技術',
+        description: '體驗世界領先的非侵入性減脂療程。CoolSculpting使用控制性冷卻技術消除頑固脂肪細胞，無需手術即可塑造平滑的輪廓線條。',
+      },
+      treatmentInfo: {
+        duration: '每個循環35-60分鐘',
+        results: '減脂效果在8-12週內逐漸顯現，因為身體會自然清除被處理的脂肪細胞',
+        price: '請洽詢價格',
+        benefits: [
+          '非手術減脂',
+          '針對頑固脂肪',
+          '恢復期短',
+          '永久消除脂肪細胞',
+          '改善輪廓',
+          '經臨床驗證',
+        ],
+      },
+    },
+    unison: {
+      hero: {
+        tagline: '橘皮組織改善',
+        title: 'Unison多波長',
+        subtitle: '先進橘皮組織療程',
+        description: '透過Unison減少橘皮組織外觀並改善彈性。這種舒適的雙能量療程增強循環、平滑膚質，並支持各種膚色的肌膚緊緻度。',
+      },
+      treatmentInfo: {
+        duration: '每個區域20-30分鐘',
+        results: '橘皮組織外觀在療程後2-8週內逐漸改善',
+        price: '請洽詢價格',
+        benefits: [
+          '減少橘皮組織',
+          '改善彈性',
+          '增強循環',
+          '舒適療程',
+          '適合所有膚質',
+          '恢復期短',
+        ],
+      },
+    },
+    vanquish: {
+      hero: {
+        tagline: '非接觸式減脂',
+        title: 'Vanquish射頻溶脂',
+        subtitle: '非侵入性身體塑形',
+        description: '體驗Vanquish非接觸式減脂。溫和均勻的加熱療程針對腹部和側腰，舒適地減少圍度，無需恢復期。',
+      },
+      treatmentInfo: {
+        duration: '45分鐘',
+        results: '在療程後4-8週內逐漸減少圍度',
+        price: '請洽詢價格',
+        benefits: [
+          '非接觸式減脂',
+          '針對腹部和側腰',
+          '無恢復期',
+          '均勻能量傳遞',
+          '非侵入性舒適',
+          '支持漸進自然效果',
+        ],
+      },
+    },
+  },
+  facialDetails: {
+    hydrafacialEdinburgh: {
+      hero: {
+        tagline: '待翻譯',
+        title: 'HydraFacial愛丁堡',
+        subtitle: '待翻譯',
+        description: '待翻譯 - HydraFacial愛丁堡療程內容將在翻譯配額重置後新增',
+      },
+      treatmentInfo: {
+        duration: '待確認',
+        results: '待確認',
+        price: '待確認',
+        benefits: ['待翻譯'],
+      },
+    },
+    hydrafacialLondon: {
+      hero: {
+        tagline: '待翻譯',
+        title: 'HydraFacial倫敦',
+        subtitle: '待翻譯',
+        description: '待翻譯 - HydraFacial倫敦療程內容將在翻譯配額重置後新增',
+      },
+      treatmentInfo: {
+        duration: '待確認',
+        results: '待確認',
+        price: '待確認',
+        benefits: ['待翻譯'],
+      },
+    },
+    microneedlingEdinburgh: {
+      hero: {
+        tagline: '即將推出',
+        title: '微針愛丁堡',
+        subtitle: '先進肌膚煥發',
+        description: '優質微針療程即將在我們的愛丁堡診所推出。',
+      },
+      treatmentInfo: {
+        duration: '待確認',
+        results: '待確認',
+        price: '待確認',
+        benefits: ['即將推出'],
+      },
+    },
+    microneedlingLondon: {
+      hero: {
+        tagline: '即將推出',
+        title: '微針倫敦',
+        subtitle: '先進肌膚煥發',
+        description: '優質微針療程即將在我們的騎士橋診所推出。',
+      },
+      treatmentInfo: {
+        duration: '待確認',
+        results: '待確認',
+        price: '待確認',
+        benefits: ['即將推出'],
+      },
+    },
+  },
+  injectablesDetails: {
+    biofillerEdinburgh: {
+      hero: {
+        tagline: '即將推出',
+        title: 'Bio Filler愛丁堡',
+        subtitle: '天然真皮填充劑',
+        description: '天然生物填充劑療程即將在我們的愛丁堡診所推出。',
+      },
+      treatmentInfo: {
+        duration: '待確認',
+        results: '待確認',
+        price: '待確認',
+        benefits: ['即將推出'],
+      },
+    },
+    biofillerLondon: {
+      hero: {
+        tagline: '即將推出',
+        title: 'Bio Filler倫敦',
+        subtitle: '天然真皮填充劑',
+        description: '天然生物填充劑療程即將在我們的騎士橋診所推出。',
+      },
+      treatmentInfo: {
+        duration: '待確認',
+        results: '待確認',
+        price: '待確認',
+        benefits: ['即將推出'],
+      },
+    },
+  },
+  peelsDetails: {
+    medik8Edinburgh: {
+      hero: {
+        tagline: '即將推出',
+        title: 'Medik8煥膚愛丁堡',
+        subtitle: '專業化學煥膚',
+        description: 'Medik8專業煥膚療程即將在我們的愛丁堡診所推出。',
+      },
+      treatmentInfo: {
+        duration: '待確認',
+        results: '待確認',
+        price: '待確認',
+        benefits: ['即將推出'],
+      },
+    },
+    medik8London: {
+      hero: {
+        tagline: '即將推出',
+        title: 'Medik8煥膚倫敦',
+        subtitle: '專業化學煥膚',
+        description: 'Medik8專業煥膚療程即將在我們的騎士橋診所推出。',
+      },
+      treatmentInfo: {
+        duration: '待確認',
+        results: '待確認',
+        price: '待確認',
+        benefits: ['即將推出'],
+      },
+    },
+    zoEdinburgh: {
+      hero: {
+        tagline: '即將推出',
+        title: 'ZO煥膚愛丁堡',
+        subtitle: '醫療級化學煥膚',
+        description: 'ZO Skin Health煥膚療程即將在我們的愛丁堡診所推出。',
+      },
+      treatmentInfo: {
+        duration: '待確認',
+        results: '待確認',
+        price: '待確認',
+        benefits: ['即將推出'],
+      },
+    },
+    zoLondon: {
+      hero: {
+        tagline: '即將推出',
+        title: 'ZO煥膚倫敦',
+        subtitle: '醫療級化學煥膚',
+        description: 'ZO Skin Health煥膚療程即將在我們的騎士橋診所推出。',
+      },
+      treatmentInfo: {
+        duration: '待確認',
+        results: '待確認',
+        price: '待確認',
+        benefits: ['即將推出'],
+      },
+    },
+  },
+}
+
+const bodyProcedurePagesZhCN = {
+  body: {
+    hero: {
+      title: '身体疗程',
+      subtitle: '疗程',
+      description: '通过我们先进的非侵入性疗程，改造您的身体，专为塑形、紧致和焕发肌肤而设计。',
+    },
+    treatments: [
+      {
+        key: 'exilis',
+        name: 'Exilis',
+        description: '革命性射频技术，无需手术即可紧致肌肤和塑造身体轮廓。',
+        duration: '45-60分钟',
+        price: '从 250英镑起',
+        benefits: ['肌肤紧致', '身体塑形', '减少橘皮组织', '非侵入性'],
+        route: 'procedures/body/exilis',
+      },
+      {
+        key: 'hifu',
+        name: 'HIFU',
+        description: '高强度聚焦超声波，精准提拉、紧致，效果持久焕发。',
+        duration: '60-90分钟',
+        price: '从 735英镑起',
+        benefits: ['深层提拉', '针对下颚线和面颊', '刺激胶原蛋白', '恢复期短'],
+        route: 'procedures/body/hifu',
+      },
+      {
+        key: 'cmSlim',
+        name: 'CM Slim',
+        description: '先进电磁肌肉刺激，同时增肌减脂。',
+        duration: '30分钟',
+        price: '从 263英镑起',
+        benefits: ['增肌', '减脂', '强化核心', '快速疗程'],
+        route: 'procedures/body/cm-slim',
+      },
+      {
+        key: 'coolLaser',
+        name: 'Cool Laser',
+        description: '创新冷激光疗程，改善肤质、提亮肤色，促进胶原蛋白更新。',
+        duration: '45分钟',
+        price: '从 735英镑起',
+        benefits: ['改善肤质和肤色', '针对色素沉淀', '帮助改善痘疤', '恢复期短'],
+        route: 'procedures/body/cool-laser',
+      },
+      {
+        key: 'coolSculpting',
+        name: 'CoolSculpting',
+        description: 'FDA认证冷冻技术，冻结并消除顽固脂肪细胞，持久塑造轮廓。',
+        duration: '35-60分钟',
+        price: '请洽询价格',
+        benefits: ['非手术减脂', '针对顽固脂肪', '永久消除脂肪细胞', '经验证效果'],
+        route: 'procedures/body/coolsculpting',
+      },
+      {
+        key: 'unison',
+        name: 'Unison',
+        description: '结合射频和超声波技术，全面平滑橘皮组织和紧致肌肤。',
+        duration: '60分钟',
+        price: '从 735英镑起',
+        benefits: ['减少橘皮组织', '改善弹性', '舒适疗程', '可定制疗程'],
+        route: 'procedures/body/unison',
+      },
+      {
+        key: 'vanquish',
+        name: 'Vanquish',
+        description: '非接触式射频能量，针对大面积区域，持续减少围度。',
+        duration: '45分钟',
+        price: '从 735英镑起',
+        benefits: ['非接触式疗程', '大面积覆盖', '舒适温感', '渐进自然效果'],
+        route: 'procedures/body/vanquish',
+      },
+      {
+        key: 'laserHairRemoval',
+        name: '激光脱毛',
+        description: '专业激光脱毛，减少毛发再生，让肌肤保持光滑。',
+        duration: '15-60分钟',
+        price: '从 50英镑起',
+        benefits: ['长期减少', '快速疗程', '精准针对', '光滑效果'],
+        route: 'procedures/body/laser-hair-removal',
+      },
+      {
+        key: 'electrolysis',
+        name: '电解脱毛',
+        description: 'FDA认证永久脱毛，适用于所有毛发和肤质类型，包括浅色毛发。',
+        duration: '15-45分钟',
+        price: '从 30英镑起',
+        benefits: ['永久脱毛', '所有毛发类型', '所有肤色', '适合小区域'],
+        route: 'procedures/body/electrolysis',
+      },
+    ],
+  },
+  bodyDetails: {
+    hifu: {
+      hero: {
+        tagline: '非手术提拉',
+        title: 'HIFU超声刀',
+        subtitle: '高强度聚焦超声波',
+        description: '体验革命性的HIFU疗程，实现非侵入性提拉和紧致。聚焦超声波能量刺激深层胶原蛋白生成，自然提拉、紧致和焕发您的轮廓。',
+      },
+      treatmentInfo: {
+        duration: '45-90分钟',
+        results: '提拉和紧致效果在8-12周内逐渐显现，效果可持续12-18个月',
+        price: '从 735英镑起',
+        benefits: [
+          '非侵入性提拉',
+          '刺激胶原蛋白和弹力蛋白',
+          '塑造下颚线和面颊轮廓',
+          '软化皱纹',
+          '恢复期短',
+          '持久效果',
+        ],
+      },
+    },
+    cmslim: {
+      hero: {
+        tagline: '增肌减脂',
+        title: 'CM Slim塑形',
+        subtitle: '身体塑形和轮廓雕塑',
+        description: '通过CM Slim电磁技术改造您的体态。疗程温和地塑造您的身体，在短时间内减少脂肪同时增强和强化目标肌肉群。',
+      },
+      treatmentInfo: {
+        duration: '30分钟',
+        results: '在持续疗程2-4周后，紧致度和线条感会逐渐显现',
+        price: '从 263英镑起',
+        benefits: [
+          '通过EMS增肌',
+          '帮助减少脂肪',
+          '强化核心、臀部、大腿和手臂',
+          '无恢复期',
+          '快速疗程',
+          '非侵入性',
+        ],
+      },
+    },
+    coolLaser: {
+      hero: {
+        tagline: '先进激光焕肤',
+        title: 'Cool Laser冷激光',
+        subtitle: '肌肤重塑和焕发',
+        description: '通过Cool Laser技术改造您的肌肤。这种创新方法改善肤质、提升光泽、针对色素沉淀，并支持胶原蛋白更新，实现全面焕发。',
+      },
+      treatmentInfo: {
+        duration: '30-60分钟',
+        results: '立即展现光采，细致效果在数周内持续累积',
+        price: '请洽询价格',
+        benefits: [
+          '减少细纹',
+          '改善肤质和肤色',
+          '针对色素沉淀',
+          '帮助改善痘疤',
+          '恢复期短',
+          '刺激胶原蛋白',
+        ],
+      },
+    },
+    coolsculpting: {
+      hero: {
+        tagline: '非手术减脂',
+        title: 'CoolSculpting冷冻溶脂',
+        subtitle: 'FDA认证冷冻技术',
+        description: '体验世界领先的非侵入性减脂疗程。CoolSculpting使用控制性冷却技术消除顽固脂肪细胞，无需手术即可塑造平滑的轮廓线条。',
+      },
+      treatmentInfo: {
+        duration: '每个循环35-60分钟',
+        results: '减脂效果在8-12周内逐渐显现，因为身体会自然清除被处理的脂肪细胞',
+        price: '请洽询价格',
+        benefits: [
+          '非手术减脂',
+          '针对顽固脂肪',
+          '恢复期短',
+          '永久消除脂肪细胞',
+          '改善轮廓',
+          '经临床验证',
+        ],
+      },
+    },
+    unison: {
+      hero: {
+        tagline: '橘皮组织改善',
+        title: 'Unison多波长',
+        subtitle: '先进橘皮组织疗程',
+        description: '通过Unison减少橘皮组织外观并改善弹性。这种舒适的双能量疗程增强循环、平滑肤质，并支持各种肤色的肌肤紧致度。',
+      },
+      treatmentInfo: {
+        duration: '每个区域20-30分钟',
+        results: '橘皮组织外观在疗程后2-8周内逐渐改善',
+        price: '请洽询价格',
+        benefits: [
+          '减少橘皮组织',
+          '改善弹性',
+          '增强循环',
+          '舒适疗程',
+          '适合所有肤质',
+          '恢复期短',
+        ],
+      },
+    },
+    vanquish: {
+      hero: {
+        tagline: '非接触式减脂',
+        title: 'Vanquish射频溶脂',
+        subtitle: '非侵入性身体塑形',
+        description: '体验Vanquish非接触式减脂。温和均匀的加热疗程针对腹部和侧腰，舒适地减少围度，无需恢复期。',
+      },
+      treatmentInfo: {
+        duration: '45分钟',
+        results: '在疗程后4-8周内逐渐减少围度',
+        price: '请洽询价格',
+        benefits: [
+          '非接触式减脂',
+          '针对腹部和侧腰',
+          '无恢复期',
+          '均匀能量传递',
+          '非侵入性舒适',
+          '支持渐进自然效果',
+        ],
+      },
+    },
+  },
+  facialDetails: {
+    hydrafacialEdinburgh: {
+      hero: {
+        tagline: '待翻译',
+        title: 'HydraFacial爱丁堡',
+        subtitle: '待翻译',
+        description: '待翻译 - HydraFacial爱丁堡疗程内容将在翻译配额重置后新增',
+      },
+      treatmentInfo: {
+        duration: '待确认',
+        results: '待确认',
+        price: '待确认',
+        benefits: ['待翻译'],
+      },
+    },
+    hydrafacialLondon: {
+      hero: {
+        tagline: '待翻译',
+        title: 'HydraFacial伦敦',
+        subtitle: '待翻译',
+        description: '待翻译 - HydraFacial伦敦疗程内容将在翻译配额重置后新增',
+      },
+      treatmentInfo: {
+        duration: '待确认',
+        results: '待确认',
+        price: '待确认',
+        benefits: ['待翻译'],
+      },
+    },
+    microneedlingEdinburgh: {
+      hero: {
+        tagline: '即将推出',
+        title: '微针爱丁堡',
+        subtitle: '先进肌肤焕发',
+        description: '优质微针疗程即将在我们的爱丁堡诊所推出。',
+      },
+      treatmentInfo: {
+        duration: '待确认',
+        results: '待确认',
+        price: '待确认',
+        benefits: ['即将推出'],
+      },
+    },
+    microneedlingLondon: {
+      hero: {
+        tagline: '即将推出',
+        title: '微针伦敦',
+        subtitle: '先进肌肤焕发',
+        description: '优质微针疗程即将在我们的伦敦诊所推出。',
+      },
+      treatmentInfo: {
+        duration: '待确认',
+        results: '待确认',
+        price: '待确认',
+        benefits: ['即将推出'],
+      },
+    },
+  },
+  injectablesDetails: {
+    biofillerEdinburgh: {
+      hero: {
+        tagline: '即将推出',
+        title: 'Bio Filler爱丁堡',
+        subtitle: '天然真皮填充剂',
+        description: '天然生物填充剂疗程即将在我们的爱丁堡诊所推出。',
+      },
+      treatmentInfo: {
+        duration: '待确认',
+        results: '待确认',
+        price: '待确认',
+        benefits: ['即将推出'],
+      },
+    },
+    biofillerLondon: {
+      hero: {
+        tagline: '即将推出',
+        title: 'Bio Filler伦敦',
+        subtitle: '天然真皮填充剂',
+        description: '天然生物填充剂疗程即将在我们的伦敦诊所推出。',
+      },
+      treatmentInfo: {
+        duration: '待确认',
+        results: '待确认',
+        price: '待确认',
+        benefits: ['即将推出'],
+      },
+    },
+  },
+  peelsDetails: {
+    medik8Edinburgh: {
+      hero: {
+        tagline: '即将推出',
+        title: 'Medik8焕肤爱丁堡',
+        subtitle: '专业化学焕肤',
+        description: 'Medik8专业焕肤疗程即将在我们的爱丁堡诊所推出。',
+      },
+      treatmentInfo: {
+        duration: '待确认',
+        results: '待确认',
+        price: '待确认',
+        benefits: ['即将推出'],
+      },
+    },
+    medik8London: {
+      hero: {
+        tagline: '即将推出',
+        title: 'Medik8焕肤伦敦',
+        subtitle: '专业化学焕肤',
+        description: 'Medik8专业焕肤疗程即将在我们的伦敦诊所推出。',
+      },
+      treatmentInfo: {
+        duration: '待确认',
+        results: '待确认',
+        price: '待确认',
+        benefits: ['即将推出'],
+      },
+    },
+    zoEdinburgh: {
+      hero: {
+        tagline: '即将推出',
+        title: 'ZO焕肤爱丁堡',
+        subtitle: '医学级焕肤',
+        description: 'ZO医学焕肤疗程即将在我们的爱丁堡诊所推出。',
+      },
+      treatmentInfo: {
+        duration: '待确认',
+        results: '待确认',
+        price: '待确认',
+        benefits: ['即将推出'],
+      },
+    },
+    zoLondon: {
+      hero: {
+        tagline: '即将推出',
+        title: 'ZO焕肤伦敦',
+        subtitle: '医学级焕肤',
+        description: 'ZO医学焕肤疗程即将在我们的伦敦诊所推出。',
+      },
+      treatmentInfo: {
+        duration: '待确认',
+        results: '待确认',
+        price: '待确认',
+        benefits: ['即将推出'],
+      },
+    },
+  },
+}
+
+const bodyProcedurePagesAr = {
+  body: {
+    hero: {
+      title: 'علاجات الجسم',
+      subtitle: 'العلاجات',
+      description: 'حوّلي جسمك بعلاجاتنا غير الجراحية المتقدمة، المصممة خصيصًا لنحت الجسم وشده وإشراق البشرة.',
+    },
+    treatments: [
+      {
+        key: 'exilis',
+        name: 'Exilis',
+        description: 'تقنية التردد اللاسلكي الثورية لشد البشرة ونحت معالم الجسم بدون جراحة.',
+        duration: '45-60 دقيقة',
+        price: 'من 250 جنيه إسترليني',
+        benefits: ['شد البشرة', 'نحت الجسم', 'تقليل السيلوليت', 'غير جراحي'],
+        route: 'procedures/body/exilis',
+      },
+      {
+        key: 'hifu',
+        name: 'HIFU',
+        description: 'الموجات فوق الصوتية المركزة عالية الكثافة لرفع وشد دقيقين مع نتائج مشرقة طويلة الأمد.',
+        duration: '60-90 دقيقة',
+        price: 'من 735 جنيه إسترليني',
+        benefits: ['رفع عميق', 'يستهدف خط الفك والوجنتين', 'يحفز إنتاج الكولاجين', 'وقت نقاهة قصير'],
+        route: 'procedures/body/hifu',
+      },
+      {
+        key: 'cmSlim',
+        name: 'CM Slim',
+        description: 'تقنية بناء العضلات ونحت الدهون بالطاقة المغناطيسية المتقدمة.',
+        duration: '30 دقيقة',
+        price: 'من 300 جنيه إسترليني',
+        benefits: ['بناء العضلات', 'حرق الدهون', 'تحسين لياقة العضلات', 'بدون جراحة'],
+        route: 'procedures/body/cmslim',
+      },
+      {
+        key: 'coolLaser',
+        name: 'Cool Laser',
+        description: 'تقنية الليزر المتقدمة لنحت الدهون وشد البشرة.',
+        duration: '30-45 دقيقة',
+        price: 'من 200 جنيه إسترليني',
+        benefits: ['نحت الدهون بدقة', 'شد البشرة', 'غير جراحي', 'نتائج ملحوظة'],
+        route: 'procedures/body/cool-laser',
+      },
+      {
+        key: 'coolSculpting',
+        name: 'CoolSculpting',
+        description: 'تقنية تجميد الدهون الثورية لنحت معالم الجسم غير الجراحي.',
+        duration: '35-60 دقيقة',
+        price: 'من 600 جنيه إسترليني',
+        benefits: ['تقليل الدهون بنسبة 20-25%', 'علاج دقيق', 'بدون جراحة', 'نتائج طبيعية المظهر'],
+        route: 'procedures/body/coolsculpting',
+      },
+      {
+        key: 'unison',
+        name: 'Unison',
+        description: 'تقنية التردد اللاسلكي لشد البشرة وتحسين ملمس الجلد.',
+        duration: '30-45 دقيقة',
+        price: 'من 250 جنيه إسترليني',
+        benefits: ['شد البشرة', 'تحسين ملمس الجلد', 'تعزيز الكولاجين', 'غير جراحي'],
+        route: 'procedures/body/unison',
+      },
+      {
+        key: 'vanquish',
+        name: 'Vanquish',
+        description: 'تقنية نحت الدهون بالتردد اللاسلكي بدون تلامس.',
+        duration: '45 دقيقة',
+        price: 'من 450 جنيه إسترليني',
+        benefits: ['علاج تلقائي', 'غير جراحي', 'مريح', 'تقليل محيط الخصر'],
+        route: 'procedures/body/vanquish',
+      },
+      {
+        key: 'laserHairRemoval',
+        name: 'إزالة الشعر بالليزر',
+        description: 'حل طويل الأمد لتقليل نمو الشعر غير المرغوب.',
+        duration: '15-60 دقيقة',
+        price: 'من 80 جنيه إسترليني',
+        benefits: ['طويل الأمد', 'آمن لجميع أنواع البشرة', 'متعدد الاستخدامات', 'فعّال'],
+        route: 'procedures/body/laser-hair-removal',
+      },
+      {
+        key: 'electrolysis',
+        name: 'التحليل الكهربائي',
+        description: 'إزالة دائمة للشعر بتقنية موثوقة.',
+        duration: '15-60 دقيقة',
+        price: 'من 50 جنيه إسترليني',
+        benefits: ['إزالة دائمة', 'آمن لجميع ألوان الشعر', 'علاج دقيق', 'معتمد من FDA'],
+        route: 'procedures/body/electrolysis',
+      },
+    ],
+  },
+  bodyDetails: {
+    hifu: {
+      hero: {
+        tagline: 'رفع غير جراحي',
+        title: 'HIFU',
+        subtitle: 'الموجات فوق الصوتية عالية الكثافة المركزة',
+        description: 'استمتعي بعلاج HIFU الثوري للرفع والشد غير الجراحي. طاقة الموجات فوق الصوتية المركزة تحفز إنتاج الكولاجين في العمق، مما يرفع ويشد ويضفي الإشراق على معالمك بشكل طبيعي.',
+      },
+      treatmentInfo: {
+        duration: '45-90 دقيقة',
+        results: 'تظهر نتائج الرفع والشد تدريجيًا على مدى 8-12 أسبوعًا، مع نتائج تدوم 12-18 شهرًا',
+        price: 'من 735 جنيه إسترليني',
+        benefits: [
+          'رفع غير جراحي',
+          'يحفز الكولاجين والإيلاستين',
+          'ينحت معالم خط الفك والوجنتين',
+          'ينعّم التجاعيد',
+          'وقت نقاهة قصير',
+          'نتائج طويلة الأمد',
+        ],
+      },
+    },
+    cmslim: {
+      hero: {
+        tagline: 'بناء العضلات وحرق الدهون',
+        title: 'CM Slim',
+        subtitle: 'نحت الجسم بالطاقة المغناطيسية',
+        description: 'تقنية CM Slim الثورية تجمع بين بناء العضلات وحرق الدهون. تستخدم طاقة مغناطيسية عالية الكثافة لتحفيز انقباضات عضلية قوية مع حرق الدهون في نفس الوقت.',
+      },
+      treatmentInfo: {
+        duration: '30 دقيقة',
+        results: 'نتائج مرئية بعد 2-4 أسابيع، مع أفضل نتائج بعد 8 جلسات',
+        price: 'من 300 جنيه إسترليني',
+        benefits: [
+          'بناء وتعريف العضلات',
+          'حرق الدهون',
+          'تحسين لياقة العضلات',
+          'غير جراحي',
+          'دون ألم',
+          'علاج سريع',
+        ],
+      },
+    },
+    coolLaser: {
+      hero: {
+        tagline: 'نحت الدهون بالليزر',
+        title: 'Cool Laser',
+        subtitle: 'نحت متقدم للدهون',
+        description: 'اكتشفي تقنية Cool Laser المتقدمة لنحت الدهون. طاقة الليزر المستهدفة تحلل الخلايا الدهنية مع شد البشرة لمظهر أكثر نحافة.',
+      },
+      treatmentInfo: {
+        duration: '30-45 دقيقة',
+        results: 'نتائج تدريجية على مدى 8-12 أسبوعًا',
+        price: 'من 200 جنيه إسترليني',
+        benefits: [
+          'نحت الدهون بدقة',
+          'شد البشرة',
+          'غير جراحي',
+          'الحد الأدنى من وقت النقاهة',
+          'نتائج مرئية',
+          'آمن وفعّال',
+        ],
+      },
+    },
+    coolsculpting: {
+      hero: {
+        tagline: 'تجميد الدهون',
+        title: 'CoolSculpting',
+        subtitle: 'نحت الجسم بالتبريد',
+        description: 'جرّبي CoolSculpting، تقنية نحت الدهون غير الجراحية الثورية. تجمّد وتحلل الخلايا الدهنية بدقة دون ألم لمظهر أكثر نحافة ونحتًا.',
+      },
+      treatmentInfo: {
+        duration: '35-60 دقيقة',
+        results: 'تظهر النتائج في 3 أسابيع، مع نتائج نهائية في 2-3 أشهر',
+        price: 'من 600 جنيه إسترليني',
+        benefits: [
+          'يقلل الدهون 20-25%',
+          'علاج دقيق للمناطق العنيدة',
+          'غير جراحي ودون ألم',
+          'نتائج طبيعية المظهر',
+          'بدون وقت نقاهة',
+          'معتمد من FDA',
+        ],
+      },
+    },
+    unison: {
+      hero: {
+        tagline: 'شد البشرة بالتردد اللاسلكي',
+        title: 'Unison',
+        subtitle: 'رفع وشد متقدم',
+        description: 'تقنية Unison بالتردد اللاسلكي توفّر شدًا ورفعًا متقدمًا للبشرة. تحفز طبقات البشرة العميقة لزيادة إنتاج الكولاجين وتحسين مرونة الجلد.',
+      },
+      treatmentInfo: {
+        duration: '30-45 دقيقة',
+        results: 'تحسّن تدريجي على مدى 3-6 أشهر',
+        price: 'من 250 جنيه إسترليني',
+        benefits: [
+          'شد ورفع البشرة',
+          'تحسين ملمس الجلد',
+          'تقليل التجاعيد',
+          'تعزيز إنتاج الكولاجين',
+          'غير جراحي',
+          'علاج مريح',
+        ],
+      },
+    },
+    vanquish: {
+      hero: {
+        tagline: 'نحت الدهون بدون تلامس',
+        title: 'Vanquish',
+        subtitle: 'نحت الجسم بالتردد اللاسلكي',
+        description: 'تقنية Vanquish الفريدة تستخدم طاقة التردد اللاسلكي بدون تلامس لنحت الدهون. تعالج مناطق أكبر بشكل مريح لتقليل محيط الخصر ونحت الجسم.',
+      },
+      treatmentInfo: {
+        duration: '45 دقيقة',
+        results: 'نتائج تدريجية على مدى 4-6 أسابيع',
+        price: 'من 450 جنيه إسترليني',
+        benefits: [
+          'علاج تلقائي بدون تلامس',
+          'علاج منطقة كبيرة',
+          'غير جراحي ودون ألم',
+          'مريح',
+          'تقليل محيط الخصر',
+          'آمن وفعّال',
+        ],
+      },
+    },
+  },
+  facialDetails: {
+    hydrafacialEdinburgh: {
+      hero: {
+        tagline: 'قيد الترجمة',
+        title: 'HydraFacial إدنبرة',
+        subtitle: 'قيد الترجمة',
+        description: 'قيد الترجمة - سيتم إضافة محتوى علاج HydraFacial إدنبرة بعد إعادة تعيين حصة الترجمة',
+      },
+      treatmentInfo: {
+        duration: 'قيد التأكيد',
+        results: 'قيد التأكيد',
+        price: 'قيد التأكيد',
+        benefits: ['قيد الترجمة'],
+      },
+    },
+    hydrafacialLondon: {
+      hero: {
+        tagline: 'قيد الترجمة',
+        title: 'HydraFacial لندن',
+        subtitle: 'قيد الترجمة',
+        description: 'قيد الترجمة - سيتم إضافة محتوى علاج HydraFacial لندن بعد إعادة تعيين حصة الترجمة',
+      },
+      treatmentInfo: {
+        duration: 'قيد التأكيد',
+        results: 'قيد التأكيد',
+        price: 'قيد التأكيد',
+        benefits: ['قيد الترجمة'],
+      },
+    },
+    microneedlingEdinburgh: {
+      hero: {
+        tagline: 'قريبًا',
+        title: 'الوخز الدقيق إدنبرة',
+        subtitle: 'تجديد البشرة المتقدم',
+        description: 'علاجات الوخز الدقيق المتقدمة قريبًا في عيادتنا بإدنبرة.',
+      },
+      treatmentInfo: {
+        duration: 'قيد التأكيد',
+        results: 'قيد التأكيد',
+        price: 'قيد التأكيد',
+        benefits: ['قريبًا'],
+      },
+    },
+    microneedlingLondon: {
+      hero: {
+        tagline: 'قريبًا',
+        title: 'الوخز الدقيق لندن',
+        subtitle: 'تجديد البشرة المتقدم',
+        description: 'علاجات الوخز الدقيق المتقدمة قريبًا في عيادتنا بلندن.',
+      },
+      treatmentInfo: {
+        duration: 'قيد التأكيد',
+        results: 'قيد التأكيد',
+        price: 'قيد التأكيد',
+        benefits: ['قريبًا'],
+      },
+    },
+  },
+  injectablesDetails: {
+    biofillerEdinburgh: {
+      hero: {
+        tagline: 'قريبًا',
+        title: 'Bio Filler إدنبرة',
+        subtitle: 'حشو أدمة طبيعية',
+        description: 'علاجات الحشو البيولوجي الطبيعية قريبًا في عيادتنا بإدنبرة.',
+      },
+      treatmentInfo: {
+        duration: 'قيد التأكيد',
+        results: 'قيد التأكيد',
+        price: 'قيد التأكيد',
+        benefits: ['قريبًا'],
+      },
+    },
+    biofillerLondon: {
+      hero: {
+        tagline: 'قريبًا',
+        title: 'Bio Filler لندن',
+        subtitle: 'حشو أدمة طبيعية',
+        description: 'علاجات الحشو البيولوجي الطبيعية قريبًا في عيادتنا بلندن.',
+      },
+      treatmentInfo: {
+        duration: 'قيد التأكيد',
+        results: 'قيد التأكيد',
+        price: 'قيد التأكيد',
+        benefits: ['قريبًا'],
+      },
+    },
+  },
+  peelsDetails: {
+    medik8Edinburgh: {
+      hero: {
+        tagline: 'قريبًا',
+        title: 'تقشير Medik8 إدنبرة',
+        subtitle: 'تقشير كيميائي احترافي',
+        description: 'علاجات تقشير Medik8 الاحترافية قريبًا في عيادتنا بإدنبرة.',
+      },
+      treatmentInfo: {
+        duration: 'قيد التأكيد',
+        results: 'قيد التأكيد',
+        price: 'قيد التأكيد',
+        benefits: ['قريبًا'],
+      },
+    },
+    medik8London: {
+      hero: {
+        tagline: 'قريبًا',
+        title: 'تقشير Medik8 لندن',
+        subtitle: 'تقشير كيميائي احترافي',
+        description: 'علاجات تقشير Medik8 الاحترافية قريبًا في عيادتنا بلندن.',
+      },
+      treatmentInfo: {
+        duration: 'قيد التأكيد',
+        results: 'قيد التأكيد',
+        price: 'قيد التأكيد',
+        benefits: ['قريبًا'],
+      },
+    },
+    zoEdinburgh: {
+      hero: {
+        tagline: 'قريبًا',
+        title: 'تقشير ZO إدنبرة',
+        subtitle: 'تقشير كيميائي احترافي',
+        description: 'علاجات تقشير ZO الاحترافية قريبًا في عيادتنا بإدنبرة.',
+      },
+      treatmentInfo: {
+        duration: 'قيد التأكيد',
+        results: 'قيد التأكيد',
+        price: 'قيد التأكيد',
+        benefits: ['قريبًا'],
+      },
+    },
+    zoLondon: {
+      hero: {
+        tagline: 'قريبًا',
+        title: 'تقشير ZO لندن',
+        subtitle: 'تقشير كيميائي احترافي',
+        description: 'علاجات تقشير ZO الاحترافية قريبًا في عيادتنا بلندن.',
+      },
+      treatmentInfo: {
+        duration: 'قيد التأكيد',
+        results: 'قيد التأكيد',
+        price: 'قيد التأكيد',
+        benefits: ['قريبًا'],
       },
     },
   },
@@ -751,6 +2059,9 @@ export interface Translations {
       treatments: ProcedureCategoryTreatment[];
     };
     bodyDetails: BodyProcedureDetails;
+    facialDetails: FacialProcedureDetails;
+    injectablesDetails: InjectablesProcedureDetails;
+    peelsDetails: PeelsProcedureDetails;
   };
 
   // Get More Section
@@ -1933,7 +3244,7 @@ const zhCN: Translations = {
     loading: '加载中...',
     and: '和',
   },
-  procedurePages: bodyProcedurePagesEn, // AUTO-ADDED - verify context
+  procedurePages: bodyProcedurePagesZhTW,
 
   getMore: {
     title: '选择Beyond|享受更多',
@@ -2540,7 +3851,7 @@ const zhTW: Translations = {
     loading: '載入中...',
     and: '與',
   },
-  procedurePages: bodyProcedurePagesEn, // AUTO-ADDED - verify context
+  procedurePages: bodyProcedurePagesZhTW,
 
   getMore: {
     title: '選擇Beyond|享受更多',
@@ -3147,7 +4458,7 @@ const ar: Translations = {
     loading: 'جاري التحميل...',
     and: 'و',
   },
-  procedurePages: bodyProcedurePagesEn, // AUTO-ADDED - verify context
+  procedurePages: bodyProcedurePagesAr,
 
   getMore: {
     title: 'احصل على المزيد|مع Beyond',
