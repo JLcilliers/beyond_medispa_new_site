@@ -2720,7 +2720,7 @@ const en: Translations = {
       {
         id: 1,
         city: 'London',
-        address: 'Premium Location, Central London',
+        address: 'Fourth floor Harvey Nichols, London SW1X 7RJ, United Kingdom',
         phone: '+44 (20) 7123 4567',
         email: 'london@magispa.co.uk',
         hours: 'Monday - Friday: 9:00 - 18:00\nSaturday: 9:00 - 17:00\nSunday: Closed',
@@ -2730,7 +2730,7 @@ const en: Translations = {
       {
         id: 2,
         city: 'Edinburgh',
-        address: 'Premium Location, Edinburgh Centre',
+        address: 'Second Floor, harvey nichols, 30-34 St Andrew Sq, Edinburgh EH2 2AD, United Kingdom',
         phone: '+44 (131) 123 4567',
         email: 'edinburgh@magispa.co.uk',
         hours: 'Monday - Friday: 9:00 - 18:00\nSaturday: 9:00 - 16:00\nSunday: Closed',
