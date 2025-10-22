@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="https://i.ibb.co/Y7Q2vjLx/beautiful-woman-getting-facial-skincare-treatment-2025-02-24-12-22-50-utc.webp"
+          src="/Microneedling & Exosomes/woman-having-facial-treatment-in-beauty-salon-clo-2025-02-12-23-00-09-utc (1).jpg"
           alt="Elegant woman touching her face"
           className="w-full h-full object-cover opacity-40"
         />

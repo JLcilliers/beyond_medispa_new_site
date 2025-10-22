@@ -59,6 +59,7 @@ interface ProcedureDetailHero {
   title: string
   subtitle: string
   description: string
+  backgroundImage?: string
 }
 
 interface ProcedureDetailInfo {
@@ -200,6 +201,7 @@ const bodyProcedurePagesEn: Translations['procedurePages'] = {
         subtitle: 'Radio Frequency Body and Skin Contouring',
         description:
           'Discover the power of Exilis radiofrequency technology for non-surgical body contouring and skin tightening. Our advanced treatment stimulates collagen production, reduces cellulite, and sculpts your natural contours with precision and comfort.',
+        backgroundImage: '/Exilis/woman-doing-cosmetic-treatments-2024-09-19-04-48-43-utc (1).JPG',
       },
       treatmentInfo: {
         duration: '30-60 minutes',
@@ -222,6 +224,7 @@ const bodyProcedurePagesEn: Translations['procedurePages'] = {
         subtitle: 'High Intensity Focused Ultrasound',
         description:
           'Experience the revolutionary HIFU treatment for non-invasive lifting and tightening. Focused ultrasound energy stimulates deep collagen production to lift, firm, and rejuvenate your contours naturally.',
+        backgroundImage: '/Hifu/beautiful-ethnic-skin-minimal-2025-03-09-22-12-43-utc.jpg',
       },
       treatmentInfo: {
         duration: '45-90 minutes',
@@ -244,6 +247,7 @@ const bodyProcedurePagesEn: Translations['procedurePages'] = {
         subtitle: 'Body Sculpting and Contouring',
         description:
           'Transform your shape with CM Slim electromagnetic technology. Sessions gently sculpt your body by reducing fat while enhancing and strengthening targeted muscle groups in record time.',
+        backgroundImage: '/CM Slim/Copy of portrait-of-young-woman-with-perfect-body-2024-10-18-03-08-44-utc.jpg',
       },
       treatmentInfo: {
         duration: '30 minutes',
@@ -266,6 +270,7 @@ const bodyProcedurePagesEn: Translations['procedurePages'] = {
         subtitle: 'Skin Resurfacing and Rejuvenation',
         description:
           'Transform your skin with Cool Laser technology. This innovative approach refines texture, boosts luminosity, targets pigmentation, and supports collagen renewal for comprehensive rejuvenation.',
+        backgroundImage: '/Cool Laser/beautician-doing-facial-skin-procedure-with-electr-2024-11-25-19-06-27-utc.jpg',
       },
       treatmentInfo: {
         duration: '30-60 minutes',
@@ -288,6 +293,7 @@ const bodyProcedurePagesEn: Translations['procedurePages'] = {
         subtitle: 'FDA Cleared Fat Freezing Technology',
         description:
           "Experience the world's leading non-invasive fat reduction treatment. CoolSculpting uses controlled cooling to eliminate stubborn fat cells and define smooth, contoured lines without surgery.",
+        backgroundImage: '/Cool Sculpting/portrait-of-young-woman-with-perfect-body-2024-10-18-03-08-44-utc.jpg',
       },
       treatmentInfo: {
         duration: '35-60 minutes per cycle',
@@ -331,8 +337,9 @@ const bodyProcedurePagesEn: Translations['procedurePages'] = {
         title: 'Laser Hair Removal',
         subtitle: 'Smooth, Hair-Free Skin',
         description:
-          'Achieve long-term hair reduction with targeted laser technology. Fast and effective treatments minimise regrowth, reduce ingrown hairs, and leave skin smooth across every treatment area.',
-      },
+        'Achieve long-term hair reduction with targeted laser technology. Fast and effective treatments minimise regrowth, reduce ingrown hairs, and leave skin smooth across every treatment area.',
+      backgroundImage: '/Laser Hair Removal/image-of-japanese-women-s-hair-removal-2025-03-14-02-05-00-utc.jpg',
+    },
       treatmentInfo: {
         duration: '15-60 minutes',
         results: 'Long-term hair reduction typically achieved after 6-8 sessions',
@@ -354,6 +361,7 @@ const bodyProcedurePagesEn: Translations['procedurePages'] = {
         subtitle: 'Advanced Cellulite Treatment',
         description:
           'Reduce the look of cellulite and improve elasticity with Unison. This comfortable, dual-energy treatment enhances circulation, smooths texture, and supports skin firmness for every tone.',
+        backgroundImage: '/Unison/crop-plump-woman-showing-heart-gesture-on-body-2025-03-13-23-29-43-utc.jpg',
       },
       treatmentInfo: {
         duration: '20-30 minutes per area',

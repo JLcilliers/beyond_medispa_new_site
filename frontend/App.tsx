@@ -1,6 +1,8 @@
 import './global-styles.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { LanguageProvider } from './contexts/LanguageContext'
+import { AuthProvider, useAuth } from './contexts/AuthContext'
+import { MaintenancePage } from './components/pages/MaintenancePage'
 import Homepage from './components/Homepage'
 import AboutPage from './components/pages/AboutPage'
 import ContactPage from './components/pages/ContactPage'
@@ -65,11 +67,17 @@ import EdinburghFacialPage from './components/pages/locations/EdinburghFacialPag
 import LondonInjectablesPage from './components/pages/locations/LondonInjectablesPage'
 import EdinburghInjectablesPage from './components/pages/locations/EdinburghInjectablesPage'
 
-export default function App() {
+function AppRoutes() {
+  const { isAuthenticated } = useAuth();
+
+  // Show maintenance page if not authenticated
+  if (!isAuthenticated) {
+    return <MaintenancePage />;
+  }
+
+  // Show all routes if authenticated
   return (
-    <LanguageProvider>
-      <BrowserRouter>
-        <Routes>
+    <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -133,8 +141,18 @@ export default function App() {
         <Route path="/edinburgh/facial" element={<EdinburghFacialPage />} />
         <Route path="/london/injectables" element={<LondonInjectablesPage />} />
         <Route path="/edinburgh/injectables" element={<EdinburghInjectablesPage />} />
-        </Routes>
-      </BrowserRouter>
-    </LanguageProvider>
-  )
+    </Routes>
+  );
+}
+
+export default function App() {
+  return (
+    <AuthProvider>
+      <LanguageProvider>
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+      </LanguageProvider>
+    </AuthProvider>
+  );
 }

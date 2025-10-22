@@ -99,7 +99,7 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
               <div>
                 <img
-                  src="https://i.ibb.co/BKgy3QK1/beautician-doing-facial-skin-procedure-with-electr-2024-11-25-19-06-27-utc.webp"
+                  src="/Hydrafacial/close-up-of-woman-getting-facial-hydro-microdermab-2024-10-22-03-10-28-utc (2).jpg"
                   alt={t.about.elevatingCare}
                   className="rounded-3xl shadow-xl w-full"
                 />
@@ -121,7 +121,7 @@ export default function AboutPage() {
               </div>
               <div className="order-1 lg:order-2">
                 <img
-                  src="https://i.ibb.co/whcTHZ9L/beautician-makes-laser-procedures-on-a-female-face-2024-11-27-11-44-52-utc.webp"
+                  src="/Microneedling & Exosomes/a-cosmetologist-performs-hydropiling-in-a-beauty-s-2025-03-08-01-46-27-utc.jpg"
                   alt={t.about.yourJourney}
                   className="rounded-3xl shadow-xl w-full"
                 />
@@ -160,7 +160,7 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center mb-12">
               <div>
                 <img
-                  src="https://i.ibb.co/qYdNFxHJ/lovely-woman-receiving-facial-treatment-at-wellnes-2025-03-24-09-37-28-utc.webp"
+                  src="/Hydrafacial/revitalizing-skin-treatment-that-clears-pores-and-2025-03-22-19-33-40-utc (1).jpg"
                   alt={t.about.whoWeAre}
                   className="rounded-3xl shadow-xl w-full"
                 />
@@ -248,7 +248,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <img
-                  src="https://i.ibb.co/1f6XFgtK/woman-having-facial-treatment-in-beauty-salon-clo-2025-02-12-23-00-09-utc-1.webp"
+                  src="/Microneedling & Exosomes/people-beauty-spa-healthy-lifestyle-and-relaxat-2025-10-03-18-17-22-utc.jpg"
                   alt={t.about.trustHonestyExpertise}
                   className="rounded-3xl shadow-xl w-full"
                 />
@@ -258,7 +258,7 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1">
                 <img
-                  src="https://i.ibb.co/G4zfSnGV/studio-shot-of-a-beautiful-young-woman-with-flower-2025-04-06-07-14-47-utc.webp"
+                  src="/About - Clinic Pages/skin-care-woman-beauty-face-happy-smile-2025-02-10-09-22-28-utc (1).jpg"
                   alt={t.about.personalisedExperience}
                   className="rounded-3xl shadow-xl w-full"
                 />

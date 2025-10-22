@@ -325,7 +325,7 @@ export default function EdinburghPage() {
                 </div>
                 <div className={index % 2 === 1 ? 'order-1' : ''}>
                   <img
-                    src="https://i.ibb.co/Kj4wWGcD/beauty-salon-beautician-applies-cooling-gel-to-cli-2025-01-09-05-05-23-utc-1.webp"
+                    src="/Hydrafacial/female-at-cosmetic-beauty-spa-clinic-has-facial-ha-2024-10-18-17-49-09-utc (1).jpg"
                     alt={treatment.title}
                     className="rounded-3xl shadow-xl w-full"
                   />

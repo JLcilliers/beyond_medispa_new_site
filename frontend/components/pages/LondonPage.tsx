@@ -317,7 +317,7 @@ export default function LondonPage() {
                 </div>
                 <div className={index % 2 === 1 ? 'order-1' : ''}>
                   <img
-                    src="https://i.ibb.co/zVSjQZPg/female-at-cosmetic-beauty-spa-clinic-has-facial-ha-2024-10-18-17-49-09-utc-1.webp"
+                    src="/Hydrafacial/female-at-cosmetic-beauty-spa-clinic-has-facial-ha-2024-10-18-17-49-09-utc (1).jpg"
                     alt={treatment.title}
                     className="rounded-3xl shadow-xl w-full"
                   />

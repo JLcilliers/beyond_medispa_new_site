@@ -18,7 +18,7 @@ export default function HeroSection() {
           className="w-full h-full object-cover"
         >
           <source 
-            src="https://www.beyondmedispa.com/wp-content/uploads/2025/09/Video_Aspect_Ratio_Adjustment.mp4" 
+            src="/hero-video.mp4" 
             type="video/mp4" 
           />
         </video>

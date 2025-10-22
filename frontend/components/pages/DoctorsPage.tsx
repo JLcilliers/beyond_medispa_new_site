@@ -11,7 +11,7 @@ const doctors = [
     name: "Dr. Sana Sadiq",
     title: "Lead Dermatologist & Medical Director",
     location: "London",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Dr-Sana-Sadiq.jpg",
+    image: "/team/dr-sana-sadiq.jpg",
     specialties: ["Anti-aging", "Dermal Fillers", "Laser Treatments", "Skin Analysis"],
     experience: "15 years",
     qualifications: [
@@ -28,7 +28,7 @@ const doctors = [
     name: "Dr. Reza Manesh",
     title: "Aesthetic Medicine Specialist", 
     location: "London",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Reza.png",
+    image: "/team/reza.png",
     specialties: ["Botox", "Chemical Peels", "Body Contouring", "Thread Lifts"],
     experience: "12 years",
     qualifications: [
@@ -45,7 +45,7 @@ const doctors = [
     name: "Joanna Pullar",
     title: "Wellness & Spa Director",
     location: "Edinburgh", 
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Joanna-Pullar.webp",
+    image: "/team/joanna-pullar.webp",
     specialties: ["Holistic Treatments", "Wellness Consultation", "Medical Spa", "Skincare"],
     experience: "10 years",
     qualifications: [
@@ -62,7 +62,7 @@ const doctors = [
     name: "Ruxi Marinov",
     title: "Laser & Technology Specialist",
     location: "Edinburgh",
-    image: "https://www.beyondmedispa.com/wp-content/uploads/2024/10/Ruxi.png", 
+    image: "/team/ruxi.png", 
     specialties: ["Laser Hair Removal", "Skin Resurfacing", "Pigmentation", "Vascular Treatments"],
     experience: "8 years",
     qualifications: [
