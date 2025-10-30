@@ -23,12 +23,6 @@ const services = [
 ]
 
 export default function BeautySection() {
-  const handleNavigation = (route: string) => {
-    if (window.navigateTo) {
-      (window as any).navigateTo(route)
-    }
-  }
-
   return (
     <section className="py-20 bg-[#F5F1EC] text-[#333333]">
       <div className="container mx-auto px-4">
@@ -77,19 +71,14 @@ export default function BeautySection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
-                size="lg"
-                onClick={() => handleNavigation('procedures-skin-treatments')}
-                className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-8 py-4"
-              >
-                View All Treatments
-              </Button>
-              <Button
+                asChild
                 variant="outline"
                 size="lg"
-                onClick={() => handleNavigation('book-treatment')}
                 className="border-[#A38E78] text-[#A38E78] hover:bg-[#A38E78] hover:text-white px-8 py-4"
               >
-                Book Consultation
+                <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
+                  Book Consultation
+                </a>
               </Button>
             </div>
           </div>

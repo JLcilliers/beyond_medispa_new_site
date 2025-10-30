@@ -1,13 +1,9 @@
-import { MapPin, Phone, Clock, Car } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 import { useTranslations } from '../locales/translations'
 import { splitHighlight } from '../lib/intl'
 
-const handleNavigation = (route: string) => {
-  if (window.navigateTo) {
-    (window as any).navigateTo(route)
-  }
-}
+const formatPhoneHref = (value: string) => `tel:${value.replace(/[^+\\d]/g, '')}`
 
 export default function Locations() {
   const { language } = useLanguage()
@@ -15,107 +11,123 @@ export default function Locations() {
   const { leading: locationsTitle, highlight: locationsHighlight } = splitHighlight(t.locations.title)
 
   return (
-    <section className="py-20 bg-[#FFFFFF]">
+    <section className="bg-[#FFFFFF] py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light text-[#333333] mb-4">
+        <div className="mb-16 text-center">
+          <h2 className="mb-4 text-4xl font-light text-[#333333] md:text-5xl">
             {locationsTitle}
-            {locationsHighlight && (
-              <span className="text-[#A38E78]">{locationsHighlight}</span>
-            )}
+            {locationsHighlight && <span className="text-[#A38E78]">{locationsHighlight}</span>}
           </h2>
-          <p className="text-xl text-[#777777] max-w-2xl mx-auto">
-            {t.locations.subtitle}
-          </p>
+          <p className="mx-auto max-w-2xl text-xl text-[#777777]">{t.locations.subtitle}</p>
         </div>
-        
+
         <div className="space-y-16">
-          {t.locations.locationData.map((location, index) => (
-            <div key={location.id} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-              {/* Location Info */}
+          {t.locations.locationData.map((location, index) => {
+            const directionsUrl = location.mapEmbed.replace('/maps/embed?', '/maps?')
+
+            return (
+              <div
+                key={location.id}
+                className={`grid items-center gap-12 lg:grid-cols-2 ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}
+              >
               <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                 <div className="mb-8">
-                  <h3 className="text-3xl font-semibold text-[#333333] mb-4">{location.city}</h3>
-                  <div className="w-20 h-1 bg-[#A38E78] mb-6"></div>
+                  <h3 className="mb-4 text-3xl font-semibold text-[#333333]">{location.city}</h3>
+                  <div className="h-1 w-20 bg-[#A38E78]" />
                 </div>
 
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
-                      <MapPin className="w-5 h-5 text-[#A38E78]" />
-                    </div>
+                <div className="space-y-6 text-sm text-[#555555]">
+                  <div className="flex items-start gap-4">
+                    <span className="mt-1 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#A38E78]/20">
+                      <MapPin className="h-5 w-5 text-[#A38E78]" />
+                    </span>
                     <div>
-                      <h4 className="font-semibold text-[#333333] mb-1">{t.locations.addressLabel}</h4>
-                      <p className="text-[#777777]">{location.address}</p>
+                      <h4 className="text-base font-semibold text-[#333333]">{t.locations.addressLabel}</h4>
+                      <p className="leading-relaxed text-[#666666]">{location.address}</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start">
-                    <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
-                      <Phone className="w-5 h-5 text-[#A38E78]" />
-                    </div>
+                  <div className="flex items-start gap-4">
+                    <span className="mt-1 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#A38E78]/20">
+                      <Phone className="h-5 w-5 text-[#A38E78]" />
+                    </span>
                     <div>
-                      <h4 className="font-semibold text-[#333333] mb-1">{t.locations.phoneLabel}</h4>
-                      <p className="text-[#777777]">{location.phone}</p>
+                      <h4 className="text-base font-semibold text-[#333333]">{t.locations.phoneLabel}</h4>
+                      <a
+                        href={formatPhoneHref(location.phone)}
+                        className="font-medium text-[#A38E78] transition-colors hover:text-[#8B7A67]"
+                      >
+                        {location.phone}
+                      </a>
                     </div>
                   </div>
 
-                  <div className="flex items-start">
-                    <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
-                      <Clock className="w-5 h-5 text-[#A38E78]" />
+                  {location.email ? (
+                    <div className="flex items-start gap-4">
+                      <span className="mt-1 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#A38E78]/20">
+                        <Mail className="h-5 w-5 text-[#A38E78]" />
+                      </span>
+                      <div>
+                        <h4 className="text-base font-semibold text-[#333333]">{t.contact.email}</h4>
+                        <a
+                          href={`mailto:${location.email}`}
+                          className="font-medium text-[#A38E78] transition-colors hover:text-[#8B7A67]"
+                        >
+                          {location.email}
+                        </a>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-[#333333] mb-1">{t.locations.hoursLabel}</h4>
-                      <p className="text-[#777777] whitespace-pre-line">{location.hours}</p>
-                    </div>
-                  </div>
+                  ) : null}
 
-                  <div className="flex items-start">
-                    <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
-                      <Car className="w-5 h-5 text-[#A38E78]" />
-                    </div>
+                  <div className="flex items-start gap-4">
+                    <span className="mt-1 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#A38E78]/20">
+                      <Clock className="h-5 w-5 text-[#A38E78]" />
+                    </span>
                     <div>
-                      <h4 className="font-semibold text-[#333333] mb-1">{t.locations.parkingLabel}</h4>
-                      <p className="text-[#777777]">{location.parking}</p>
+                      <h4 className="text-base font-semibold text-[#333333]">{t.locations.hoursLabel}</h4>
+                      <p className="whitespace-pre-line text-[#666666]">{location.hours}</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                  <button
-                    onClick={() => handleNavigation('book-treatment')}
-                    className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                  >
-                    {t.locations.bookAppointment}
-                  </button>
+                <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                   <a
-                    href={`https://www.google.com/maps/search/?api=1&query=Beyond+Aesthetic+Clinic+${location.city}`}
+                    href="https://book.beyondmedispa.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border border-[#A38E78] text-[#A38E78] hover:bg-[#A38E78] hover:text-white px-6 py-3 rounded-lg font-medium transition-colors text-center"
+                    className="rounded-lg bg-[#A38E78] px-6 py-3 text-center font-medium text-white transition-colors hover:bg-[#8B7A67]"
+                  >
+                    {t.locations.bookAppointment}
+                  </a>
+                  <a
+                    href={directionsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-lg border border-[#A38E78] px-6 py-3 text-center font-medium text-[#A38E78] transition-colors hover:bg-[#A38E78] hover:text-white"
                   >
                     {t.locations.getDirections}
                   </a>
                 </div>
               </div>
-              
-              {/* Google Maps Embed */}
+
               <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                <div className="relative h-80 rounded-2xl overflow-hidden">
-                  <iframe 
+                <div className="relative h-80 overflow-hidden rounded-2xl shadow-lg">
+                  <iframe
                     src={location.mapEmbed}
-                    width="100%" 
-                    height="100%" 
-                    style={{border: 0}} 
-                    allowFullScreen 
-                    loading="lazy" 
+                    title={`${location.city} clinic map`}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    className="w-full h-full"
+                    className="h-full w-full"
                   />
                 </div>
               </div>
-            </div>
-          ))}
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>

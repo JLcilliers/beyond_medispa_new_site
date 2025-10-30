@@ -1,6 +1,5 @@
 import Navigation from '../Navigation'
 import Footer from '../Footer'
-import TestimonialsSection from '../TestimonialsSection'
 import Locations from '../Locations'
 import { Award, Users, Heart, Shield, Phone, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -11,6 +10,7 @@ import { useTranslations } from '../../locales/translations'
 export default function AboutPage() {
   const { language } = useLanguage()
   const t = useTranslations(language)
+  const primaryPhoneHref = `tel:${t.contact.primaryPhoneNumber.replace(/[^+\\d]/g, '')}`
 
   const differentiators = [
     {
@@ -39,9 +39,11 @@ export default function AboutPage() {
       case 'Aesthetic Practitioner':
         return t.teamRoles.aestheticPractitioner
       case 'Client Relations':
-        return t.teamRoles.clientRelations
-      default:
-        return role
+      return t.teamRoles.clientRelations
+      case 'Nurse Prescriber':
+      return t.teamRoles.nursePrescriber
+    default:
+      return role
     }
   }
   return (
@@ -55,25 +57,26 @@ export default function AboutPage() {
               <h1 className="text-5xl lg:text-6xl font-light mb-6">
                 {t.about.pageTitle} <span className="text-[#C6A77D]">{t.about.pageSubtitle}</span>
               </h1>
-              <h3 className="text-2xl font-light text-white/80 mb-8">
-                {t.about.pageSubtitle}
-              </h3>
               <p className="text-xl text-white/90 leading-relaxed mb-12">
                 {t.about.pageDescription}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/book-treatment">
-                  <Button className="bg-[#C6A77D] hover:bg-[#A38E78] text-white px-8 py-4 text-lg">
+                <Button asChild className="bg-[#C6A77D] hover:bg-[#A38E78] text-white px-8 py-4 text-lg">
+                  <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
                     {t.about.makeBooking}
                     <ArrowRight className="ml-2 w-5 h-5" />
-                  </Button>
-                </Link>
-                <a href="tel:02072018595">
-                  <Button variant="outline" className="border-2 border-[#C6A77D] text-[#C6A77D] hover:bg-[#C6A77D] hover:text-white px-8 py-4 text-lg">
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-2 border-[#C6A77D] text-[#C6A77D] hover:bg-[#C6A77D] hover:text-white px-8 py-4 text-lg"
+                >
+                  <a href={primaryPhoneHref}>
                     <Phone className="mr-2 w-5 h-5" />
-                    020 7201 8595
-                  </Button>
-                </a>
+                    {t.contact.primaryPhoneNumber}
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
@@ -170,19 +173,17 @@ export default function AboutPage() {
                   {t.about.whoWeAreDesc}
                 </p>
                 <div className="flex gap-4 mt-8">
-                  <Link to="/book-treatment">
-                    <Button className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-6 py-3">
+                  <Button asChild className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-6 py-3">
+                    <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
                       {t.about.makeBooking}
                       <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
-                  </Link>
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        <TestimonialsSection />
 
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
@@ -289,7 +290,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <img
-                  src="https://www.beyondmedispa.com/wp-content/uploads/2024/10/Claire-Hill.png"
+                  src="/team/claire-hill.png"
                   alt={t.about.safetyInnovation}
                   className="rounded-3xl shadow-xl w-full"
                 />
@@ -308,12 +309,12 @@ export default function AboutPage() {
               <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
                 {t.about.visitDesc}
               </p>
-              <Link to="/book-treatment">
-                <Button size="lg" className="bg-white text-[#A38E78] hover:bg-white/90 px-8 py-4 text-lg">
+              <Button asChild size="lg" className="bg-white text-[#A38E78] hover:bg-white/90 px-8 py-4 text-lg">
+                <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
                   {t.buttons.bookNow}
                   <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-              </Link>
+                </a>
+              </Button>
             </div>
           </div>
         </section>

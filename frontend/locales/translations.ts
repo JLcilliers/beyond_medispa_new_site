@@ -997,7 +997,7 @@ const bodyProcedurePagesZhCN = {
         name: 'Unison',
         description: '结合射频和超声波技术，全面平滑橘皮组织和紧致肌肤。',
         duration: '60分钟',
-        price: '从 735英镑起',
+        price: '从 250英镑起',
         benefits: ['减少橘皮组织', '改善弹性', '舒适疗程', '可定制疗程'],
         route: 'procedures/body/unison',
       },
@@ -1006,7 +1006,7 @@ const bodyProcedurePagesZhCN = {
         name: 'Vanquish',
         description: '非接触式射频能量，针对大面积区域，持续减少围度。',
         duration: '45分钟',
-        price: '从 735英镑起',
+        price: '从 450英镑起',
         benefits: ['非接触式疗程', '大面积覆盖', '舒适温感', '渐进自然效果'],
         route: 'procedures/body/vanquish',
       },
@@ -1685,6 +1685,7 @@ export interface Translations {
     london: string;
     edinburgh: string;
     doctors: string;
+    team: string;
     contact: string;
     bookNow: string;
   };
@@ -2186,6 +2187,7 @@ const en: Translations = {
     london: 'London',
     edinburgh: 'Edinburgh',
     doctors: 'Doctors',
+    team: 'Our Team',
     contact: 'Contact',
     bookNow: 'Book Now',
   },
@@ -2321,77 +2323,84 @@ const en: Translations = {
   },
 
   teamRoles: {
-    aestheticDoctor: 'Aesthetic Doctor',
-    seniorPractitioner: 'Senior Aesthetic Practitioner',
-    aestheticPractitioner: 'Aesthetic Practitioner',
-    clientRelations: 'Client Relations',
-  },
+  aestheticDoctor: 'Aesthetic Doctor',
+  seniorPractitioner: 'Senior Aesthetic Practitioner',
+  aestheticPractitioner: 'Aesthetic Practitioner',
+  clientRelations: 'Client Relations',
+    nursePrescriber: 'Nurse Prescriber',
+    },
 
   teamMembers: [
     {
       name: 'Dr Azadeh Manesh',
-      image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Azadeh-Manesh.png',
-      description: 'Dr Azadeh Manesh specialises in non‑surgical aesthetics, offering natural‑looking results and holistic skin consultations tailored to individual needs.',
+      image: '/team/azadeh-manesh-hq.png',
+      description: 'Dr Azadeh Manesh delivers personalised injectable and skin rejuvenation plans that focus on elegant, natural-looking results.',
+      role: 'Aesthetic Doctor'
+    },
+    {
+      name: 'Dr Alicia Gonzalez Fernandez',
+      image: '/team/dr-alicia-gonzalez-fernandez.png',
+      description: 'Dr Alicia is renowned for her gentle aesthetic approach, balancing facial features with evidence-based rejuvenation techniques.',
       role: 'Aesthetic Doctor'
     },
     {
       name: 'Dr Sana Sadiq',
-      image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/DR-SANA-SADIQ.jpeg',
-      description: 'Dr Sana Sadiq focuses on full‑face beautification, combining corrective and preventive treatments for stunning, natural results.',
+      image: '/team/dr-sana-sadiq.jpg',
+      description: 'Dr Sana specialises in full-face harmonisation, combining advanced injectables with long-term treatment planning.',
       role: 'Aesthetic Doctor'
     },
     {
       name: 'Marianne',
-      image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/MARIANNE.jpg',
-      description: 'Marianne focuses on natural enhancements and subtle tweaks to highlight your facial contours.',
-      role: 'Senior Aesthetic Practitioner'
+      image: '/team/marianne-hq.jpg',
+      description: 'Marianne is our nurse prescriber, known for creating subtle enhancements that celebrate each client\'s features.',
+      role: 'Nurse Prescriber'
     },
     {
       name: 'Ewelina Roguska',
-      image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Ewelina-Roguska-1.png',
-      description: 'Ewelina has 9+ years of experience and a passion for treating acne and post‑acne skin with advanced skin therapies.',
+      image: '/team/ewelina-roguska-hq.png',
+      description: 'Ewelina leads advanced skin programmes with a special interest in treating acne, pigmentation, and texture concerns.',
       role: 'Senior Aesthetic Practitioner'
     },
     {
       name: 'Louise Walker',
-      image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Louise-Walker-1.jpg',
-      description: 'Louise customises skin treatments using medical‑grade devices and advanced skincare techniques with 18+ years in aesthetics.',
+      image: '/team/louise-walker-hq.jpg',
+      description: 'With over 18 years in aesthetics, Louise combines medical-grade devices and skincare to maximise treatment outcomes.',
       role: 'Senior Aesthetic Practitioner'
     },
     {
       name: 'Joanna Pullar',
-      image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Joanna-Pullar-1.webp',
-      description: 'Joanna is a Senior Aesthetic Practitioner with expertise in electrolysis and advanced skin treatments.',
+      image: '/team/joanna-pullar.webp',
+      description: 'Joanna is highly experienced in electrolysis and bespoke skin treatments, supporting long-term client confidence.',
       role: 'Senior Aesthetic Practitioner'
     },
     {
       name: 'Nazish Aman',
-      image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Nazish-Aman.jpg',
-      description: 'With 11+ years in aesthetics, Naz assists front‑of‑house operations and provides tailored skincare treatments.',
+      image: '/team/nazish-aman.jpg',
+      description: 'Naz brings 11+ years of client care and aesthetic expertise, ensuring every visit feels warm, informed, and reassuring.',
       role: 'Aesthetic Practitioner'
     },
     {
       name: 'Reza',
-      image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Reza.png',
-      description: 'Known for his five‑star service, Reza ensures clients feel comfortable while delivering expert aesthetic advice.',
-      role: 'Aesthetic Practitioner'
+      image: '/team/reza.png',
+      description: 'Reza elevates the Beyond MediSpa experience with polished client service and expert product knowledge.',
+      role: 'Client Relations'
     },
     {
       name: 'Leanne',
-      image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Leanne.jpg',
-      description: 'Leanne has 6+ years of experience in customer service, providing a professional and welcoming presence at Beyond Aesthetic Clinic.',
+      image: '/team/leanne.jpg',
+      description: 'Leanne welcomes clients to our clinics, guiding each journey with meticulous attention and friendly professionalism.',
       role: 'Client Relations'
     },
     {
       name: 'Ruxi',
-      image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Ruxi.png',
-      description: 'With over a decade in aesthetics, Ruxi specialises in modern skincare treatments and practitioner training.',
+      image: '/team/ruxi.png',
+      description: 'Ruxi supports our team with practitioner training and advanced skincare treatments rooted in over a decade of experience.',
       role: 'Senior Aesthetic Practitioner'
     },
     {
       name: 'Claire Hill',
-      image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/Claire-Hill.png',
-      description: 'A Senior Aesthetician with 14+ years of experience, Claire specialises in laser hair and tattoo removal treatments.',
+      image: '/team/claire-hill.png',
+      description: 'Claire is our laser specialist, offering expert hair and tattoo removal alongside comprehensive skin rejuvenation.',
       role: 'Senior Aesthetic Practitioner'
     }
   ],
@@ -2505,10 +2514,10 @@ const en: Translations = {
     needImmediateDesc: 'Contact us directly for urgent inquiries or last-minute bookings.',
     mondayToFriday: 'Mon-Fri: 9:00 AM - 8:00 PM',
     saturdayToSunday: 'Sat-Sun: 10:00 AM - 6:00 PM',
-    primaryPhoneNumber: '+44 (20) 7123 4567',
-    secondaryPhoneNumber: '+44 (131) 456 7890',
-    primaryEmail: 'info@magispa.co.uk',
-    secondaryEmail: 'bookings@magispa.co.uk',
+    primaryPhoneNumber: '020 7224 1555',
+    secondaryPhoneNumber: '0131 226 8828',
+    primaryEmail: 'info@beyondmedispa.com',
+    secondaryEmail: 'bookings@beyondmedispa.com',
   },
 
   doctors: {
@@ -2617,18 +2626,18 @@ const en: Translations = {
   },
 
   footer: {
-    brandDescription: 'Aesthetic medicine clinic dedicated to your beauty and skin health. Advanced technology, remarkable results.',
+    brandDescription: 'Beyond MediSpa delivers doctor-led aesthetic medicine with personalised care in London and Edinburgh.',
     services: 'Services',
     quickLinks: 'Quick Links',
     aboutUs: 'About Us',
     ourTeam: 'Our Team',
     londonClinic: 'London Clinic',
     edinburghClinic: 'Edinburgh Clinic',
-    bookTreatment: 'Book Treatment',
+    bookTreatment: 'Book Now',
     contactInfo: 'Contact',
-    londonAddress: 'London: 123 Harley Street, W1G 6AX',
-    edinburghAddress: 'Edinburgh: 45 Queen Street, EH2 3NH',
-    allRightsReserved: '© 2024 Aesthetic Lab. All rights reserved.',
+    londonAddress: 'London: Fourth Floor, Harvey Nichols, 109-125 Knightsbridge, SW1X 7RJ',
+    edinburghAddress: 'Edinburgh: Second Floor, Harvey Nichols, 30-34 St Andrew Square, EH2 2AD',
+    allRightsReserved: '© 2024 Beyond MediSpa. All rights reserved.',
     privacyPolicy: 'Privacy Policy',
     termsConditions: 'Terms & Conditions',
     cookies: 'Cookies',
@@ -2729,8 +2738,8 @@ const en: Translations = {
         id: 1,
         city: 'London',
         address: 'Fourth floor Harvey Nichols, London SW1X 7RJ, United Kingdom',
-        phone: '+44 (20) 7123 4567',
-        email: 'london@magispa.co.uk',
+        phone: '020 7224 1555',
+        email: 'info@beyondmedispa.com',
         hours: 'Monday - Friday: 9:00 - 18:00\nSaturday: 9:00 - 17:00\nSunday: Closed',
         parking: 'Street parking available',
         mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.628183492772!2d-0.1624627224548056!3d51.50169031111937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605397680ad09%3A0x68bb8e672eb273a1!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20MediSpa!5e0!3m2!1sen!2sza!4v1758541805476!5m2!1sen!2sza',
@@ -2739,8 +2748,8 @@ const en: Translations = {
         id: 2,
         city: 'Edinburgh',
         address: 'Second Floor, harvey nichols, 30-34 St Andrew Sq, Edinburgh EH2 2AD, United Kingdom',
-        phone: '+44 (131) 123 4567',
-        email: 'edinburgh@magispa.co.uk',
+        phone: '0131 226 8828',
+        email: 'info@beyondmedispa.com',
         hours: 'Monday - Friday: 9:00 - 18:00\nSaturday: 9:00 - 16:00\nSunday: Closed',
         parking: 'Nearby parking available',
         mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.678446141864!2d-3.194440922303394!3d55.954944976402295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766ac0abf29af5%3A0xe8c125ae82237941!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20Medispa!5e0!3m2!1sen!2sza!4v1758541860806!5m2!1sen!2sza',
@@ -2796,6 +2805,7 @@ const zhCN: Translations = {
     london: '伦敦',
     edinburgh: '爱丁堡',
     doctors: '医生团队',
+    team: '医生团队',
     contact: '联系我们',
     bookNow: '立即预约',
   },
@@ -2931,11 +2941,12 @@ const zhCN: Translations = {
   },
 
   teamRoles: {
-    aestheticDoctor: '美容医生',
-    seniorPractitioner: '资深美容师',
-    aestheticPractitioner: '美容师',
-    clientRelations: '客户关系',
-  },
+  aestheticDoctor: '美容医生',
+  seniorPractitioner: '资深美容师',
+  aestheticPractitioner: '美容师',
+  clientRelations: '客户关系',
+    nursePrescriber: '护士处方师',
+    },
 
   teamMembers: [
     {
@@ -2954,7 +2965,7 @@ const zhCN: Translations = {
       name: 'Marianne',
       image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/MARIANNE.jpg',
       description: 'Marianne专注于自然提升和细微调整，突出您的面部轮廓。',
-      role: 'Senior Aesthetic Practitioner'
+      role: 'Nurse Prescriber'
     },
     {
       name: 'Ewelina Roguska',
@@ -3115,10 +3126,10 @@ const zhCN: Translations = {
     needImmediateDesc: '如有紧急咨询或临时预约，请直接与我们联系。',
     mondayToFriday: '周一至周五：上午9:00 - 晚上8:00',
     saturdayToSunday: '周六至周日：上午10:00 - 下午6:00',
-    primaryPhoneNumber: '+44 (20) 7123 4567',
-    secondaryPhoneNumber: '+44 (131) 456 7890',
-    primaryEmail: 'info@magispa.co.uk',
-    secondaryEmail: 'bookings@magispa.co.uk',
+    primaryPhoneNumber: '020 7224 1555',
+    secondaryPhoneNumber: '0131 226 8828',
+    primaryEmail: 'info@beyondmedispa.com',
+    secondaryEmail: 'bookings@beyondmedispa.com',
   },
 
   doctors: {
@@ -3403,6 +3414,7 @@ const zhTW: Translations = {
     london: '倫敦',
     edinburgh: '愛丁堡',
     doctors: '醫生團隊',
+    team: '醫生團隊',
     contact: '聯絡我們',
     bookNow: '立即預約',
   },
@@ -3538,11 +3550,12 @@ const zhTW: Translations = {
   },
 
   teamRoles: {
-    aestheticDoctor: '美容醫生',
-    seniorPractitioner: '資深美容師',
-    aestheticPractitioner: '美容師',
-    clientRelations: '客戶關係',
-  },
+  aestheticDoctor: '美容醫生',
+  seniorPractitioner: '資深美容師',
+  aestheticPractitioner: '美容師',
+  clientRelations: '客戶關係',
+    nursePrescriber: '護士處方師',
+      },
 
   teamMembers: [
     {
@@ -3561,7 +3574,7 @@ const zhTW: Translations = {
       name: 'Marianne',
       image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/MARIANNE.jpg',
       description: 'Marianne專注於自然提升和細微調整，突出您的面部輪廓。',
-      role: 'Senior Aesthetic Practitioner'
+      role: 'Nurse Prescriber'
     },
     {
       name: 'Ewelina Roguska',
@@ -3722,10 +3735,10 @@ const zhTW: Translations = {
     needImmediateDesc: '如有緊急諮詢或臨時預約，請直接與我們聯絡。',
     mondayToFriday: '週一至週五：上午9:00 - 晚上8:00',
     saturdayToSunday: '週六至週日：上午10:00 - 下午6:00',
-    primaryPhoneNumber: '+44 (20) 7123 4567',
-    secondaryPhoneNumber: '+44 (131) 456 7890',
-    primaryEmail: 'info@magispa.co.uk',
-    secondaryEmail: 'bookings@magispa.co.uk',
+    primaryPhoneNumber: '020 7224 1555',
+    secondaryPhoneNumber: '0131 226 8828',
+    primaryEmail: 'info@beyondmedispa.com',
+    secondaryEmail: 'bookings@beyondmedispa.com',
   },
 
   doctors: {
@@ -4010,6 +4023,7 @@ const ar: Translations = {
     london: 'لندن',
     edinburgh: 'إدنبرة',
     doctors: 'الأطباء',
+    team: 'الأطباء',
     contact: 'تواصل معنا',
     bookNow: 'احجز الآن',
   },
@@ -4145,11 +4159,12 @@ const ar: Translations = {
   },
 
   teamRoles: {
-    aestheticDoctor: 'طبيب تجميل',
-    seniorPractitioner: 'أخصائي تجميل أول',
-    aestheticPractitioner: 'أخصائي تجميل',
-    clientRelations: 'علاقات العملاء',
-  },
+  aestheticDoctor: 'طبيب تجميل',
+  seniorPractitioner: 'أخصائي تجميل أول',
+  aestheticPractitioner: 'أخصائي تجميل',
+  clientRelations: 'علاقات العملاء',
+    nursePrescriber: 'ممرضة واصفة',
+      },
 
   teamMembers: [
     {
@@ -4168,7 +4183,7 @@ const ar: Translations = {
       name: 'Marianne',
       image: 'https://www.beyondmedispa.com/wp-content/uploads/2025/09/MARIANNE.jpg',
       description: 'ماريان تركز على التحسينات الطبيعية والتعديلات الدقيقة لإبراز ملامح وجهك.',
-      role: 'Senior Aesthetic Practitioner'
+      role: 'Nurse Prescriber'
     },
     {
       name: 'Ewelina Roguska',
@@ -4329,10 +4344,10 @@ const ar: Translations = {
     needImmediateDesc: 'اتصل بنا مباشرة للاستفسارات العاجلة أو الحجوزات في اللحظة الأخيرة.',
     mondayToFriday: 'الإثنين - الجمعة: 9:00 صباحًا - 8:00 مساءً',
     saturdayToSunday: 'السبت - الأحد: 10:00 صباحًا - 6:00 مساءً',
-    primaryPhoneNumber: '+44 (20) 7123 4567',
-    secondaryPhoneNumber: '+44 (131) 456 7890',
-    primaryEmail: 'info@magispa.co.uk',
-    secondaryEmail: 'bookings@magispa.co.uk',
+    primaryPhoneNumber: '020 7224 1555',
+    secondaryPhoneNumber: '0131 226 8828',
+    primaryEmail: 'info@beyondmedispa.com',
+    secondaryEmail: 'bookings@beyondmedispa.com',
   },
 
   doctors: {
@@ -4553,7 +4568,7 @@ const ar: Translations = {
         city: 'لندن',
         address: 'موقع متميز، وسط لندن',
         phone: '+44 (20) 7123 4567',
-        email: 'london@magispa.co.uk',
+        email: 'info@beyondmedispa.com',
         hours: 'الاثنين - الجمعة: 9:00 - 18:00\nالسبت: 9:00 - 17:00\nالأحد: مغلق',
         parking: 'مواقف سيارات في الشارع',
         mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.628183492772!2d-0.1624627224548056!3d51.50169031111937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605397680ad09%3A0x68bb8e672eb273a1!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20MediSpa!5e0!3m2!1sen!2sza!4v1758541805476!5m2!1sen!2sza',
@@ -4563,7 +4578,7 @@ const ar: Translations = {
         city: 'إدنبرة',
         address: 'موقع متميز، وسط إدنبرة',
         phone: '+44 (131) 123 4567',
-        email: 'edinburgh@magispa.co.uk',
+        email: 'info@beyondmedispa.com',
         hours: 'الاثنين - الجمعة: 9:00 - 18:00\nالسبت: 9:00 - 16:00\nالأحد: مغلق',
         parking: 'مواقف سيارات قريبة',
         mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.678446141864!2d-3.194440922303394!3d55.954944976402295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766ac0abf29af5%3A0xe8c125ae82237941!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20Medispa!5e0!3m2!1sen!2sza!4v1758541860806!5m2!1sen!2sza',

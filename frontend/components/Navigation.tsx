@@ -1,260 +1,365 @@
-import { Button } from '@/components/ui/button'
-import { Phone, MapPin, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Button } from '@/components/ui/button'
+import { Phone, Menu, X, ChevronDown, ChevronRight } from 'lucide-react'
 import LanguageSelector from './LanguageSelector'
 import { useLanguage } from '../contexts/LanguageContext'
 import { useTranslations } from '../locales/translations'
 
+type FeaturedItem = {
+  name: string
+  route: string
+  badge?: string
+}
+
+type CategoryItem = {
+  name: string
+  route: string
+  isSeeAll?: boolean
+}
+
+type CategoryGroup = {
+  title: string
+  route: string
+  items: CategoryItem[]
+}
+
+type LocationMenu = {
+  name: string
+  featured: FeaturedItem[]
+  categories: CategoryGroup[]
+}
+
+const formatPhoneHref = (phone: string) => `tel:${phone.replace(/[^+\d]/g, '')}`
+
+const SPECIALITIES_LABEL = 'Our Specialities'
+const OTHER_OPTIONS_LABEL = 'Other treatment options'
+const CLIENT_FAVOURITE_LABEL = 'Client favourite'
+
+type MenuItem =
+  | { type: 'link'; name: string; route: string }
+  | { type: 'location'; menu: LocationMenu }
+
 export default function Navigation() {
   const { language } = useLanguage()
   const t = useTranslations(language)
+  const [mobileOpen, setMobileOpen] = useState(false)
 
-  const menuItems = [
-    {
-      name: t.nav.about,
-      route: '/about',
-      type: 'single' as const
-    },
-    {
-      name: t.nav.londonTreatments,
-      type: 'mega-dropdown' as const,
-      categories: [
-        {
-          title: t.treatments.body,
-          route: '/london/body',
-          items: [
-            { name: t.treatmentNames.exilis, route: '/procedures/body/exilis' },
-            { name: t.treatmentNames.hifu, route: '/procedures/body/hifu' },
-            { name: t.treatmentNames.cmSlim, route: '/procedures/body/cmslim' },
-            { name: t.treatmentNames.coolLaser, route: '/procedures/body/cool-laser' },
-            { name: t.treatmentNames.coolSculpting, route: '/procedures/body/coolsculpting' },
-            { name: t.treatmentNames.unison, route: '/procedures/body/unison' },
-            { name: t.treatmentNames.vanquish, route: '/procedures/body/vanquish' }
-          ]
-        },
-        {
-          title: t.treatments.peels,
-          route: '/london/peels',
-          items: [
-            { name: t.treatmentNames.medik8, route: '/procedures/peels/medik8-london' },
-            { name: t.treatmentNames.obagi, route: '/procedures/peels/obagi' },
-            { name: t.treatmentNames.zo, route: '/procedures/peels/zo-london' }
-          ]
-        },
-        {
-          title: t.treatments.facial,
-          route: '/london/facial',
-          items: [
-            { name: t.treatmentNames.skinScanner, route: '/procedures/facial/skin-scanner' },
-            { name: t.treatmentNames.hydrafacial, route: '/procedures/facial/hydrafacial-london' },
-            { name: t.treatmentNames.hydraTite, route: '/procedures/facial/hydratite' },
-            { name: t.treatmentNames.oxygenFacial, route: '/procedures/facial/oxygen-facial' },
-            { name: t.treatmentNames.keravive, route: '/procedures/facial/keravive' },
-            { name: t.treatmentNames.ledFacial, route: '/procedures/facial/led-facial' },
-            { name: t.treatmentNames.microneedling, route: '/procedures/facial/microneedling-london' },
-            { name: t.treatmentNames.exosome, route: '/procedures/facial/exosome' }
-          ]
-        },
-        {
-          title: t.treatments.injectables,
-          route: '/london/injectables',
-          items: [
-            { name: t.treatmentNames.antiWrinkle, route: '/procedures/injectables/anti-wrinkle' },
-            { name: t.treatmentNames.carboxy, route: '/procedures/injectables/carboxy' },
-            { name: t.treatmentNames.biofiller, route: '/procedures/injectables/biofiller-london' },
-            { name: t.treatmentNames.dermalFiller, route: '/procedures/injectables/dermal-filler' },
-            { name: t.treatmentNames.moleRemoval, route: '/procedures/injectables/mole-removal' },
-            { name: t.treatmentNames.polynucleotides, route: '/procedures/injectables/polynucleotides' },
-            { name: t.treatmentNames.prp, route: '/procedures/injectables/prp' },
-            { name: t.treatmentNames.profhilo, route: '/procedures/injectables/profhilo' }
-          ]
-        }
-      ]
-    },
-    {
-      name: t.nav.edinburghTreatments,
-      type: 'mega-dropdown' as const,
-      categories: [
-        {
-          title: t.treatments.body,
-          route: '/edinburgh/body',
-          items: [
-            { name: t.treatmentNames.electrolysis, route: '/procedures/body/electrolysis' },
-            { name: t.treatmentNames.exilis, route: '/procedures/body/exilis' },
-            { name: t.treatmentNames.cmSlim, route: '/procedures/body/cmslim' },
-            { name: t.treatmentNames.coolLaser, route: '/procedures/body/cool-laser' },
-            { name: t.treatmentNames.coolSculpting, route: '/procedures/body/coolsculpting' },
-            { name: t.treatmentNames.hifu, route: '/procedures/body/hifu' },
-            { name: t.treatmentNames.laserHairRemoval, route: '/procedures/body/laser-hair-removal' }
-          ]
-        },
-        {
-          title: t.treatments.peels,
-          route: '/edinburgh/peels',
-          items: [
-            { name: t.treatmentNames.medik8, route: '/procedures/peels/medik8-edinburgh' },
-            { name: t.treatmentNames.obagi, route: '/procedures/peels/obagi' },
-            { name: t.treatmentNames.zo, route: '/procedures/peels/zo-edinburgh' }
-          ]
-        },
-        {
-          title: t.treatments.facial,
-          route: '/edinburgh/facial',
-          items: [
-            { name: t.treatmentNames.exosome, route: '/procedures/facial/exosome' },
-            { name: t.treatmentNames.hydrafacial, route: '/procedures/facial/hydrafacial-edinburgh' },
-            { name: t.treatmentNames.hydraTite, route: '/procedures/facial/hydratite' },
-            { name: t.treatmentNames.keravive, route: '/procedures/facial/keravive' },
-            { name: t.treatmentNames.ledFacial, route: '/procedures/facial/led-facial' },
-            { name: t.treatmentNames.microneedling, route: '/procedures/facial/microneedling-edinburgh' },
-            { name: t.treatmentNames.skinScanner, route: '/procedures/facial/skin-scanner' }
-          ]
-        },
-        {
-          title: t.treatments.injectables,
-          route: '/edinburgh/injectables',
-          items: [
-            { name: t.treatmentNames.allergy, route: '/procedures/injectables/allergy' },
-            { name: t.treatmentNames.antiWrinkle, route: '/procedures/injectables/anti-wrinkle' },
-            { name: t.treatmentNames.b12, route: '/procedures/injectables/b12' },
-            { name: t.treatmentNames.biofiller, route: '/procedures/injectables/biofiller-edinburgh' },
-            { name: t.treatmentNames.biotin, route: '/procedures/injectables/biotin' },
-            { name: t.treatmentNames.dermalFiller, route: '/procedures/injectables/dermal-filler' },
-            { name: t.treatmentNames.glutathione, route: '/procedures/injectables/glutathione' },
-            { name: t.treatmentNames.ivDrip, route: '/procedures/injectables/iv-drip' },
-            { name: t.treatmentNames.magnesium, route: '/procedures/injectables/magnesium' },
-            { name: t.treatmentNames.neofound, route: '/procedures/injectables/neofound' },
-            { name: t.treatmentNames.polynucleotides, route: '/procedures/injectables/polynucleotides' },
-            { name: t.treatmentNames.prp, route: '/procedures/injectables/prp' },
-            { name: t.treatmentNames.sclerotherapy, route: '/procedures/injectables/sclerotherapy' },
-            { name: t.treatmentNames.vitaminD, route: '/procedures/injectables/vitamin-d' }
-          ]
-        }
-      ]
-    },
-    {
-      name: t.nav.locations,
-      type: 'dropdown' as const,
-      items: [
-        { name: t.nav.allLocations, route: '/locations' },
-        { name: t.nav.london, route: '/london' },
-        { name: t.nav.edinburgh, route: '/edinburgh' }
-      ]
-    },
-    {
-      name: t.nav.doctors,
-      route: '/doctors',
-      type: 'single' as const
-    },
-    {
-      name: t.nav.contact,
-      route: '/contact',
-      type: 'single' as const
-    }
+  const viewAllLabel = t.buttons.viewAllTreatments || t.buttons.viewAll || 'View all'
+
+  const londonMenu: LocationMenu = {
+    name: t.nav.londonTreatments,
+    featured: [
+      { name: t.treatmentNames.hydrafacial, route: '/procedures/facial/hydrafacial-london', badge: CLIENT_FAVOURITE_LABEL },
+      { name: t.treatmentNames.ledFacial, route: '/procedures/facial/led-facial' },
+      { name: t.treatmentNames.oxygenFacial, route: '/procedures/facial/oxygen-facial' },
+      { name: t.treatmentNames.microneedling, route: '/procedures/facial/microneedling-london' },
+      { name: t.treatmentNames.exosome, route: '/procedures/facial/exosome' },
+      { name: t.treatmentNames.exilis, route: '/procedures/body/exilis' },
+      { name: t.treatmentNames.hifu, route: '/procedures/body/hifu' }
+    ],
+    categories: [
+      {
+        title: t.treatments.facial,
+        route: '/london/facial',
+        items: [
+          { name: t.treatmentNames.zo, route: '/procedures/peels/zo-london' },
+          { name: t.treatmentNames.hydraTite, route: '/procedures/facial/hydratite' },
+          { name: viewAllLabel, route: '/london/facial', isSeeAll: true }
+        ]
+      },
+      {
+        title: t.treatments.body,
+        route: '/london/body',
+        items: [
+          { name: t.treatmentNames.coolSculpting, route: '/procedures/body/coolsculpting' },
+          { name: viewAllLabel, route: '/london/body', isSeeAll: true }
+        ]
+      },
+      {
+        title: t.treatments.injectables,
+        route: '/london/injectables',
+        items: [
+          { name: t.treatmentNames.biofiller, route: '/procedures/injectables/biofiller-london' },
+          { name: t.treatmentNames.antiWrinkle, route: '/procedures/injectables/anti-wrinkle' },
+          { name: t.treatmentNames.polynucleotides, route: '/procedures/injectables/polynucleotides' },
+          { name: t.treatmentNames.dermalFiller, route: '/procedures/injectables/dermal-filler' },
+          { name: viewAllLabel, route: '/london/injectables', isSeeAll: true }
+        ]
+      }
+    ]
+  }
+
+  const edinburghMenu: LocationMenu = {
+    name: t.nav.edinburghTreatments,
+    featured: [
+      { name: t.treatmentNames.hydrafacial, route: '/procedures/facial/hydrafacial-edinburgh', badge: CLIENT_FAVOURITE_LABEL },
+      { name: t.treatmentNames.ledFacial, route: '/procedures/facial/led-facial' },
+      { name: t.treatmentNames.microneedling, route: '/procedures/facial/microneedling-edinburgh' },
+      { name: t.treatmentNames.exosome, route: '/procedures/facial/exosome' },
+      { name: t.treatmentNames.exilis, route: '/procedures/body/exilis' },
+      { name: t.treatmentNames.coolLaser, route: '/procedures/body/cool-laser' },
+      { name: t.treatmentNames.electrolysis, route: '/procedures/body/electrolysis' }
+    ],
+    categories: [
+      {
+        title: t.treatments.facial,
+        route: '/edinburgh/facial',
+        items: [
+          { name: t.treatmentNames.zo, route: '/procedures/peels/zo-edinburgh' },
+          { name: t.treatmentNames.hydraTite, route: '/procedures/facial/hydratite' },
+          { name: viewAllLabel, route: '/edinburgh/facial', isSeeAll: true }
+        ]
+      },
+      {
+        title: t.treatments.body,
+        route: '/edinburgh/body',
+        items: [
+          { name: t.treatmentNames.laserHairRemoval, route: '/procedures/body/laser-hair-removal' },
+          { name: viewAllLabel, route: '/edinburgh/body', isSeeAll: true }
+        ]
+      },
+      {
+        title: t.treatments.injectables,
+        route: '/edinburgh/injectables',
+        items: [
+          { name: t.treatmentNames.biofiller, route: '/procedures/injectables/biofiller-edinburgh' },
+          { name: t.treatmentNames.antiWrinkle, route: '/procedures/injectables/anti-wrinkle' },
+          { name: t.treatmentNames.polynucleotides, route: '/procedures/injectables/polynucleotides' },
+          { name: t.treatmentNames.dermalFiller, route: '/procedures/injectables/dermal-filler' },
+          { name: t.treatmentNames.ivDrip, route: '/procedures/injectables/iv-drip' },
+          { name: t.treatmentNames.sclerotherapy, route: '/procedures/injectables/sclerotherapy' },
+          { name: viewAllLabel, route: '/edinburgh/injectables', isSeeAll: true }
+        ]
+      }
+    ]
+  }
+
+  const menuItems: MenuItem[] = [
+    { type: 'link', name: t.nav.about, route: '/about' },
+    { type: 'location', menu: londonMenu },
+    { type: 'location', menu: edinburghMenu },
+    { type: 'link', name: t.nav.team, route: '/doctors' },
+    { type: 'link', name: t.nav.contact, route: '/contact' }
   ]
-  
-  const headlinePhone = t.contact.primaryPhoneNumber || '+44 (20) 7123 4567'
-  const serviceAreaLabel = `${t.nav.london} ${t.common.and} ${t.nav.edinburgh}`
 
-  return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#2C2C2C]/95 backdrop-blur-sm shadow-sm">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between py-4">
-          <Link 
-            to="/"
-            className="flex items-center cursor-pointer"
-          >
-            <img
-              src="/beyond-logo.png"
-              alt="Beyond Aesthetic Clinic Logo"
-              className="h-12 w-auto"
-            />
-          </Link>
-          
-          <div className="hidden lg:flex items-center space-x-6">
-            {menuItems.map((item, index) => (
-              <div
-                key={index}
-                className="relative group"
+  const primaryPhone = t.contact.primaryPhoneNumber || '020 7224 1555'
+  const phoneHref = formatPhoneHref(primaryPhone)
+
+  const closeMobileMenu = () => setMobileOpen(false)
+
+  const renderLocationDropdown = (menu: LocationMenu) => (
+    <div className="relative group" key={menu.name}>
+      <button className="flex items-center gap-1 py-2 text-sm font-medium text-[#F5F1EC] transition-colors hover:text-[#C6A77D] focus-visible:outline-none">
+        {menu.name}
+        <ChevronDown className="h-4 w-4" />
+      </button>
+      <div className="absolute left-1/2 top-full hidden w-[900px] -translate-x-1/2 rounded-2xl bg-white p-8 shadow-2xl ring-1 ring-black/5 group-hover:block">
+        <div className="grid gap-8 lg:grid-cols-[minmax(220px,260px)_repeat(3,minmax(170px,1fr))]">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9C8A76]">{SPECIALITIES_LABEL}</p>
+            <div className="mt-4 space-y-3">
+              {menu.featured.map((item) => (
+                <Link
+                  key={item.route}
+                  to={item.route}
+                  className="flex items-center justify-between rounded-lg border border-transparent px-3 py-2 text-sm font-medium text-[#2C2C2C] transition-colors hover:border-[#E6DED3] hover:text-[#8F7657]"
+                >
+                  <span>{item.name}</span>
+                  {item.badge ? (
+                    <span className="rounded-full bg-[#F2ECE3] px-2 py-[2px] text-xs font-semibold uppercase tracking-wide text-[#8F7657]">
+                      {item.badge}
+                    </span>
+                  ) : null}
+                </Link>
+              ))}
+            </div>
+          </div>
+          {menu.categories.map((category) => (
+            <div key={category.title}>
+              <Link
+                to={category.route}
+                className="flex items-center justify-between text-sm font-semibold text-[#2C2C2C] transition-colors hover:text-[#8F7657]"
               >
-                {item.type === 'single' ? (
+                {category.title}
+                <ChevronRight className="h-4 w-4 text-[#C6A77D]" />
+              </Link>
+              <p className="mt-1 text-xs uppercase tracking-[0.2em] text-[#B5A68B]">{OTHER_OPTIONS_LABEL}</p>
+              <div className="mt-3 space-y-2">
+                {category.items.map((item) => (
                   <Link
-                    to={item.route!}
-                    className="text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium"
+                    key={item.route}
+                    to={item.route}
+                    className={`block rounded-md px-2 py-2 text-sm transition-colors ${
+                      item.isSeeAll
+                        ? 'text-[#8F7657] hover:bg-[#F5EFE6]/70 font-semibold'
+                        : 'text-[#4B4B4B] hover:bg-[#F5EFE6]/60'
+                    }`}
                   >
                     {item.name}
                   </Link>
-                ) : item.type === 'mega-dropdown' ? (
-                  <div>
-                    <button className="flex items-center text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium">
-                      {item.name}
-                      <ChevronDown className="w-4 h-4 ml-1" />
-                    </button>
-                    
-                    <div className="absolute top-full left-0 mt-1 bg-[#FAF8F5] border border-[#E5E5E5] rounded-lg shadow-xl min-w-[800px] p-6 grid grid-cols-4 gap-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                      {item.categories?.map((category, catIndex) => (
-                        <div key={catIndex} className="space-y-3">
-                          <Link
-                            to={category.route}
-                            className="block text-[#333333] font-bold text-sm hover:text-[#A38E78] transition-colors mb-2"
-                          >
-                            {category.title}
-                          </Link>
-                          <div className="space-y-1">
-                            {category.items.map((subItem, subIndex) => (
-                              <Link
-                                key={subIndex}
-                                to={subItem.route}
-                                className="block w-full text-left text-[#777777] hover:text-[#A38E78] transition-colors text-xs py-1"
-                              >
-                                {subItem.name}
-                              </Link>
-                            ))}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+
+  const renderDesktopMenu = () => (
+    <div className="hidden items-center space-x-8 lg:flex">
+      {menuItems.map((item) => {
+        if (item.type === 'link') {
+          return (
+            <Link
+              key={item.route}
+              to={item.route}
+              className="text-sm font-medium text-[#F5F1EC] transition-colors hover:text-[#C6A77D]"
+            >
+              {item.name}
+            </Link>
+          )
+        }
+        return renderLocationDropdown(item.menu)
+      })}
+    </div>
+  )
+
+  const renderMobileMenu = () => (
+    <div className="lg:hidden border-t border-white/10 bg-[#141414] text-[#F5F1EC]">
+      <div className="space-y-6 px-4 py-6">
+        {menuItems.map((item) => {
+          if (item.type === 'link') {
+            return (
+              <Link
+                key={item.route}
+                to={item.route}
+                onClick={closeMobileMenu}
+                className="block text-base font-medium hover:text-[#C6A77D]"
+              >
+                {item.name}
+              </Link>
+            )
+          }
+
+          return (
+            <div key={item.menu.name} className="rounded-xl border border-white/10 p-4">
+              <div className="text-sm font-semibold uppercase tracking-wide text-[#C6A77D]">{item.menu.name}</div>
+              <div className="mt-4 space-y-5">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-white/50">{SPECIALITIES_LABEL}</p>
+                  <div className="mt-2 flex flex-wrap gap-3">
+                    {item.menu.featured.map((featured) => (
+                      <Link
+                        key={featured.route}
+                        to={featured.route}
+                        onClick={closeMobileMenu}
+                        className="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-white hover:bg-white/10"
+                      >
+                        {featured.name}
+                        {featured.badge ? (
+                          <span className="rounded-full bg-[#C6A77D]/20 px-2 py-[2px] text-[10px] font-semibold uppercase tracking-wide text-[#EED9B7]">
+                            {featured.badge}
+                          </span>
+                        ) : null}
+                      </Link>
+                    ))}
                   </div>
-                ) : (
-                  <div>
-                    <button className="flex items-center text-[#FAF8F5] hover:text-[#C6A77D] transition-colors text-sm py-2 font-medium">
-                      {item.name}
-                      <ChevronDown className="w-4 h-4 ml-1" />
-                    </button>
-                    
-                    <div className="absolute top-full left-0 mt-1 bg-[#FAF8F5] border border-[#E5E5E5] rounded-lg shadow-xl min-w-48 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                      {item.items?.map((subItem, subIndex) => (
+                </div>
+                {item.menu.categories.map((category) => (
+                  <div key={category.title}>
+                    <Link
+                      to={category.route}
+                      onClick={closeMobileMenu}
+                      className="text-sm font-semibold text-white hover:text-[#C6A77D]"
+                    >
+                      {category.title}
+                    </Link>
+                    <div className="mt-2 space-y-2 pl-2">
+                      {category.items.map((categoryItem) => (
                         <Link
-                          key={subIndex}
-                          to={subItem.route}
-                          className="block w-full text-left px-4 py-2 text-[#777777] hover:text-[#A38E78] hover:bg-[#A38E78]/10 transition-colors text-sm"
+                          key={categoryItem.route}
+                          to={categoryItem.route}
+                          onClick={closeMobileMenu}
+                          className={`block text-sm ${
+                            categoryItem.isSeeAll ? 'font-semibold text-[#C6A77D]' : 'text-white/80'
+                          }`}
                         >
-                          {subItem.name}
+                          {categoryItem.name}
                         </Link>
                       ))}
                     </div>
                   </div>
-                )}
-              </div>
-            ))}
-          </div>
-          
-          <div className="flex items-center space-x-4">
-            <div className="hidden xl:flex items-center space-x-4 text-[#B5A68B] text-sm">
-              <div className="flex items-center">
-                <Phone className="w-4 h-4 mr-2 text-[#C6A77D]" />
-                <span>{headlinePhone}</span>
-              </div>
-              <div className="flex items-center">
-                <MapPin className="w-4 h-4 mr-2 text-[#C6A77D]" />
-                <span>{serviceAreaLabel}</span>
+                ))}
               </div>
             </div>
-            <LanguageSelector />
-          </div>
+          )
+        })}
+        <a
+          href={phoneHref}
+          className="flex items-center gap-3 rounded-lg border border-white/15 px-4 py-3 text-sm font-medium text-white hover:border-[#C6A77D] hover:text-[#C6A77D]"
+          onClick={closeMobileMenu}
+        >
+          <Phone className="h-4 w-4" />
+          {primaryPhone}
+        </a>
+        <Button
+          asChild
+          className="inline-flex w-full justify-center bg-[#C6A77D] py-3 text-base font-semibold text-white hover:bg-[#b49368]"
+        >
+          <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
+            {t.nav.bookNow}
+          </a>
+        </Button>
+        <div className="border-t border-white/10 pt-4">
+          <LanguageSelector />
         </div>
       </div>
+    </div>
+  )
+
+  return (
+    <nav className="fixed left-0 right-0 top-0 z-50 bg-[#1B1B1B]/95 backdrop-blur-sm shadow-[0_2px_12px_rgba(0,0,0,0.25)]">
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4">
+        <Link to="/" className="flex items-center" aria-label="Beyond MediSpa home">
+          <img
+            src="/beyond-logo.png"
+            alt="Beyond MediSpa logo"
+            className="h-12 w-auto transition-transform duration-200 hover:scale-[1.02]"
+          />
+        </Link>
+        {renderDesktopMenu()}
+        <div className="flex items-center gap-3">
+          <a
+            href={phoneHref}
+            className="hidden items-center gap-2 text-sm font-medium text-[#F6F2EC] transition-colors hover:text-[#C6A77D] xl:flex"
+          >
+            <Phone className="h-4 w-4 text-[#C6A77D]" />
+            <span>{primaryPhone}</span>
+          </a>
+          <Button
+            asChild
+            className="hidden bg-[#C6A77D] px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#b49368] lg:inline-flex"
+          >
+            <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
+              {t.nav.bookNow}
+            </a>
+          </Button>
+          <div className="hidden lg:block">
+            <LanguageSelector />
+          </div>
+          <button
+            type="button"
+            onClick={() => setMobileOpen((prev) => !prev)}
+            className="inline-flex items-center justify-center rounded-md bg-[#2C2C2C]/70 p-2 text-[#F5F1EC] transition-colors hover:bg-[#3A3A3A] lg:hidden"
+            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+          >
+            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
+      </div>
+      {mobileOpen && renderMobileMenu()}
     </nav>
   )
 }

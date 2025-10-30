@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { LanguageProvider } from './contexts/LanguageContext'
 import { AuthProvider, useAuth } from './contexts/AuthContext'
 import { MaintenancePage } from './components/pages/MaintenancePage'
+import ScrollToTop from './components/ScrollToTop'
 import Homepage from './components/Homepage'
 import AboutPage from './components/pages/AboutPage'
 import ContactPage from './components/pages/ContactPage'
@@ -150,6 +151,7 @@ export default function App() {
     <AuthProvider>
       <LanguageProvider>
         <BrowserRouter>
+          <ScrollToTop />
           <AppRoutes />
         </BrowserRouter>
       </LanguageProvider>

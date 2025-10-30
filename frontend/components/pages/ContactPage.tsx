@@ -183,15 +183,19 @@ export default function ContactPage() {
                           <p className="text-gray-700">{location.address}</p>
                         </div>
                         <div className="flex items-center">
-                          <Phone className="w-5 h-5 text-[#284139] mr-3" />
-                          <p className="text-gray-700">{location.phone}</p>
-                        </div>
+                        <Phone className="w-5 h-5 text-[#284139] mr-3" />
+                        <a href={`tel:${location.phone.replace(/\s/g, '')}`} className="text-gray-700 hover:text-[#284139] transition-colors">
+                            {location.phone}
+                  </a>
+                </div>
                         {location.email && (
-                          <div className="flex items-center">
-                            <Mail className="w-5 h-5 text-[#284139] mr-3" />
-                            <p className="text-gray-700">{location.email}</p>
-                          </div>
-                        )}
+                        <div className="flex items-center">
+                        <Mail className="w-5 h-5 text-[#284139] mr-3" />
+                        <a href={`mailto:${location.email}`} className="text-gray-700 hover:text-[#284139] transition-colors">
+                            {location.email}
+                            </a>
+                  </div>
+                )}
                       </div>
                       
                       <div className="flex space-x-3 mt-6">
@@ -203,12 +207,15 @@ export default function ContactPage() {
                           {t.buttons.getDirections}
                         </Button>
                         <Button 
-                          size="sm" 
-                          variant="outline"
+                        asChild
+                        size="sm" 
+                        variant="outline"
                           className="border-[#284139] text-[#284139] hover:bg-[#284139] hover:text-white"
                         >
-                          {t.buttons.bookNow}
-                        </Button>
+                          <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
+                    {t.buttons.bookNow}
+                  </a>
+                </Button>
                       </div>
                     </div>
                   </div>
@@ -250,7 +257,9 @@ export default function ContactPage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-gray-700 text-sm">{londonLocation?.address || ''}</p>
-                    <p className="text-[#284139] font-medium">{londonLocation?.phone || ''}</p>
+                    <a href={`tel:${(londonLocation?.phone || '').replace(/\s/g, '')}`} className="text-[#284139] font-medium hover:underline">
+                    {londonLocation?.phone || ''}
+                  </a>
                   </div>
                   <Button
                     size="sm"
@@ -285,7 +294,9 @@ export default function ContactPage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-gray-700 text-sm">{edinburghLocation?.address || ''}</p>
-                    <p className="text-[#284139] font-medium">{edinburghLocation?.phone || ''}</p>
+                    <a href={`tel:${(edinburghLocation?.phone || '').replace(/\s/g, '')}`} className="text-[#284139] font-medium hover:underline">
+                    {edinburghLocation?.phone || ''}
+                  </a>
                   </div>
                   <Button
                     size="sm"
@@ -318,20 +329,26 @@ export default function ContactPage() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                size="lg" 
+              asChild
+              size="lg" 
                 className="bg-[#F8D794] hover:bg-[#B86330] text-[#111A19] px-8 py-4"
               >
-                <Phone className="w-5 h-5 mr-2" />
+              <a href={`tel:${t.contact.primaryPhoneNumber.replace(/\s/g, '')}`}>
+                  <Phone className="w-5 h-5 mr-2" />
                 {t.buttons.callNow}
-              </Button>
+              </a>
+            </Button>
               
               <Button 
-                size="lg" 
+              asChild
+              size="lg" 
                 className="bg-[#25D366] hover:bg-[#128C7E] text-white px-8 py-4"
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
+              <a href="https://wa.me/442072018595" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5 mr-2" />
                 {t.buttons.whatsapp}
-              </Button>
+              </a>
+            </Button>
             </div>
           </div>
         </section>
