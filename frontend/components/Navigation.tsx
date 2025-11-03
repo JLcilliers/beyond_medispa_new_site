@@ -321,7 +321,7 @@ export default function Navigation() {
 
   return (
     <nav className="fixed left-0 right-0 top-0 z-50 bg-[#1B1B1B]/95 backdrop-blur-sm shadow-[0_2px_12px_rgba(0,0,0,0.25)]">
-      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4">
+      <div className="flex h-20 items-center justify-between px-4">
         <Link to="/" className="flex items-center" aria-label="Beyond MediSpa home">
           <img
             src="https://i.ibb.co/B52LXBrt/Untitled-design-28.png"
