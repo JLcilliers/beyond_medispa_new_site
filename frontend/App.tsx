@@ -11,7 +11,6 @@ import DoctorsPage from './components/pages/DoctorsPage'
 import LocationsPage from './components/pages/LocationsPage'
 import LondonPage from './components/pages/LondonPage'
 import EdinburghPage from './components/pages/EdinburghPage'
-import BridgeenKingPage from './components/pages/BridgeenKingPage'
 import BookTreatmentPage from './components/pages/BookTreatmentPage'
 import FillersLondonPage from './components/pages/locations/FillersLondonPage'
 import FacialPage from './components/pages/procedures/FacialPage'
@@ -85,7 +84,6 @@ function AppRoutes() {
         <Route path="/locations" element={<LocationsPage />} />
         <Route path="/london" element={<LondonPage />} />
         <Route path="/edinburgh" element={<EdinburghPage />} />
-        <Route path="/bridgeen-king" element={<BridgeenKingPage />} />
         <Route path="/book-treatment" element={<BookTreatmentPage />} />
         <Route path="/procedures/facial" element={<FacialPage />} />
         <Route path="/procedures/injectables" element={<InjectablesPage />} />

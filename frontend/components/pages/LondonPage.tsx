@@ -62,23 +62,23 @@ const treatments = [
 
 const faqs = [
   {
-    question: 'Where is Beyond Aesthetic Clinic London located?',
-    answer: 'Beyond Aesthetic Clinic London is situated on the fourth floor of Harvey Nichols in Knightsbridge, just a short walk from Knightsbridge tube station. Our luxury aesthetic clinic provides world-class beauty and skin treatments in a tranquil setting.'
+    question: 'Where is Beyond MediSpa London located?',
+    answer: 'Beyond MediSpa London is situated on the fourth floor of Harvey Nichols in Knightsbridge, just a short walk from Knightsbridge tube station. Our luxury aesthetic clinic provides world-class beauty and skin treatments in a tranquil setting.'
   },
   {
-    question: 'What treatments are available at Beyond Aesthetic Clinic London?',
+    question: 'What treatments are available at Beyond MediSpa London?',
     answer: 'We offer a wide range of advanced aesthetic and medical-grade treatments, including skin tightening, dermal fillers, facial treatments, body contouring, laser hair removal, fat reduction and more. Our expert team provides tailored solutions to enhance your natural beauty.'
   },
   {
-    question: 'Why should I choose Beyond Aesthetic Clinic London beauty clinic?',
-    answer: 'As a leading London beauty clinic, Beyond Aesthetic Clinic has been trusted since 2006 for its exceptional results. We combine the latest medical aesthetics with a holistic approach to skincare, ensuring you achieve confidence-boosting, natural-looking results.'
+    question: 'Why should I choose Beyond MediSpa London beauty clinic?',
+    answer: 'As a leading London beauty clinic, Beyond MediSpa has been trusted since 2006 for its exceptional results. We combine the latest medical aesthetics with a holistic approach to skincare, ensuring you achieve confidence-boosting, natural-looking results.'
   },
   {
-    question: 'Are treatments at Beyond Aesthetic Clinic performed by professionals?',
+    question: 'Are treatments at Beyond MediSpa performed by professionals?',
     answer: 'Yes, all treatments are performed by experienced doctors, nurse prescribers, and expert aestheticians. We are committed to safety, precision, and delivering outstanding patient care.'
   },
   {
-    question: 'Can I book a beauty consultation at Beyond Aesthetic Clinic London?',
+    question: 'Can I book a beauty consultation at Beyond MediSpa London?',
     answer: 'Absolutely! We offer personalised consultations to assess your skincare needs, fine lines, facial treatments, and body sculpting goals. Our specialists will recommend the best treatments for you. Book an appointment online or call us today.'
   },
   {
@@ -86,7 +86,7 @@ const faqs = [
     answer: 'Yes, we specialise in non-invasive and minimally invasive treatments, including anti-wrinkle injections, laser skin treatments, dermal fillers, and body sculpting technologies that require little to no downtime.'
   },
   {
-    question: 'How much do treatments cost at Beyond Aesthetic Clinic London?',
+    question: 'How much do treatments cost at Beyond MediSpa London?',
     answer: 'Prices vary depending on the treatment and the personalised plan we create for you. Our team will discuss costs during your consultation. We offer a wide range of aesthetic treatments at competitive prices.'
   },
   {
@@ -94,7 +94,7 @@ const faqs = [
     answer: 'We stock a curated selection of premium skincare products to complement your treatment plan, ensuring long-term skin health and beauty maintenance. Visit our online shop or speak to our experts for personalised recommendations.'
   },
   {
-    question: 'How do I book an appointment at Beyond Aesthetic Clinic London?',
+    question: 'How do I book an appointment at Beyond MediSpa London?',
     answer: 'You can book online, call our team at 0345 548 1151, or visit us at Harvey Nichols, Knightsbridge. Our expert team is ready to help you achieve your beauty goals with confidence.'
   }
 ]
@@ -117,7 +117,7 @@ export default function LondonPage() {
                 Advanced medical and aesthetic treatments in the heart of Knightsbridge
               </h3>
               <p className="text-xl text-white/90 leading-relaxed mb-12">
-                At Beyond Aesthetic Clinic in London, we blend science and artistry to offer next-generation aesthetic treatments tailored to your unique beauty goals. Located in Harvey Nichols, our state-of-the-art clinic provides a luxurious and relaxing environment where expert care meets cutting-edge technology.
+                At Beyond MediSpa in London, we blend science and artistry to offer next-generation aesthetic treatments tailored to your unique beauty goals. Located in Harvey Nichols, our state-of-the-art clinic provides a luxurious and relaxing environment where expert care meets cutting-edge technology.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/book-treatment">
@@ -129,7 +129,7 @@ export default function LondonPage() {
                 <a href="tel:03455481151">
                   <Button variant="outline" className="border-2 border-[#C6A77D] text-[#C6A77D] hover:bg-[#C6A77D] hover:text-white px-8 py-4 text-lg">
                     <Phone className="mr-2 w-5 h-5" />
-                    03455 481151
+                    0345 548 1151
                   </Button>
                 </a>
               </div>
@@ -153,7 +153,7 @@ export default function LondonPage() {
                 World-Class <span className="text-[#A38E78]">Aesthetic Care</span>
               </h2>
               <p className="text-xl text-[#777777] max-w-4xl mx-auto mb-8">
-                Since 2006, Beyond Aesthetic Clinic has been a leader in medical aesthetics, offering a comprehensive range of treatments designed to rejuvenate, restore, and enhance your natural beauty. From anti-aging solutions to skin-perfecting therapies, our expert team ensures that every treatment is delivered with precision and care.
+                Since 2006, Beyond MediSpa has been a leader in medical aesthetics, offering a comprehensive range of treatments designed to rejuvenate, restore, and enhance your natural beauty. From anti-aging solutions to skin-perfecting therapies, our expert team ensures that every treatment is delivered with precision and care.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/about">
@@ -179,7 +179,7 @@ export default function LondonPage() {
             <div className="text-center mb-16">
               <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">THE PREMIER LONDON BEAUTY CLINIC</h4>
               <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-12">
-                Why Choose <span className="text-[#A38E78]">Beyond Aesthetic Clinic?</span>
+                Why Choose <span className="text-[#A38E78]">Beyond MediSpa?</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-5 gap-8 max-w-6xl mx-auto mb-12">
@@ -255,7 +255,7 @@ export default function LondonPage() {
             <div className="text-center mb-12">
               <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">GALLERY</h4>
               <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-                Inside <span className="text-[#A38E78]">Beyond Aesthetic Clinic London Beauty Clinic</span>
+                Inside <span className="text-[#A38E78]">Beyond MediSpa London Beauty Clinic</span>
               </h2>
             </div>
           </div>
@@ -335,7 +335,7 @@ export default function LondonPage() {
                 Visit Our London Beauty Clinic Today
               </h2>
               <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-                Experience the highest level of aesthetic expertise at Beyond Aesthetic Clinic London beauty clinic. Book your consultation today.
+                Experience the highest level of aesthetic expertise at Beyond MediSpa London beauty clinic. Book your consultation today.
               </p>
               <Link to="/book-treatment">
                 <Button size="lg" className="bg-white text-[#A38E78] hover:bg-white/90 px-8 py-4 text-lg">

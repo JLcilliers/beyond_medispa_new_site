@@ -2,6 +2,7 @@ import Navigation from './Navigation'
 import HeroSection from './HeroSection'
 import WhyChooseUsSection from './WhyChooseUsSection'
 import ServicesOverview from './ServicesOverview'
+import GetMoreSection from './GetMoreSection'
 import ProgramSection from './ProgramSection'
 import ExpertMedicineSection from './ExpertMedicineSection'
 import Locations from './Locations'
@@ -15,6 +16,7 @@ export default function Homepage() {
       <HeroSection />
       <WhyChooseUsSection />
       <ServicesOverview />
+      <GetMoreSection />
       <ProgramSection />
       <ExpertMedicineSection />
       <Locations />

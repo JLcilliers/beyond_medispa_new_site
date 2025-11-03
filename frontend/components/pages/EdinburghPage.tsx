@@ -8,11 +8,11 @@ import { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 
 const whyChoose = [
-  { icon: Award, title: 'Medical-grade treatments by expert professionals' },
-  { icon: MapPin, title: 'Conveniently located in Edinburgh city centre' },
-  { icon: Heart, title: 'Personalised care tailored to your needs' },
-  { icon: Shield, title: 'State-of-the-art technology and techniques' },
-  { icon: Star, title: 'Trusted brand with exceptional results' }
+  { icon: Award, title: 'Award-winning aesthetic experts with medical credentials' },
+  { icon: MapPin, title: 'Exclusive clinic inside Harvey Nichols, Edinburgh city centre' },
+  { icon: Heart, title: 'Personalised treatment plans for natural-looking confidence' },
+  { icon: Shield, title: 'State-of-the-art technologies including lasers, HIFU, and regenerative care' },
+  { icon: Star, title: 'Trusted by clients across Scotland for exceptional results' }
 ]
 
 const journey = [
@@ -43,7 +43,7 @@ const treatments = [
   {
     tag: 'YOUR IDEAL SILHOUETTE',
     title: 'Body Contouring',
-    description: 'Beyond Aesthetic Clinic Edinburgh offers non-invasive body sculpting treatments such as fat freezing, skin tightening, and cellulite reduction to help shape and tone your body for a sleek, contoured look.',
+    description: 'Beyond MediSpa Edinburgh offers non-invasive body sculpting treatments such as fat freezing, skin tightening, and cellulite reduction to help shape and tone your body for a sleek, contoured look.',
     link: '/edinburgh/body'
   },
   {
@@ -62,7 +62,7 @@ const treatments = [
 
 const faqs = [
   {
-    question: 'Where is Beyond Aesthetic Clinic Edinburgh located?',
+    question: 'Where is Beyond MediSpa Edinburgh located?',
     answer: 'Our Edinburgh clinic is conveniently located on the second floor of Harvey Nichols, 30-34 St Andrew Square, in the heart of the city. Easily accessible from Hanover Street and Easter Road, we offer world-class aesthetic treatments in a luxurious, professional setting.'
   },
   {
@@ -70,11 +70,11 @@ const faqs = [
     answer: 'We provide a full range of medical aesthetics, including anti-wrinkle injections, dermal fillers, fat loss injections, HIFU skin tightening, laser hair removal, skin rejuvenation, and body contouring. Our expert team personalises every procedure to enhance your natural beauty with amazing results.'
   },
   {
-    question: 'Who performs the treatments at Beyond Aesthetic Clinic Edinburgh?',
+    question: 'Who performs the treatments at Beyond MediSpa Edinburgh?',
     answer: 'Our treatments are carried out by experienced consultants, leading aesthetic professionals, and our specialist medical aesthetics team. With many years of expertise, we ensure the highest standards of care, safety, and natural-looking results.'
   },
   {
-    question: 'What makes Beyond Aesthetic Clinic different from other aesthetic clinics in Edinburgh?',
+    question: 'What makes Beyond MediSpa different from other aesthetic clinics in Edinburgh?',
     answer: 'We combine science and artistry to deliver medical-grade treatments tailored to each patient. Our clinic is part of a trusted brand with locations in London and Edinburgh, known for providing exceptional patient care, innovative procedures, and real patient transformations.'
   },
   {
@@ -86,7 +86,7 @@ const faqs = [
     answer: 'We offer a range of skin rejuvenation procedures, including laser treatments, skin peels, and non-surgical facelifts. Whether you\'re looking to reduce fine lines, improve skin texture, or achieve a more youthful glow, we have options for every skin type.'
   },
   {
-    question: 'Do you offer laser hair removal at Beyond Aesthetic Clinic Edinburgh?',
+    question: 'Do you offer laser hair removal at Beyond MediSpa Edinburgh?',
     answer: 'Yes! Our laser hair removal services deliver long-lasting results for smooth skin. This non-invasive procedure effectively removes unwanted hair on the face, body, and legs, helping you enjoy hair-free confidence.'
   },
   {
@@ -98,11 +98,11 @@ const faqs = [
     answer: 'Yes. We provide comprehensive aftercare to ensure you achieve the best results. Our team offers skincare advice, premium aftercare products, and ongoing support for long-term beauty maintenance.'
   },
   {
-    question: 'Is Beyond Aesthetic Clinic Edinburgh suitable for both men and women?',
+    question: 'Is Beyond MediSpa Edinburgh suitable for both men and women?',
     answer: 'Absolutely! We offer aesthetic procedures tailored for both women and men, including anti-wrinkle injections, skin treatments, and body contouring. Our team ensures natural, confidence-boosting results for every patient.'
   },
   {
-    question: 'How do I book an appointment at Beyond Aesthetic Clinic Edinburgh?',
+    question: 'How do I book an appointment at Beyond MediSpa Edinburgh?',
     answer: 'You can call us at 0345 548 1151, email edinburgh@beyondmedispa.co.uk, or use our online booking system. Our team is ready to assist you with expert advice and tailored treatment recommendations.'
   }
 ]
@@ -125,7 +125,7 @@ export default function EdinburghPage() {
                 State-of-the-art medical and aesthetic treatments in Edinburgh
               </h3>
               <p className="text-xl text-white/90 leading-relaxed mb-12">
-                Welcome to Beyond Aesthetic Clinic, the premier aesthetic clinic in Edinburgh, located on the second floor of Harvey Nichols. Our expert doctors and aesthetic specialists provide cutting-edge beauty treatments designed to enhance your natural beauty with tailored, medical-grade solutions. Achieve your desired look with our advanced skincare, body sculpting, and rejuvenation therapies.
+                Welcome to Beyond MediSpa, the premier aesthetic clinic in Edinburgh, located on the second floor of Harvey Nichols. Our expert doctors and aesthetic specialists provide cutting-edge beauty treatments designed to enhance your natural beauty with tailored, medical-grade solutions. Achieve your desired look with our advanced skincare, body sculpting, and rejuvenation therapies.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/book-treatment">
@@ -137,7 +137,7 @@ export default function EdinburghPage() {
                 <a href="tel:03455481151">
                   <Button variant="outline" className="border-2 border-[#C6A77D] text-[#C6A77D] hover:bg-[#C6A77D] hover:text-white px-8 py-4 text-lg">
                     <Phone className="mr-2 w-5 h-5" />
-                    03455 481151
+                    0345 548 1151
                   </Button>
                 </a>
               </div>
@@ -161,7 +161,7 @@ export default function EdinburghPage() {
                 The Gold Standard In <span className="text-[#A38E78]">Medical Aesthetics</span>
               </h2>
               <p className="text-xl text-[#777777] max-w-4xl mx-auto mb-8">
-                At Beyond Aesthetic Clinic Edinburgh, we blend science and artistry to offer advanced aesthetic treatments with a personalised approach. From anti-wrinkle injections and dermal fillers to skin rejuvenation and non-invasive body contouring, our treatments help you achieve youthful, radiant skin while maintaining natural-looking results.
+                At Beyond MediSpa Edinburgh, we blend science and artistry to offer advanced aesthetic treatments with a personalised approach. From anti-wrinkle injections and dermal fillers to skin rejuvenation and non-invasive body contouring, our treatments help you achieve youthful, radiant skin while maintaining natural-looking results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/about">
@@ -187,7 +187,7 @@ export default function EdinburghPage() {
             <div className="text-center mb-16">
               <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">THE PREMIER AESTHETIC CLINIC IN EDINBURGH</h4>
               <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-12">
-                Why Choose <span className="text-[#A38E78]">Beyond Aesthetic Clinic?</span>
+                Why Choose <span className="text-[#A38E78]">Beyond MediSpa?</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-5 gap-8 max-w-6xl mx-auto mb-12">
@@ -238,7 +238,7 @@ export default function EdinburghPage() {
                 Welcome To Our <span className="text-[#A38E78]">Aesthetic Clinic In Edinburgh</span>
               </h2>
               <p className="text-xl text-[#777777] max-w-3xl mx-auto mb-8">
-                Experience the best in medical aesthetics and skincare at Beyond Aesthetic Clinic Edinburgh. Our specialists provide tailored treatments for skin rejuvenation, body contouring, and facial aesthetics.
+                Experience the best in medical aesthetics and skincare at Beyond MediSpa Edinburgh. Our specialists provide tailored treatments for skin rejuvenation, body contouring, and facial aesthetics.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/book-treatment">
@@ -263,7 +263,7 @@ export default function EdinburghPage() {
             <div className="text-center mb-12">
               <h4 className="text-sm text-[#A38E78] font-semibold tracking-wider mb-4">GALLERY</h4>
               <h2 className="text-4xl lg:text-5xl font-light text-[#333333] mb-6">
-                Inside <span className="text-[#A38E78]">Beyond Aesthetic Clinic In Edinburgh</span>
+                Inside <span className="text-[#A38E78]">Beyond MediSpa In Edinburgh</span>
               </h2>
             </div>
           </div>
@@ -343,7 +343,7 @@ export default function EdinburghPage() {
                 Visit Our Aesthetic Clinic In Edinburgh Today
               </h2>
               <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-                Begin your beauty transformation at Beyond Aesthetic Clinic Edinburgh. Our expert practitioners are ready to help you achieve your skincare and body goals with tailored aesthetic treatments.
+                Begin your beauty transformation at Beyond MediSpa Edinburgh. Our expert practitioners are ready to help you achieve your skincare and body goals with tailored aesthetic treatments.
               </p>
               <Link to="/book-treatment">
                 <Button size="lg" className="bg-white text-[#A38E78] hover:bg-white/90 px-8 py-4 text-lg">

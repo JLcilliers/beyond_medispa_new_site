@@ -18,14 +18,17 @@ export default function ProgramSection() {
     <section className="bg-[#111A19] py-20 text-white">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-center">
         <div className="lg:w-1/2">
-          <p className="text-xs uppercase tracking-[0.35em] text-[#C6A77D]">Inside Our Clinics</p>
+          <p className="text-xs uppercase tracking-[0.35em] text-[#C6A77D]">Gallery Highlights</p>
           <h2 className="mt-4 text-4xl font-light leading-tight lg:text-5xl">
-            Experience Beyond MediSpa in London &amp; Edinburgh
+            Inside Beyond MediSpa London &amp; Edinburgh
           </h2>
           <p className="mt-6 text-base leading-relaxed text-white/70">
-            Step into calming, contemporary spaces designed for exceptional care. Our Harley Street and Edinburgh
-            clinics pair advanced medical aesthetics with a warm welcome, so every visit feels tailored, private, and
-            reassuring from the moment you arrive.
+            Take a look inside our Knightsbridge and Edinburgh clinics—serene reception spaces, private consultation
+            rooms, and calming treatment suites curated for every stage of your aesthetic journey.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-white/70">
+            Visit us at Harvey Nichols in London's Knightsbridge and on St Andrew Square in Edinburgh to experience
+            doctor-led treatments delivered in luxurious surroundings that feel as welcoming as they are advanced.
           </p>
         </div>
         <div className="grid gap-4 lg:w-1/2">
