@@ -324,8 +324,8 @@ export default function Navigation() {
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4">
         <Link to="/" className="flex items-center" aria-label="Beyond MediSpa home">
           <img
-            src="/beyond-logo.png"
-            alt="Beyond MediSpa logo"
+            src="https://i.ibb.co/B52LXBrt/Untitled-design-28.png"
+            alt="Beyond MediSpa"
             className="h-12 w-auto transition-transform duration-200 hover:scale-[1.02]"
           />
         </Link>
