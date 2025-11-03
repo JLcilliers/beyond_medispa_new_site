@@ -60,20 +60,20 @@ export default function Navigation() {
     ],
     categories: [
       {
+        title: t.treatments.body,
+        route: '/london/body',
+        items: [
+          { name: t.treatmentNames.coolSculpting, route: '/procedures/body/coolsculpting' },
+          { name: viewAllLabel, route: '/london/body', isSeeAll: true }
+        ]
+      },
+      {
         title: t.treatments.facial,
         route: '/london/facial',
         items: [
           { name: t.treatmentNames.zo, route: '/procedures/peels/zo-london' },
           { name: t.treatmentNames.hydraTite, route: '/procedures/facial/hydratite' },
           { name: viewAllLabel, route: '/london/facial', isSeeAll: true }
-        ]
-      },
-      {
-        title: t.treatments.body,
-        route: '/london/body',
-        items: [
-          { name: t.treatmentNames.coolSculpting, route: '/procedures/body/coolsculpting' },
-          { name: viewAllLabel, route: '/london/body', isSeeAll: true }
         ]
       },
       {
@@ -98,10 +98,19 @@ export default function Navigation() {
       { name: t.treatmentNames.microneedling, route: '/procedures/facial/microneedling-edinburgh' },
       { name: t.treatmentNames.exosome, route: '/procedures/facial/exosome' },
       { name: t.treatmentNames.exilis, route: '/procedures/body/exilis' },
+      { name: t.treatmentNames.hifu, route: '/procedures/body/hifu' },
       { name: t.treatmentNames.coolLaser, route: '/procedures/body/cool-laser' },
       { name: t.treatmentNames.electrolysis, route: '/procedures/body/electrolysis' }
     ],
     categories: [
+      {
+        title: t.treatments.body,
+        route: '/edinburgh/body',
+        items: [
+          { name: t.treatmentNames.laserHairRemoval, route: '/procedures/body/laser-hair-removal' },
+          { name: viewAllLabel, route: '/edinburgh/body', isSeeAll: true }
+        ]
+      },
       {
         title: t.treatments.facial,
         route: '/edinburgh/facial',
@@ -109,14 +118,6 @@ export default function Navigation() {
           { name: t.treatmentNames.zo, route: '/procedures/peels/zo-edinburgh' },
           { name: t.treatmentNames.hydraTite, route: '/procedures/facial/hydratite' },
           { name: viewAllLabel, route: '/edinburgh/facial', isSeeAll: true }
-        ]
-      },
-      {
-        title: t.treatments.body,
-        route: '/edinburgh/body',
-        items: [
-          { name: t.treatmentNames.laserHairRemoval, route: '/procedures/body/laser-hair-removal' },
-          { name: viewAllLabel, route: '/edinburgh/body', isSeeAll: true }
         ]
       },
       {
@@ -150,20 +151,19 @@ export default function Navigation() {
 
   const renderLocationDropdown = (menu: LocationMenu) => (
     <div className="relative group" key={menu.name}>
-      <button className="flex items-center gap-1 py-2 text-sm font-medium text-[#F5F1EC] transition-colors hover:text-[#C6A77D] focus-visible:outline-none">
+      <button className="flex items-center gap-1 py-2 text-base font-medium text-[#F5F1EC] transition-colors hover:text-[#C6A77D] focus-visible:outline-none">
         {menu.name}
         <ChevronDown className="h-4 w-4" />
       </button>
       <div className="absolute left-1/2 top-full hidden w-[900px] -translate-x-1/2 rounded-2xl bg-white p-8 shadow-2xl ring-1 ring-black/5 group-hover:block">
         <div className="grid gap-8 lg:grid-cols-[minmax(220px,260px)_repeat(3,minmax(170px,1fr))]">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9C8A76]">{SPECIALITIES_LABEL}</p>
             <div className="mt-4 space-y-3">
               {menu.featured.map((item) => (
                 <Link
                   key={item.route}
                   to={item.route}
-                  className="flex items-center justify-between rounded-lg border border-transparent px-3 py-2 text-sm font-medium text-[#2C2C2C] transition-colors hover:border-[#E6DED3] hover:text-[#8F7657]"
+                  className="flex items-center justify-between rounded-lg border border-transparent px-3 py-2 text-base font-medium text-[#2C2C2C] transition-colors hover:border-[#E6DED3] hover:text-[#8F7657]"
                 >
                   <span>{item.name}</span>
                   {item.badge ? (
@@ -179,18 +179,17 @@ export default function Navigation() {
             <div key={category.title}>
               <Link
                 to={category.route}
-                className="flex items-center justify-between text-sm font-semibold text-[#2C2C2C] transition-colors hover:text-[#8F7657]"
+                className="flex items-center justify-between text-base font-semibold text-[#2C2C2C] transition-colors hover:text-[#8F7657]"
               >
                 {category.title}
                 <ChevronRight className="h-4 w-4 text-[#C6A77D]" />
               </Link>
-              <p className="mt-1 text-xs uppercase tracking-[0.2em] text-[#B5A68B]">{OTHER_OPTIONS_LABEL}</p>
               <div className="mt-3 space-y-2">
                 {category.items.map((item) => (
                   <Link
                     key={item.route}
                     to={item.route}
-                    className={`block rounded-md px-2 py-2 text-sm transition-colors ${
+                    className={`block rounded-md px-2 py-2 text-base transition-colors ${
                       item.isSeeAll
                         ? 'text-[#8F7657] hover:bg-[#F5EFE6]/70 font-semibold'
                         : 'text-[#4B4B4B] hover:bg-[#F5EFE6]/60'
@@ -215,7 +214,7 @@ export default function Navigation() {
             <Link
               key={item.route}
               to={item.route}
-              className="text-sm font-medium text-[#F5F1EC] transition-colors hover:text-[#C6A77D]"
+              className="text-base font-medium text-[#F5F1EC] transition-colors hover:text-[#C6A77D]"
             >
               {item.name}
             </Link>
@@ -333,14 +332,14 @@ export default function Navigation() {
         <div className="flex items-center gap-3">
           <a
             href={phoneHref}
-            className="hidden items-center gap-2 text-sm font-medium text-[#F6F2EC] transition-colors hover:text-[#C6A77D] xl:flex"
+            className="hidden items-center gap-2 text-base font-medium text-[#F6F2EC] transition-colors hover:text-[#C6A77D] xl:flex"
           >
             <Phone className="h-4 w-4 text-[#C6A77D]" />
             <span>{primaryPhone}</span>
           </a>
           <Button
             asChild
-            className="hidden bg-[#C6A77D] px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#b49368] lg:inline-flex"
+            className="hidden bg-[#C6A77D] px-5 py-2 text-base font-semibold text-white transition-colors hover:bg-[#b49368] lg:inline-flex"
           >
             <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
               {t.nav.bookNow}

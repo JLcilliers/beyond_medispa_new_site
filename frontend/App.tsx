@@ -11,7 +11,9 @@ import DoctorsPage from './components/pages/DoctorsPage'
 import LocationsPage from './components/pages/LocationsPage'
 import LondonPage from './components/pages/LondonPage'
 import EdinburghPage from './components/pages/EdinburghPage'
+import BridgeenKingPage from './components/pages/BridgeenKingPage'
 import BookTreatmentPage from './components/pages/BookTreatmentPage'
+import FillersLondonPage from './components/pages/locations/FillersLondonPage'
 import FacialPage from './components/pages/procedures/FacialPage'
 import InjectablesPage from './components/pages/procedures/InjectablesPage'
 import BodyPage from './components/pages/procedures/BodyPage'
@@ -48,12 +50,9 @@ import AllergyPage from './components/pages/procedures/injectables/AllergyPage'
 import LaserHairRemovalPage from './components/pages/procedures/body/LaserHairRemovalPage'
 import CoolSculptingPage from './components/pages/procedures/body/CoolSculptingPage'
 import ExilisPage from './components/pages/procedures/body/ExilisPage'
-import VanquishPage from './components/pages/procedures/body/VanquishPage'
 import HifuPage from './components/pages/procedures/body/HifuPage'
-import CMSlimPage from './components/pages/procedures/body/CMSlimPage'
 import CoolLaserPage from './components/pages/procedures/body/CoolLaserPage'
 import ElectrolysisPage from './components/pages/procedures/body/ElectrolysisPage'
-import UnisonPage from './components/pages/procedures/body/UnisonPage'
 import Medik8EdinburghPage from './components/pages/procedures/peels/Medik8EdinburghPage'
 import Medik8LondonPage from './components/pages/procedures/peels/Medik8LondonPage'
 import ZOEdinburghPage from './components/pages/procedures/peels/ZOEdinburghPage'
@@ -86,6 +85,7 @@ function AppRoutes() {
         <Route path="/locations" element={<LocationsPage />} />
         <Route path="/london" element={<LondonPage />} />
         <Route path="/edinburgh" element={<EdinburghPage />} />
+        <Route path="/bridgeen-king" element={<BridgeenKingPage />} />
         <Route path="/book-treatment" element={<BookTreatmentPage />} />
         <Route path="/procedures/facial" element={<FacialPage />} />
         <Route path="/procedures/injectables" element={<InjectablesPage />} />
@@ -123,12 +123,9 @@ function AppRoutes() {
         <Route path="/procedures/body/laser-hair-removal" element={<LaserHairRemovalPage />} />
         <Route path="/procedures/body/coolsculpting" element={<CoolSculptingPage />} />
         <Route path="/procedures/body/exilis" element={<ExilisPage />} />
-        <Route path="/procedures/body/vanquish" element={<VanquishPage />} />
         <Route path="/procedures/body/hifu" element={<HifuPage />} />
-        <Route path="/procedures/body/cmslim" element={<CMSlimPage />} />
         <Route path="/procedures/body/cool-laser" element={<CoolLaserPage />} />
         <Route path="/procedures/body/electrolysis" element={<ElectrolysisPage />} />
-        <Route path="/procedures/body/unison" element={<UnisonPage />} />
         <Route path="/procedures/peels/medik8-edinburgh" element={<Medik8EdinburghPage />} />
         <Route path="/procedures/peels/medik8-london" element={<Medik8LondonPage />} />
         <Route path="/procedures/peels/zo-edinburgh" element={<ZOEdinburghPage />} />
@@ -141,6 +138,7 @@ function AppRoutes() {
         <Route path="/london/facial" element={<LondonFacialPage />} />
         <Route path="/edinburgh/facial" element={<EdinburghFacialPage />} />
         <Route path="/london/injectables" element={<LondonInjectablesPage />} />
+        <Route path="/london/fillers" element={<FillersLondonPage />} />
         <Route path="/edinburgh/injectables" element={<EdinburghInjectablesPage />} />
     </Routes>
   );
