@@ -158,7 +158,8 @@ export default function Navigation() {
       <div className="absolute left-1/2 top-full hidden w-[900px] -translate-x-1/2 rounded-2xl bg-white p-8 shadow-2xl ring-1 ring-black/5 group-hover:block">
         <div className="grid gap-8 lg:grid-cols-[minmax(220px,260px)_repeat(3,minmax(170px,1fr))]">
           <div>
-            <div className="mt-4 space-y-3">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#8F7657] mb-3">{SPECIALITIES_LABEL}</h3>
+            <div className="space-y-3">
               {menu.featured.map((item) => (
                 <Link
                   key={item.route}
@@ -179,10 +180,9 @@ export default function Navigation() {
             <div key={category.title}>
               <Link
                 to={category.route}
-                className="flex items-center justify-between text-base font-semibold text-[#2C2C2C] transition-colors hover:text-[#8F7657]"
+                className="block text-base font-semibold text-[#2C2C2C] transition-colors hover:text-[#8F7657]"
               >
                 {category.title}
-                <ChevronRight className="h-4 w-4 text-[#C6A77D]" />
               </Link>
               <div className="mt-3 space-y-2">
                 {category.items.map((item) => (
