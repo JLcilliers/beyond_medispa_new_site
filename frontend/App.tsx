@@ -65,6 +65,7 @@ import LondonFacialPage from './components/pages/locations/LondonFacialPage'
 import EdinburghFacialPage from './components/pages/locations/EdinburghFacialPage'
 import LondonInjectablesPage from './components/pages/locations/LondonInjectablesPage'
 import EdinburghInjectablesPage from './components/pages/locations/EdinburghInjectablesPage'
+import TinaCMSAdmin from './components/pages/TinaCMSAdmin'
 
 function AppRoutes() {
   const { isAuthenticated } = useAuth();
@@ -77,6 +78,7 @@ function AppRoutes() {
   // Show all routes if authenticated
   return (
     <Routes>
+        <Route path="/admin" element={<TinaCMSAdmin />} />
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />

@@ -297,7 +297,7 @@ export default function Navigation() {
           asChild
           className="inline-flex w-full justify-center bg-[#C6A77D] py-3 text-base font-semibold text-white hover:bg-[#b49368]"
         >
-          <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
+          <a href="https://www.beyondmedispa.com/book-treatment" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
             {t.nav.bookNow}
           </a>
         </Button>
@@ -331,7 +331,7 @@ export default function Navigation() {
             asChild
             className="hidden bg-[#C6A77D] px-5 py-2 text-base font-semibold text-white transition-colors hover:bg-[#b49368] lg:inline-flex"
           >
-            <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.beyondmedispa.com/book-treatment" target="_blank" rel="noopener noreferrer">
               {t.nav.bookNow}
             </a>
           </Button>

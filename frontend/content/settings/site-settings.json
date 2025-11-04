@@ -1,0 +1,23 @@
+{
+  "contact": {
+    "london": {
+      "phone": "+44 20 1234 5678",
+      "email": "london@beyondmedispa.com",
+      "address": "123 Knightsbridge, London SW1X 7XL",
+      "hours": "Mon-Fri: 9am-7pm, Sat: 10am-6pm, Sun: Closed"
+    },
+    "edinburgh": {
+      "phone": "+44 131 234 5678",
+      "email": "edinburgh@beyondmedispa.com",
+      "address": "St Andrew Square, Edinburgh EH2 2BD",
+      "hours": "Mon-Fri: 9am-6pm, Sat: 10am-5pm, Sun: Closed"
+    }
+  },
+  "social": {
+    "instagram": "https://instagram.com/beyondmedispa",
+    "facebook": "https://facebook.com/beyondmedispa",
+    "youtube": "https://youtube.com/@beyondmedispa",
+    "whatsapp": "+447123456789"
+  },
+  "bookingUrl": "https://book.beyondmedispa.com"
+}
