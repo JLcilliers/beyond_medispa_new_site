@@ -158,7 +158,7 @@ export default function Navigation() {
       <div className="absolute left-1/2 top-full hidden w-[900px] -translate-x-1/2 rounded-2xl bg-white p-8 shadow-2xl ring-1 ring-black/5 group-hover:block">
         <div className="grid gap-8 lg:grid-cols-[minmax(220px,260px)_repeat(3,minmax(170px,1fr))]">
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#8F7657] mb-3">{SPECIALITIES_LABEL}</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#2C2C2C] mb-3">{SPECIALITIES_LABEL}</h3>
             <div className="space-y-3">
               {menu.featured.map((item) => (
                 <Link
@@ -167,11 +167,6 @@ export default function Navigation() {
                   className="flex items-center justify-between rounded-lg border border-transparent px-3 py-2 text-base font-medium text-[#2C2C2C] transition-colors hover:border-[#E6DED3] hover:text-[#8F7657]"
                 >
                   <span>{item.name}</span>
-                  {item.badge ? (
-                    <span className="rounded-full bg-[#F2ECE3] px-2 py-[2px] text-xs font-semibold uppercase tracking-wide text-[#8F7657]">
-                      {item.badge}
-                    </span>
-                  ) : null}
                 </Link>
               ))}
             </div>
@@ -257,11 +252,6 @@ export default function Navigation() {
                         className="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-white hover:bg-white/10"
                       >
                         {featured.name}
-                        {featured.badge ? (
-                          <span className="rounded-full bg-[#C6A77D]/20 px-2 py-[2px] text-[10px] font-semibold uppercase tracking-wide text-[#EED9B7]">
-                            {featured.badge}
-                          </span>
-                        ) : null}
                       </Link>
                     ))}
                   </div>
