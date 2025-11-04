@@ -11,13 +11,14 @@ export default defineConfig({
   branch,
 
   // Get this from tina.io
-  clientId: process.env.VITE_TINA_CLIENT_ID,
+  // Use TINA_ for build time (server), VITE_TINA_ for runtime (browser)
+  clientId: process.env.TINA_CLIENT_ID || process.env.VITE_TINA_CLIENT_ID,
   // Get this from tina.io
-  token: process.env.VITE_TINA_TOKEN,
+  token: process.env.TINA_TOKEN || process.env.VITE_TINA_TOKEN,
 
   search: {
     tina: {
-      indexerToken: process.env.VITE_TINA_SEARCH_TOKEN,
+      indexerToken: process.env.TINA_SEARCH_TOKEN || process.env.VITE_TINA_SEARCH_TOKEN,
       stopwordLanguages: ['eng'],
     },
   },
