@@ -5,7 +5,15 @@
   "framework": null,
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/admin",
+      "destination": "/admin/index.html"
+    },
+    {
+      "source": "/admin/(.*)",
+      "destination": "/admin/$1"
+    },
+    {
+      "source": "/((?!admin).*)",
       "destination": "/index.html"
     }
   ],
