@@ -1,0 +1,39 @@
+{
+  "title": "Profhilo",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "BIO-REMODELLING",
+    "title": "Profhilo",
+    "subtitle": "Intense Hydration & Skin Quality",
+    "description": "Experience intense hydration and improved elasticity with Profhilo. This bio-remodelling treatment enhances skin quality in just 2 sessions, delivering a natural look with minimal downtime.",
+    "backgroundImage": "/profhilo-hero.png"
+  },
+  "treatmentInfo": {
+    "duration": "15–30 minutes",
+    "results": "Hydration/elasticity improve in 2–4 weeks; typically 2 sessions",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Intense hydration",
+      "Improves elasticity",
+      "Enhances skin quality",
+      "Minimal downtime",
+      "Natural look",
+      "Bio-remodelling"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "Profhilo",
+      "description": "通过Profhilo体验强效补水和改善弹性。这种生物重塑治疗仅需2次疗程即可增强皮肤质量，呈现自然外观，停机时间最少。"
+    },
+    "zhTW": {
+      "title": "Profhilo",
+      "description": "通過Profhilo體驗強效補水和改善彈性。這種生物重塑治療僅需2次療程即可增強皮膚質量，呈現自然外觀，停機時間最少。"
+    },
+    "ar": {
+      "title": "بروفيلو",
+      "description": "اختبر الترطيب المكثف وتحسين المرونة مع بروفيلو. يعزز علاج إعادة التشكيل الحيوي هذا جودة البشرة في جلستين فقط، مما يوفر مظهرًا طبيعيًا مع الحد الأدنى من فترة التوقف."
+    }
+  }
+}

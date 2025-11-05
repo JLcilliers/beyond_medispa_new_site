@@ -1,0 +1,39 @@
+{
+  "title": "Dermal Fillers",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "VOLUME & CONTOUR",
+    "title": "Dermal Fillers",
+    "subtitle": "Natural Enhancement & Rejuvenation",
+    "description": "Restore volume and sculpt contours with our dermal filler treatments. Immediate, customizable results smooth folds and enhance features with dissolvable HA technology.",
+    "backgroundImage": "/dermal-fillers-hero.png"
+  },
+  "treatmentInfo": {
+    "duration": "30–60 minutes",
+    "results": "Immediate results; settles over 1–2 weeks",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Restores volume",
+      "Sculpts contours",
+      "Smooths folds",
+      "Quick",
+      "Customisable",
+      "Dissolvable HA"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "真皮填充剂",
+      "description": "通过我们的真皮填充剂治疗恢复体积和雕刻轮廓。立即、可定制的效果平滑褶皱，使用可溶解的透明质酸技术增强特征。"
+    },
+    "zhTW": {
+      "title": "真皮填充劑",
+      "description": "通過我們的真皮填充劑治療恢復體積和雕刻輪廓。立即、可定制的效果平滑褶皺，使用可溶解的透明質酸技術增強特徵。"
+    },
+    "ar": {
+      "title": "حشوات الجلد",
+      "description": "استعادة الحجم ونحت الملامح من خلال علاجات حشو الجلد لدينا. نتائج فورية وقابلة للتخصيص تنعم الطيات وتعزز الملامح بتقنية حمض الهيالورونيك القابل للذوبان."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Polynucleotides",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "NATURAL REVITALIZATION",
+    "title": "Polynucleotides",
+    "subtitle": "Advanced Skin Regeneration",
+    "description": "Naturally revitalize your skin with polynucleotides. This innovative treatment improves elasticity, hydrates, reduces lines, and brightens, with excellent safety for delicate areas.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "30–45 minutes",
+    "results": "Skin quality improves in 2–6 weeks; course advised",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Naturally revitalises",
+      "Improves elasticity",
+      "Hydrates & smooths",
+      "Reduces lines",
+      "Brightens",
+      "Safe for delicate areas"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "多核苷酸",
+      "description": "使用多核苷酸自然地活化您的皮肤。这种创新治疗可改善弹性，补水，减少细纹，提亮，对敏感区域具有出色的安全性。"
+    },
+    "zhTW": {
+      "title": "多核苷酸",
+      "description": "使用多核苷酸自然地活化您的皮膚。這種創新治療可改善彈性，補水，減少細紋，提亮，對敏感區域具有出色的安全性。"
+    },
+    "ar": {
+      "title": "متعدد النيوكليوتيدات",
+      "description": "أعد تنشيط بشرتك بشكل طبيعي باستخدام متعدد النيوكليوتيدات. يحسن هذا العلاج المبتكر المرونة، ويرطب، ويقلل من الخطوط، ويضيء، مع أمان ممتاز للمناطق الحساسة."
+    }
+  }
+}

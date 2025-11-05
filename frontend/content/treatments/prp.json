@@ -1,0 +1,39 @@
+{
+  "title": "PRP Treatment",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "PLATELET-RICH PLASMA",
+    "title": "PRP Treatment",
+    "subtitle": "Natural Skin & Hair Rejuvenation",
+    "description": "Harness your body's natural healing power with PRP treatment. Using your own platelets, this therapy stimulates collagen, improves texture, supports hair growth, and aids healing with minimal downtime.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "45–60 minutes",
+    "results": "Texture/quality improves over 4–8 weeks; hair over months",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Uses your own platelets",
+      "Stimulates collagen",
+      "Improves texture",
+      "Supports hair growth",
+      "Minimal downtime",
+      "Aids healing"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "PRP治疗",
+      "description": "通过PRP治疗利用身体的自然愈合能力。使用您自己的血小板，这种疗法可刺激胶原蛋白，改善质地，支持头发生长，并帮助愈合，停机时间最少。"
+    },
+    "zhTW": {
+      "title": "PRP治療",
+      "description": "通過PRP治療利用身體的自然癒合能力。使用您自己的血小板，這種療法可刺激膠原蛋白，改善質地，支持頭髮生長，並幫助癒合，停機時間最少。"
+    },
+    "ar": {
+      "title": "علاج PRP",
+      "description": "استغل قوة الشفاء الطبيعية لجسمك مع علاج PRP. باستخدام الصفائح الدموية الخاصة بك، يحفز هذا العلاج الكولاجين، ويحسن الملمس، ويدعم نمو الشعر، ويساعد في الشفاء مع الحد الأدنى من فترة التوقف."
+    }
+  }
+}
