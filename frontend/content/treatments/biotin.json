@@ -1,0 +1,39 @@
+{
+  "title": "Biotin Injections",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "HAIR, SKIN & NAILS",
+    "title": "Biotin Injections",
+    "subtitle": "Beauty Vitamin Support",
+    "description": "Support healthy hair, skin, and nails with biotin injections. This beauty vitamin promotes strong, vibrant hair and nails while enhancing skin health.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "10–15 minutes",
+    "results": "Benefits typically seen over several weeks",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Supports hair, skin and nails",
+      "Healthy metabolism",
+      "Quick treatment",
+      "Adjunct for deficiency",
+      "Minimal downtime",
+      "Simple injection"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "生物素注射",
+      "description": "通过生物素注射支持健康的头发、皮肤和指甲。这种美容维生素促进强健、有活力的头发和指甲，同时增强皮肤健康。"
+    },
+    "zhTW": {
+      "title": "生物素注射",
+      "description": "透過生物素注射支持健康的頭髮、皮膚和指甲。這種美容維生素促進強健、有活力的頭髮和指甲，同時增強皮膚健康。"
+    },
+    "ar": {
+      "title": "حقن البيوتين",
+      "description": "ادعم صحة الشعر والبشرة والأظافر من خلال حقن البيوتين. يعزز فيتامين الجمال هذا الشعر والأظافر القوية والنابضة بالحياة مع تحسين صحة البشرة."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Allergy Testing",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "ALLERGY TESTING",
+    "title": "Allergy Testing",
+    "subtitle": "Comprehensive Allergy Assessment",
+    "description": "Identify your allergy triggers with comprehensive testing. Our expert clinicians provide thorough assessments to help you understand and manage your allergies effectively.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "30–60 minutes",
+    "results": "Results within days",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Identify triggers",
+      "Personalised treatment plan",
+      "Quick tests",
+      "Clinician supervised",
+      "Actionable advice",
+      "Long-term allergy control"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "过敏测试",
+      "description": "通过全面的测试识别您的过敏原。我们的专业临床医生提供彻底的评估，帮助您有效地了解和管理过敏症状。"
+    },
+    "zhTW": {
+      "title": "過敏測試",
+      "description": "透過全面的測試識別您的過敏原。我們的專業臨床醫生提供徹底的評估，幫助您有效地了解和管理過敏症狀。"
+    },
+    "ar": {
+      "title": "اختبار الحساسية",
+      "description": "حدد مسببات الحساسية لديك من خلال الاختبار الشامل. يقدم أطباؤنا الخبراء تقييمات شاملة لمساعدتك على فهم الحساسية وإدارتها بفعالية."
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "title": "Biofiller London",
+  "category": "injectables",
+  "location": "london",
+  "hero": {
+    "tagline": "ADVANCED REGENERATIVE AESTHETICS",
+    "title": "Biofiller London",
+    "subtitle": "Cutting-Edge Autologous Plasma Therapy in Knightsbridge",
+    "description": "Experience the future of facial rejuvenation with biofiller at Beyond Aesthetics London. Our state-of-the-art Knightsbridge clinic offers autologous plasma therapy for natural volume restoration and comprehensive skin regeneration.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "60–90 minutes including blood collection and plasma processing",
+    "results": "Immediate volumizing effect with continued skin regeneration over 4-8 weeks. Longevity of 12-18 months typical",
+    "price": "From £500 per treatment zone - Contact for bespoke consultation",
+    "benefits": [
+      "Autologous treatment",
+      "Instant volume addition",
+      "Triggers collagen synthesis",
+      "Zero allergy risk",
+      "Enhances skin quality",
+      "Perfect for sensitive areas",
+      "Immediate + regenerative benefits",
+      "Natural results",
+      "Brief recovery",
+      "Prestigious Knightsbridge location"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "伦敦生物填充",
+      "description": "在Beyond Aesthetics伦敦体验面部年轻化的未来。我们位于骑士桥的最先进诊所提供自体血浆疗法，用于自然容量恢复和全面皮肤再生。"
+    },
+    "zhTW": {
+      "title": "倫敦生物填充",
+      "description": "在Beyond Aesthetics倫敦體驗面部年輕化的未來。我們位於騎士橋的最先進診所提供自體血漿療法，用於自然容量恢復和全面皮膚再生。"
+    },
+    "ar": {
+      "title": "الحشو الحيوي في لندن",
+      "description": "اختبر مستقبل تجديد الوجه مع الحشو الحيوي في Beyond Aesthetics لندن. تقدم عيادتنا الحديثة في نايتسبريدج علاج البلازما الذاتية لاستعادة الحجم الطبيعي وتجديد البشرة الشامل."
+    }
+  }
+}

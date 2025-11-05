@@ -1,0 +1,39 @@
+{
+  "title": "Vitamin D Injections",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "SUNSHINE VITAMIN",
+    "title": "Vitamin D Injections",
+    "subtitle": "Energy & Immune Support",
+    "description": "Support your energy, health, and immune system with vitamin D injections. Essential for bone health, mood regulation, and overall vitality.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "10–15 minutes",
+    "results": "Levels improve over weeks",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Supports energy and health",
+      "Immune system support",
+      "Improved mood & wellbeing",
+      "Convenient dosing",
+      "Corrects deficiency",
+      "Quick injection"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "维生素D注射",
+      "description": "通过维生素D注射支持您的能量、健康和免疫系统。对骨骼健康、情绪调节和整体活力至关重要。"
+    },
+    "zhTW": {
+      "title": "維生素D注射",
+      "description": "透過維生素D注射支持您的能量、健康和免疫系統。對骨骼健康、情緒調節和整體活力至關重要。"
+    },
+    "ar": {
+      "title": "حقن فيتامين د",
+      "description": "ادعم طاقتك وصحتك وجهازك المناعي من خلال حقن فيتامين د. ضروري لصحة العظام وتنظيم المزاج والحيوية العامة."
+    }
+  }
+}

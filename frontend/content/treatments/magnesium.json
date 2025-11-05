@@ -1,0 +1,39 @@
+{
+  "title": "Magnesium Injections",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "MUSCLE & NERVE SUPPORT",
+    "title": "Magnesium Injections",
+    "subtitle": "Relief & Recovery",
+    "description": "Relieve muscle cramps and support nerve function with magnesium injections. This essential mineral helps with muscle recovery, relaxation, and overall wellbeing.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "10–15 minutes",
+    "results": "Muscle and nerve benefits may be felt over days",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Relieves muscle cramps",
+      "Supports nerve function",
+      "May aid sleep quality",
+      "Quick session",
+      "Addresses deficiency",
+      "Minimal downtime"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "镁注射",
+      "description": "通过镁注射缓解肌肉痉挛并支持神经功能。这种必需矿物质有助于肌肉恢复、放松和整体健康。"
+    },
+    "zhTW": {
+      "title": "鎂注射",
+      "description": "透過鎂注射緩解肌肉痙攣並支持神經功能。這種必需礦物質有助於肌肉恢復、放鬆和整體健康。"
+    },
+    "ar": {
+      "title": "حقن المغنيسيوم",
+      "description": "خفف تشنجات العضلات وادعم وظيفة الأعصاب من خلال حقن المغنيسيوم. يساعد هذا المعدن الأساسي في تعافي العضلات والاسترخاء والصحة العامة."
+    }
+  }
+}

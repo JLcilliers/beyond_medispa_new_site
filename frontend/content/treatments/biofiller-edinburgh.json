@@ -1,0 +1,43 @@
+{
+  "title": "Biofiller Edinburgh",
+  "category": "injectables",
+  "location": "edinburgh",
+  "hero": {
+    "tagline": "NATURAL REJUVENATION",
+    "title": "Biofiller Edinburgh",
+    "subtitle": "Autologous Plasma Volume Restoration in Scotland's Capital",
+    "description": "Discover the revolutionary biofiller treatment at Beyond Aesthetics Edinburgh. This innovative procedure uses your own blood plasma for natural volume restoration and skin rejuvenation, offering a safe and effective alternative to traditional dermal fillers.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "60–90 minutes including blood draw and preparation",
+    "results": "Immediate volume enhancement with progressive skin quality improvements over 4-8 weeks. Effects can last 12-18 months",
+    "price": "From £500 per treatment area - Contact for comprehensive consultation and pricing",
+    "benefits": [
+      "Uses your own plasma - 100% natural",
+      "Immediate volume restoration",
+      "Stimulates collagen production",
+      "No allergic reactions",
+      "Improves skin texture",
+      "Ideal for delicate areas",
+      "Dual action results",
+      "Natural-looking outcomes",
+      "Minimal downtime",
+      "Expert Edinburgh treatment"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "爱丁堡生物填充",
+      "description": "在Beyond Aesthetics爱丁堡发现革命性的生物填充疗法。这种创新程序使用您自己的血浆进行自然容量恢复和皮肤年轻化，提供了传统真皮填充剂的安全有效替代方案。"
+    },
+    "zhTW": {
+      "title": "愛丁堡生物填充",
+      "description": "在Beyond Aesthetics愛丁堡發現革命性的生物填充療法。這種創新程序使用您自己的血漿進行自然容量恢復和皮膚年輕化，提供了傳統真皮填充劑的安全有效替代方案。"
+    },
+    "ar": {
+      "title": "الحشو الحيوي في إدنبرة",
+      "description": "اكتشف علاج الحشو الحيوي الثوري في Beyond Aesthetics إدنبرة. يستخدم هذا الإجراء المبتكر البلازما الخاصة بك لاستعادة الحجم الطبيعي وتجديد البشرة، مما يوفر بديلاً آمناً وفعالاً لحشوات الجلد التقليدية."
+    }
+  }
+}

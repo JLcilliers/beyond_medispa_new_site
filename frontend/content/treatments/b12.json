@@ -1,0 +1,39 @@
+{
+  "title": "B12 Injections",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "VITAMIN B12 INJECTION",
+    "title": "B12 Injections",
+    "subtitle": "Energy & Wellbeing Boost",
+    "description": "Address B12 deficiency and support energy metabolism with targeted vitamin B12 injections. Experience improved energy levels and overall wellbeing.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "10–15 minutes",
+    "results": "Energy and wellbeing may improve over days to weeks",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Addresses B12 deficiency",
+      "Supports energy metabolism",
+      "Nervous system support",
+      "Quick treatment",
+      "Minimal downtime",
+      "Intramuscular delivery"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "维生素B12注射",
+      "description": "通过定向维生素B12注射解决B12缺乏并支持能量代谢。体验改善的能量水平和整体健康状况。"
+    },
+    "zhTW": {
+      "title": "維生素B12注射",
+      "description": "透過定向維生素B12注射解決B12缺乏並支持能量代謝。體驗改善的能量水平和整體健康狀況。"
+    },
+    "ar": {
+      "title": "حقن فيتامين ب12",
+      "description": "عالج نقص فيتامين ب12 وادعم عملية التمثيل الغذائي للطاقة من خلال حقن فيتامين ب12 المستهدفة. استمتع بتحسن مستويات الطاقة والصحة العامة."
+    }
+  }
+}

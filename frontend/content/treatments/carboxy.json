@@ -1,0 +1,39 @@
+{
+  "title": "Carboxy Therapy",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "CIRCULATION & REJUVENATION",
+    "title": "Carboxy Therapy",
+    "subtitle": "CO2 Skin Revitalization",
+    "description": "Improve circulation and brighten your complexion with carboxy therapy. This innovative treatment uses carbon dioxide to stimulate blood flow and promote skin rejuvenation.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "30–45 minutes",
+    "results": "Brighter, firmer look develops over 2–4 weeks",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Improves circulation",
+      "Brightens complexion",
+      "Reduces dark circles",
+      "Stimulates collagen production",
+      "Helps reduce cellulite",
+      "Minimal downtime"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "二氧化碳疗法",
+      "description": "通过二氧化碳疗法改善血液循环，提亮肤色。这种创新疗法使用二氧化碳刺激血液流动，促进皮肤再生。"
+    },
+    "zhTW": {
+      "title": "二氧化碳療法",
+      "description": "透過二氧化碳療法改善血液循環，提亮膚色。這種創新療法使用二氧化碳刺激血液流動，促進皮膚再生。"
+    },
+    "ar": {
+      "title": "علاج الكاربوكسي",
+      "description": "حسّن الدورة الدموية وأشرق بشرتك مع علاج الكاربوكسي. يستخدم هذا العلاج المبتكر ثاني أكسيد الكربون لتحفيز تدفق الدم وتعزيز تجديد البشرة."
+    }
+  }
+}
