@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "title": "Let Your Natural Beauty Shine at a",
+    "titleHighlight": "World-Class Aesthetic Clinic",
+    "subtitle": "Refine. Rejuvenate. Radiate confidence.",
+    "description": "Here at Beyond, we combine advanced aesthetic medicine with a luxurious, calming experience, helping you achieve natural, beautiful results. Our expert doctors and beauticians use the latest techniques and treatments to enhance your beauty - discreetly, elegantly, and effectively.",
+    "videoUrl": "/hero-video.mp4",
+    "features": [
+      {
+        "text": "CQC & HIS Regulated For Patient Safety & Care"
+      },
+      {
+        "text": "Doctor-led Treatment"
+      },
+      {
+        "text": "New Customer Discounts"
+      },
+      {
+        "text": "10 Years of Excellence"
+      }
+    ]
+  }
+}

@@ -5,6 +5,7 @@ import { AuthProvider, useAuth } from './contexts/AuthContext'
 import { MaintenancePage } from './components/pages/MaintenancePage'
 import ScrollToTop from './components/ScrollToTop'
 import Homepage from './components/Homepage'
+import HomepageTina from './components/HomepageTina'
 import AboutPage from './components/pages/AboutPage'
 import ContactPage from './components/pages/ContactPage'
 import DoctorsPage from './components/pages/DoctorsPage'
@@ -78,7 +79,7 @@ function AppRoutes() {
   // Show all routes if authenticated
   return (
     <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<HomepageTina />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/doctors" element={<DoctorsPage />} />

@@ -220,6 +220,75 @@ export default defineConfig({
         ],
       },
       {
+        name: "homepage",
+        label: "Homepage",
+        path: "content/homepage",
+        format: "json",
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false,
+          },
+          router: () => {
+            return `/`;
+          },
+        },
+        fields: [
+          {
+            type: "object",
+            name: "hero",
+            label: "Hero Section",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Title (First Part)",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "titleHighlight",
+                label: "Title (Highlighted Part)",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "subtitle",
+                label: "Subtitle",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Description",
+                required: true,
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "string",
+                name: "videoUrl",
+                label: "Background Video URL",
+              },
+              {
+                type: "object",
+                name: "features",
+                label: "Key Features",
+                list: true,
+                fields: [
+                  {
+                    type: "string",
+                    name: "text",
+                    label: "Feature Text",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
         name: "teamMember",
         label: "Team Members",
         path: "content/team",
