@@ -40,7 +40,12 @@ export default defineConfig({
         format: "json",
         ui: {
           router: ({ document }) => {
-            return `/procedures/${document._sys.filename}`;
+            // Route to TinaCMS-enabled pages
+            if (document._sys.filename === 'anti-wrinkle') {
+              return `/procedures/injectables/anti-wrinkle-tina`;
+            }
+            // Default fallback - will show "nothing to edit" until page is migrated to TinaCMS
+            return undefined;
           },
         },
         fields: [
