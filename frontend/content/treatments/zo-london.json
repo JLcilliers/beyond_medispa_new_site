@@ -1,0 +1,43 @@
+{
+  "title": "ZO Chemical Peel London",
+  "category": "peels",
+  "location": "london",
+  "hero": {
+    "tagline": "Resurface • Brighten • Renew",
+    "title": "ZO Chemical Peel London",
+    "subtitle": "Restore Healthy Luminosity in Knightsbridge",
+    "description": "Expect the very best in advanced skincare. Our ZO peels combine clinical expertise with a Knightsbridge luxury experience, leaving skin brighter, smoother, and effortlessly radiant. Visible results after one session, lasting radiance for 4–6 weeks, and zero downtime. Suitable for all skin types—even first-time peel clients. ZO Skin Health combines medical expertise with advanced skin science. Professional acid concentrations exfoliate at varied depths—from refreshing surface peels to medium-depth protocols tackling pigmentation and fine lines. Each peel enhances your at-home ZO routine, maximising absorption and daily results.",
+    "backgroundImage": "/Microneedling & Exosomes/pexels-anna-shvets-4586755.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "30–45 minute appointments - perfect for a Knightsbridge schedule",
+    "results": "See brighter tone immediately with continued enhancement over several days. Results last 4–6 weeks. Optimal transformation with 3–6 treatments spaced 3–4 weeks apart",
+    "price": "Starting at £190 per chemical peel session",
+    "benefits": [
+      "Smooth uneven texture and refine pores for luminous skin",
+      "Balance oil to reduce breakouts and congestion",
+      "Flood the complexion with antioxidants to neutralise free radicals",
+      "Boost collagen and elastin for firmer, more resilient skin",
+      "In-and-out treatment ideal for busy schedules",
+      "Quick and noticeable results from the first session",
+      "No downtime - most London clients leave glowing",
+      "Perfect for first-time peels yet powerful for advanced concerns",
+      "Restores healthy glow that lasts 4–6 weeks",
+      "Calms visible redness for a balanced complexion"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "伦敦ZO化学焕肤",
+      "description": "期待最好的先进护肤。我们的ZO焕肤疗程结合临床专业知识和奈茨布里奢华体验，让肌肤更明亮、更光滑、更容光焕发。一次疗程后就有明显效果，光彩持续4-6周，零停工期。"
+    },
+    "zhTW": {
+      "title": "倫敦ZO化學煥膚",
+      "description": "期待最好的先進護膚。我們的ZO煥膚療程結合臨床專業知識和奈茨布里奢華體驗，讓肌膚更明亮、更光滑、更容光煥發。一次療程後就有明顯效果，光彩持續4-6週，零停工期。"
+    },
+    "ar": {
+      "title": "تقشير ZO الكيميائي في لندن",
+      "description": "توقع الأفضل في العناية المتقدمة بالبشرة. تجمع علاجات التقشير ZO لدينا بين الخبرة السريرية وتجربة الفخامة في Knightsbridge، مما يترك البشرة أكثر إشراقاً ونعومة وتألقاً. نتائج ملحوظة بعد جلسة واحدة، وإشراق يدوم 4-6 أسابيع، وبدون فترة توقف."
+    }
+  }
+}

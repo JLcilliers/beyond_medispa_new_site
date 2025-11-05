@@ -1,0 +1,43 @@
+{
+  "title": "Obagi Blue Peel RADIANCE",
+  "category": "peels",
+  "location": "both",
+  "hero": {
+    "tagline": "Renew • Brighten • Restore",
+    "title": "Transform Your Complexion with Obagi Blue Peel RADIANCE",
+    "subtitle": "Rediscover Your Glow, Reclaim Your Confidence",
+    "description": "Medical-grade acid peels gently resurface to unveil firmer, smoother, brighter skin. Target fine lines, uneven texture, or blemishes and see visible renewal from your very first session. Each Obagi peel is precisely tailored to your skin, gently lifting away dull, damaged layers to reveal renewed luminosity and confidence. Developed by Obagi Medical Skincare, this 20% salicylic acid formulation is available in light, medium, and medical-grade strengths. Peels penetrate multiple layers to stimulate regeneration and enhance collagen for comprehensive renewal.",
+    "backgroundImage": "/Microneedling & Exosomes/pexels-shiny-diamond-3762882.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "30 minutes per session",
+    "results": "Noticeable improvements follow one peel, with long-lasting transformation through 4-6 sessions spaced several weeks apart. Light peeling for three to five days as new, smoother skin emerges",
+    "price": "Contact for pricing and course packages",
+    "benefits": [
+      "20% salicylic acid accelerates cellular renewal",
+      "Addresses fine lines, uneven texture, breakouts, and photoageing",
+      "Deep rejuvenation for firmer, smoother, brighter skin",
+      "Targets acne scarring and hyperpigmentation",
+      "Suitable for most skin types, including dry or acne-prone",
+      "Professional renewal with gentle exfoliation",
+      "Progressive enhancement with each session",
+      "Expert customization to match skin tolerance and goals",
+      "Available in light, medium, and medical-grade strengths",
+      "Dramatic smoothing and brightening results"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "Obagi蓝色焕肤光彩疗程",
+      "description": "医疗级酸类焕肤温和地重塑肌肤，揭示更紧致、更光滑、更明亮的肌肤。针对细纹、不均匀质地或瑕疵，从第一次疗程就能看到明显的改善。使用20%水杨酸配方，加速细胞更新。"
+    },
+    "zhTW": {
+      "title": "Obagi藍色煥膚光彩療程",
+      "description": "醫療級酸類煥膚溫和地重塑肌膚，揭示更緊緻、更光滑、更明亮的肌膚。針對細紋、不均勻質地或瑕疵，從第一次療程就能看到明顯的改善。使用20%水楊酸配方，加速細胞更新。"
+    },
+    "ar": {
+      "title": "تقشير Obagi الأزرق RADIANCE",
+      "description": "تقشير الأحماض الطبية يعيد تشكيل البشرة بلطف ليكشف عن بشرة أكثر صلابة ونعومة وإشراقاً. استهدف الخطوط الدقيقة أو الملمس غير المتساوي أو العيوب واشهد تجديداً ملحوظاً من جلستك الأولى. يستخدم تركيبة حمض الساليسيليك بنسبة 20% لتسريع التجديد الخلوي."
+    }
+  }
+}

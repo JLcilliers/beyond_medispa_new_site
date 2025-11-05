@@ -1,0 +1,43 @@
+{
+  "title": "Medik8 Facial Peel in London",
+  "category": "peels",
+  "location": "london",
+  "hero": {
+    "tagline": "Resurface • Brighten • Refine",
+    "title": "Medik8 Facial Peel in London",
+    "subtitle": "Achieve Flawless, Clinic-Level Results",
+    "description": "Reveal brighter, clearer, smoother skin with a Medik8 peel at Beyond MediSpa Knightsbridge. Our medical-grade peels combine precisely balanced acids with comfort-focused Time Release technology to tackle dullness, congestion, pigmentation, and fine lines. Medik8 peels are ideal for first-time clients and seasoned skincare enthusiasts alike. Expect refined texture, even tone, and a refreshed glow—delivered by trained professionals in Harvey Nichols, Knightsbridge.",
+    "backgroundImage": "/Microneedling & Exosomes/pexels-nick-wehrli-5282362.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "30–45 minutes including consultation, application, and aftercare",
+    "results": "Smoother, brighter skin from the very first appointment, with cumulative benefits over a course",
+    "price": "From £210 per treatment. New clients enjoy 10% off single sessions or 20% off multi-treatment bookings",
+    "benefits": [
+      "Scientifically balanced acids with Time Release delivery",
+      "Tackles dullness, congestion, pigmentation, and early ageing",
+      "Limited downtime - mild redness or light flaking",
+      "Tailored to your skin type with lactic, glycolic, and mandelic acid blends",
+      "Free skin analysis included with every appointment",
+      "CQC registered clinic with medical oversight",
+      "Delivered by trained practitioners in Harvey Nichols, Knightsbridge",
+      "Visible results after just one session",
+      "Pairs beautifully with LED therapy and hydrating facials",
+      "Professional Medik8 formulas for optimal safety and efficacy"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "伦敦Medik8面部焕肤",
+      "description": "在Beyond MediSpa Knightsbridge享受Medik8焕肤疗程，让肌肤更明亮、清透、光滑。我们的医疗级焕肤产品结合精确平衡的酸类和舒适的缓释技术，解决暗沉、堵塞、色素沉着和细纹问题。"
+    },
+    "zhTW": {
+      "title": "倫敦Medik8面部煥膚",
+      "description": "在Beyond MediSpa Knightsbridge享受Medik8煥膚療程，讓肌膚更明亮、清透、光滑。我們的醫療級煥膚產品結合精確平衡的酸類和舒適的緩釋技術，解決暗沉、堵塞、色素沉著和細紋問題。"
+    },
+    "ar": {
+      "title": "تقشير الوجه Medik8 في لندن",
+      "description": "اكشف عن بشرة أكثر إشراقاً ونقاءً ونعومة مع تقشير Medik8 في Beyond MediSpa Knightsbridge. تجمع منتجاتنا الطبية بين الأحماض المتوازنة بدقة وتقنية الإطلاق البطيء المريحة لمعالجة البهتان والاحتقان والتصبغ والخطوط الدقيقة."
+    }
+  }
+}

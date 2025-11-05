@@ -1,0 +1,43 @@
+{
+  "title": "ZO Chemical Peel Edinburgh",
+  "category": "peels",
+  "location": "edinburgh",
+  "hero": {
+    "tagline": "Resurface • Brighten • Renew",
+    "title": "ZO Chemical Peel Edinburgh",
+    "subtitle": "Refresh & Rejuvenate with ZO Chemical Peels",
+    "description": "Beautiful skin is the ultimate confidence. Our industry-leading ZO Chemical Peel treatments in Edinburgh combine clinical expertise with luxury care, leaving your complexion brighter, smoother, and effortlessly radiant. See visible results after just one session, with continued improvements as your skin regenerates. Suitable for all skin types—even if you're new to chemical peels. Professional blends of AHAs deliver gentle yet effective resurfacing with no downtime. These peels amplify the absorption of your at-home ZO routine, maximising daily results.",
+    "backgroundImage": "/Microneedling & Exosomes/pexels-anna-shvets-4586757.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "30–45 minute appointments",
+    "results": "Fresh radiance immediately, with full benefits emerging over several days. Results last 4–6 weeks. Optimal transformation with 3–6 treatments spaced 3–4 weeks apart",
+    "price": "Starting at £91 per chemical peel session",
+    "benefits": [
+      "Smooth uneven texture and refine pores for softer, luminous skin",
+      "Balance oil production to reduce breakouts and blemishes",
+      "Neutralise free radicals with powerful antioxidants",
+      "Boost collagen and elastin to improve firmness and elasticity",
+      "In-and-out treatment that fits effortlessly into your schedule",
+      "Quick and noticeable results from the first appointment",
+      "No downtime - most clients resume activities immediately",
+      "Ideal for first-time peels - gentle yet effective",
+      "Restores a healthy glow that lasts 4–6 weeks",
+      "Calms visible redness and irritation"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "爱丁堡ZO化学焕肤",
+      "description": "我们行业领先的ZO化学焕肤疗程结合临床专业知识和奢华护理，让您的肤色更明亮、更光滑、更容光焕发。仅一次疗程后就能看到明显效果，随着肌肤再生而持续改善。适合所有肤质。"
+    },
+    "zhTW": {
+      "title": "愛丁堡ZO化學煥膚",
+      "description": "我們行業領先的ZO化學煥膚療程結合臨床專業知識和奢華護理，讓您的膚色更明亮、更光滑、更容光煥發。僅一次療程後就能看到明顯效果，隨著肌膚再生而持續改善。適合所有膚質。"
+    },
+    "ar": {
+      "title": "تقشير ZO الكيميائي في إدنبرة",
+      "description": "تجمع علاجات التقشير الكيميائي ZO الرائدة في الصناعة بين الخبرة السريرية والرعاية الفاخرة، مما يترك بشرتك أكثر إشراقاً ونعومة وتألقاً. شاهد نتائج ملحوظة بعد جلسة واحدة فقط. مناسب لجميع أنواع البشرة."
+    }
+  }
+}

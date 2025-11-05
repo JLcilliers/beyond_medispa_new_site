@@ -1,0 +1,43 @@
+{
+  "title": "Medik8 Peels Edinburgh",
+  "category": "peels",
+  "location": "edinburgh",
+  "hero": {
+    "tagline": "PROFESSIONAL CHEMICAL PEELS",
+    "title": "Medik8 Peels Edinburgh",
+    "subtitle": "Scientifically Advanced Skin Resurfacing in Scotland's Capital",
+    "description": "Transform your skin with Medik8 professional chemical peels at Beyond Aesthetics Edinburgh, located on the Second Floor of Harvey Nichols in St Andrew Square. Medik8 is a scientifically advanced British skincare brand renowned for creating some of the most effective, gentle professional peels available. Our Medik8 peel treatments are specifically customized to address the unique skincare challenges faced by Edinburgh residents, from weather-related dullness and dehydration to uneven texture and pigmentation concerns. These medical-grade chemical peels use precise concentrations of active ingredients like lactic acid, salicylic acid, mandelic acid, and glycolic acid to gently dissolve the bonds between dead skin cells, revealing the fresh, radiant skin beneath. Unlike harsh traditional peels, Medik8 formulations are designed to resurface while simultaneously hydrating and soothing, making them suitable even for sensitive skin types. Each treatment is fully customizable to your specific concerns, whether you're targeting fine lines, acne, hyperpigmentation, enlarged pores, or overall skin dullness. Our experienced practitioners in Edinburgh's New Town provide thorough consultations to select the ideal peel strength and formulation for your skin, ensuring optimal results with minimal downtime. With immediate radiance and progressive improvements through a treatment course, Medik8 peels represent the gold standard in professional exfoliation.",
+    "backgroundImage": "/Microneedling & Exosomes/pexels-nick-wehrli-5282362.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "30–60 minutes including consultation and post-peel care",
+    "results": "Immediate brightening and glow; continued improvements in texture, tone, and clarity over 2-4 weeks. Optimal results with a course of 4-6 treatments",
+    "price": "From £100 per peel - Contact for personalized course packages and pricing",
+    "benefits": [
+      "Medical-grade exfoliation with scientifically proven ingredients",
+      "Resurfaces skin to reveal fresh, radiant complexion",
+      "Hydrates deeply while exfoliating - no excessive dryness",
+      "Brightens and evens skin tone effectively",
+      "Minimizes enlarged pores and refines texture",
+      "Highly customizable to individual skin concerns",
+      "Suitable for sensitive skin with gentle formulations",
+      "Addresses acne, pigmentation, aging, and dullness",
+      "Minimal downtime with progressive results",
+      "Expert treatment in Edinburgh's St Andrew Square"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "爱丁堡Medik8焕肤疗程",
+      "description": "使用Medik8专业化学焕肤疗程改变您的肌肤。这些医疗级焕肤产品采用精确浓度的活性成分，温和地溶解死皮细胞之间的连接，揭示下方新鲜、光彩的肌肤。"
+    },
+    "zhTW": {
+      "title": "愛丁堡Medik8煥膚療程",
+      "description": "使用Medik8專業化學煥膚療程改變您的肌膚。這些醫療級煥膚產品採用精確濃度的活性成分，溫和地溶解死皮細胞之間的連接，揭示下方新鮮、光彩的肌膚。"
+    },
+    "ar": {
+      "title": "تقشير Medik8 في إدنبرة",
+      "description": "حوّل بشرتك باستخدام التقشير الكيميائي الاحترافي من Medik8. تستخدم هذه المنتجات الطبية تركيزات دقيقة من المكونات النشطة لإذابة الروابط بين خلايا الجلد الميتة بلطف، مما يكشف عن البشرة النضرة والمشرقة تحتها."
+    }
+  }
+}
