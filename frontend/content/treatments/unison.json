@@ -1,0 +1,39 @@
+{
+  "title": "Unison",
+  "category": "body",
+  "location": "both",
+  "hero": {
+    "tagline": "CELLULITE REDUCTION",
+    "title": "Unison",
+    "subtitle": "Advanced Cellulite Treatment",
+    "description": "Reduce the look of cellulite and improve elasticity with Unison. This comfortable, dual-energy treatment enhances circulation, smooths texture, and supports skin firmness for every tone.",
+    "backgroundImage": "/Unison/crop-plump-woman-showing-heart-gesture-on-body-2025-03-13-23-29-43-utc.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "20-30 minutes per area",
+    "results": "Cellulite appearance improves gradually over 2-8 weeks after treatment",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Reduces cellulite",
+      "Improves elasticity",
+      "Enhances circulation",
+      "Comfortable sessions",
+      "Suitable for all skin types",
+      "Minimal downtime"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "优尼森",
+      "description": "使用Unison减少橘皮组织外观并改善弹性。这种舒适的双能量治疗增强循环、平滑质地，并为各种肤色提供皮肤紧致支持。"
+    },
+    "zhTW": {
+      "title": "優尼森",
+      "description": "使用Unison減少橘皮組織外觀並改善彈性。這種舒適的雙能量治療增強循環、平滑質地，並為各種膚色提供皮膚緊緻支持。"
+    },
+    "ar": {
+      "title": "يونيسون",
+      "description": "قلل من مظهر السيلوليت وحسّن المرونة مع يونيسون. هذا العلاج المزدوج الطاقة المريح يعزز الدورة الدموية، وينعم الملمس، ويدعم صلابة البشرة لجميع الألوان."
+    }
+  }
+}

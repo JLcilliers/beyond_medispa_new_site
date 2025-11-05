@@ -1,0 +1,39 @@
+{
+  "title": "Laser Hair Removal",
+  "category": "body",
+  "location": "both",
+  "hero": {
+    "tagline": "LONG-TERM HAIR REDUCTION",
+    "title": "Laser Hair Removal",
+    "subtitle": "Smooth, Hair-Free Skin",
+    "description": "Achieve long-term hair reduction with targeted laser technology. Fast and effective treatments minimise regrowth, reduce ingrown hairs, and leave skin smooth across every treatment area.",
+    "backgroundImage": "/Laser Hair Removal/image-of-japanese-women-s-hair-removal-2025-03-14-02-05-00-utc.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "15-60 minutes",
+    "results": "Long-term hair reduction typically achieved after 6-8 sessions",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Long-term reduction",
+      "Precision targeting",
+      "Fast appointments",
+      "Fewer ingrown hairs",
+      "Smooth skin",
+      "Cost-effective course options"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "激光脱毛",
+      "description": "通过精准激光技术实现长期脱毛。快速有效的治疗可最大限度地减少再生长、减少内生毛发，并使所有治疗区域的皮肤保持光滑。"
+    },
+    "zhTW": {
+      "title": "激光脫毛",
+      "description": "透過精準激光技術實現長期脫毛。快速有效的治療可最大限度地減少再生長、減少內生毛髮，並使所有治療區域的皮膚保持光滑。"
+    },
+    "ar": {
+      "title": "إزالة الشعر بالليزر",
+      "description": "حقق تقليل الشعر على المدى الطويل بتقنية الليزر المستهدفة. العلاجات السريعة والفعالة تقلل من إعادة النمو، وتقلل من الشعر الناشئ، وتترك البشرة ناعمة في جميع مناطق العلاج."
+    }
+  }
+}

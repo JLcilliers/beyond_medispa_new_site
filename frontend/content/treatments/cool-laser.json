@@ -1,0 +1,39 @@
+{
+  "title": "Cool Laser",
+  "category": "body",
+  "location": "both",
+  "hero": {
+    "tagline": "ADVANCED LASER REJUVENATION",
+    "title": "Cool Laser",
+    "subtitle": "Skin Resurfacing and Rejuvenation",
+    "description": "Transform your skin with Cool Laser technology. This innovative approach refines texture, boosts luminosity, targets pigmentation, and supports collagen renewal for comprehensive rejuvenation.",
+    "backgroundImage": "/Cool Laser/beautician-doing-facial-skin-procedure-with-electr-2024-11-25-19-06-27-utc.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "30-60 minutes",
+    "results": "Immediate glow with refinement that continues to build over several weeks",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Reduces fine lines",
+      "Improves texture and tone",
+      "Targets pigmentation",
+      "Helps acne scarring",
+      "Minimal downtime",
+      "Stimulates collagen"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "冷激光",
+      "description": "使用冷激光技术改变您的皮肤。这种创新方法可细化质地、提升光泽、针对色素沉着，并支持胶原蛋白更新，实现全面焕肤。"
+    },
+    "zhTW": {
+      "title": "冷激光",
+      "description": "使用冷激光技術改變您的皮膚。這種創新方法可細化質地、提升光澤、針對色素沉著，並支持膠原蛋白更新，實現全面煥膚。"
+    },
+    "ar": {
+      "title": "كول ليزر",
+      "description": "حوّل بشرتك بتقنية كول ليزر. هذا النهج المبتكر يحسن الملمس، ويعزز الإشراق، ويستهدف التصبغ، ويدعم تجديد الكولاجين للحصول على تجديد شامل."
+    }
+  }
+}

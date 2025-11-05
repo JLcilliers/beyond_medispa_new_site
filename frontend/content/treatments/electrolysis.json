@@ -1,0 +1,38 @@
+{
+  "title": "Electrolysis",
+  "category": "body",
+  "location": "both",
+  "hero": {
+    "tagline": "PERMANENT HAIR REMOVAL",
+    "title": "Electrolysis",
+    "subtitle": "FDA-Approved Permanent Solution",
+    "description": "Experience permanent hair removal with electrolysis. This precise, medically approved treatment works on every hair and skin type, including fair hairs, for lasting, tailored results."
+  },
+  "treatmentInfo": {
+    "duration": "15-60 minutes",
+    "results": "Permanent hair removal achieved over a personalised series",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Effective for all hair and skin types",
+      "Treats blonde and white hairs",
+      "Highly precise",
+      "Medically certified",
+      "Ideal for small areas",
+      "Delivers long-term results"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "电解脱毛",
+      "description": "通过电解脱毛体验永久脱毛。这种精确的、经医学认可的治疗适用于所有毛发和皮肤类型，包括浅色毛发，带来持久、定制的效果。"
+    },
+    "zhTW": {
+      "title": "電解脫毛",
+      "description": "透過電解脫毛體驗永久脫毛。這種精確的、經醫學認可的治療適用於所有毛髮和皮膚類型，包括淺色毛髮，帶來持久、定製的效果。"
+    },
+    "ar": {
+      "title": "إزالة الشعر بالكهرباء",
+      "description": "اختبر إزالة الشعر الدائمة بالتحليل الكهربائي. هذا العلاج الدقيق والمعتمد طبياً يعمل على جميع أنواع الشعر والبشرة، بما في ذلك الشعر الفاتح، للحصول على نتائج دائمة ومخصصة."
+    }
+  }
+}

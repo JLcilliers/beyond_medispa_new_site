@@ -1,0 +1,39 @@
+{
+  "title": "CM Slim",
+  "category": "body",
+  "location": "both",
+  "hero": {
+    "tagline": "MUSCLE BUILDING AND FAT REDUCTION",
+    "title": "CM Slim",
+    "subtitle": "Body Sculpting and Contouring",
+    "description": "Transform your shape with CM Slim electromagnetic technology. Sessions gently sculpt your body by reducing fat while enhancing and strengthening targeted muscle groups in record time.",
+    "backgroundImage": "/CM Slim/Copy of portrait-of-young-woman-with-perfect-body-2024-10-18-03-08-44-utc.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "30 minutes",
+    "results": "Improved tone and definition appears 2-4 weeks after a consistent series",
+    "price": "From GBP 263",
+    "benefits": [
+      "Builds muscle with EMS",
+      "Helps reduce fat",
+      "Strengthens core, glutes, thighs, and arms",
+      "No downtime",
+      "Quick sessions",
+      "Non-invasive"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "CM纤体",
+      "description": "通过CM Slim电磁技术改变您的体型。疗程温和塑形身体，在短时间内减少脂肪，同时增强和强化目标肌肉群。"
+    },
+    "zhTW": {
+      "title": "CM纖體",
+      "description": "透過CM Slim電磁技術改變您的體型。療程溫和塑形身體，在短時間內減少脂肪，同時增強和強化目標肌肉群。"
+    },
+    "ar": {
+      "title": "سي إم سليم",
+      "description": "حوّل شكل جسمك باستخدام تقنية CM Slim الكهرومغناطيسية. جلسات تنحت جسمك بلطف من خلال تقليل الدهون مع تعزيز وتقوية مجموعات العضلات المستهدفة في وقت قياسي."
+    }
+  }
+}

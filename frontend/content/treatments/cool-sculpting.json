@@ -1,0 +1,39 @@
+{
+  "title": "CoolSculpting",
+  "category": "body",
+  "location": "both",
+  "hero": {
+    "tagline": "NON-SURGICAL FAT REDUCTION",
+    "title": "CoolSculpting",
+    "subtitle": "FDA Cleared Fat Freezing Technology",
+    "description": "Experience the world's leading non-invasive fat reduction treatment. CoolSculpting uses controlled cooling to eliminate stubborn fat cells and define smooth, contoured lines without surgery.",
+    "backgroundImage": "/Cool Sculpting/portrait-of-young-woman-with-perfect-body-2024-10-18-03-08-44-utc.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "35-60 minutes per cycle",
+    "results": "Fat reduction becomes visible in 8-12 weeks as the body naturally clears treated fat cells",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Non-surgical fat reduction",
+      "Targets stubborn fat",
+      "Minimal downtime",
+      "Permanent fat-cell removal",
+      "Contour improvement",
+      "Clinically proven"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "酷塑冷冻溶脂",
+      "description": "体验世界领先的非侵入性减脂治疗。酷塑冷冻溶脂使用受控冷却来消除顽固脂肪细胞，无需手术即可定义平滑、轮廓清晰的线条。"
+    },
+    "zhTW": {
+      "title": "酷塑冷凍溶脂",
+      "description": "體驗世界領先的非侵入性減脂治療。酷塑冷凍溶脂使用受控冷卻來消除頑固脂肪細胞，無需手術即可定義平滑、輪廓清晰的線條。"
+    },
+    "ar": {
+      "title": "كول سكلبتنج",
+      "description": "اختبر علاج تقليل الدهون غير الجراحي الرائد عالمياً. يستخدم كول سكلبتنج التبريد المتحكم فيه للقضاء على الخلايا الدهنية العنيدة وتحديد خطوط ملساء ومحددة بدون جراحة."
+    }
+  }
+}

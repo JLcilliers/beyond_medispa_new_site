@@ -1,0 +1,38 @@
+{
+  "title": "Vanquish",
+  "category": "body",
+  "location": "both",
+  "hero": {
+    "tagline": "CONTACTLESS FAT REDUCTION",
+    "title": "Vanquish",
+    "subtitle": "Non-Invasive Body Contouring",
+    "description": "Experience contactless fat reduction with Vanquish. Gentle, uniform heating treats the abdomen and flanks to reduce circumference comfortably, with no required downtime."
+  },
+  "treatmentInfo": {
+    "duration": "45 minutes",
+    "results": "Circumferential reduction unfolds over 4-8 weeks following a treatment course",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Contactless fat reduction",
+      "Targets abdomen and flanks",
+      "No downtime",
+      "Uniform energy delivery",
+      "Non-invasive comfort",
+      "Supports gradual, natural results"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "消脂先锋",
+      "description": "体验Vanquish非接触式减脂。温和、均匀的加热治疗腹部和侧腹，舒适地减少周长，无需停机时间。"
+    },
+    "zhTW": {
+      "title": "消脂先鋒",
+      "description": "體驗Vanquish非接觸式減脂。溫和、均勻的加熱治療腹部和側腹，舒適地減少周長，無需停機時間。"
+    },
+    "ar": {
+      "title": "فانكويش",
+      "description": "اختبر تقليل الدهون بدون تماس مع فانكويش. التسخين اللطيف والموحد يعالج البطن والخواصر لتقليل المحيط بشكل مريح، دون الحاجة إلى وقت تعطل."
+    }
+  }
+}

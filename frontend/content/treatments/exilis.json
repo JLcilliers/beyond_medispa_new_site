@@ -1,0 +1,39 @@
+{
+  "title": "Exilis",
+  "category": "body",
+  "location": "both",
+  "hero": {
+    "tagline": "SKIN TIGHTENING EXCELLENCE",
+    "title": "Exilis",
+    "subtitle": "Radio Frequency Body and Skin Contouring",
+    "description": "Discover the power of Exilis radiofrequency technology for non-surgical body contouring and skin tightening. Our advanced treatment stimulates collagen production, reduces cellulite, and sculpts your natural contours with precision and comfort.",
+    "backgroundImage": "/Exilis/woman-doing-cosmetic-treatments-2024-09-19-04-48-43-utc (1).JPG"
+  },
+  "treatmentInfo": {
+    "duration": "30-60 minutes",
+    "results": "Progressive improvement over 4-12 weeks after a course",
+    "price": "From GBP 420",
+    "benefits": [
+      "Skin tightening",
+      "Stimulates collagen",
+      "Cellulite improvement",
+      "Targeted body contouring",
+      "Minimal downtime",
+      "Suitable for multiple body areas"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "紧致精灵",
+      "description": "发现Exilis射频技术在非手术身体塑形和皮肤紧致方面的力量。我们的先进治疗刺激胶原蛋白生成、减少橘皮组织，并以精确和舒适的方式雕塑您的自然轮廓。"
+    },
+    "zhTW": {
+      "title": "緊緻精靈",
+      "description": "發現Exilis射頻技術在非手術身體塑形和皮膚緊緻方面的力量。我們的先進治療刺激膠原蛋白生成、減少橘皮組織，並以精確和舒適的方式雕塑您的自然輪廓。"
+    },
+    "ar": {
+      "title": "إكسيليس",
+      "description": "اكتشف قوة تقنية الترددات اللاسلكية إكسيليس لنحت الجسم وشد البشرة غير الجراحي. يحفز علاجنا المتقدم إنتاج الكولاجين، ويقلل من السيلوليت، وينحت خطوطك الطبيعية بدقة وراحة."
+    }
+  }
+}

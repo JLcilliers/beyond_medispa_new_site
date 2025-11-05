@@ -1,0 +1,39 @@
+{
+  "title": "HIFU",
+  "category": "body",
+  "location": "both",
+  "hero": {
+    "tagline": "NON-SURGICAL LIFTING",
+    "title": "HIFU",
+    "subtitle": "High Intensity Focused Ultrasound",
+    "description": "Experience the revolutionary HIFU treatment for non-invasive lifting and tightening. Focused ultrasound energy stimulates deep collagen production to lift, firm, and rejuvenate your contours naturally.",
+    "backgroundImage": "/Hifu/beautiful-ethnic-skin-minimal-2025-03-09-22-12-43-utc.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "45-90 minutes",
+    "results": "Lifting and tightening develops over 8-12 weeks with results that can last 12-18 months",
+    "price": "From GBP 735",
+    "benefits": [
+      "Non-invasive lifting",
+      "Stimulates collagen and elastin",
+      "Contours jawline and cheeks",
+      "Softens wrinkles",
+      "Minimal downtime",
+      "Long-lasting results"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "超声刀",
+      "description": "体验革命性的超声刀治疗，实现非侵入性提升和紧致。聚焦超声波能量刺激深层胶原蛋白生成，自然提升、紧致和焕新您的轮廓。"
+    },
+    "zhTW": {
+      "title": "超聲刀",
+      "description": "體驗革命性的超聲刀治療，實現非侵入性提升和緊緻。聚焦超聲波能量刺激深層膠原蛋白生成，自然提升、緊緻和煥新您的輪廓。"
+    },
+    "ar": {
+      "title": "هايفو",
+      "description": "اختبر علاج هايفو الثوري للرفع والشد غير الجراحي. تحفز طاقة الموجات فوق الصوتية المركزة إنتاج الكولاجين العميق لرفع وتثبيت وتجديد خطوطك بشكل طبيعي."
+    }
+  }
+}
