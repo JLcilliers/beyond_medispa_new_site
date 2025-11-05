@@ -19,5 +19,179 @@
         "text": "10 Years of Excellence"
       }
     ]
+  },
+  "whyChooseUs": {
+    "title": "Aesthetic Excellence Redefined{It's Who We Are}",
+    "subtitle": "At Beyond Aesthetic Clinic, we're redefining aesthetic excellence.",
+    "features": [
+      {
+        "icon": "Award",
+        "title": "Award-Winning, Doctor-Led Medical Aesthetic Clinic",
+        "description": "Our clinic is led by highly qualified doctors, nurse prescribers, and experienced aestheticians who have successfully provided revitalising beauty treatments to thousands of patients worldwide. Recognised for excellence in aesthetic medicine, we combine medical expertise with a commitment to natural, safe, and effective results."
+      },
+      {
+        "icon": "Zap",
+        "title": "Cutting-Edge Technology & Medical-Grade Products",
+        "description": "We routinely invest in the latest aesthetic technologies and use only medical-grade, clinically proven products. This ensures every treatment is safe, comfortable, and results-driven; never compromising on quality, innovation, or your wellbeing."
+      },
+      {
+        "icon": "Heart",
+        "title": "Treatment Plans for Natural-Looking Results",
+        "description": "Every patient is unique, which is why we create bespoke treatment plans tailored to your goals, skin type, and lifestyle. Our approach is focused on enhancing your natural beauty, delivering results that are subtle, balanced, and long-lasting."
+      }
+    ],
+    "stats": [
+      {
+        "value": "500+",
+        "label": "Monthly Treatments"
+      },
+      {
+        "value": "98%",
+        "label": "Client Retention"
+      },
+      {
+        "value": "15+",
+        "label": "Expert Practitioners"
+      },
+      {
+        "value": "2",
+        "label": "Premium Locations"
+      }
+    ]
+  },
+  "services": {
+    "treatments": [
+      {
+        "tag": "London Clinic",
+        "title": "Body",
+        "description": "Non-surgical body sculpting solutions",
+        "link": "/london/body",
+        "image": "/treatment-categories/body-sculpting.png",
+        "imageAlt": "Body contouring treatment at Beyond MediSpa",
+        "cta": "Explore body treatments"
+      },
+      {
+        "tag": "Tailored Peels",
+        "title": "Peels",
+        "description": "Exfoliate and renew skin texture and tone",
+        "link": "/london/peels",
+        "image": "/treatment-categories/advanced-skin-treatments.png",
+        "imageAlt": "Advanced skin peel treatment",
+        "cta": "Explore peel treatments"
+      },
+      {
+        "tag": "Complexion Care",
+        "title": "Facial",
+        "description": "Advanced therapies for radiant, healthy skin",
+        "link": "/london/facial",
+        "image": "/treatment-categories/hydrafacial.png",
+        "imageAlt": "HydraFacial performed in clinic",
+        "cta": "Explore facial treatments"
+      },
+      {
+        "tag": "Doctor-Led",
+        "title": "Injectables",
+        "description": "Expert anti-aging and enhancement treatments",
+        "link": "/london/injectables",
+        "image": "/treatment-categories/anti-wrinkle-treatments.png",
+        "imageAlt": "Injectable aesthetic treatments",
+        "cta": "Explore injectables"
+      }
+    ]
+  },
+  "getMore": {
+    "title": "Get More With{Beyond}",
+    "benefits": [
+      {
+        "icon": "Star",
+        "title": "4.7 Stars Across 110+ Google Reviews"
+      },
+      {
+        "icon": "Users",
+        "title": "Refer a Friend Discounts"
+      },
+      {
+        "icon": "Stethoscope",
+        "title": "Optional Free Skin Consultation with Every Appointment"
+      }
+    ]
+  },
+  "program": {
+    "tagline": "Gallery Highlights",
+    "title": "Inside Beyond MediSpa London & Edinburgh",
+    "description": "Take a look inside our Knightsbridge and Edinburgh clinics—serene reception spaces, private consultation rooms, and calming treatment suites curated for every stage of your aesthetic journey.",
+    "description2": "Visit us at Harvey Nichols in London's Knightsbridge and on St Andrew Square in Edinburgh to experience doctor-led treatments delivered in luxurious surroundings that feel as welcoming as they are advanced.",
+    "images": [
+      {
+        "src": "/About - Clinic Pages/London.jpg",
+        "alt": "Beyond MediSpa London clinic reception"
+      },
+      {
+        "src": "/About - Clinic Pages/Edinburgh.jpg",
+        "alt": "Beyond MediSpa Edinburgh clinic interior"
+      },
+      {
+        "src": "/About - Clinic Pages/Beyond Desk.webp",
+        "alt": "Beyond MediSpa consultation area"
+      }
+    ]
+  },
+  "expertMedicine": {
+    "title": "We Only Offer Expert Aesthetic",
+    "titleHighlight": "Medicine & Beauty",
+    "subtitle": "At Beyond Aesthetic Clinic, your care is always led by experts who combine medical knowledge with a passion for excellence. We believe in safe, effective and natural results through expert treatments and the latest aesthetic care.",
+    "points": [
+      "We never compromise on quality, using only trusted products, proven technologies, and advanced techniques to achieve the best possible beauty results.",
+      "We're constantly progressing. Our team trains in the latest aesthetic techniques and international standards of care, while we also invest in brand new devices and proven technologies to ensure treatments are safe, comfortable and results driven.",
+      "We specialise in non-invasive, non-surgical aesthetic treatments. This means low risk, no-downtime treatments that provide immediate and long-lasting results."
+    ],
+    "buttonText": "Meet the Team",
+    "buttonLink": "/doctors"
+  },
+  "locations": {
+    "title": "Our{Locations}",
+    "subtitle": "Visit our premium clinics in London and Edinburgh for expert aesthetic treatments"
+  },
+  "faq": {
+    "title": "Beyond Aesthetic Clinic{FAQs}",
+    "questions": [
+      {
+        "question": "What treatments does Beyond Aesthetic Clinic offer?",
+        "answer": "Beyond Aesthetic Clinic offers a comprehensive range of aesthetic treatments including anti-wrinkle injections, dermal fillers, skin boosters, chemical peels, HydraFacial, microneedling, laser treatments, body contouring, and specialist skincare consultations. All treatments are doctor-led and use medical-grade products."
+      },
+      {
+        "question": "Are your treatments suitable for all skin types?",
+        "answer": "Yes, our treatments are designed to be safe and effective for all skin types and tones. During your consultation, our experienced practitioners will assess your skin and recommend treatments tailored to your specific needs and goals."
+      },
+      {
+        "question": "What is body contouring, and how does it work?",
+        "answer": "Body contouring treatments use advanced technology to target and reduce stubborn fat deposits and improve skin texture without surgery. We offer treatments like EMSculpt and CoolSculpting that work by either breaking down fat cells or building muscle, helping you achieve your desired body shape."
+      },
+      {
+        "question": "How long do aesthetic treatments take?",
+        "answer": "Treatment times vary depending on the procedure. Injectable treatments typically take 15-30 minutes, while more comprehensive treatments like HydraFacial or body contouring may take 45-90 minutes. Your practitioner will give you a clear timeline during your consultation."
+      },
+      {
+        "question": "Is there any downtime after treatment?",
+        "answer": "Most of our treatments are designed to have minimal to no downtime, allowing you to return to your daily activities immediately. Some treatments may cause mild redness or swelling that typically subsides within a few hours to days. Your practitioner will provide specific aftercare instructions."
+      },
+      {
+        "question": "How do I know which treatment is right for me?",
+        "answer": "We offer complimentary consultations where our expert practitioners will assess your concerns, discuss your goals, and recommend a personalized treatment plan. This ensures you receive the most appropriate treatments for your individual needs."
+      },
+      {
+        "question": "Can I combine treatments for a complete transformation?",
+        "answer": "Yes! Many patients combine treatments for optimal results. Our practitioners can create a comprehensive treatment plan that may include multiple procedures tailored to your specific goals and timeline."
+      },
+      {
+        "question": "How can I book a consultation?",
+        "answer": "You can book a consultation by calling us directly, using our online booking system, or visiting one of our clinics. We have locations in London (Knightsbridge) and Edinburgh (St Andrew Square)."
+      }
+    ],
+    "ctaTitle": "Visit Our Aesthetic Clinic In London Or Edinburgh Today",
+    "ctaDescription": "Experience expert aesthetic care in a luxurious, calming setting. Visit our London or Edinburgh clinics and start your beauty journey today.",
+    "ctaPhone": "020 7201 8595",
+    "ctaPhoneText": "Call Us: 020 7201 8595",
+    "ctaBookText": "Book Now"
   }
 }

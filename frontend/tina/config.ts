@@ -286,6 +286,337 @@ export default defineConfig({
               },
             ],
           },
+          {
+            type: "object",
+            name: "whyChooseUs",
+            label: "Why Choose Us Section",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Section Title",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "subtitle",
+                label: "Subtitle",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "object",
+                name: "features",
+                label: "Features",
+                list: true,
+                fields: [
+                  {
+                    type: "string",
+                    name: "icon",
+                    label: "Icon Name",
+                    description: "Lucide icon name (e.g., Award, Zap, Heart)",
+                  },
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Feature Title",
+                  },
+                  {
+                    type: "string",
+                    name: "description",
+                    label: "Feature Description",
+                    ui: {
+                      component: "textarea",
+                    },
+                  },
+                ],
+              },
+              {
+                type: "object",
+                name: "stats",
+                label: "Statistics",
+                list: true,
+                fields: [
+                  {
+                    type: "string",
+                    name: "value",
+                    label: "Stat Value",
+                  },
+                  {
+                    type: "string",
+                    name: "label",
+                    label: "Stat Label",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "services",
+            label: "Services Overview Section",
+            fields: [
+              {
+                type: "object",
+                name: "treatments",
+                label: "Treatment Cards",
+                list: true,
+                fields: [
+                  {
+                    type: "string",
+                    name: "tag",
+                    label: "Tag/Category",
+                  },
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Treatment Title",
+                    required: true,
+                  },
+                  {
+                    type: "string",
+                    name: "description",
+                    label: "Description",
+                    ui: {
+                      component: "textarea",
+                    },
+                  },
+                  {
+                    type: "string",
+                    name: "link",
+                    label: "Link URL",
+                  },
+                  {
+                    type: "image",
+                    name: "image",
+                    label: "Image",
+                  },
+                  {
+                    type: "string",
+                    name: "imageAlt",
+                    label: "Image Alt Text",
+                  },
+                  {
+                    type: "string",
+                    name: "cta",
+                    label: "Button Text",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "getMore",
+            label: "Get More Section",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Section Title",
+                required: true,
+              },
+              {
+                type: "object",
+                name: "benefits",
+                label: "Benefits",
+                list: true,
+                fields: [
+                  {
+                    type: "string",
+                    name: "icon",
+                    label: "Icon Name",
+                    description: "Lucide icon name (e.g., Star, Users, Stethoscope)",
+                  },
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Benefit Title",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "program",
+            label: "Gallery/Program Section",
+            fields: [
+              {
+                type: "string",
+                name: "tagline",
+                label: "Tagline",
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Section Title",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Description Paragraph 1",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "string",
+                name: "description2",
+                label: "Description Paragraph 2",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "object",
+                name: "images",
+                label: "Gallery Images",
+                list: true,
+                fields: [
+                  {
+                    type: "image",
+                    name: "src",
+                    label: "Image",
+                  },
+                  {
+                    type: "string",
+                    name: "alt",
+                    label: "Alt Text",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "expertMedicine",
+            label: "Expert Medicine Section",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Title (First Part)",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "titleHighlight",
+                label: "Title (Highlighted Part)",
+              },
+              {
+                type: "string",
+                name: "subtitle",
+                label: "Subtitle",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "string",
+                name: "points",
+                label: "Key Points",
+                list: true,
+              },
+              {
+                type: "string",
+                name: "buttonText",
+                label: "Button Text",
+              },
+              {
+                type: "string",
+                name: "buttonLink",
+                label: "Button Link",
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "locations",
+            label: "Locations Section",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Section Title",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "subtitle",
+                label: "Subtitle",
+                ui: {
+                  component: "textarea",
+                },
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "faq",
+            label: "FAQ Section",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Section Title",
+                required: true,
+              },
+              {
+                type: "object",
+                name: "questions",
+                label: "FAQ Questions",
+                list: true,
+                fields: [
+                  {
+                    type: "string",
+                    name: "question",
+                    label: "Question",
+                    required: true,
+                  },
+                  {
+                    type: "string",
+                    name: "answer",
+                    label: "Answer",
+                    required: true,
+                    ui: {
+                      component: "textarea",
+                    },
+                  },
+                ],
+              },
+              {
+                type: "string",
+                name: "ctaTitle",
+                label: "CTA Box Title",
+              },
+              {
+                type: "string",
+                name: "ctaDescription",
+                label: "CTA Box Description",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "string",
+                name: "ctaPhone",
+                label: "CTA Phone Number",
+              },
+              {
+                type: "string",
+                name: "ctaPhoneText",
+                label: "CTA Phone Button Text",
+              },
+              {
+                type: "string",
+                name: "ctaBookText",
+                label: "CTA Book Button Text",
+              },
+            ],
+          },
         ],
       },
       {
