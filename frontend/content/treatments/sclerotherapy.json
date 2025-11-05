@@ -1,0 +1,39 @@
+{
+  "title": "Sclerotherapy",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "VEIN TREATMENT",
+    "title": "Sclerotherapy",
+    "subtitle": "Spider Vein Removal",
+    "description": "Eliminate spider veins with minimally invasive sclerotherapy. This proven outpatient technique targets veins to improve leg appearance with high patient satisfaction.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "30–60 minutes",
+    "results": "Spider veins fade over 4–12 weeks",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Minimally invasive",
+      "Targets veins",
+      "Improves leg appearance",
+      "Outpatient",
+      "Proven technique",
+      "High satisfaction"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "硬化疗法",
+      "description": "通过微创硬化疗法消除蜘蛛静脉。这种经过验证的门诊技术针对静脉，改善腿部外观，患者满意度高。"
+    },
+    "zhTW": {
+      "title": "硬化療法",
+      "description": "通過微創硬化療法消除蜘蛛靜脈。這種經過驗證的門診技術針對靜脈，改善腿部外觀，患者滿意度高。"
+    },
+    "ar": {
+      "title": "العلاج بالتصليب",
+      "description": "القضاء على الأوردة العنكبوتية باستخدام العلاج بالتصليب الأقل بضعاً. هذه التقنية الخارجية المثبتة تستهدف الأوردة لتحسين مظهر الساق مع رضا عالٍ للمرضى."
+    }
+  }
+}

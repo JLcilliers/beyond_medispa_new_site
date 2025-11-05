@@ -1,0 +1,39 @@
+{
+  "title": "Neofound",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "SKIN BRIGHTENING",
+    "title": "Neofound",
+    "subtitle": "Advanced Skin Enhancement",
+    "description": "Brighten and smooth your skin with Neofound. This advanced treatment reduces lines, improves elasticity, hydrates, and evens tone with minimal downtime. Course recommended for optimal results.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "15–30 minutes",
+    "results": "Brighter, smoother skin in 2–4 weeks; course recommended",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Brightens",
+      "Reduces lines",
+      "Improves elasticity",
+      "Hydrates",
+      "Evens tone",
+      "Minimal downtime"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "Neofound",
+      "description": "使用Neofound提亮和平滑您的皮肤。这种先进的治疗可减少细纹，改善弹性，补水，均匀肤色，停机时间最少。建议进行疗程以获得最佳效果。"
+    },
+    "zhTW": {
+      "title": "Neofound",
+      "description": "使用Neofound提亮和平滑您的皮膚。這種先進的治療可減少細紋，改善彈性，補水，均勻膚色，停機時間最少。建議進行療程以獲得最佳效果。"
+    },
+    "ar": {
+      "title": "نيوفاوند",
+      "description": "اجعل بشرتك أكثر إشراقًا ونعومة باستخدام نيوفاوند. يقلل هذا العلاج المتقدم من الخطوط، ويحسن المرونة، ويرطب، ويوحد اللون مع الحد الأدنى من فترة التوقف. يوصى بالدورة للحصول على أفضل النتائج."
+    }
+  }
+}

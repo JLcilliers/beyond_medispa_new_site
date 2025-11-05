@@ -1,0 +1,39 @@
+{
+  "title": "Mole Removal",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "SAFE LESION REMOVAL",
+    "title": "Mole Removal",
+    "subtitle": "Professional Skin Lesion Treatment",
+    "description": "Safely remove unwanted moles and skin lesions with our professional treatment. Quick procedures under local anesthetic with minimal downtime and scar-minimizing techniques.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "20–45 minutes",
+    "results": "Immediate removal; healing 1–3 weeks",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Quick under local anaesthetic",
+      "Precise",
+      "Minimal downtime",
+      "Option for histology",
+      "Suitable for many lesions",
+      "Scar-minimising"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "痣去除",
+      "description": "通过我们的专业治疗安全地去除不需要的痣和皮肤病变。在局部麻醉下进行快速手术，停机时间最少，采用减少疤痕的技术。"
+    },
+    "zhTW": {
+      "title": "痣去除",
+      "description": "通過我們的專業治療安全地去除不需要的痣和皮膚病變。在局部麻醉下進行快速手術，停機時間最少，採用減少疤痕的技術。"
+    },
+    "ar": {
+      "title": "إزالة الشامات",
+      "description": "إزالة الشامات والآفات الجلدية غير المرغوب فيها بأمان مع علاجنا المهني. إجراءات سريعة تحت التخدير الموضعي مع الحد الأدنى من فترة التوقف وتقنيات تقليل الندبات."
+    }
+  }
+}

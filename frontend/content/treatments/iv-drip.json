@@ -1,0 +1,39 @@
+{
+  "title": "IV Drip Therapy",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "HYDRATION & WELLNESS",
+    "title": "IV Drip Therapy",
+    "subtitle": "Rapid Nutrient Replenishment",
+    "description": "Experience rapid rehydration and energy support with IV drip therapy. Customizable blends deliver immediate hydration and nutrient replenishment with professional administration.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "30–60 minutes",
+    "results": "Immediate hydration/energy; recovery in hours to days",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Rapid rehydration",
+      "Replenishes nutrients",
+      "Energy support",
+      "Customisable blends",
+      "Professional administration",
+      "Fast absorption"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "静脉滴注疗法",
+      "description": "通过静脉滴注疗法体验快速补水和能量支持。可定制的混合物提供即时补水和营养补充，专业管理。"
+    },
+    "zhTW": {
+      "title": "靜脈滴注療法",
+      "description": "通過靜脈滴注療法體驗快速補水和能量支持。可定制的混合物提供即時補水和營養補充，專業管理。"
+    },
+    "ar": {
+      "title": "علاج التنقيط الوريدي",
+      "description": "اختبر الترطيب السريع ودعم الطاقة مع علاج التنقيط الوريدي. توفر المزيجات القابلة للتخصيص الترطيب الفوري وتجديد المغذيات مع الإدارة المهنية."
+    }
+  }
+}

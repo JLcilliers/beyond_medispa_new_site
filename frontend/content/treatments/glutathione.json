@@ -1,0 +1,39 @@
+{
+  "title": "Glutathione",
+  "category": "injectables",
+  "location": "both",
+  "hero": {
+    "tagline": "MASTER ANTIOXIDANT",
+    "title": "Glutathione",
+    "subtitle": "Antioxidant & Skin Brightening",
+    "description": "Harness the power of glutathione for antioxidant protection and skin brightening. Support detox, boost immunity, and achieve a radiant glow with IV/IM administration.",
+    "backgroundImage": ""
+  },
+  "treatmentInfo": {
+    "duration": "15–30 minutes",
+    "results": "Skin/antioxidant benefits accrue over weeks",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Antioxidant",
+      "Brightens skin",
+      "Detox support",
+      "Immune support",
+      "Minimal downtime",
+      "IV/IM administration"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "谷胱甘肽",
+      "description": "利用谷胱甘肽的力量进行抗氧化保护和皮肤提亮。通过静脉/肌肉注射支持排毒，增强免疫力，并获得光彩照人的光泽。"
+    },
+    "zhTW": {
+      "title": "谷胱甘肽",
+      "description": "利用谷胱甘肽的力量進行抗氧化保護和皮膚提亮。通過靜脈/肌肉注射支持排毒，增強免疫力，並獲得光彩照人的光澤。"
+    },
+    "ar": {
+      "title": "الجلوتاثيون",
+      "description": "استغل قوة الجلوتاثيون لحماية مضادات الأكسدة وتفتيح البشرة. دعم إزالة السموم، وتعزيز المناعة، وتحقيق توهج مشرق مع الإعطاء الوريدي/العضلي."
+    }
+  }
+}
