@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "tinacms dev -c \"vite\"",
     "dev:client": "vite",
-    "build": "tinacms build --local && vite build",
-    "build:vercel": "tinacms build --local && vite build",
+    "build": "tinacms build && vite build",
+    "build:vercel": "vite build",
+    "build:admin": "tinacms build --local",
     "preview": "vite preview"
   },
   "dependencies": {
