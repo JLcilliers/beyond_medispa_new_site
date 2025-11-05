@@ -29,6 +29,7 @@ import LEDFacialPage from './components/pages/procedures/facial/LEDFacialPage'
 import OxygenFacialPage from './components/pages/procedures/facial/OxygenFacialPage'
 import SkinScannerPage from './components/pages/procedures/facial/SkinScannerPage'
 import AntiWrinklePage from './components/pages/procedures/injectables/AntiWrinklePage'
+import AntiWrinkleTinaPage from './components/pages/procedures/injectables/AntiWrinkleTinaPage'
 import DermalFillerPage from './components/pages/procedures/injectables/DermalFillerPage'
 import ProfhiloPage from './components/pages/procedures/injectables/ProfhiloPage'
 import PolynucleotidesPage from './components/pages/procedures/injectables/PolynucleotidesPage'
@@ -101,6 +102,7 @@ function AppRoutes() {
         <Route path="/procedures/facial/oxygen-facial" element={<OxygenFacialPage />} />
         <Route path="/procedures/facial/skin-scanner" element={<SkinScannerPage />} />
         <Route path="/procedures/injectables/anti-wrinkle" element={<AntiWrinklePage />} />
+        <Route path="/procedures/injectables/anti-wrinkle-tina" element={<AntiWrinkleTinaPage />} />
         <Route path="/procedures/injectables/dermal-filler" element={<DermalFillerPage />} />
         <Route path="/procedures/injectables/profhilo" element={<ProfhiloPage />} />
         <Route path="/procedures/injectables/polynucleotides" element={<PolynucleotidesPage />} />

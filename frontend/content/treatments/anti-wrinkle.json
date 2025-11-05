@@ -6,7 +6,7 @@
     "tagline": "WRINKLE REDUCTION",
     "title": "Anti-Wrinkle Injections",
     "subtitle": "Smooth, Youthful Skin",
-    "description": "Turn back the clock with our expertly administered anti-wrinkle injections. Our skilled practitioners use premium products to smooth fine lines and wrinkles, helping you achieve a refreshed, natural-looking appearance.",
+    "description": "Turn back the clock with our expertly administered anti-wrinkle injections. Our skilled practitioners use premium products to smooth fine lines and wrinkles, helping you achieve a refreshed, natural-looking appearance.\n",
     "backgroundImage": "/anti-wrinkle-hero-new.png"
   },
   "treatmentInfo": {
@@ -25,15 +25,15 @@
   "translations": {
     "zhCN": {
       "title": "抗皱注射",
-      "description": "通过我们专业的抗皱注射服务让时光倒流。我们经验丰富的医师使用优质产品抚平细纹和皱纹，帮助您实现清新、自然的外观。"
+      "description": "通过我们专业的抗皱注射服务让时光倒流。我们经验丰富的医师使用优质产品抚平细纹和皱纹，帮助您实现清新、自然的外观。\n"
     },
     "zhTW": {
       "title": "抗皺注射",
-      "description": "通過我們專業的抗皺注射服務讓時光倒流。我們經驗豐富的醫師使用優質產品撫平細紋和皺紋，幫助您實現清新、自然的外觀。"
+      "description": "通過我們專業的抗皺注射服務讓時光倒流。我們經驗豐富的醫師使用優質產品撫平細紋和皺紋，幫助您實現清新、自然的外觀。\n"
     },
     "ar": {
       "title": "حقن مضادة للتجاعيد",
-      "description": "أعد عقارب الساعة إلى الوراء مع حقننا المضادة للتجاعيد التي يديرها خبراؤنا. يستخدم ممارسونا المهرة منتجات متميزة لتنعيم الخطوط الدقيقة والتجاعيد، مما يساعدك على تحقيق مظهر منتعش وطبيعي."
+      "description": "أعد عقارب الساعة إلى الوراء مع حقننا المضادة للتجاعيد التي يديرها خبراؤنا. يستخدم ممارسونا المهرة منتجات متميزة لتنعيم الخطوط الدقيقة والتجاعيد، مما يساعدك على تحقيق مظهر منتعش وطبيعي.\n"
     }
   }
 }
