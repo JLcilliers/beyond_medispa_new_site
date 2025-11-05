@@ -1,0 +1,38 @@
+{
+  "title": "Skin Scanner",
+  "category": "facial",
+  "location": "both",
+  "hero": {
+    "tagline": "ADVANCED SKIN ANALYSIS",
+    "title": "Skin Scanner",
+    "subtitle": "Comprehensive Skin Assessment",
+    "description": "Get a complete understanding of your skin's health with our advanced skin scanner. Identify pigmentation, UV damage, and track your progress with objective analysis and personalized treatment recommendations."
+  },
+  "treatmentInfo": {
+    "duration": "15–30 minutes",
+    "results": "Immediate analysis and recommendations",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Objective assessment",
+      "Identifies pigmentation/UV damage",
+      "Tracks progress",
+      "Personalised plan",
+      "Baseline photography",
+      "Highlights concerns"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "皮肤扫描仪",
+      "description": "通过我们先进的皮肤扫描仪全面了解您的皮肤健康状况。识别色素沉着、紫外线损伤，并通过客观分析和个性化治疗建议跟踪您的进展。"
+    },
+    "zhTW": {
+      "title": "皮膚掃描儀",
+      "description": "通過我們先進的皮膚掃描儀全面了解您的皮膚健康狀況。識別色素沉著、紫外線損傷，並通過客觀分析和個性化治療建議跟踪您的進展。"
+    },
+    "ar": {
+      "title": "ماسح البشرة",
+      "description": "احصلي على فهم كامل لصحة بشرتك باستخدام ماسح البشرة المتقدم لدينا. حددي التصبغات وأضرار الأشعة فوق البنفسجية، وتتبعي تقدمك من خلال التحليل الموضوعي والتوصيات العلاجية الشخصية."
+    }
+  }
+}

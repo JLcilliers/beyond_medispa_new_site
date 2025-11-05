@@ -1,0 +1,42 @@
+{
+  "title": "HydraFacial Edinburgh",
+  "category": "facial",
+  "location": "edinburgh",
+  "hero": {
+    "tagline": "EDINBURGH EXCELLENCE",
+    "title": "HydraFacial Edinburgh",
+    "subtitle": "Advanced Facial Rejuvenation in Scotland's Capital",
+    "description": "Experience the transformative power of HydraFacial at Beyond Aesthetics Edinburgh, located in the prestigious Harvey Nichols on St Andrew Square. Our HydraFacial treatment is specifically customized to address the unique skincare challenges faced by Edinburgh residents, from combating the effects of Scotland's changeable climate to protecting against environmental stressors. Using advanced vortex-fusion technology, this medical-grade facial delivers immediate, visible results through a multi-step process that cleanses, exfoliates, extracts impurities, and deeply hydrates your skin. Perfect for busy professionals in Edinburgh's business district, this no-downtime treatment fits seamlessly into your schedule while delivering professional-grade results. Whether you're preparing for a special event or maintaining your skincare regimen, our expert practitioners at our Second Floor clinic combine cutting-edge technology with personalized care to reveal your skin's natural radiance. Suitable for all skin types and concerns, from fine lines and congestion to dullness and dehydration."
+  },
+  "treatmentInfo": {
+    "duration": "30–60 minutes",
+    "results": "Immediate radiance and glow; progressive improvements in skin clarity, texture, and hydration over 2-4 weeks",
+    "price": "From £150 - Contact for personalized package pricing",
+    "benefits": [
+      "Deep cleansing & gentle exfoliation tailored for Edinburgh's climate",
+      "Painless extractions of blackheads and congestion",
+      "Intensive hydration with hyaluronic acid serums",
+      "Immediate visible results with zero downtime",
+      "Addresses pollution and environmental damage",
+      "Customizable for all skin types and concerns",
+      "Boosts radiance and evens skin tone",
+      "Reduces appearance of fine lines and pores",
+      "Perfect pre-event treatment for Edinburgh occasions",
+      "Located in prestigious St Andrew Square, New Town"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "爱丁堡海菲秀",
+      "description": "在位于爱丁堡圣安德鲁广场的著名Harvey Nichols的Beyond Aesthetics，体验海菲秀的变革力量。我们的海菲秀护理专门定制，以应对爱丁堡居民面临的独特护肤挑战，从对抗苏格兰多变气候的影响到防护环境压力。"
+    },
+    "zhTW": {
+      "title": "愛丁堡海菲秀",
+      "description": "在位於愛丁堡聖安德魯廣場的著名Harvey Nichols的Beyond Aesthetics，體驗海菲秀的變革力量。我們的海菲秀護理專門定制，以應對愛丁堡居民面臨的獨特護膚挑戰，從對抗蘇格蘭多變氣候的影響到防護環境壓力。"
+    },
+    "ar": {
+      "title": "هايدرافيشال إدنبرة",
+      "description": "اختبري القوة التحويلية لـ HydraFacial في Beyond Aesthetics إدنبرة، الواقع في Harvey Nichols المرموق في ساحة سانت أندرو. تم تخصيص علاج HydraFacial الخاص بنا خصيصاً لمعالجة تحديات العناية بالبشرة الفريدة التي يواجهها سكان إدنبرة."
+    }
+  }
+}

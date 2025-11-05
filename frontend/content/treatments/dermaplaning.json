@@ -1,0 +1,38 @@
+{
+  "title": "Dermaplaning",
+  "category": "facial",
+  "location": "both",
+  "hero": {
+    "tagline": "GENTLE EXFOLIATION",
+    "title": "Dermaplaning",
+    "subtitle": "Smooth, Radiant Skin",
+    "description": "Reveal brighter, smoother skin with dermaplaning. This gentle exfoliation technique removes vellus hair and dead skin cells, improving makeup application and giving you an instant glow with no downtime."
+  },
+  "treatmentInfo": {
+    "duration": "30–45 minutes",
+    "results": "Immediate smoothness and brightness",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Removes vellus hair",
+      "Gentle exfoliation",
+      "Improves makeup application",
+      "Brighter skin",
+      "No downtime",
+      "Suitable for most types"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "磨皮术",
+      "description": "通过磨皮术展现更明亮、更光滑的肌肤。这种温和的去角质技术可去除汗毛和死皮细胞，改善化妆效果，让您立即焕发光彩，无需恢复时间。"
+    },
+    "zhTW": {
+      "title": "磨皮術",
+      "description": "通過磨皮術展現更明亮、更光滑的肌膚。這種溫和的去角質技術可去除汗毛和死皮細胞，改善化妝效果，讓您立即煥發光彩，無需恢復時間。"
+    },
+    "ar": {
+      "title": "تقشير الجلد",
+      "description": "اكتشفي بشرة أكثر إشراقاً ونعومة مع تقشير الجلد. تزيل هذه التقنية اللطيفة للتقشير الشعر الناعم وخلايا الجلد الميتة، مما يحسن من تطبيق المكياج ويمنحك توهجاً فورياً دون الحاجة إلى فترة نقاهة."
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Keravive",
+  "category": "facial",
+  "location": "both",
+  "hero": {
+    "tagline": "SCALP HEALTH TREATMENT",
+    "title": "Keravive",
+    "subtitle": "Scalp Rejuvenation Therapy",
+    "description": "Improve your scalp health and promote fuller-looking hair with Keravive. This specialized treatment removes buildup, hydrates the scalp, reduces flaking, and enhances circulation to support healthier hair growth."
+  },
+  "treatmentInfo": {
+    "duration": "45 minutes",
+    "results": "Scalp quality improves in 1–4 weeks after series",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Removes dead skin build-up",
+      "Hydrates scalp",
+      "Reduces flaking",
+      "Promotes fuller-looking hair",
+      "Improves circulation",
+      "Complements hair-loss programs"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "Keravive头皮护理",
+      "description": "通过Keravive改善头皮健康并促进头发更加浓密。这种专业护理可去除堆积物、滋润头皮、减少脱屑并增强循环，以支持更健康的头发生长。"
+    },
+    "zhTW": {
+      "title": "Keravive頭皮護理",
+      "description": "通過Keravive改善頭皮健康並促進頭髮更加濃密。這種專業護理可去除堆積物、滋潤頭皮、減少脫屑並增強循環，以支持更健康的頭髮生長。"
+    },
+    "ar": {
+      "title": "علاج كيرافيف لفروة الرأس",
+      "description": "حسني صحة فروة رأسك وعززي كثافة الشعر مع كيرافيف. يزيل هذا العلاج المتخصص التراكمات، ويرطب فروة الرأس، ويقلل من التقشر، ويعزز الدورة الدموية لدعم نمو الشعر الصحي."
+    }
+  }
+}

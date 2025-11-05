@@ -1,0 +1,42 @@
+{
+  "title": "HydraTite Facial",
+  "category": "facial",
+  "location": "both",
+  "hero": {
+    "tagline": "HYDRATE • TIGHTEN • GLOW",
+    "title": "The HydraTite Facial",
+    "subtitle": "Achieve Hydrated, Firmer Skin with Natural Radiance",
+    "description": "HydraTite combines the deep exfoliation of HydraFacial with the collagen-boosting power of Exilis Elite. Address sagging jowls, loose skin, and hard-to-reach areas while enjoying immediate results and zero downtime."
+  },
+  "treatmentInfo": {
+    "duration": "Up to 2 hours per session",
+    "results": "Immediate radiance and lift after first treatment; progressive collagen-driven improvements over following weeks",
+    "price": "Contact for pricing - Course of 6 treatments recommended",
+    "benefits": [
+      "Deep cleanse & gentle exfoliation",
+      "Painless pore extraction with HydraFacial technology",
+      "Intensive hydration with advanced serums",
+      "Radio frequency skin tightening",
+      "Stimulates collagen & elastin production",
+      "Reduces sagging in jowls, neck & under-eye areas",
+      "Addresses loose skin and laxity",
+      "Improves skin texture and tone",
+      "Suitable for face, neck, and décolletage",
+      "No downtime - immediate return to daily activities"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "HydraTite水润紧致面部护理",
+      "description": "HydraTite结合了海菲秀的深层去角质和Exilis Elite的胶原蛋白促进功效。改善松弛的下颌、松弛的皮肤和难以触及的部位，同时享受即时效果且无需恢复时间。"
+    },
+    "zhTW": {
+      "title": "HydraTite水潤緊緻面部護理",
+      "description": "HydraTite結合了海菲秀的深層去角質和Exilis Elite的膠原蛋白促進功效。改善鬆弛的下顎、鬆弛的皮膚和難以觸及的部位，同時享受即時效果且無需恢復時間。"
+    },
+    "ar": {
+      "title": "علاج الوجه هايدراتايت",
+      "description": "يجمع هايدراتايت بين التقشير العميق لـ HydraFacial وقوة تعزيز الكولاجين لـ Exilis Elite. عالجي ترهل الفك والجلد المترهل والمناطق التي يصعب الوصول إليها مع الاستمتاع بنتائج فورية ودون الحاجة إلى فترة نقاهة."
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Exosome Therapy",
+  "category": "facial",
+  "location": "both",
+  "hero": {
+    "tagline": "REGENERATIVE THERAPY",
+    "title": "Exosome Therapy",
+    "subtitle": "Advanced Skin Regeneration",
+    "description": "Experience cutting-edge exosome therapy for enhanced healing and visible improvements. This innovative treatment reduces redness, improves texture and tone, brightens, boosts collagen, and calms inflammation."
+  },
+  "treatmentInfo": {
+    "duration": "45–60 minutes",
+    "results": "Faster recovery and visible quality improvements in 1–4 weeks",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Enhances healing",
+      "Reduces redness",
+      "Improves texture & tone",
+      "Brightens",
+      "Boosts collagen",
+      "Calms inflammation"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "外泌体疗法",
+      "description": "体验尖端的外泌体疗法，增强愈合能力并带来明显改善。这种创新疗法可减少红肿、改善肤质和肤色、提亮肌肤、促进胶原蛋白生成并舒缓炎症。"
+    },
+    "zhTW": {
+      "title": "外泌體療法",
+      "description": "體驗尖端的外泌體療法，增強癒合能力並帶來明顯改善。這種創新療法可減少紅腫、改善膚質和膚色、提亮肌膚、促進膠原蛋白生成並舒緩炎症。"
+    },
+    "ar": {
+      "title": "العلاج بالإكسوسومات",
+      "description": "اختبري العلاج المتطور بالإكسوسومات لتعزيز الشفاء والحصول على تحسينات مرئية. يقلل هذا العلاج المبتكر من الاحمرار، ويحسن الملمس واللون، ويضيء البشرة، ويعزز الكولاجين، ويهدئ الالتهاب."
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Oxygen Facial",
+  "category": "facial",
+  "location": "both",
+  "hero": {
+    "tagline": "INSTANT RADIANCE",
+    "title": "Oxygen Facial",
+    "subtitle": "Hydrating & Soothing Treatment",
+    "description": "Boost your skin's radiance with an oxygen facial. This gentle treatment hydrates and soothes, perfect for sensitive skin, while softening fine lines and improving product absorption with no downtime."
+  },
+  "treatmentInfo": {
+    "duration": "45–60 minutes",
+    "results": "Instant plump/glow; cumulative with a course",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Boosts radiance",
+      "Hydrates & soothes",
+      "Great for sensitive skin",
+      "Softens fine lines",
+      "Improves absorption",
+      "No downtime"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "氧气面部护理",
+      "description": "通过氧气面部护理提升肌肤光泽。这种温和的护理可保湿舒缓，非常适合敏感肌肤，同时软化细纹并改善产品吸收，无需恢复时间。"
+    },
+    "zhTW": {
+      "title": "氧氣面部護理",
+      "description": "通過氧氣面部護理提升肌膚光澤。這種溫和的護理可保濕舒緩，非常適合敏感肌膚，同時軟化細紋並改善產品吸收，無需恢復時間。"
+    },
+    "ar": {
+      "title": "علاج الأوكسجين للوجه",
+      "description": "عززي إشراق بشرتك بعلاج الأوكسجين للوجه. يرطب هذا العلاج اللطيف ويهدئ البشرة، وهو مثالي للبشرة الحساسة، بينما ينعم الخطوط الدقيقة ويحسن امتصاص المنتجات دون الحاجة إلى فترة نقاهة."
+    }
+  }
+}

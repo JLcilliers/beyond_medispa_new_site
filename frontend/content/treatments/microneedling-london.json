@@ -1,0 +1,42 @@
+{
+  "title": "Microneedling London",
+  "category": "facial",
+  "location": "london",
+  "hero": {
+    "tagline": "KNIGHTSBRIDGE PRECISION",
+    "title": "Microneedling London",
+    "subtitle": "Expert Collagen Induction Therapy in Prestigious Knightsbridge",
+    "description": "Experience London's most advanced microneedling treatment at Beyond Aesthetics, located on the Fourth Floor of Harvey Nichols in the heart of Knightsbridge. Our professional microneedling service harnesses your skin's natural regenerative power to combat the visible effects of urban living, from pollution damage to stress-related aging. This scientifically proven collagen induction therapy uses precision micro-needling technology to create controlled channels in the skin, triggering a powerful healing response that floods the area with fresh collagen and elastin. Ideal for London professionals seeking non-surgical solutions to acne scarring, enlarged pores, fine lines, uneven texture, and pigmentation issues, this treatment delivers transformative results through your body's own repair mechanisms. Our highly trained practitioners near Harrods customize each microneedling session to address your specific concerns, whether you're targeting stubborn scars, age-related changes, or overall skin quality improvement. The treatment dramatically boosts the efficacy of topical skincare by increasing absorption rates, making it a cornerstone treatment for optimal skin health. With a brief recovery period and results that continue improving for months, microneedling represents the cutting edge of aesthetic dermatology in London."
+  },
+  "treatmentInfo": {
+    "duration": "45–60 minutes including numbing cream application",
+    "results": "Immediate post-treatment glow; continued collagen remodeling and skin improvement over 4-12 weeks. Best results with a series of 3-6 sessions",
+    "price": "From £200 per treatment - Contact for customized course pricing",
+    "benefits": [
+      "Triggers natural collagen & elastin regeneration",
+      "Dramatically improves overall skin texture and feel",
+      "Reduces acne scars and post-surgical scarring",
+      "Refines enlarged pores for smoother appearance",
+      "Diminishes fine lines and early wrinkles",
+      "Improves skin tone and reduces dark spots",
+      "Boosts skincare product absorption dramatically",
+      "Safe and effective for all skin types",
+      "Quick recovery with minimal social downtime",
+      "Premium Knightsbridge location near Harrods"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "伦敦微针疗法",
+      "description": "在位于伦敦骑士桥中心Harvey Nichols四楼的Beyond Aesthetics，体验伦敦最先进的微针疗法。我们的专业微针服务利用肌肤的天然再生能力，对抗城市生活的可见影响，从污染损伤到压力相关的衰老。"
+    },
+    "zhTW": {
+      "title": "倫敦微針療法",
+      "description": "在位於倫敦騎士橋中心Harvey Nichols四樓的Beyond Aesthetics，體驗倫敦最先進的微針療法。我們的專業微針服務利用肌膚的天然再生能力，對抗城市生活的可見影響，從污染損傷到壓力相關的衰老。"
+    },
+    "ar": {
+      "title": "الوخز بالإبر الدقيقة لندن",
+      "description": "اختبري أكثر علاجات الوخز بالإبر الدقيقة تطوراً في لندن في Beyond Aesthetics، الواقع في الطابق الرابع من Harvey Nichols في قلب نايتسبريدج. تسخر خدمة الوخز بالإبر الدقيقة الاحترافية لدينا قوة التجديد الطبيعية لبشرتك لمكافحة الآثار المرئية للحياة الحضرية."
+    }
+  }
+}
