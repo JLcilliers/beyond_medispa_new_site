@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tinacms dev -c \"vite\"",
     "dev:client": "vite",
-    "build": "tinacms build && vite build",
+    "build": "tinacms build --skip-cloud-checks && vite build",
+    "build:vercel": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
