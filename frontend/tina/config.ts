@@ -40,10 +40,56 @@ export default defineConfig({
         format: "json",
         ui: {
           router: ({ document }) => {
-            // Route to TinaCMS-enabled pages
-            if (document._sys.filename === 'anti-wrinkle') {
-              return `/procedures/injectables/anti-wrinkle-tina`;
-            }
+            const filename = document._sys.filename;
+
+            // Facial treatments
+            if (filename === 'hydrafacial-edinburgh') return `/procedures/facial/hydrafacial-edinburgh`;
+            if (filename === 'hydrafacial-london') return `/procedures/facial/hydrafacial-london`;
+            if (filename === 'microneedling-edinburgh') return `/procedures/facial/microneedling-edinburgh`;
+            if (filename === 'microneedling-london') return `/procedures/facial/microneedling-london`;
+            if (filename === 'dermaplaning') return `/procedures/facial/dermaplaning`;
+            if (filename === 'exosome') return `/procedures/facial/exosome`;
+            if (filename === 'hydra-tite') return `/procedures/facial/hydratite`;
+            if (filename === 'keravive') return `/procedures/facial/keravive`;
+            if (filename === 'led-facial') return `/procedures/facial/led-facial`;
+            if (filename === 'oxygen-facial') return `/procedures/facial/oxygen-facial`;
+            if (filename === 'skin-scanner') return `/procedures/facial/skin-scanner`;
+
+            // Injectables
+            if (filename === 'anti-wrinkle') return `/procedures/injectables/anti-wrinkle`;
+            if (filename === 'dermal-filler') return `/procedures/injectables/dermal-filler`;
+            if (filename === 'profhilo') return `/procedures/injectables/profhilo`;
+            if (filename === 'polynucleotides') return `/procedures/injectables/polynucleotides`;
+            if (filename === 'biofiller-edinburgh') return `/procedures/injectables/biofiller-edinburgh`;
+            if (filename === 'biofiller-london') return `/procedures/injectables/biofiller-london`;
+            if (filename === 'prp') return `/procedures/injectables/prp`;
+            if (filename === 'carboxy') return `/procedures/injectables/carboxy`;
+            if (filename === 'sclerotherapy') return `/procedures/injectables/sclerotherapy`;
+            if (filename === 'mole-removal') return `/procedures/injectables/mole-removal`;
+            if (filename === 'neofound') return `/procedures/injectables/neofound`;
+            if (filename === 'iv-drip') return `/procedures/injectables/iv-drip`;
+            if (filename === 'vitamin-d') return `/procedures/injectables/vitamin-d`;
+            if (filename === 'b12') return `/procedures/injectables/b12`;
+            if (filename === 'biotin') return `/procedures/injectables/biotin`;
+            if (filename === 'glutathione') return `/procedures/injectables/glutathione`;
+            if (filename === 'magnesium') return `/procedures/injectables/magnesium`;
+            if (filename === 'allergy') return `/procedures/injectables/allergy`;
+
+            // Body treatments
+            if (filename === 'laser-hair-removal') return `/procedures/body/laser-hair-removal`;
+            if (filename === 'coolsculpting') return `/procedures/body/coolsculpting`;
+            if (filename === 'exilis') return `/procedures/body/exilis`;
+            if (filename === 'hifu') return `/procedures/body/hifu`;
+            if (filename === 'cool-laser') return `/procedures/body/cool-laser`;
+            if (filename === 'electrolysis') return `/procedures/body/electrolysis`;
+
+            // Peels
+            if (filename === 'medik8-edinburgh') return `/procedures/peels/medik8-edinburgh`;
+            if (filename === 'medik8-london') return `/procedures/peels/medik8-london`;
+            if (filename === 'zo-edinburgh') return `/procedures/peels/zo-edinburgh`;
+            if (filename === 'zo-london') return `/procedures/peels/zo-london`;
+            if (filename === 'obagi') return `/procedures/peels/obagi`;
+
             // Default fallback - will show "nothing to edit" until page is migrated to TinaCMS
             return undefined;
           },
