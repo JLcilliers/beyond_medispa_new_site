@@ -1,4 +1,4 @@
-import ProcedurePageTemplate from "../../../ProcedurePageTemplate";
+import ProcedurePageTemplate from "../../../../ProcedurePageTemplate";
 
 export default function HydrafacialEdinburghContent({ data }: any) {
   const treatment = data?.data?.treatment;
