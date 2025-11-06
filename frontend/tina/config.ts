@@ -225,6 +225,7 @@ export default defineConfig({
         path: "content/homepage",
         format: "json",
         ui: {
+          global: true,
           allowedActions: {
             create: false,
             delete: false,
