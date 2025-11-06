@@ -224,6 +224,9 @@ export default defineConfig({
         label: "Homepage",
         path: "content/homepage",
         format: "json",
+        match: {
+          include: "home"
+        },
         ui: {
           global: true,
           allowedActions: {
