@@ -8,6 +8,7 @@ import TreatmentJourney from './TreatmentJourney'
 import PromotionsSection from './PromotionsSection'
 import BeautySection from './BeautySection'
 import FAQSection from './FAQSection'
+import DynamicSectionRenderer from './DynamicSectionRenderer'
 import { Button } from '@/components/ui/button'
 import { useLanguage } from '../contexts/LanguageContext'
 import { TinaMarkdown } from 'tinacms/dist/rich-text'
@@ -49,6 +50,7 @@ interface ProcedurePageTemplateProps {
   hero: HeroProps
   treatmentInfo?: TreatmentInfo
   translations?: Translations
+  sections?: any[]
   customSections?: React.ReactNode
   showStandardSections?: boolean
 }
@@ -57,6 +59,7 @@ export default function ProcedurePageTemplate({
   hero,
   treatmentInfo,
   translations,
+  sections,
   customSections,
   showStandardSections = true
 }: ProcedurePageTemplateProps) {
@@ -201,18 +204,23 @@ export default function ProcedurePageTemplate({
         {/* Custom Sections */}
         {customSections}
 
-        {/* Standard Sections */}
-        {showStandardSections && (
-          <>
-            <TestimonialsSection />
-            <SpaWelcome />
-            <ExpertiseSection />
-            <ProfessionalProductsSection />
-            <TreatmentJourney />
-            <PromotionsSection />
-            <BeautySection />
-            <FAQSection />
-          </>
+        {/* Dynamic TinaCMS Sections */}
+        {sections && sections.length > 0 ? (
+          <DynamicSectionRenderer sections={sections} />
+        ) : (
+          /* Standard Sections (fallback if no custom sections defined) */
+          showStandardSections && (
+            <>
+              <TestimonialsSection />
+              <SpaWelcome />
+              <ExpertiseSection />
+              <ProfessionalProductsSection />
+              <TreatmentJourney />
+              <PromotionsSection />
+              <BeautySection />
+              <FAQSection />
+            </>
+          )
         )}
       </div>
       

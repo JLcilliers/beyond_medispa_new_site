@@ -186,13 +186,225 @@ export default defineConfig({
           },
           {
             type: "object",
-            name: "content",
-            label: "Page Content",
+            name: "sections",
+            label: "Page Sections",
+            description: "Add and customize sections for this treatment page",
             list: true,
             templates: [
               {
-                name: "textSection",
-                label: "Text Section",
+                name: "testimonialsSection",
+                label: "Testimonials Section",
+                fields: [
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Section Title",
+                    default: "What Our Clients Say",
+                  },
+                  {
+                    type: "string",
+                    name: "subtitle",
+                    label: "Subtitle",
+                  },
+                  {
+                    type: "object",
+                    name: "testimonials",
+                    label: "Testimonials",
+                    list: true,
+                    fields: [
+                      { type: "string", name: "name", label: "Client Name" },
+                      { type: "string", name: "treatment", label: "Treatment" },
+                      { type: "number", name: "rating", label: "Rating (1-5)" },
+                      { type: "rich-text", name: "content", label: "Testimonial" },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "spaWelcomeSection",
+                label: "Spa Welcome Section",
+                fields: [
+                  {
+                    type: "string",
+                    name: "tagline",
+                    label: "Tagline",
+                    default: "WELCOME TO SPA CENTER",
+                  },
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Title",
+                    default: "Best Relaxation and Regeneration Center",
+                  },
+                  {
+                    type: "rich-text",
+                    name: "description",
+                    label: "Description",
+                  },
+                  {
+                    type: "image",
+                    name: "image",
+                    label: "Section Image",
+                  },
+                ],
+              },
+              {
+                name: "expertiseSection",
+                label: "Expertise Section",
+                fields: [
+                  {
+                    type: "string",
+                    name: "tagline",
+                    label: "Tagline",
+                    default: "EXPERTISE COMBINED WITH QUALITY",
+                  },
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Title",
+                    default: "Professional Aesthetic Treatments",
+                  },
+                  {
+                    type: "rich-text",
+                    name: "description",
+                    label: "Description",
+                  },
+                  {
+                    type: "object",
+                    name: "features",
+                    label: "Features",
+                    list: true,
+                    fields: [
+                      { type: "string", name: "icon", label: "Icon Name" },
+                      { type: "string", name: "title", label: "Feature Title" },
+                      { type: "string", name: "description", label: "Description" },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "promotionsSection",
+                label: "Special Offers Section",
+                fields: [
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Section Title",
+                    default: "Special Offers",
+                  },
+                  {
+                    type: "object",
+                    name: "promotions",
+                    label: "Promotions",
+                    list: true,
+                    fields: [
+                      { type: "string", name: "title", label: "Promotion Title" },
+                      { type: "rich-text", name: "description", label: "Description" },
+                      { type: "string", name: "discount", label: "Discount Text" },
+                      { type: "image", name: "image", label: "Promotion Image" },
+                      { type: "string", name: "buttonText", label: "Button Text" },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "beautySection",
+                label: "Essence of Beauty Section",
+                fields: [
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Section Title",
+                    default: "The Essence of Beauty",
+                  },
+                  {
+                    type: "rich-text",
+                    name: "description",
+                    label: "Description",
+                  },
+                  {
+                    type: "image",
+                    name: "image",
+                    label: "Section Image",
+                  },
+                ],
+              },
+              {
+                name: "faqSection",
+                label: "FAQ Section",
+                fields: [
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Section Title",
+                    default: "Frequently Asked Questions",
+                  },
+                  {
+                    type: "object",
+                    name: "questions",
+                    label: "Questions",
+                    list: true,
+                    fields: [
+                      { type: "string", name: "question", label: "Question" },
+                      { type: "rich-text", name: "answer", label: "Answer" },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "productsSection",
+                label: "Professional Products Section",
+                fields: [
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Section Title",
+                    default: "Professional Products",
+                  },
+                  {
+                    type: "rich-text",
+                    name: "description",
+                    label: "Description",
+                  },
+                  {
+                    type: "object",
+                    name: "products",
+                    label: "Products",
+                    list: true,
+                    fields: [
+                      { type: "string", name: "name", label: "Product Name" },
+                      { type: "rich-text", name: "description", label: "Description" },
+                      { type: "image", name: "image", label: "Product Image" },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "treatmentJourneySection",
+                label: "Treatment Journey Section",
+                fields: [
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Section Title",
+                    default: "Your Treatment Journey",
+                  },
+                  {
+                    type: "object",
+                    name: "steps",
+                    label: "Journey Steps",
+                    list: true,
+                    fields: [
+                      { type: "string", name: "title", label: "Step Title" },
+                      { type: "rich-text", name: "description", label: "Description" },
+                      { type: "string", name: "icon", label: "Icon Name" },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "customTextSection",
+                label: "Custom Text Section",
                 fields: [
                   {
                     type: "string",
@@ -202,7 +414,7 @@ export default defineConfig({
                   {
                     type: "rich-text",
                     name: "body",
-                    label: "Body",
+                    label: "Body Content",
                   },
                 ],
               },

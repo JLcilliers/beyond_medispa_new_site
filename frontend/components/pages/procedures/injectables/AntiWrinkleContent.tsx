@@ -38,6 +38,7 @@ export default function AntiWrinkleContent({ data }: AntiWrinkleContentProps) {
       hero={hero}
       treatmentInfo={treatmentInfo}
       translations={treatment.translations}
+      sections={treatment.sections}
     />
   );
 }
