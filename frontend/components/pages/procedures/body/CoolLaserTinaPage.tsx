@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { client } from "../../../../../tina/__generated__/client";
+import { client } from "../../../../tina/__generated__/client";
 import CoolLaserContent from "./CoolLaserContent";
 
 export default function CoolLaserTinaPage() {

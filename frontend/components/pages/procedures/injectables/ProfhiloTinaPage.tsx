@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { client } from "../../../../../tina/__generated__/client";
+import { client } from "../../../../tina/__generated__/client";
 import ProfhiloContent from "./ProfhiloContent";
 
 export default function ProfhiloTinaPage() {
