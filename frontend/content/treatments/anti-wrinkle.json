@@ -4,7 +4,7 @@
   "location": "both",
   "hero": {
     "tagline": "WRINKLE REDUCTION",
-    "title": "Anti-Wrinkle Injections - EDITED LIVE via TinaCMS",
+    "title": "Anti-Wrinkle Injections",
     "subtitle": "Smooth, Youthful Skin",
     "description": "Turn back the clock with our expertly administered anti-wrinkle injections. Our skilled practitioners use premium products to smooth fine lines and wrinkles, helping you achieve a refreshed, natural-looking appearance.\n",
     "backgroundImage": "/anti-wrinkle-hero-new.png"
@@ -22,6 +22,218 @@
       "Performed by experienced practitioners"
     ]
   },
+  "sections": [
+    {
+      "_template": "spaWelcomeSection",
+      "tagline": "WELCOME TO SPA CENTER",
+      "title": "Best Relaxation and Regeneration Center",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Experience the ultimate in aesthetic wellness at our state-of-the-art spa center. Our expert team combines advanced medical techniques with luxurious spa treatments to deliver transformative results in a serene, welcoming environment."
+              }
+            ]
+          }
+        ]
+      },
+      "image": "https://i.ibb.co/Zz6VZvZS/a-drop-of-gel-pours-from-a-syringe-for-cosmetic-pr-2025-03-16-09-14-11-utc.webp"
+    },
+    {
+      "_template": "expertiseSection",
+      "tagline": "EXPERTISE COMBINED WITH QUALITY",
+      "title": "Professional Aesthetic Treatments",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Our commitment to excellence is reflected in every treatment we provide. With years of experience and continuous training, our practitioners deliver results that exceed expectations while maintaining the highest standards of safety and care."
+              }
+            ]
+          }
+        ]
+      },
+      "features": [
+        {
+          "icon": "✨",
+          "title": "Award-Winning Expertise",
+          "description": "Recognized for excellence in aesthetic medicine with industry-leading practitioners"
+        },
+        {
+          "icon": "⚡",
+          "title": "Advanced Technology",
+          "description": "State-of-the-art equipment and the latest treatment innovations"
+        },
+        {
+          "icon": "🛡️",
+          "title": "Safety First",
+          "description": "Rigorous safety protocols and medical-grade products for your peace of mind"
+        },
+        {
+          "icon": "⏱️",
+          "title": "Proven Results",
+          "description": "Thousands of satisfied clients with natural-looking, long-lasting results"
+        }
+      ]
+    },
+    {
+      "_template": "beautySection",
+      "title": "The Essence of Beauty",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Our comprehensive range of aesthetic treatments is designed to enhance your natural beauty. From advanced facial treatments to body contouring, we offer cutting-edge solutions tailored to your unique needs."
+              }
+            ]
+          }
+        ]
+      },
+      "image": "https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp"
+    },
+    {
+      "_template": "productsSection",
+      "title": "Professional Products from Premium Brands",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "We use only the highest quality products and treatments, partnering with leading brands to ensure exceptional results and safety for every client."
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Advanced Skincare",
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Medical-grade skincare products for optimal results with clinical strength formulations that are dermatologist approved."
+                  }
+                ]
+              }
+            ]
+          },
+          "image": "https://i.ibb.co/Kj4wWGcD/beauty-salon-beautician-applies-cooling-gel-to-cli-2025-01-09-05-05-23-utc-1.webp"
+        },
+        {
+          "name": "Injectable Treatments",
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Premium injectables for natural enhancement, FDA approved with long-lasting results and minimal downtime."
+                  }
+                ]
+              }
+            ]
+          },
+          "image": "https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp"
+        }
+      ]
+    },
+    {
+      "_template": "faqSection",
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "How long do anti-wrinkle injections last?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Results typically last 3-4 months. You'll notice the onset of effects within 3-5 days, with peak results at 2 weeks. Regular maintenance treatments help maintain optimal results."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question": "Is there any downtime after treatment?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "No significant downtime is required. You may experience minor redness or swelling at injection sites, which typically resolves within a few hours. Most clients return to normal activities immediately."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question": "Are anti-wrinkle injections safe?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Yes, anti-wrinkle injections are FDA-approved and have been safely used for cosmetic purposes for over 20 years. Our experienced practitioners follow strict safety protocols to ensure optimal results."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question": "Which areas can be treated?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Common treatment areas include forehead lines, frown lines between the eyebrows, crow's feet around the eyes, and bunny lines on the nose. During your consultation, we'll assess which areas would benefit most from treatment."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
   "translations": {
     "zhCN": {
       "title": "抗皱注射",
