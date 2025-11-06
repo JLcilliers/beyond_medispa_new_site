@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tinacms dev -c \"vite\"",
     "dev:client": "vite",
-    "build": "tinacms build --skip-cloud-checks && vite build",
+    "build": "tinacms build && vite build",
     "build:admin": "tinacms build --local",
     "preview": "vite preview"
   },
