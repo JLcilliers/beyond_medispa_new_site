@@ -18,47 +18,46 @@ import FacialPage from './components/pages/procedures/FacialPage'
 import InjectablesPage from './components/pages/procedures/InjectablesPage'
 import BodyPage from './components/pages/procedures/BodyPage'
 import PeelsPage from './components/pages/procedures/PeelsPage'
-import HydrafacialEdinburghPage from './components/pages/procedures/facial/HydrafacialEdinburghPage'
-import HydrafacialLondonPage from './components/pages/procedures/facial/HydrafacialLondonPage'
-import MicroneedlingEdinburghPage from './components/pages/procedures/facial/MicroneedlingEdinburghPage'
-import MicroneedlingLondonPage from './components/pages/procedures/facial/MicroneedlingLondonPage'
-import DermaplaningPage from './components/pages/procedures/facial/DermaplaningPage'
-import ExosomePage from './components/pages/procedures/facial/ExosomePage'
-import HydraTitePage from './components/pages/procedures/facial/HydraTitePage'
-import KeravivePage from './components/pages/procedures/facial/KeravivePage'
-import LEDFacialPage from './components/pages/procedures/facial/LEDFacialPage'
-import OxygenFacialPage from './components/pages/procedures/facial/OxygenFacialPage'
-import SkinScannerPage from './components/pages/procedures/facial/SkinScannerPage'
-import AntiWrinklePage from './components/pages/procedures/injectables/AntiWrinklePage'
+import HydrafacialEdinburghTinaPage from './components/pages/procedures/facial/HydrafacialEdinburghTinaPage'
+import HydrafacialLondonTinaPage from './components/pages/procedures/facial/HydrafacialLondonTinaPage'
+import MicroneedlingEdinburghTinaPage from './components/pages/procedures/facial/MicroneedlingEdinburghTinaPage'
+import MicroneedlingLondonTinaPage from './components/pages/procedures/facial/MicroneedlingLondonTinaPage'
+import DermaplaningTinaPage from './components/pages/procedures/facial/DermaplaningTinaPage'
+import ExosomeTinaPage from './components/pages/procedures/facial/ExosomeTinaPage'
+import HydraTiteTinaPage from './components/pages/procedures/facial/HydraTiteTinaPage'
+import KeraviveTinaPage from './components/pages/procedures/facial/KeraviveTinaPage'
+import LEDFacialTinaPage from './components/pages/procedures/facial/LEDFacialTinaPage'
+import OxygenFacialTinaPage from './components/pages/procedures/facial/OxygenFacialTinaPage'
+import SkinScannerTinaPage from './components/pages/procedures/facial/SkinScannerTinaPage'
 import AntiWrinkleTinaPage from './components/pages/procedures/injectables/AntiWrinkleTinaPage'
-import DermalFillerPage from './components/pages/procedures/injectables/DermalFillerPage'
-import ProfhiloPage from './components/pages/procedures/injectables/ProfhiloPage'
-import PolynucleotidesPage from './components/pages/procedures/injectables/PolynucleotidesPage'
-import BiofillerEdinburghPage from './components/pages/procedures/injectables/BiofillerEdinburghPage'
-import BiofillerLondonPage from './components/pages/procedures/injectables/BiofillerLondonPage'
-import PRPPage from './components/pages/procedures/injectables/PRPPage'
-import CarboxyPage from './components/pages/procedures/injectables/CarboxyPage'
-import SclerotherapyPage from './components/pages/procedures/injectables/SclerotherapyPage'
-import MoleRemovalPage from './components/pages/procedures/injectables/MoleRemovalPage'
-import NeofoundPage from './components/pages/procedures/injectables/NeofoundPage'
-import IVDripPage from './components/pages/procedures/injectables/IVDripPage'
-import VitaminDPage from './components/pages/procedures/injectables/VitaminDPage'
-import B12Page from './components/pages/procedures/injectables/B12Page'
-import BiotinPage from './components/pages/procedures/injectables/BiotinPage'
-import GlutathionePage from './components/pages/procedures/injectables/GlutathionePage'
-import MagnesiumPage from './components/pages/procedures/injectables/MagnesiumPage'
-import AllergyPage from './components/pages/procedures/injectables/AllergyPage'
-import LaserHairRemovalPage from './components/pages/procedures/body/LaserHairRemovalPage'
-import CoolSculptingPage from './components/pages/procedures/body/CoolSculptingPage'
-import ExilisPage from './components/pages/procedures/body/ExilisPage'
-import HifuPage from './components/pages/procedures/body/HifuPage'
-import CoolLaserPage from './components/pages/procedures/body/CoolLaserPage'
-import ElectrolysisPage from './components/pages/procedures/body/ElectrolysisPage'
-import Medik8EdinburghPage from './components/pages/procedures/peels/Medik8EdinburghPage'
-import Medik8LondonPage from './components/pages/procedures/peels/Medik8LondonPage'
-import ZOEdinburghPage from './components/pages/procedures/peels/ZOEdinburghPage'
-import ZOLondonPage from './components/pages/procedures/peels/ZOLondonPage'
-import ObagiPage from './components/pages/procedures/peels/ObagiPage'
+import DermalFillerTinaPage from './components/pages/procedures/injectables/DermalFillerTinaPage'
+import ProfhiloTinaPage from './components/pages/procedures/injectables/ProfhiloTinaPage'
+import PolynucleotidesTinaPage from './components/pages/procedures/injectables/PolynucleotidesTinaPage'
+import BiofillerEdinburghTinaPage from './components/pages/procedures/injectables/BiofillerEdinburghTinaPage'
+import BiofillerLondonTinaPage from './components/pages/procedures/injectables/BiofillerLondonTinaPage'
+import PRPTinaPage from './components/pages/procedures/injectables/PRPTinaPage'
+import CarboxyTinaPage from './components/pages/procedures/injectables/CarboxyTinaPage'
+import SclerotherapyTinaPage from './components/pages/procedures/injectables/SclerotherapyTinaPage'
+import MoleRemovalTinaPage from './components/pages/procedures/injectables/MoleRemovalTinaPage'
+import NeofoundTinaPage from './components/pages/procedures/injectables/NeofoundTinaPage'
+import IVDripTinaPage from './components/pages/procedures/injectables/IVDripTinaPage'
+import VitaminDTinaPage from './components/pages/procedures/injectables/VitaminDTinaPage'
+import B12TinaPage from './components/pages/procedures/injectables/B12TinaPage'
+import BiotinTinaPage from './components/pages/procedures/injectables/BiotinTinaPage'
+import GlutathioneTinaPage from './components/pages/procedures/injectables/GlutathioneTinaPage'
+import MagnesiumTinaPage from './components/pages/procedures/injectables/MagnesiumTinaPage'
+import AllergyTinaPage from './components/pages/procedures/injectables/AllergyTinaPage'
+import LaserHairRemovalTinaPage from './components/pages/procedures/body/LaserHairRemovalTinaPage'
+import CoolSculptingTinaPage from './components/pages/procedures/body/CoolSculptingTinaPage'
+import ExilisTinaPage from './components/pages/procedures/body/ExilisTinaPage'
+import HifuTinaPage from './components/pages/procedures/body/HifuTinaPage'
+import CoolLaserTinaPage from './components/pages/procedures/body/CoolLaserTinaPage'
+import ElectrolysisTinaPage from './components/pages/procedures/body/ElectrolysisTinaPage'
+import Medik8EdinburghTinaPage from './components/pages/procedures/peels/Medik8EdinburghTinaPage'
+import Medik8LondonTinaPage from './components/pages/procedures/peels/Medik8LondonTinaPage'
+import ZOEdinburghTinaPage from './components/pages/procedures/peels/ZOEdinburghTinaPage'
+import ZOLondonTinaPage from './components/pages/procedures/peels/ZOLondonTinaPage'
+import ObagiTinaPage from './components/pages/procedures/peels/ObagiTinaPage'
 import LondonBodyPage from './components/pages/locations/LondonBodyPage'
 import EdinburghBodyPage from './components/pages/locations/EdinburghBodyPage'
 import LondonPeelsPage from './components/pages/locations/LondonPeelsPage'
@@ -91,47 +90,46 @@ function AppRoutes() {
         <Route path="/procedures/injectables" element={<InjectablesPage />} />
         <Route path="/procedures/body" element={<BodyPage />} />
         <Route path="/procedures/peels" element={<PeelsPage />} />
-        <Route path="/procedures/facial/hydrafacial-edinburgh" element={<HydrafacialEdinburghPage />} />
-        <Route path="/procedures/facial/hydrafacial-london" element={<HydrafacialLondonPage />} />
-        <Route path="/procedures/facial/microneedling-edinburgh" element={<MicroneedlingEdinburghPage />} />
-        <Route path="/procedures/facial/microneedling-london" element={<MicroneedlingLondonPage />} />
-        <Route path="/procedures/facial/dermaplaning" element={<DermaplaningPage />} />
-        <Route path="/procedures/facial/exosome" element={<ExosomePage />} />
-        <Route path="/procedures/facial/hydratite" element={<HydraTitePage />} />
-        <Route path="/procedures/facial/keravive" element={<KeravivePage />} />
-        <Route path="/procedures/facial/led-facial" element={<LEDFacialPage />} />
-        <Route path="/procedures/facial/oxygen-facial" element={<OxygenFacialPage />} />
-        <Route path="/procedures/facial/skin-scanner" element={<SkinScannerPage />} />
-        <Route path="/procedures/injectables/anti-wrinkle" element={<AntiWrinklePage />} />
-        <Route path="/procedures/injectables/anti-wrinkle-tina" element={<AntiWrinkleTinaPage />} />
-        <Route path="/procedures/injectables/dermal-filler" element={<DermalFillerPage />} />
-        <Route path="/procedures/injectables/profhilo" element={<ProfhiloPage />} />
-        <Route path="/procedures/injectables/polynucleotides" element={<PolynucleotidesPage />} />
-        <Route path="/procedures/injectables/biofiller-edinburgh" element={<BiofillerEdinburghPage />} />
-        <Route path="/procedures/injectables/biofiller-london" element={<BiofillerLondonPage />} />
-        <Route path="/procedures/injectables/prp" element={<PRPPage />} />
-        <Route path="/procedures/injectables/carboxy" element={<CarboxyPage />} />
-        <Route path="/procedures/injectables/sclerotherapy" element={<SclerotherapyPage />} />
-        <Route path="/procedures/injectables/mole-removal" element={<MoleRemovalPage />} />
-        <Route path="/procedures/injectables/neofound" element={<NeofoundPage />} />
-        <Route path="/procedures/injectables/iv-drip" element={<IVDripPage />} />
-        <Route path="/procedures/injectables/vitamin-d" element={<VitaminDPage />} />
-        <Route path="/procedures/injectables/b12" element={<B12Page />} />
-        <Route path="/procedures/injectables/biotin" element={<BiotinPage />} />
-        <Route path="/procedures/injectables/glutathione" element={<GlutathionePage />} />
-        <Route path="/procedures/injectables/magnesium" element={<MagnesiumPage />} />
-        <Route path="/procedures/injectables/allergy" element={<AllergyPage />} />
-        <Route path="/procedures/body/laser-hair-removal" element={<LaserHairRemovalPage />} />
-        <Route path="/procedures/body/coolsculpting" element={<CoolSculptingPage />} />
-        <Route path="/procedures/body/exilis" element={<ExilisPage />} />
-        <Route path="/procedures/body/hifu" element={<HifuPage />} />
-        <Route path="/procedures/body/cool-laser" element={<CoolLaserPage />} />
-        <Route path="/procedures/body/electrolysis" element={<ElectrolysisPage />} />
-        <Route path="/procedures/peels/medik8-edinburgh" element={<Medik8EdinburghPage />} />
-        <Route path="/procedures/peels/medik8-london" element={<Medik8LondonPage />} />
-        <Route path="/procedures/peels/zo-edinburgh" element={<ZOEdinburghPage />} />
-        <Route path="/procedures/peels/zo-london" element={<ZOLondonPage />} />
-        <Route path="/procedures/peels/obagi" element={<ObagiPage />} />
+        <Route path="/procedures/facial/hydrafacial-edinburgh" element={<HydrafacialEdinburghTinaPage />} />
+        <Route path="/procedures/facial/hydrafacial-london" element={<HydrafacialLondonTinaPage />} />
+        <Route path="/procedures/facial/microneedling-edinburgh" element={<MicroneedlingEdinburghTinaPage />} />
+        <Route path="/procedures/facial/microneedling-london" element={<MicroneedlingLondonTinaPage />} />
+        <Route path="/procedures/facial/dermaplaning" element={<DermaplaningTinaPage />} />
+        <Route path="/procedures/facial/exosome" element={<ExosomeTinaPage />} />
+        <Route path="/procedures/facial/hydratite" element={<HydraTiteTinaPage />} />
+        <Route path="/procedures/facial/keravive" element={<KeraviveTinaPage />} />
+        <Route path="/procedures/facial/led-facial" element={<LEDFacialTinaPage />} />
+        <Route path="/procedures/facial/oxygen-facial" element={<OxygenFacialTinaPage />} />
+        <Route path="/procedures/facial/skin-scanner" element={<SkinScannerTinaPage />} />
+        <Route path="/procedures/injectables/anti-wrinkle" element={<AntiWrinkleTinaPage />} />
+        <Route path="/procedures/injectables/dermal-filler" element={<DermalFillerTinaPage />} />
+        <Route path="/procedures/injectables/profhilo" element={<ProfhiloTinaPage />} />
+        <Route path="/procedures/injectables/polynucleotides" element={<PolynucleotidesTinaPage />} />
+        <Route path="/procedures/injectables/biofiller-edinburgh" element={<BiofillerEdinburghTinaPage />} />
+        <Route path="/procedures/injectables/biofiller-london" element={<BiofillerLondonTinaPage />} />
+        <Route path="/procedures/injectables/prp" element={<PRPTinaPage />} />
+        <Route path="/procedures/injectables/carboxy" element={<CarboxyTinaPage />} />
+        <Route path="/procedures/injectables/sclerotherapy" element={<SclerotherapyTinaPage />} />
+        <Route path="/procedures/injectables/mole-removal" element={<MoleRemovalTinaPage />} />
+        <Route path="/procedures/injectables/neofound" element={<NeofoundTinaPage />} />
+        <Route path="/procedures/injectables/iv-drip" element={<IVDripTinaPage />} />
+        <Route path="/procedures/injectables/vitamin-d" element={<VitaminDTinaPage />} />
+        <Route path="/procedures/injectables/b12" element={<B12TinaPage />} />
+        <Route path="/procedures/injectables/biotin" element={<BiotinTinaPage />} />
+        <Route path="/procedures/injectables/glutathione" element={<GlutathioneTinaPage />} />
+        <Route path="/procedures/injectables/magnesium" element={<MagnesiumTinaPage />} />
+        <Route path="/procedures/injectables/allergy" element={<AllergyTinaPage />} />
+        <Route path="/procedures/body/laser-hair-removal" element={<LaserHairRemovalTinaPage />} />
+        <Route path="/procedures/body/coolsculpting" element={<CoolSculptingTinaPage />} />
+        <Route path="/procedures/body/exilis" element={<ExilisTinaPage />} />
+        <Route path="/procedures/body/hifu" element={<HifuTinaPage />} />
+        <Route path="/procedures/body/cool-laser" element={<CoolLaserTinaPage />} />
+        <Route path="/procedures/body/electrolysis" element={<ElectrolysisTinaPage />} />
+        <Route path="/procedures/peels/medik8-edinburgh" element={<Medik8EdinburghTinaPage />} />
+        <Route path="/procedures/peels/medik8-london" element={<Medik8LondonTinaPage />} />
+        <Route path="/procedures/peels/zo-edinburgh" element={<ZOEdinburghTinaPage />} />
+        <Route path="/procedures/peels/zo-london" element={<ZOLondonTinaPage />} />
+        <Route path="/procedures/peels/obagi" element={<ObagiTinaPage />} />
         <Route path="/london/body" element={<LondonBodyPage />} />
         <Route path="/edinburgh/body" element={<EdinburghBodyPage />} />
         <Route path="/london/peels" element={<LondonPeelsPage />} />
