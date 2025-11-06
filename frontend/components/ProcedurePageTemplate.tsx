@@ -10,6 +10,7 @@ import BeautySection from './BeautySection'
 import FAQSection from './FAQSection'
 import { Button } from '@/components/ui/button'
 import { useLanguage } from '../contexts/LanguageContext'
+import { TinaMarkdown } from 'tinacms/dist/rich-text'
 
 const handleNavigation = (route: string) => {
   if (window.navigateTo) {
@@ -21,7 +22,7 @@ interface HeroProps {
   tagline: string
   title: string
   subtitle: string
-  description: string
+  description: string | any // Can be string or TinaCMS rich-text object
   buttonText?: string
   backgroundImage?: string
 }
@@ -35,7 +36,7 @@ interface TreatmentInfo {
 
 interface Translation {
   title?: string
-  description?: string
+  description?: string | any // Can be string or TinaCMS rich-text object
 }
 
 interface Translations {
@@ -118,9 +119,13 @@ export default function ProcedurePageTemplate({
                 {displayTitle}<br />
                 <span className="text-[#C6A77D]">{hero.subtitle}</span>
               </h1>
-              <p className="text-xl text-[#F5F1EC] mb-8 leading-relaxed max-w-lg">
-                {displayDescription}
-              </p>
+              <div className="text-xl text-[#F5F1EC] mb-8 leading-relaxed max-w-lg">
+                {typeof displayDescription === 'string' ? (
+                  <p>{displayDescription}</p>
+                ) : (
+                  <TinaMarkdown content={displayDescription} />
+                )}
+              </div>
               <Button
                 onClick={() => handleNavigation('book-treatment')}
                 className="bg-transparent border-2 border-[#C6A77D] text-[#C6A77D] hover:bg-[#C6A77D] hover:text-[#2C2C2C] px-8 py-4 text-lg font-light tracking-wide transition-all duration-300"
