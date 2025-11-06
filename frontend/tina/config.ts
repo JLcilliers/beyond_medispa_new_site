@@ -713,7 +713,7 @@ export default defineConfig({
                   { type: "string", name: "phone", label: "Phone" },
                   { type: "string", name: "email", label: "Email" },
                   { type: "string", name: "address", label: "Address" },
-                  { type: "string", name: "hours", label: "Opening Hours" },
+                  { type: "string", name: "hours", label: "Opening Hours", list: true },
                 ],
               },
               {
@@ -724,7 +724,7 @@ export default defineConfig({
                   { type: "string", name: "phone", label: "Phone" },
                   { type: "string", name: "email", label: "Email" },
                   { type: "string", name: "address", label: "Address" },
-                  { type: "string", name: "hours", label: "Opening Hours" },
+                  { type: "string", name: "hours", label: "Opening Hours", list: true },
                 ],
               },
             ],
