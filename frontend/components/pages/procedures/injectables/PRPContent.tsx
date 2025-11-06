@@ -11,6 +11,7 @@ export default function PRPContent({ data }: any) {
     <ProcedurePageTemplate
       hero={treatment.hero}
       treatmentInfo={treatment.treatmentInfo}
+      translations={treatment.translations}
     />
   );
 }

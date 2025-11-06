@@ -54,6 +54,7 @@ export default function AntiWrinkleContent({ data }: AntiWrinkleContentProps) {
     <ProcedurePageTemplate
       hero={hero}
       treatmentInfo={treatmentInfo}
+      translations={treatment.translations}
     />
   );
 }

@@ -11,6 +11,7 @@ export default function CarboxyContent({ data }: any) {
     <ProcedurePageTemplate
       hero={treatment.hero}
       treatmentInfo={treatment.treatmentInfo}
+      translations={treatment.translations}
     />
   );
 }

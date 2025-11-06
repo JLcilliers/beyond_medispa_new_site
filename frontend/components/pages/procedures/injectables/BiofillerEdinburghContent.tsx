@@ -11,6 +11,7 @@ export default function BiofillerEdinburghContent({ data }: any) {
     <ProcedurePageTemplate
       hero={treatment.hero}
       treatmentInfo={treatment.treatmentInfo}
+      translations={treatment.translations}
     />
   );
 }

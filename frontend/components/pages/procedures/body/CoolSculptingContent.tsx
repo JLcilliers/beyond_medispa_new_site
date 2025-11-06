@@ -11,6 +11,7 @@ export default function CoolSculptingContent({ data }: any) {
     <ProcedurePageTemplate
       hero={treatment.hero}
       treatmentInfo={treatment.treatmentInfo}
+      translations={treatment.translations}
     />
   );
 }

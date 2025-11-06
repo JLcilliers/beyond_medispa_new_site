@@ -9,6 +9,7 @@ import PromotionsSection from './PromotionsSection'
 import BeautySection from './BeautySection'
 import FAQSection from './FAQSection'
 import { Button } from '@/components/ui/button'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const handleNavigation = (route: string) => {
   if (window.navigateTo) {
@@ -32,46 +33,95 @@ interface TreatmentInfo {
   benefits?: string[]
 }
 
+interface Translation {
+  title?: string
+  description?: string
+}
+
+interface Translations {
+  zhCN?: Translation
+  zhTW?: Translation
+  ar?: Translation
+}
+
 interface ProcedurePageTemplateProps {
   hero: HeroProps
   treatmentInfo?: TreatmentInfo
+  translations?: Translations
   customSections?: React.ReactNode
   showStandardSections?: boolean
 }
 
-export default function ProcedurePageTemplate({ 
-  hero, 
-  treatmentInfo, 
-  customSections, 
-  showStandardSections = true 
+export default function ProcedurePageTemplate({
+  hero,
+  treatmentInfo,
+  translations,
+  customSections,
+  showStandardSections = true
 }: ProcedurePageTemplateProps) {
+  const { language } = useLanguage()
+
+  // Get translated content based on current language
+  const getTranslatedTitle = () => {
+    if (!translations) return hero.title
+
+    switch (language) {
+      case 'zh-CN':
+        return translations.zhCN?.title || hero.title
+      case 'zh-TW':
+        return translations.zhTW?.title || hero.title
+      case 'ar':
+        return translations.ar?.title || hero.title
+      default:
+        return hero.title
+    }
+  }
+
+  const getTranslatedDescription = () => {
+    if (!translations) return hero.description
+
+    switch (language) {
+      case 'zh-CN':
+        return translations.zhCN?.description || hero.description
+      case 'zh-TW':
+        return translations.zhTW?.description || hero.description
+      case 'ar':
+        return translations.ar?.description || hero.description
+      default:
+        return hero.description
+    }
+  }
+
+  const displayTitle = getTranslatedTitle()
+  const displayDescription = getTranslatedDescription()
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      
+
       <div className="pt-20">
         {/* Hero Section */}
         <section className="relative min-h-screen bg-gradient-to-br from-[#2C2C2C] to-[#A38E78] text-white overflow-hidden">
           <div className="absolute inset-0">
             <img
               src={hero.backgroundImage || "/Hydrafacial/female-at-cosmetic-beauty-spa-clinic-has-facial-ha-2024-10-18-17-49-09-utc (1).jpg"}
-              alt={hero.title}
+              alt={displayTitle}
               className="w-full h-full object-cover opacity-60"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#2C2C2C]/80 to-transparent"></div>
           </div>
-          
+
           <div className="relative container mx-auto px-4 py-32 flex items-center min-h-screen">
             <div className="max-w-2xl">
               <p className="text-[#C6A77D] text-lg mb-4 tracking-wider">{hero.tagline}</p>
               <h1 className="text-5xl lg:text-7xl font-light leading-tight mb-8">
-                {hero.title}<br />
+                {displayTitle}<br />
                 <span className="text-[#C6A77D]">{hero.subtitle}</span>
               </h1>
               <p className="text-xl text-[#F5F1EC] mb-8 leading-relaxed max-w-lg">
-                {hero.description}
+                {displayDescription}
               </p>
-              <Button 
+              <Button
                 onClick={() => handleNavigation('book-treatment')}
                 className="bg-transparent border-2 border-[#C6A77D] text-[#C6A77D] hover:bg-[#C6A77D] hover:text-[#2C2C2C] px-8 py-4 text-lg font-light tracking-wide transition-all duration-300"
               >
