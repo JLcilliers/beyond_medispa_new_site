@@ -246,6 +246,12 @@ export default defineConfig({
                     name: "image",
                     label: "Section Image",
                   },
+                  {
+                    type: "string",
+                    name: "videoUrl",
+                    label: "Video URL (optional)",
+                    description: "YouTube or Vimeo embed URL - replaces image if provided",
+                  },
                 ],
               },
               {
@@ -270,12 +276,24 @@ export default defineConfig({
                     label: "Description",
                   },
                   {
+                    type: "image",
+                    name: "backgroundImage",
+                    label: "Background Image (optional)",
+                  },
+                  {
+                    type: "string",
+                    name: "videoUrl",
+                    label: "Background Video URL (optional)",
+                    description: "YouTube or Vimeo embed URL",
+                  },
+                  {
                     type: "object",
                     name: "features",
                     label: "Features",
                     list: true,
                     fields: [
-                      { type: "string", name: "icon", label: "Icon Name" },
+                      { type: "string", name: "icon", label: "Icon Emoji or Text", description: "Use emoji (✨) or text" },
+                      { type: "image", name: "iconImage", label: "Icon Image (optional)", description: "Upload custom icon image" },
                       { type: "string", name: "title", label: "Feature Title" },
                       { type: "string", name: "description", label: "Description" },
                     ],
@@ -326,6 +344,12 @@ export default defineConfig({
                     type: "image",
                     name: "image",
                     label: "Section Image",
+                  },
+                  {
+                    type: "string",
+                    name: "videoUrl",
+                    label: "Video URL (optional)",
+                    description: "YouTube or Vimeo embed URL - replaces image if provided",
                   },
                 ],
               },
@@ -397,7 +421,8 @@ export default defineConfig({
                     fields: [
                       { type: "string", name: "title", label: "Step Title" },
                       { type: "rich-text", name: "description", label: "Description" },
-                      { type: "string", name: "icon", label: "Icon Name" },
+                      { type: "string", name: "icon", label: "Icon Emoji or Number", description: "Use emoji (✨) or step number" },
+                      { type: "image", name: "iconImage", label: "Icon Image (optional)", description: "Upload custom icon image" },
                     ],
                   },
                 ],

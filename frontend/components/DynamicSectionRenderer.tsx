@@ -63,13 +63,22 @@ export default function DynamicSectionRenderer({ sections }: DynamicSectionRende
               <section key={index} className="py-24 bg-white">
                 <div className="container mx-auto px-4">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
-                    {section.image && (
+                    {(section.videoUrl || section.image) && (
                       <div className="relative h-[500px] rounded-3xl overflow-hidden">
-                        <img
-                          src={section.image}
-                          alt={section.title}
-                          className="w-full h-full object-cover"
-                        />
+                        {section.videoUrl ? (
+                          <iframe
+                            src={section.videoUrl}
+                            className="w-full h-full object-cover"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        ) : (
+                          <img
+                            src={section.image}
+                            alt={section.title}
+                            className="w-full h-full object-cover"
+                          />
+                        )}
                       </div>
                     )}
                     <div>
@@ -90,8 +99,26 @@ export default function DynamicSectionRenderer({ sections }: DynamicSectionRende
 
           case 'expertiseSection':
             return (
-              <section key={index} className="py-24 bg-[#2C2C2C] text-white">
-                <div className="container mx-auto px-4">
+              <section key={index} className="py-24 bg-[#2C2C2C] text-white relative overflow-hidden">
+                {(section.videoUrl || section.backgroundImage) && (
+                  <div className="absolute inset-0 z-0">
+                    {section.videoUrl ? (
+                      <iframe
+                        src={section.videoUrl}
+                        className="w-full h-full object-cover opacity-30"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    ) : (
+                      <img
+                        src={section.backgroundImage}
+                        alt="Background"
+                        className="w-full h-full object-cover opacity-30"
+                      />
+                    )}
+                  </div>
+                )}
+                <div className="container mx-auto px-4 relative z-10">
                   <div className="max-w-4xl mx-auto text-center mb-16">
                     <p className="text-[#C6A77D] text-sm tracking-wider mb-4">
                       {section.tagline || 'EXPERTISE COMBINED WITH QUALITY'}
@@ -107,8 +134,12 @@ export default function DynamicSectionRenderer({ sections }: DynamicSectionRende
                     <div className="grid md:grid-cols-3 gap-8">
                       {section.features.map((feature: any, idx: number) => (
                         <div key={idx} className="text-center">
-                          <div className="w-16 h-16 bg-[#C6A77D] rounded-full mx-auto mb-4 flex items-center justify-center">
-                            <span className="text-2xl">{feature.icon || '✨'}</span>
+                          <div className="w-16 h-16 bg-[#C6A77D] rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                            {feature.iconImage ? (
+                              <img src={feature.iconImage} alt={feature.title} className="w-10 h-10 object-contain" />
+                            ) : (
+                              <span className="text-2xl">{feature.icon || '✨'}</span>
+                            )}
                           </div>
                           <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
                           <p className="text-[#F5F1EC]">{feature.description}</p>
@@ -176,13 +207,22 @@ export default function DynamicSectionRenderer({ sections }: DynamicSectionRende
                         <TinaMarkdown content={section.description} />
                       </div>
                     </div>
-                    {section.image && (
+                    {(section.videoUrl || section.image) && (
                       <div className="relative h-[500px] rounded-3xl overflow-hidden">
-                        <img
-                          src={section.image}
-                          alt={section.title}
-                          className="w-full h-full object-cover"
-                        />
+                        {section.videoUrl ? (
+                          <iframe
+                            src={section.videoUrl}
+                            className="w-full h-full object-cover"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        ) : (
+                          <img
+                            src={section.image}
+                            alt={section.title}
+                            className="w-full h-full object-cover"
+                          />
+                        )}
                       </div>
                     )}
                   </div>
@@ -268,8 +308,12 @@ export default function DynamicSectionRenderer({ sections }: DynamicSectionRende
                     {section.steps?.map((step: any, idx: number) => (
                       <div key={idx} className="flex gap-6">
                         <div className="flex-shrink-0">
-                          <div className="w-16 h-16 bg-[#C6A77D] rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                            {idx + 1}
+                          <div className="w-16 h-16 bg-[#C6A77D] rounded-full flex items-center justify-center text-white text-2xl font-bold overflow-hidden">
+                            {step.iconImage ? (
+                              <img src={step.iconImage} alt={step.title} className="w-12 h-12 object-contain" />
+                            ) : (
+                              <span>{step.icon || (idx + 1)}</span>
+                            )}
                           </div>
                         </div>
                         <div className="flex-1">
