@@ -17,7 +17,15 @@ export default function DynamicSectionRenderer({ sections }: DynamicSectionRende
   return (
     <>
       {sections.map((section, index) => {
-        const sectionType = section._template || section.__typename
+        // Normalize the section type - handle both _template and __typename
+        let sectionType = section._template || section.__typename
+
+        // If using __typename from GraphQL, extract the section name
+        // e.g., "TreatmentSectionsSpaWelcomeSection" -> "spaWelcomeSection"
+        if (sectionType && sectionType.startsWith('TreatmentSections')) {
+          sectionType = sectionType.replace('TreatmentSections', '')
+          sectionType = sectionType.charAt(0).toLowerCase() + sectionType.slice(1)
+        }
 
         switch (sectionType) {
           case 'testimonialsSection':
