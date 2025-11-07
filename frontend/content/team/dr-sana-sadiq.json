@@ -1,0 +1,23 @@
+{
+  "name": "Dr. Sana Sadiq",
+  "title": "Medical Director & Lead Aesthetic Practitioner",
+  "image": "/team/dr-sana-sadiq.jpg",
+  "specialty": [
+    "Anti-ageing treatments",
+    "Dermal fillers",
+    "Advanced facial aesthetics"
+  ],
+  "qualifications": [
+    "MBBS",
+    "Member of the Royal College of General Practitioners",
+    "Advanced Certificate in Anti-ageing Medicine"
+  ],
+  "bio": "Dr. Sana Sadiq is a highly experienced aesthetic practitioner with over 15 years of clinical experience. She specializes in advanced facial aesthetics and has helped thousands of patients achieve their aesthetic goals with natural-looking results.",
+  "yearsExperience": 15,
+  "languages": [
+    "English",
+    "Urdu",
+    "Punjabi"
+  ],
+  "location": "both"
+}

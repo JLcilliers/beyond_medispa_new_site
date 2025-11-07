@@ -1,0 +1,35 @@
+  'en': {
+    nav: {
+      home: 'Home',
+      about: 'About',
+      londonTreatments: 'London Treatments',
+      edinburghTreatments: 'Edinburgh Treatments',
+      doctors: 'Doctors',
+      contact: 'Contact',
+      bookNow: 'Book Now',
+      locations: 'Locations'
+    },
+    hero: {
+      welcomeTitle: 'Welcome to Beyond MediSpa',
+      welcomeSubtitle: 'Premium Aesthetic Treatments in London & Edinburgh',
+      bookConsultation: 'Book Consultation',
+      learnMore: 'Learn More'
+    },
+    common: {
+      readMore: 'Read More',
+      viewAll: 'View All',
+      contactUs: 'Contact Us',
+      getInTouch: 'Get In Touch',
+      location: 'Location',
+      phone: 'Phone',
+      email: 'Email',
+      bookNow: 'Book Now',
+      callNow: 'Call Now',
+      getDirections: 'Get Directions',
+      viewProfile: 'View Profile',
+      makeBooking: 'Make a Booking',
+      sendMessage: 'Send Message',
+      whatsApp: 'WhatsApp',
+      learnMore: 'Learn More',
+      viewAllTreatments: 'View All Treatments'
+    },

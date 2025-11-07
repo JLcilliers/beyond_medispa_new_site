@@ -1,0 +1,254 @@
+{
+  "title": "Microneedling Edinburgh",
+  "category": "facial",
+  "location": "edinburgh",
+  "hero": {
+    "tagline": "EDINBURGH SKIN RENEWAL",
+    "title": "Microneedling Edinburgh",
+    "subtitle": "Advanced Collagen Induction Therapy in Scotland's Capital",
+    "description": "Transform your skin with professional microneedling at Beyond Aesthetics Edinburgh, conveniently located on the Second Floor of Harvey Nichols in St Andrew Square. Our microneedling treatment, also known as collagen induction therapy, is specifically tailored to address the unique skincare challenges faced by Edinburgh residents, from weather-related damage to seasonal skin changes. Using state-of-the-art precision needling technology, this minimally invasive treatment creates controlled micro-injuries that stimulate your skin's natural healing response, triggering increased collagen and elastin production. Perfect for addressing acne scars, surgical scars, enlarged pores, fine lines, and uneven texture, microneedling delivers remarkable results through your body's own regenerative processes. Our experienced practitioners in Edinburgh's prestigious New Town customize each treatment to your individual skin concerns and goals, ensuring optimal results while maintaining the highest safety standards. The treatment also enhances the absorption of skincare products by up to 300%, making it an ideal complement to your existing skincare routine. With minimal downtime and progressive improvements visible over several weeks, microneedling is the gold standard for non-surgical skin rejuvenation in Edinburgh."
+  },
+  "treatmentInfo": {
+    "duration": "45–60 minutes including numbing time",
+    "results": "Initial glow within days; progressive collagen remodeling over 4-12 weeks. Optimal results achieved with a course of 3-6 treatments",
+    "price": "From £200 per session - Contact for course packages and pricing",
+    "benefits": [
+      "Stimulates natural collagen & elastin production",
+      "Significantly improves skin texture and smoothness",
+      "Reduces appearance of acne scars and surgical scars",
+      "Minimizes enlarged pores for refined skin",
+      "Softens fine lines and wrinkles naturally",
+      "Evens skin tone and reduces hyperpigmentation",
+      "Enhances product absorption by up to 300%",
+      "Suitable for all skin types and tones",
+      "Minimal downtime with natural healing process",
+      "Expert treatment in Edinburgh's New Town location"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "爱丁堡微针疗法",
+      "description": "在位于爱丁堡圣安德鲁广场Harvey Nichols二楼的Beyond Aesthetics，通过专业微针疗法改造您的肌肤。我们的微针疗法，也称为胶原诱导疗法，专门针对爱丁堡居民面临的独特护肤挑战，从天气相关损伤到季节性皮肤变化。"
+    },
+    "zhTW": {
+      "title": "愛丁堡微針療法",
+      "description": "在位於愛丁堡聖安德魯廣場Harvey Nichols二樓的Beyond Aesthetics，通過專業微針療法改造您的肌膚。我們的微針療法，也稱為膠原誘導療法，專門針對愛丁堡居民面臨的獨特護膚挑戰，從天氣相關損傷到季節性皮膚變化。"
+    },
+    "ar": {
+      "title": "الوخز بالإبر الدقيقة إدنبرة",
+      "description": "حولي بشرتك بالوخز بالإبر الدقيقة الاحترافي في Beyond Aesthetics إدنبرة، الواقع في الطابق الثاني من Harvey Nichols في ساحة سانت أندرو. علاجنا بالوخز بالإبر الدقيقة، المعروف أيضاً باسم علاج تحفيز الكولاجين، مصمم خصيصاً لمعالجة تحديات العناية بالبشرة الفريدة."
+    }
+  },
+  "sections": [
+    {
+      "_template": "spaWelcomeSection",
+      "tagline": "WELCOME TO SPA CENTER",
+      "title": "Best Relaxation and Regeneration Center",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Experience the ultimate in aesthetic wellness at our state-of-the-art spa center. Our expert team combines advanced medical techniques with luxurious spa treatments to deliver transformative results in a serene, welcoming environment."
+              }
+            ]
+          }
+        ]
+      },
+      "image": "https://i.ibb.co/Zz6VZvZS/a-drop-of-gel-pours-from-a-syringe-for-cosmetic-pr-2025-03-16-09-14-11-utc.webp"
+    },
+    {
+      "_template": "expertiseSection",
+      "tagline": "EXPERTISE COMBINED WITH QUALITY",
+      "title": "Professional Aesthetic Treatments",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Our commitment to excellence is reflected in every treatment we provide. With years of experience and continuous training, our practitioners deliver results that exceed expectations while maintaining the highest standards of safety and care."
+              }
+            ]
+          }
+        ]
+      },
+      "features": [
+        {
+          "icon": "✨",
+          "title": "Award-Winning Expertise",
+          "description": "Recognized for excellence in aesthetic medicine with industry-leading practitioners"
+        },
+        {
+          "icon": "⚡",
+          "title": "Advanced Technology",
+          "description": "State-of-the-art equipment and the latest treatment innovations"
+        },
+        {
+          "icon": "🛡️",
+          "title": "Safety First",
+          "description": "Rigorous safety protocols and medical-grade products for your peace of mind"
+        },
+        {
+          "icon": "⏱️",
+          "title": "Proven Results",
+          "description": "Thousands of satisfied clients with natural-looking, long-lasting results"
+        }
+      ]
+    },
+    {
+      "_template": "beautySection",
+      "title": "The Essence of Beauty",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Our comprehensive range of aesthetic treatments is designed to enhance your natural beauty. From advanced facial treatments to body contouring, we offer cutting-edge solutions tailored to your unique needs."
+              }
+            ]
+          }
+        ]
+      },
+      "image": "https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp"
+    },
+    {
+      "_template": "productsSection",
+      "title": "Professional Products from Premium Brands",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "We use only the highest quality products and treatments, partnering with leading brands to ensure exceptional results and safety for every client."
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Advanced Skincare",
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Medical-grade skincare products for optimal results with clinical strength formulations that are dermatologist approved."
+                  }
+                ]
+              }
+            ]
+          },
+          "image": "https://i.ibb.co/Kj4wWGcD/beauty-salon-beautician-applies-cooling-gel-to-cli-2025-01-09-05-05-23-utc-1.webp"
+        },
+        {
+          "name": "Injectable Treatments",
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Premium injectables for natural enhancement, FDA approved with long-lasting results and minimal downtime."
+                  }
+                ]
+              }
+            ]
+          },
+          "image": "https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp"
+        }
+      ]
+    },
+    {
+      "_template": "faqSection",
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "How long do results typically last?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Results vary depending on the treatment and individual factors. During your consultation, we'll provide specific information about expected duration and maintenance requirements."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question": "Is there any downtime after treatment?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Most of our treatments have minimal to no downtime. Any specific recovery requirements will be discussed during your consultation."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question": "Are the treatments safe?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "All our treatments are performed by experienced practitioners using approved methods and products. We follow strict safety protocols to ensure optimal results and your wellbeing."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question": "What can I expect during my consultation?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "During your consultation, we'll assess your goals, discuss suitable treatment options, explain the procedure in detail, and create a personalized treatment plan tailored to your needs."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

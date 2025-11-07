@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "content": "Read Navigation.tsx to understand current dropdown structure",
+      "status": "completed",
+      "activeForm": "Reading Navigation.tsx to understand current dropdown structure"
+    },
+    {
+      "content": "Make 'Client Favourite' a proper heading like other categories",
+      "status": "completed",
+      "activeForm": "Making 'Client Favourite' a proper heading like other categories"
+    },
+    {
+      "content": "Remove ChevronRight arrows from category headings",
+      "status": "completed",
+      "activeForm": "Removing ChevronRight arrows from category headings"
+    },
+    {
+      "content": "Commit and push changes to Git",
+      "status": "completed",
+      "activeForm": "Committing and pushing changes to Git"
+    }
+  ]
+}

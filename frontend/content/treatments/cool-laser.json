@@ -1,0 +1,251 @@
+{
+  "title": "Cool Laser",
+  "category": "body",
+  "location": "both",
+  "hero": {
+    "tagline": "ADVANCED LASER REJUVENATION",
+    "title": "Cool Laser",
+    "subtitle": "Skin Resurfacing and Rejuvenation",
+    "description": "Transform your skin with Cool Laser technology. This innovative approach refines texture, boosts luminosity, targets pigmentation, and supports collagen renewal for comprehensive rejuvenation.",
+    "backgroundImage": "/Cool Laser/beautician-doing-facial-skin-procedure-with-electr-2024-11-25-19-06-27-utc.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "30-60 minutes",
+    "results": "Immediate glow with refinement that continues to build over several weeks",
+    "price": "Contact for pricing",
+    "benefits": [
+      "Reduces fine lines",
+      "Improves texture and tone",
+      "Targets pigmentation",
+      "Helps acne scarring",
+      "Minimal downtime",
+      "Stimulates collagen"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "冷激光",
+      "description": "使用冷激光技术改变您的皮肤。这种创新方法可细化质地、提升光泽、针对色素沉着，并支持胶原蛋白更新，实现全面焕肤。"
+    },
+    "zhTW": {
+      "title": "冷激光",
+      "description": "使用冷激光技術改變您的皮膚。這種創新方法可細化質地、提升光澤、針對色素沉著，並支持膠原蛋白更新，實現全面煥膚。"
+    },
+    "ar": {
+      "title": "كول ليزر",
+      "description": "حوّل بشرتك بتقنية كول ليزر. هذا النهج المبتكر يحسن الملمس، ويعزز الإشراق، ويستهدف التصبغ، ويدعم تجديد الكولاجين للحصول على تجديد شامل."
+    }
+  },
+  "sections": [
+    {
+      "_template": "spaWelcomeSection",
+      "tagline": "WELCOME TO SPA CENTER",
+      "title": "Best Relaxation and Regeneration Center",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Experience the ultimate in aesthetic wellness at our state-of-the-art spa center. Our expert team combines advanced medical techniques with luxurious spa treatments to deliver transformative results in a serene, welcoming environment."
+              }
+            ]
+          }
+        ]
+      },
+      "image": "https://i.ibb.co/Zz6VZvZS/a-drop-of-gel-pours-from-a-syringe-for-cosmetic-pr-2025-03-16-09-14-11-utc.webp"
+    },
+    {
+      "_template": "expertiseSection",
+      "tagline": "EXPERTISE COMBINED WITH QUALITY",
+      "title": "Professional Aesthetic Treatments",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Our commitment to excellence is reflected in every treatment we provide. With years of experience and continuous training, our practitioners deliver results that exceed expectations while maintaining the highest standards of safety and care."
+              }
+            ]
+          }
+        ]
+      },
+      "features": [
+        {
+          "icon": "✨",
+          "title": "Award-Winning Expertise",
+          "description": "Recognized for excellence in aesthetic medicine with industry-leading practitioners"
+        },
+        {
+          "icon": "⚡",
+          "title": "Advanced Technology",
+          "description": "State-of-the-art equipment and the latest treatment innovations"
+        },
+        {
+          "icon": "🛡️",
+          "title": "Safety First",
+          "description": "Rigorous safety protocols and medical-grade products for your peace of mind"
+        },
+        {
+          "icon": "⏱️",
+          "title": "Proven Results",
+          "description": "Thousands of satisfied clients with natural-looking, long-lasting results"
+        }
+      ]
+    },
+    {
+      "_template": "beautySection",
+      "title": "The Essence of Beauty",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Our comprehensive range of aesthetic treatments is designed to enhance your natural beauty. From advanced facial treatments to body contouring, we offer cutting-edge solutions tailored to your unique needs."
+              }
+            ]
+          }
+        ]
+      },
+      "image": "https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp"
+    },
+    {
+      "_template": "productsSection",
+      "title": "Professional Products from Premium Brands",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "We use only the highest quality products and treatments, partnering with leading brands to ensure exceptional results and safety for every client."
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Advanced Skincare",
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Medical-grade skincare products for optimal results with clinical strength formulations that are dermatologist approved."
+                  }
+                ]
+              }
+            ]
+          },
+          "image": "https://i.ibb.co/Kj4wWGcD/beauty-salon-beautician-applies-cooling-gel-to-cli-2025-01-09-05-05-23-utc-1.webp"
+        },
+        {
+          "name": "Injectable Treatments",
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Premium injectables for natural enhancement, FDA approved with long-lasting results and minimal downtime."
+                  }
+                ]
+              }
+            ]
+          },
+          "image": "https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp"
+        }
+      ]
+    },
+    {
+      "_template": "faqSection",
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "How long do results typically last?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Results vary depending on the treatment and individual factors. During your consultation, we'll provide specific information about expected duration and maintenance requirements."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question": "Is there any downtime after treatment?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Most of our treatments have minimal to no downtime. Any specific recovery requirements will be discussed during your consultation."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question": "Are the treatments safe?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "All our treatments are performed by experienced practitioners using approved methods and products. We follow strict safety protocols to ensure optimal results and your wellbeing."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question": "What can I expect during my consultation?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "During your consultation, we'll assess your goals, discuss suitable treatment options, explain the procedure in detail, and create a personalized treatment plan tailored to your needs."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

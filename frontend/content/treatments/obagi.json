@@ -1,0 +1,255 @@
+{
+  "title": "Obagi Blue Peel RADIANCE",
+  "category": "peels",
+  "location": "both",
+  "hero": {
+    "tagline": "Renew • Brighten • Restore",
+    "title": "Transform Your Complexion with Obagi Blue Peel RADIANCE",
+    "subtitle": "Rediscover Your Glow, Reclaim Your Confidence",
+    "description": "Medical-grade acid peels gently resurface to unveil firmer, smoother, brighter skin. Target fine lines, uneven texture, or blemishes and see visible renewal from your very first session. Each Obagi peel is precisely tailored to your skin, gently lifting away dull, damaged layers to reveal renewed luminosity and confidence. Developed by Obagi Medical Skincare, this 20% salicylic acid formulation is available in light, medium, and medical-grade strengths. Peels penetrate multiple layers to stimulate regeneration and enhance collagen for comprehensive renewal.",
+    "backgroundImage": "/Microneedling & Exosomes/pexels-shiny-diamond-3762882.jpg"
+  },
+  "treatmentInfo": {
+    "duration": "30 minutes per session",
+    "results": "Noticeable improvements follow one peel, with long-lasting transformation through 4-6 sessions spaced several weeks apart. Light peeling for three to five days as new, smoother skin emerges",
+    "price": "Contact for pricing and course packages",
+    "benefits": [
+      "20% salicylic acid accelerates cellular renewal",
+      "Addresses fine lines, uneven texture, breakouts, and photoageing",
+      "Deep rejuvenation for firmer, smoother, brighter skin",
+      "Targets acne scarring and hyperpigmentation",
+      "Suitable for most skin types, including dry or acne-prone",
+      "Professional renewal with gentle exfoliation",
+      "Progressive enhancement with each session",
+      "Expert customization to match skin tolerance and goals",
+      "Available in light, medium, and medical-grade strengths",
+      "Dramatic smoothing and brightening results"
+    ]
+  },
+  "translations": {
+    "zhCN": {
+      "title": "Obagi蓝色焕肤光彩疗程",
+      "description": "医疗级酸类焕肤温和地重塑肌肤，揭示更紧致、更光滑、更明亮的肌肤。针对细纹、不均匀质地或瑕疵，从第一次疗程就能看到明显的改善。使用20%水杨酸配方，加速细胞更新。"
+    },
+    "zhTW": {
+      "title": "Obagi藍色煥膚光彩療程",
+      "description": "醫療級酸類煥膚溫和地重塑肌膚，揭示更緊緻、更光滑、更明亮的肌膚。針對細紋、不均勻質地或瑕疵，從第一次療程就能看到明顯的改善。使用20%水楊酸配方，加速細胞更新。"
+    },
+    "ar": {
+      "title": "تقشير Obagi الأزرق RADIANCE",
+      "description": "تقشير الأحماض الطبية يعيد تشكيل البشرة بلطف ليكشف عن بشرة أكثر صلابة ونعومة وإشراقاً. استهدف الخطوط الدقيقة أو الملمس غير المتساوي أو العيوب واشهد تجديداً ملحوظاً من جلستك الأولى. يستخدم تركيبة حمض الساليسيليك بنسبة 20% لتسريع التجديد الخلوي."
+    }
+  },
+  "sections": [
+    {
+      "_template": "spaWelcomeSection",
+      "tagline": "WELCOME TO SPA CENTER",
+      "title": "Best Relaxation and Regeneration Center",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Experience the ultimate in aesthetic wellness at our state-of-the-art spa center. Our expert team combines advanced medical techniques with luxurious spa treatments to deliver transformative results in a serene, welcoming environment."
+              }
+            ]
+          }
+        ]
+      },
+      "image": "https://i.ibb.co/Zz6VZvZS/a-drop-of-gel-pours-from-a-syringe-for-cosmetic-pr-2025-03-16-09-14-11-utc.webp"
+    },
+    {
+      "_template": "expertiseSection",
+      "tagline": "EXPERTISE COMBINED WITH QUALITY",
+      "title": "Professional Aesthetic Treatments",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Our commitment to excellence is reflected in every treatment we provide. With years of experience and continuous training, our practitioners deliver results that exceed expectations while maintaining the highest standards of safety and care."
+              }
+            ]
+          }
+        ]
+      },
+      "features": [
+        {
+          "icon": "✨",
+          "title": "Award-Winning Expertise",
+          "description": "Recognized for excellence in aesthetic medicine with industry-leading practitioners"
+        },
+        {
+          "icon": "⚡",
+          "title": "Advanced Technology",
+          "description": "State-of-the-art equipment and the latest treatment innovations"
+        },
+        {
+          "icon": "🛡️",
+          "title": "Safety First",
+          "description": "Rigorous safety protocols and medical-grade products for your peace of mind"
+        },
+        {
+          "icon": "⏱️",
+          "title": "Proven Results",
+          "description": "Thousands of satisfied clients with natural-looking, long-lasting results"
+        }
+      ]
+    },
+    {
+      "_template": "beautySection",
+      "title": "The Essence of Beauty",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Our comprehensive range of aesthetic treatments is designed to enhance your natural beauty. From advanced facial treatments to body contouring, we offer cutting-edge solutions tailored to your unique needs."
+              }
+            ]
+          }
+        ]
+      },
+      "image": "https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp"
+    },
+    {
+      "_template": "productsSection",
+      "title": "Professional Products from Premium Brands",
+      "description": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "We use only the highest quality products and treatments, partnering with leading brands to ensure exceptional results and safety for every client."
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Advanced Skincare",
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Medical-grade skincare products for optimal results with clinical strength formulations that are dermatologist approved."
+                  }
+                ]
+              }
+            ]
+          },
+          "image": "https://i.ibb.co/Kj4wWGcD/beauty-salon-beautician-applies-cooling-gel-to-cli-2025-01-09-05-05-23-utc-1.webp"
+        },
+        {
+          "name": "Injectable Treatments",
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Premium injectables for natural enhancement, FDA approved with long-lasting results and minimal downtime."
+                  }
+                ]
+              }
+            ]
+          },
+          "image": "https://i.ibb.co/4R2SfBpq/beautician-applying-facial-mask-at-cosmetic-clinic-2024-10-31-01-14-38-utc.webp"
+        }
+      ]
+    },
+    {
+      "_template": "faqSection",
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "How long do results typically last?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Results vary depending on the treatment and individual factors. During your consultation, we'll provide specific information about expected duration and maintenance requirements."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question": "Is there any downtime after treatment?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Most of our treatments have minimal to no downtime. Any specific recovery requirements will be discussed during your consultation."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question": "Are the treatments safe?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "All our treatments are performed by experienced practitioners using approved methods and products. We follow strict safety protocols to ensure optimal results and your wellbeing."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question": "What can I expect during my consultation?",
+          "answer": {
+            "type": "root",
+            "children": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "During your consultation, we'll assess your goals, discuss suitable treatment options, explain the procedure in detail, and create a personalized treatment plan tailored to your needs."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

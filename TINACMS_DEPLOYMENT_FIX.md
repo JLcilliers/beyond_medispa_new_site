@@ -1,0 +1,101 @@
+# TinaCMS Vercel Deployment Fix
+
+## Problem
+The Vercel deployment was failing with this error:
+```
+ERROR: Branch 'main' is not on TinaCloud. Please make sure that branch 'main' exists in your repository and that you have pushed your all changes to the remote.
+```
+
+## Root Cause
+TinaCMS requires the branch to be indexed on TinaCloud before builds can succeed. The `tinacms build` command tries to sync with TinaCloud's API, which fails if:
+1. The branch hasn't been indexed yet on TinaCloud
+2. TinaCMS credentials are missing from Vercel environment variables
+3. The TinaCloud project isn't properly configured
+
+## Solution Applied
+Modified the build process to use TinaCMS in local mode during deployments, which:
+- ✅ Generates the admin interface files (fixes "Failed loading TinaCMS assets" error)
+- ✅ Skips cloud synchronization (bypasses the branch indexing requirement)
+- ✅ Allows the site to deploy successfully
+
+### Changes Made
+1. **frontend/package.json:9-10** - Updated `build` and `build:vercel` scripts to use `tinacms build --local`
+2. **vercel.json:3** - Build command points to `build:vercel` script
+
+The `--local` flag tells TinaCMS to:
+- Build the admin interface files needed for `/admin` route
+- Generate the GraphQL client for local content access
+- Skip TinaCloud synchronization and branch validation
+
+## Next Steps
+
+### Option A: Continue Without TinaCMS Cloud (Current Solution)
+The site will deploy successfully with a functional admin interface at `/admin`.
+
+**What Works:**
+- ✅ Site deploys successfully
+- ✅ Admin interface loads at `/admin`
+- ✅ Content editing works in development (`npm run dev`)
+- ✅ Content is committed directly to Git
+
+**Limitations:**
+- ⚠️ Admin interface in production uses local filesystem access (won't work on Vercel)
+- ⚠️ No cloud-based authentication (anyone can access `/admin` if they know the URL)
+- ⚠️ No TinaCMS search indexing
+- ⚠️ No Git-backed media management
+
+**Important:** The `/admin` route will load but won't be functional in production without proper authentication setup. Consider adding password protection or restricting access.
+
+### Option B: Fully Enable TinaCMS Cloud
+To enable full TinaCMS functionality with cloud editing:
+
+1. **Ensure TinaCloud Project is Set Up:**
+   - Visit https://app.tina.io
+   - Make sure your project (`cac767d8-5cac-4e55-bd7a-f5d756fc7f51`) is properly configured
+   - Verify the `main` branch is listed in the project configuration
+
+2. **Add Environment Variables to Vercel:**
+   ```bash
+   # In Vercel Dashboard > Settings > Environment Variables
+   TINA_CLIENT_ID=<your-client-id>
+   TINA_TOKEN=<your-token>
+   TINA_SEARCH_TOKEN=<your-search-token>
+   ```
+
+   Get these values from:
+   - TinaCloud Dashboard: https://app.tina.io/projects/cac767d8-5cac-4e55-bd7a-f5d756fc7f51/configuration
+   - Or from your local `.env.local` file
+
+3. **Update Vercel Build Command:**
+   Change back to the full build in `vercel.json`:
+   ```json
+   "buildCommand": "cd frontend && npm run build"
+   ```
+
+4. **Trigger Branch Indexing:**
+   - Push a commit to the `main` branch
+   - TinaCMS will automatically index it on the next deployment
+
+## Current Configuration Files
+
+### frontend/tina/config.ts
+```typescript
+// Correctly uses VERCEL_GIT_COMMIT_REF (set automatically by Vercel)
+const branch = process.env.VERCEL_GIT_COMMIT_REF || "main";
+```
+
+### Environment Variables Needed (if using Option B)
+- `TINA_CLIENT_ID` or `VITE_TINA_CLIENT_ID`
+- `TINA_TOKEN` or `VITE_TINA_TOKEN`
+- `TINA_SEARCH_TOKEN` or `VITE_TINA_SEARCH_TOKEN`
+
+## Verification
+After deploying, verify:
+- ✅ Site deploys successfully to Vercel
+- ✅ Main site pages load correctly
+- ✅ `/admin` route is accessible (if using Option B with proper env vars)
+
+## References
+- TinaCMS Documentation: https://tina.io/docs/
+- Your TinaCloud Project: https://app.tina.io/projects/cac767d8-5cac-4e55-bd7a-f5d756fc7f51
+- Vercel Environment Variables: https://vercel.com/docs/environment-variables
