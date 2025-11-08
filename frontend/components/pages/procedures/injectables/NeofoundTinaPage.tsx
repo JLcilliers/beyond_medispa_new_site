@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import NeofoundContent from "./NeofoundContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function NeofoundTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function NeofoundTinaPage() {
     );
   }
 
-  return <NeofoundContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/injectables/neofound"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <NeofoundContent data={graphQLResponse} />
+    </>
+  );
 }

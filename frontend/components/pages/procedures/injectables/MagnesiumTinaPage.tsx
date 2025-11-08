@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import MagnesiumContent from "./MagnesiumContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function MagnesiumTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function MagnesiumTinaPage() {
     );
   }
 
-  return <MagnesiumContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/injectables/magnesium"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <MagnesiumContent data={graphQLResponse} />
+    </>
+  );
 }

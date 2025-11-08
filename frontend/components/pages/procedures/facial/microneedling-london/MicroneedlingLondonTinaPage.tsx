@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../../tina/__generated__/client";
 import MicroneedlingLondonContent from "./MicroneedlingLondonContent";
+import { SEOHead } from "../../../../SEO/SEOHead";
 
 export default function MicroneedlingLondonTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function MicroneedlingLondonTinaPage() {
     );
   }
 
-  return <MicroneedlingLondonContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/facial/microneedling-london"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <MicroneedlingLondonContent data={graphQLResponse} />
+    </>
+  );
 }

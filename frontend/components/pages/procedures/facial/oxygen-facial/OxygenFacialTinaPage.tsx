@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../../tina/__generated__/client";
 import OxygenFacialContent from "./OxygenFacialContent";
+import { SEOHead } from "../../../../SEO/SEOHead";
 
 export default function OxygenFacialTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function OxygenFacialTinaPage() {
     );
   }
 
-  return <OxygenFacialContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/facial/oxygen-facial"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <OxygenFacialContent data={graphQLResponse} />
+    </>
+  );
 }

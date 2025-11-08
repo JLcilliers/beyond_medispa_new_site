@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import PRPContent from "./PRPContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function PRPTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function PRPTinaPage() {
     );
   }
 
-  return <PRPContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/injectables/prp"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <PRPContent data={graphQLResponse} />
+    </>
+  );
 }

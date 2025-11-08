@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../../tina/__generated__/client";
 import KeraviveContent from "./KeraviveContent";
+import { SEOHead } from "../../../../SEO/SEOHead";
 
 export default function KeraviveTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function KeraviveTinaPage() {
     );
   }
 
-  return <KeraviveContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/facial/keravive"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <KeraviveContent data={graphQLResponse} />
+    </>
+  );
 }

@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import MoleRemovalContent from "./MoleRemovalContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function MoleRemovalTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function MoleRemovalTinaPage() {
     );
   }
 
-  return <MoleRemovalContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/injectables/mole-removal"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <MoleRemovalContent data={graphQLResponse} />
+    </>
+  );
 }

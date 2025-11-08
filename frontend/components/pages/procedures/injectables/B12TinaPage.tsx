@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import B12Content from "./B12Content";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function B12TinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function B12TinaPage() {
     );
   }
 
-  return <B12Content data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/injectables/b12"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <B12Content data={graphQLResponse} />
+    </>
+  );
 }

@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import BiotinContent from "./BiotinContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function BiotinTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function BiotinTinaPage() {
     );
   }
 
-  return <BiotinContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/injectables/biotin"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <BiotinContent data={graphQLResponse} />
+    </>
+  );
 }
