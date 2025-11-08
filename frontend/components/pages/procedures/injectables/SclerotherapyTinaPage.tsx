@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import SclerotherapyContent from "./SclerotherapyContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function SclerotherapyTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function SclerotherapyTinaPage() {
     );
   }
 
-  return <SclerotherapyContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/injectables/sclerotherapy"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <SclerotherapyContent data={graphQLResponse} />
+    </>
+  );
 }

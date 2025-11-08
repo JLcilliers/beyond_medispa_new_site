@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import CMSlimContent from "./CMSlimContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function CMSlimTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function CMSlimTinaPage() {
     );
   }
 
-  return <CMSlimContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/body/cmslim"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <CMSlimContent data={graphQLResponse} />
+    </>
+  );
 }

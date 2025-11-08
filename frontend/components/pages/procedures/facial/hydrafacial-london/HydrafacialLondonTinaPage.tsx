@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../../tina/__generated__/client";
 import HydrafacialLondonContent from "./HydrafacialLondonContent";
+import { SEOHead } from "../../../../SEO/SEOHead";
 
 export default function HydrafacialLondonTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function HydrafacialLondonTinaPage() {
     );
   }
 
-  return <HydrafacialLondonContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/facial/hydrafacial-london"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <HydrafacialLondonContent data={graphQLResponse} />
+    </>
+  );
 }

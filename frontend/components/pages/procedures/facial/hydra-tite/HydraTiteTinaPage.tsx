@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../../tina/__generated__/client";
 import HydraTiteContent from "./HydraTiteContent";
+import { SEOHead } from "../../../../SEO/SEOHead";
 
 export default function HydraTiteTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function HydraTiteTinaPage() {
     );
   }
 
-  return <HydraTiteContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/facial/hydratite"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <HydraTiteContent data={graphQLResponse} />
+    </>
+  );
 }

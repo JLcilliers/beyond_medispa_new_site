@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import ObagiContent from "./ObagiContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function ObagiTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function ObagiTinaPage() {
     );
   }
 
-  return <ObagiContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/peels/obagi"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <ObagiContent data={graphQLResponse} />
+    </>
+  );
 }

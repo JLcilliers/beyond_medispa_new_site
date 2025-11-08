@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import GlutathioneContent from "./GlutathioneContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function GlutathioneTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function GlutathioneTinaPage() {
     );
   }
 
-  return <GlutathioneContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/injectables/glutathione"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <GlutathioneContent data={graphQLResponse} />
+    </>
+  );
 }

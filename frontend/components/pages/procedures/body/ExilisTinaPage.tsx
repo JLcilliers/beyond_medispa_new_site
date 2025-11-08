@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import ExilisContent from "./ExilisContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function ExilisTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function ExilisTinaPage() {
     );
   }
 
-  return <ExilisContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/body/exilis"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <ExilisContent data={graphQLResponse} />
+    </>
+  );
 }

@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import ElectrolysisContent from "./ElectrolysisContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function ElectrolysisTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function ElectrolysisTinaPage() {
     );
   }
 
-  return <ElectrolysisContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/body/electrolysis"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <ElectrolysisContent data={graphQLResponse} />
+    </>
+  );
 }

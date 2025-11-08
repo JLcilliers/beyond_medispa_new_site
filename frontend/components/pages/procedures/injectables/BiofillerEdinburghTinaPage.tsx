@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import BiofillerEdinburghContent from "./BiofillerEdinburghContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function BiofillerEdinburghTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function BiofillerEdinburghTinaPage() {
     );
   }
 
-  return <BiofillerEdinburghContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/injectables/biofiller-edinburgh"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <BiofillerEdinburghContent data={graphQLResponse} />
+    </>
+  );
 }

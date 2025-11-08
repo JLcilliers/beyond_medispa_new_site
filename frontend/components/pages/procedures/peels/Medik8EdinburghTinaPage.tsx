@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import Medik8EdinburghContent from "./Medik8EdinburghContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function Medik8EdinburghTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function Medik8EdinburghTinaPage() {
     );
   }
 
-  return <Medik8EdinburghContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/peels/medik8-edinburgh"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <Medik8EdinburghContent data={graphQLResponse} />
+    </>
+  );
 }

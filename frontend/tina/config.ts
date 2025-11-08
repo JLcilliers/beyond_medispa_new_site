@@ -1,8 +1,162 @@
 import { defineConfig } from "tinacms";
+import slugify from 'slugify';
 
 // Your hosting provider likely exposes this as an environment variable
 // Vercel automatically sets VERCEL_GIT_COMMIT_REF to the current branch
 const branch = process.env.VERCEL_GIT_COMMIT_REF || "main";
+
+// ============================================
+// REUSABLE SEO FIELD DEFINITIONS
+// ============================================
+
+// Generate SEO-friendly slug from title
+const generateSlug = (title: string): string => {
+  return slugify(title, {
+    lower: true,
+    strict: true,
+    remove: /[*+~.()'"!:@]/g
+  });
+};
+
+// Reusable SEO fields for all collections
+const seoFields = [
+  {
+    type: 'object' as const,
+    name: 'seo',
+    label: 'SEO Settings',
+    description: 'Configure meta tags, Open Graph, and search engine optimization',
+    fields: [
+      {
+        type: 'string' as const,
+        name: 'metaTitle',
+        label: 'Meta Title',
+        description: 'Optimized title for search engines (50-60 characters recommended)',
+        ui: {
+          validate: (value: string) => {
+            if (value && value.length > 60) {
+              return 'Meta title should be 60 characters or less for optimal display in search results';
+            }
+          }
+        }
+      },
+      {
+        type: 'string' as const,
+        name: 'metaDescription',
+        label: 'Meta Description',
+        description: 'Brief description for search results (150-160 characters recommended)',
+        ui: {
+          component: 'textarea',
+          validate: (value: string) => {
+            if (value && value.length > 160) {
+              return 'Meta description should be 160 characters or less for optimal display';
+            }
+          }
+        }
+      },
+      {
+        type: 'string' as const,
+        name: 'slug',
+        label: 'URL Slug',
+        description: 'Custom URL path (leave empty to auto-generate from title)',
+      },
+      {
+        type: 'string' as const,
+        name: 'canonicalUrl',
+        label: 'Canonical URL',
+        description: 'Full canonical URL (optional - defaults to page URL)',
+      },
+      {
+        type: 'string' as const,
+        name: 'keywords',
+        label: 'Keywords',
+        description: 'SEO keywords (comma-separated)',
+        list: true,
+      },
+      {
+        type: 'object' as const,
+        name: 'openGraph',
+        label: 'Open Graph (Social Media)',
+        description: 'Customize how this page appears when shared on social media',
+        fields: [
+          {
+            type: 'string' as const,
+            name: 'title',
+            label: 'OG Title',
+            description: 'Title for social media shares (defaults to meta title)',
+          },
+          {
+            type: 'string' as const,
+            name: 'description',
+            label: 'OG Description',
+            description: 'Description for social media shares (defaults to meta description)',
+            ui: {
+              component: 'textarea',
+            }
+          },
+          {
+            type: 'image' as const,
+            name: 'image',
+            label: 'OG Image',
+            description: 'Image for social media shares (1200x630px recommended)',
+          },
+        ],
+      },
+    ],
+  },
+];
+
+// Reusable schema markup field
+const schemaMarkupField = {
+  type: 'object' as const,
+  name: 'schemaMarkup',
+  label: 'Schema Markup (Advanced SEO)',
+  description: 'Structured data for rich search results',
+  fields: [
+    {
+      type: 'string' as const,
+      name: 'type',
+      label: 'Schema Type',
+      options: [
+        { value: 'MedicalProcedure', label: 'Medical Procedure' },
+        { value: 'FAQPage', label: 'FAQ Page' },
+        { value: 'AboutPage', label: 'About Page' },
+        { value: 'ContactPage', label: 'Contact Page' },
+      ],
+    },
+    {
+      type: 'string' as const,
+      name: 'customSchema',
+      label: 'Custom Schema JSON',
+      description: 'Advanced: Paste custom JSON-LD schema markup',
+      ui: {
+        component: 'textarea',
+      }
+    },
+  ],
+};
+
+// Helper function for images with alt text
+const imageWithAlt = (name: string, label: string, description?: string) => ({
+  type: 'object' as const,
+  name,
+  label,
+  description,
+  fields: [
+    {
+      type: 'image' as const,
+      name: 'src',
+      label: 'Image',
+      required: true,
+    },
+    {
+      type: 'string' as const,
+      name: 'alt',
+      label: 'Alt Text',
+      description: 'Describe the image for accessibility and SEO',
+      required: true,
+    },
+  ],
+});
 
 export default defineConfig({
   branch,
@@ -149,11 +303,7 @@ export default defineConfig({
                 name: "description",
                 label: "Description",
               },
-              {
-                type: "image",
-                name: "backgroundImage",
-                label: "Background Image",
-              },
+              imageWithAlt("backgroundImage", "Background Image", "Background image for the hero section"),
             ],
           },
           {
@@ -241,11 +391,7 @@ export default defineConfig({
                     name: "description",
                     label: "Description",
                   },
-                  {
-                    type: "image",
-                    name: "image",
-                    label: "Section Image",
-                  },
+                  imageWithAlt("image", "Section Image", "Image for the spa welcome section"),
                   {
                     type: "string",
                     name: "videoUrl",
@@ -319,7 +465,7 @@ export default defineConfig({
                       { type: "string", name: "title", label: "Promotion Title" },
                       { type: "rich-text", name: "description", label: "Description" },
                       { type: "string", name: "discount", label: "Discount Text" },
-                      { type: "image", name: "image", label: "Promotion Image" },
+                      { type: "image", name: "promotionImage", label: "Promotion Image" },
                       { type: "string", name: "buttonText", label: "Button Text" },
                     ],
                   },
@@ -340,11 +486,7 @@ export default defineConfig({
                     name: "description",
                     label: "Description",
                   },
-                  {
-                    type: "image",
-                    name: "image",
-                    label: "Section Image",
-                  },
+                  imageWithAlt("image", "Section Image", "Image for the essence of beauty section"),
                   {
                     type: "string",
                     name: "videoUrl",
@@ -398,7 +540,7 @@ export default defineConfig({
                     fields: [
                       { type: "string", name: "name", label: "Product Name" },
                       { type: "rich-text", name: "description", label: "Description" },
-                      { type: "image", name: "image", label: "Product Image" },
+                      { type: "image", name: "productImage", label: "Product Image" },
                     ],
                   },
                 ],
@@ -449,7 +591,7 @@ export default defineConfig({
                 fields: [
                   {
                     type: "image",
-                    name: "image",
+                    name: "sectionImage",
                     label: "Image",
                   },
                   {
@@ -500,6 +642,9 @@ export default defineConfig({
               },
             ],
           },
+          // SEO Fields
+          ...seoFields,
+          schemaMarkupField,
         ],
       },
       {
@@ -676,7 +821,7 @@ export default defineConfig({
                   },
                   {
                     type: "image",
-                    name: "image",
+                    name: "treatmentImage",
                     label: "Image",
                   },
                   {
@@ -904,6 +1049,9 @@ export default defineConfig({
               },
             ],
           },
+          // SEO Fields
+          ...seoFields,
+          schemaMarkupField,
         ],
       },
       {
@@ -927,7 +1075,7 @@ export default defineConfig({
           },
           {
             type: "image",
-            name: "image",
+            name: "profilePhoto",
             label: "Profile Photo",
             required: true,
           },
@@ -969,6 +1117,9 @@ export default defineConfig({
               { value: "both", label: "Both Locations" },
             ],
           },
+          // SEO Fields
+          ...seoFields,
+          schemaMarkupField,
         ],
       },
       {
@@ -1055,6 +1206,9 @@ export default defineConfig({
             label: "Page Content",
             isBody: true,
           },
+          // SEO Fields
+          ...seoFields,
+          schemaMarkupField,
         ],
       },
       {
@@ -1087,6 +1241,9 @@ export default defineConfig({
               { value: "pricing", label: "Pricing" },
             ],
           },
+          // SEO Fields (for FAQ pages/listings)
+          ...seoFields,
+          schemaMarkupField,
         ],
       },
       {
@@ -1133,6 +1290,9 @@ export default defineConfig({
             name: "featured",
             label: "Show on Homepage",
           },
+          // SEO Fields (for testimonial pages/listings)
+          ...seoFields,
+          schemaMarkupField,
         ],
       },
     ],

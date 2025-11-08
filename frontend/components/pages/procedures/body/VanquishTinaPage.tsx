@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../../../../tina/__generated__/client";
 import VanquishContent from "./VanquishContent";
+import { SEOHead } from "../../../SEO/SEOHead";
 
 export default function VanquishTinaPage() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -44,5 +45,19 @@ export default function VanquishTinaPage() {
     );
   }
 
-  return <VanquishContent data={graphQLResponse} />;
+  const treatmentData = graphQLResponse.data.treatment;
+
+  return (
+    <>
+      <SEOHead
+        seo={treatmentData.seo}
+        schemaMarkup={treatmentData.schemaMarkup}
+        defaultTitle={treatmentData.title}
+        pagePath="/procedures/body/vanquish"
+        treatmentCategory={treatmentData.category}
+        location={treatmentData.location}
+      />
+      <VanquishContent data={graphQLResponse} />
+    </>
+  );
 }
