@@ -3,7 +3,7 @@ import slugify from 'slugify';
 
 // Your hosting provider likely exposes this as an environment variable
 // Vercel automatically sets VERCEL_GIT_COMMIT_REF to the current branch
-const branch = process.env.VERCEL_GIT_COMMIT_REF || "main";
+const branch = process.env.VERCEL_GIT_COMMIT_REF || "master";
 
 // ============================================
 // REUSABLE SEO FIELD DEFINITIONS
