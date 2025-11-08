@@ -465,7 +465,7 @@ export default defineConfig({
                       { type: "string", name: "title", label: "Promotion Title" },
                       { type: "rich-text", name: "description", label: "Description" },
                       { type: "string", name: "discount", label: "Discount Text" },
-                      { type: "image", name: "image", label: "Promotion Image" },
+                      { type: "image", name: "promotionImage", label: "Promotion Image" },
                       { type: "string", name: "buttonText", label: "Button Text" },
                     ],
                   },
@@ -540,7 +540,7 @@ export default defineConfig({
                     fields: [
                       { type: "string", name: "name", label: "Product Name" },
                       { type: "rich-text", name: "description", label: "Description" },
-                      { type: "image", name: "image", label: "Product Image" },
+                      { type: "image", name: "productImage", label: "Product Image" },
                     ],
                   },
                 ],
@@ -591,7 +591,7 @@ export default defineConfig({
                 fields: [
                   {
                     type: "image",
-                    name: "image",
+                    name: "sectionImage",
                     label: "Image",
                   },
                   {
@@ -821,7 +821,7 @@ export default defineConfig({
                   },
                   {
                     type: "image",
-                    name: "image",
+                    name: "treatmentImage",
                     label: "Image",
                   },
                   {
@@ -1075,7 +1075,7 @@ export default defineConfig({
           },
           {
             type: "image",
-            name: "image",
+            name: "profilePhoto",
             label: "Profile Photo",
             required: true,
           },
