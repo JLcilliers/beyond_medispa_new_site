@@ -39,6 +39,12 @@ jobs:
         env:
           NODE_ENV: production
           VITE_BASE_PATH: /beyond_medispa_new_site/
+          TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+          TINA_SEARCH_TOKEN: ${{ secrets.TINA_SEARCH_TOKEN }}
+          VITE_TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
+          VITE_TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+          VITE_TINA_SEARCH_TOKEN: ${{ secrets.TINA_SEARCH_TOKEN }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
