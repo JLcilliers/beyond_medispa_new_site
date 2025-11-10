@@ -1052,6 +1052,16 @@ export default defineConfig({
           // SEO Fields
           ...seoFields,
           schemaMarkupField,
+          // Force schema refresh - optional internal field
+          {
+            type: "string",
+            name: "_schemaVersion",
+            label: "Schema Version (Internal)",
+            description: "Internal field for schema versioning - do not modify",
+            ui: {
+              component: () => null,
+            },
+          },
         ],
       },
       {
