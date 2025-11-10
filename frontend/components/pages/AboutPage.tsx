@@ -62,7 +62,7 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild className="bg-[#C6A77D] hover:bg-[#A38E78] text-white px-8 py-4 text-lg">
-                  <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.phorest.com/salon/beyondmedispa" target="_blank" rel="noopener noreferrer">
                     {t.about.makeBooking}
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </a>
@@ -174,7 +174,7 @@ export default function AboutPage() {
                 </p>
                 <div className="flex gap-4 mt-8">
                   <Button asChild className="bg-[#A38E78] hover:bg-[#8B7A67] text-white px-6 py-3">
-                    <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.phorest.com/salon/beyondmedispa" target="_blank" rel="noopener noreferrer">
                       {t.about.makeBooking}
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </a>
@@ -310,7 +310,7 @@ export default function AboutPage() {
                 {t.about.visitDesc}
               </p>
               <Button asChild size="lg" className="bg-white text-[#A38E78] hover:bg-white/90 px-8 py-4 text-lg">
-                <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.phorest.com/salon/beyondmedispa" target="_blank" rel="noopener noreferrer">
                   {t.buttons.bookNow}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>

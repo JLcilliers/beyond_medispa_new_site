@@ -92,7 +92,7 @@ export default function Locations() {
 
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                   <a
-                    href="https://book.beyondmedispa.com"
+                    href="https://www.phorest.com/salon/beyondmedispa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-lg bg-[#A38E78] px-6 py-3 text-center font-medium text-white transition-colors hover:bg-[#8B7A67]"

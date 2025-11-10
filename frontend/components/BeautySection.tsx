@@ -76,7 +76,7 @@ export default function BeautySection() {
                 size="lg"
                 className="border-[#A38E78] text-[#A38E78] hover:bg-[#A38E78] hover:text-white px-8 py-4"
               >
-                <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.phorest.com/salon/beyondmedispa" target="_blank" rel="noopener noreferrer">
                   Book Consultation
                 </a>
               </Button>

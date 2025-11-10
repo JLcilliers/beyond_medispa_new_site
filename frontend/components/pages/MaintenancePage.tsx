@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
-import { Award, Zap, Heart, MapPin, Phone, Clock } from 'lucide-react';
+import { Award, Zap, Heart, MapPin, Phone, Clock, Mail } from 'lucide-react';
 
 export const MaintenancePage: React.FC = () => {
   const [password, setPassword] = useState('');
@@ -191,7 +191,7 @@ export const MaintenancePage: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#333333] mb-1">Address</h4>
-                      <p className="text-[#777777]">145-147 Harley Street, London W1G 6DD</p>
+                      <p className="text-[#777777]">Fourth floor Harvey Nichols, London SW1X 7RJ, United Kingdom</p>
                     </div>
                   </div>
 
@@ -201,8 +201,20 @@ export const MaintenancePage: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#333333] mb-1">Phone</h4>
-                      <a href="tel:+442072241555" className="text-[#A38E78] hover:underline text-lg">
-                        020 7224 1555
+                      <a href="tel:03455481151" className="text-[#A38E78] hover:underline text-lg">
+                        0345 548 1151
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
+                      <Mail className="w-5 h-5 text-[#A38E78]" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-[#333333] mb-1">Email</h4>
+                      <a href="mailto:info@beyondmedispa.com" className="text-[#A38E78] hover:underline text-lg">
+                        info@beyondmedispa.com
                       </a>
                     </div>
                   </div>
@@ -212,12 +224,31 @@ export const MaintenancePage: React.FC = () => {
                       <Clock className="w-5 h-5 text-[#A38E78]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#333333] mb-1">Opening Hours</h4>
-                      <p className="text-[#777777]">Monday - Friday: 9am - 8pm</p>
-                      <p className="text-[#777777]">Saturday: 9am - 6pm</p>
+                      <h4 className="font-semibold text-[#333333] mb-1">Hours</h4>
+                      <p className="text-[#777777]">Monday - Friday: 9:00 - 18:00</p>
+                      <p className="text-[#777777]">Saturday: 9:00 - 17:00</p>
                       <p className="text-[#777777]">Sunday: Closed</p>
                     </div>
                   </div>
+                </div>
+
+                <div className="flex gap-4 mt-8">
+                  <a
+                    href="https://www.phorest.com/salon/beyondmedispa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-[#A38E78] text-white px-6 py-3 rounded-lg hover:bg-[#8b7961] transition-colors text-center font-medium"
+                  >
+                    Book Appointment
+                  </a>
+                  <a
+                    href="https://www.google.com/maps?pb=!1m18!1m12!1m3!1d2483.628183492772!2d-0.1624627224548056!3d51.50169031111937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605397680ad09%3A0x68bb8e672eb273a1!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20MediSpa!5e0!3m2!1sen!2sza!4v1758541805476!5m2!1sen!2sza"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-gray-200 text-[#333333] px-6 py-3 rounded-lg hover:bg-gray-300 transition-colors text-center font-medium"
+                  >
+                    Get Directions
+                  </a>
                 </div>
               </div>
 
@@ -250,7 +281,7 @@ export const MaintenancePage: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#333333] mb-1">Address</h4>
-                      <p className="text-[#777777]">50 Melville Street, Edinburgh EH3 7HF</p>
+                      <p className="text-[#777777]">Second Floor, harvey nichols, 30-34 St Andrew Sq, Edinburgh EH2 2AD, United Kingdom</p>
                     </div>
                   </div>
 
@@ -260,8 +291,20 @@ export const MaintenancePage: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#333333] mb-1">Phone</h4>
-                      <a href="tel:+441312268828" className="text-[#A38E78] hover:underline text-lg">
-                        0131 226 8828
+                      <a href="tel:03455481151" className="text-[#A38E78] hover:underline text-lg">
+                        0345 548 1151
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="bg-[#A38E78]/20 p-3 rounded-full mr-4 mt-1">
+                      <Mail className="w-5 h-5 text-[#A38E78]" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-[#333333] mb-1">Email</h4>
+                      <a href="mailto:info@beyondmedispa.com" className="text-[#A38E78] hover:underline text-lg">
+                        info@beyondmedispa.com
                       </a>
                     </div>
                   </div>
@@ -271,12 +314,31 @@ export const MaintenancePage: React.FC = () => {
                       <Clock className="w-5 h-5 text-[#A38E78]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#333333] mb-1">Opening Hours</h4>
-                      <p className="text-[#777777]">Monday - Friday: 9am - 8pm</p>
-                      <p className="text-[#777777]">Saturday: 9am - 6pm</p>
+                      <h4 className="font-semibold text-[#333333] mb-1">Hours</h4>
+                      <p className="text-[#777777]">Monday - Friday: 9:00 - 18:00</p>
+                      <p className="text-[#777777]">Saturday: 9:00 - 16:00</p>
                       <p className="text-[#777777]">Sunday: Closed</p>
                     </div>
                   </div>
+                </div>
+
+                <div className="flex gap-4 mt-8">
+                  <a
+                    href="https://www.phorest.com/salon/beyondmedispa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-[#A38E78] text-white px-6 py-3 rounded-lg hover:bg-[#8b7961] transition-colors text-center font-medium"
+                  >
+                    Book Appointment
+                  </a>
+                  <a
+                    href="https://www.google.com/maps?pb=!1m18!1m12!1m3!1d2233.678446141864!2d-3.194440922303394!3d55.954944976402295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766ac0abf29af5%3A0xe8c125ae82237941!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20Medispa!5e0!3m2!1sen!2sza!4v1758541860806!5m2!1sen!2sza"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-gray-200 text-[#333333] px-6 py-3 rounded-lg hover:bg-gray-300 transition-colors text-center font-medium"
+                  >
+                    Get Directions
+                  </a>
                 </div>
               </div>
 

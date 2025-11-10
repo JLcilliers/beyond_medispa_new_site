@@ -63,7 +63,7 @@ export default function Footer() {
               </a>
             </div>
             <a
-              href="https://book.beyondmedispa.com"
+              href="https://www.phorest.com/salon/beyondmedispa"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex items-center justify-center rounded-lg bg-[#C6A77D] px-6 py-3 text-sm font-semibold text-[#1A1A1A] transition-colors hover:bg-[#b49368]"

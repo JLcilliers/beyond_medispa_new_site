@@ -177,7 +177,7 @@ export default function LocationsPage() {
 
                   <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                     <Button asChild className="bg-[#A38E78] px-6 py-3 text-white hover:bg-[#8B7A67]">
-                      <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.phorest.com/salon/beyondmedispa" target="_blank" rel="noopener noreferrer">
                         {t.locations.bookAppointment}
                       </a>
                     </Button>
@@ -221,7 +221,7 @@ export default function LocationsPage() {
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button asChild size="lg" className="bg-[#C6A77D] text-[#1A1A1A] hover:bg-[#b49368]">
-                <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.phorest.com/salon/beyondmedispa" target="_blank" rel="noopener noreferrer">
                   {t.buttons.bookNow}
                 </a>
               </Button>

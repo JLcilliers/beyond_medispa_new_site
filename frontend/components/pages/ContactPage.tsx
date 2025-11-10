@@ -212,7 +212,7 @@ export default function ContactPage() {
                         variant="outline"
                           className="border-[#284139] text-[#284139] hover:bg-[#284139] hover:text-white"
                         >
-                          <a href="https://book.beyondmedispa.com" target="_blank" rel="noopener noreferrer">
+                          <a href="https://www.phorest.com/salon/beyondmedispa" target="_blank" rel="noopener noreferrer">
                     {t.buttons.bookNow}
                   </a>
                 </Button>
