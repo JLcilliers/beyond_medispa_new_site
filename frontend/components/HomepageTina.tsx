@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../tina/__generated__/client";
 import HomepageContent from "./HomepageContent";
+import { MaintenancePage } from "./pages/MaintenancePage";
 
 export default function HomepageTina() {
   const [graphQLResponse, setGraphQLResponse] = useState<any>();
@@ -23,14 +24,9 @@ export default function HomepageTina() {
   }, []);
 
   if (error) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-white">
-        <div className="text-center p-8">
-          <h1 className="text-2xl text-red-600 mb-4">Error Loading Content</h1>
-          <p className="text-gray-600">{error}</p>
-        </div>
-      </div>
-    );
+    // Show maintenance page when TinaCMS fails to load
+    // This provides a professional landing page while TinaCMS issues are resolved
+    return <MaintenancePage />;
   }
 
   if (!graphQLResponse) {
