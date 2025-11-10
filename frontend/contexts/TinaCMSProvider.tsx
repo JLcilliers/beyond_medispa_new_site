@@ -1,15 +1,19 @@
-import { useTina } from 'tinacms/dist/react';
-import { client } from '../../tina/__generated__/client';
+"use client";
+import { MaintenancePage } from "pages/MaintenancePage";
 
-export const TinaCMSProvider = ({ children }: { children: React.ReactNode }) => {
-  return <>{children}</>;
-};
-
-// Hook to use TinaCMS data
-export const useTinaContent = (query: any, variables: any) => {
-  return useTina({
-    query,
-    variables,
-    data: {},
-  });
-};
+/**
+ * TinaCMSProvider - Currently showing maintenance page
+ *
+ * TinaCMS Cloud project was deleted and cannot be recreated due to 403 errors.
+ * This component now directly shows the MaintenancePage until TinaCMS is restored.
+ *
+ * Original functionality (disabled to allow build without TinaCMS):
+ * - Fetched procedure/treatment content from TinaCMS Cloud
+ * - Displayed treatment-specific information
+ * - Showed MaintenancePage on error
+ */
+export default function TinaCMSProvider() {
+  // TinaCMS is currently unavailable - show maintenance page directly
+  // This allows the site to build and deploy without TinaCMS dependencies
+  return <MaintenancePage />;
+}
