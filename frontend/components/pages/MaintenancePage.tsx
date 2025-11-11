@@ -254,7 +254,7 @@ export const MaintenancePage: React.FC = () => {
 
               <div className="relative h-80 rounded-2xl overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4087634455487!2d-0.14907!3d51.521023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554c335c1%3A0x4a62a217874d2a1!2s145-147%20Harley%20St%2C%20London%20W1G%206DD!5e0!3m2!1sen!2suk!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6281834927872!2d-0.16246272241142543!3d51.5016903111191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605397680ad09%3A0x68bb8e672eb273a1!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20MediSpa!5e0!3m2!1sen!2sza!4v1762848235130!5m2!1sen!2sza"
                   width="100%"
                   height="100%"
                   style={{border: 0}}
@@ -344,7 +344,7 @@ export const MaintenancePage: React.FC = () => {
 
               <div className="relative h-80 rounded-2xl overflow-hidden lg:order-1">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.1654778947515!2d-3.2087!3d55.9511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c79a1a1a1a1a%3A0x1a1a1a1a1a1a1a1a!2s50%20Melville%20St%2C%20Edinburgh%20EH3%207HF!5e0!3m2!1sen!2suk!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.678450134738!2d-3.1967369014958527!3d55.954944907201444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766ac0abf29af5%3A0xe8c125ae82237941!2sBeyond%20Aesthetic%20Clinic%20by%20Beyond%20Medispa!5e0!3m2!1sen!2sza!4v1762848225482!5m2!1sen!2sza"
                   width="100%"
                   height="100%"
                   style={{border: 0}}
